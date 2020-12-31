@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PC_BaseClothing_1A_Override
+  m_Controller: {fileID: 9100000, guid: 7453ab469d3123f4ab5c61e66d7ef75f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 49625ce7e6b13e24084e0d3042e4494c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ebeb40e56cd5ccf4285e40a63227ee28, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 21fe58ae5162def4e8a2d9f095298ab2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 29085ba38f8603144a715286583cc607, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 56d1cee13942a3b4d9977253c30d935e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a29298a503f77784daab72229949dd20, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 56a933f62b1716a4982977e6432d9770, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 348e2691541f88d4592563d632a94e4c, type: 2}
