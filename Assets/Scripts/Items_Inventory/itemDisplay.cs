@@ -10,43 +10,42 @@ public class itemDisplay : MonoBehaviour
     public GameObject player;
     public Image image;
     Color c;
+
     void Update()
     {
-    
-    if(slot == 0)
-    {
-      item = player.GetComponent<PlayerController>().weapon;  
-    }
+      switch(slot)
+      {
+        case 0: 
+          item = player.GetComponent<PlayerController>().weapon;
+          break;
 
-    if(slot == 1)
-    {
-      item = player.GetComponent<PlayerController>().clothing;  
-    }
+        case 1:
+          item = player.GetComponent<PlayerController>().clothing;
+          break;
 
-    if(slot == 2)
-    {
-      item = player.GetComponent<PlayerController>().bigItem;  
-    }
+        case 2: 
+          item = player.GetComponent<PlayerController>().bigItem;
+          break;
 
-    if(slot == 3)
-    {
-      item = player.GetComponent<PlayerController>().smallItem;  
-    }
-    
-    if(!item) 
-    {
-    image.sprite = null;
-    c = image.color;
-    c.a = 0f;
-    image.color = c;
-    }
-    else
-    { 
-    image.sprite = item.GetComponent<ItemClass>().itemSprite;
-    c = image.color;
-    c.a = 1f;
-    image.color = c;
-    }
+        case 3:
+          item = player.GetComponent<PlayerController>().smallItem;
+          break;
+      }
+
+      if(!item) 
+      {
+        image.sprite = null;
+        c = image.color;
+        c.a = 0f;
+        image.color = c;
+      }
+      else
+      { 
+        image.sprite = item.GetComponent<ItemClass>().itemSprite;
+        c = image.color;
+        c.a = 1f;
+        image.color = c;
+      }
 
     }
 

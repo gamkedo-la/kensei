@@ -120,10 +120,10 @@ public class PlayerController : MonoBehaviour
         if(targetItem != null)
             {
                 Debug.Log("pickupinitiate");
-            int slot;        
+            ItemClass.Slot slot;        
             slot = targetItem.GetComponent<ItemClass>().itemSlot;
             
-                if(slot == 0)
+                if(slot == ItemClass.Slot.Weapon)
                 {
                         if(weapon != null)
                         {
@@ -158,7 +158,7 @@ public class PlayerController : MonoBehaviour
                         }
                 }
 
-                if(slot == 1)
+                if(slot == ItemClass.Slot.Clothing)
                 {
                         if(clothing != null)
                         {
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour
                             GetComponent<Animator>().runtimeAnimatorController = baseClothingAnimator as RuntimeAnimatorController;
                         }
                 }
-                if(slot == 2)
+                if(slot == ItemClass.Slot.BigItem)
                 {
                         if(bigItem != null)
                         {
@@ -198,7 +198,7 @@ public class PlayerController : MonoBehaviour
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                         }
                 }
-                if(slot == 3)
+                if(slot == ItemClass.Slot.SmallItem)
                 {
                         if(smallItem != null)
                         {
@@ -222,9 +222,9 @@ public class PlayerController : MonoBehaviour
             else{return;}
     }
 
-    public void DropItem(int slot)
+    public void DropItem(ItemClass.Slot slot)
     {
-                if(slot == 0)
+                if(slot == ItemClass.Slot.Weapon)
                 {
                         if(weapon != null)
                         {
@@ -239,7 +239,7 @@ public class PlayerController : MonoBehaviour
                         
                 }
 
-                if(slot == 1)
+                if(slot == ItemClass.Slot.Clothing)
                 {
                         if(clothing != null)
                         {
@@ -250,7 +250,7 @@ public class PlayerController : MonoBehaviour
                             GetComponent<Animator>().runtimeAnimatorController = defaultController;
                         }
                 }
-                if(slot == 2)
+                if(slot == ItemClass.Slot.BigItem)
                 {
                         if(bigItem != null)
                         {
@@ -260,7 +260,7 @@ public class PlayerController : MonoBehaviour
                         }
                        
                 }
-                if(slot == 3)
+                if(slot == ItemClass.Slot.SmallItem)
                 {
                         if(smallItem != null)
                         {

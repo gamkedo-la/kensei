@@ -8,7 +8,7 @@ public class DisplayDropButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
 {
     public GameObject drop;
     public GameObject player;
-    public int slot;
+    public ItemClass.Slot slot;
     bool droppable = false;
 
     public void OnPointerEnter( PointerEventData eventData)
