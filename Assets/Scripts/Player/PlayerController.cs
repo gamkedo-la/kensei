@@ -80,6 +80,7 @@ public class PlayerController : MonoBehaviour
             Canvas.SetActive(false);
             inventoryOpen = false; 
             }
+            
             else
             {
             Debug.Log("Inventory");
