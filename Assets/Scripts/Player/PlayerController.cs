@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
      defaultController = GetComponent<Animator>().runtimeAnimatorController;
+     Cursor.lockState = CursorLockMode.Confined;
     }
 
     void Update()

@@ -20,7 +20,7 @@ public class DisplayDropButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerExit( PointerEventData eventData)
     {
     drop.SetActive(false);
-    droppable = true;
+    droppable = false;
     }
 
     public void OnPointerClick(PointerEventData eventData)
