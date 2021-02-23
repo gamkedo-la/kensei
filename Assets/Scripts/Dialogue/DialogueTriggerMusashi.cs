@@ -84,6 +84,7 @@ public bool Dialogue1 = false;
         buttonB.GetComponentInChildren<Text>().text = buttonBText;
         buttonA.SetActive(true);
         buttonB.SetActive(true);
+        combatScore.SetActive(true);
     }
     public override void ButtonA()
     {
