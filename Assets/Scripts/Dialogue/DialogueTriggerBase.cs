@@ -3,22 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTriggerBase : DialogueTrigger
 {
-    
-    public List<Dialogue> Dialogues;
-    public CircleCollider2D collider;
-    public GameObject button;
-    public GameObject panel;
-    public bool inRange;
-    public bool dialogueEnd;
-    public GameObject combatScore;
-    public GameObject buttonA;
-    public string buttonAText;
-    public GameObject buttonB;
-    public string buttonBText;
 
-    public virtual void Start()
+    public void Start()
     {
        button.SetActive(false); 
        buttonA.SetActive(false);
@@ -31,7 +19,7 @@ public class DialogueTrigger : MonoBehaviour
       //check for conditions for different dialogue options
     }
 
-    public virtual void OnTriggerEnter2D(Collider2D collider)
+    public void OnTriggerEnter2D(Collider2D collider)
     {
         inRange = true;
         button.SetActive(true);
@@ -44,7 +32,7 @@ public class DialogueTrigger : MonoBehaviour
             }   
     }
     
-    public virtual void OnTriggerExit2D(Collider2D collider)
+    public void OnTriggerExit2D(Collider2D collider)
     {
         inRange = false;
         button.SetActive(false);
@@ -57,7 +45,7 @@ public class DialogueTrigger : MonoBehaviour
         combatScore.SetActive(false);
     }
 
-    public virtual void DecisionDisplay(string buttonAText, string buttonBText)
+    public void DecisionDisplay(string buttonAText, string buttonBText)
     {
         this.buttonA.GetComponentInChildren<Text>().text = buttonAText;
         this.buttonB.GetComponentInChildren<Text>().text = buttonBText;
@@ -65,14 +53,5 @@ public class DialogueTrigger : MonoBehaviour
         this.buttonB.SetActive(true);
     }
 
-    public virtual void ButtonA()
-    {
 
-    }
-
-    public virtual void ButtonB()
-    {
-
-    }
-   
 }

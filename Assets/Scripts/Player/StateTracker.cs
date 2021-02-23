@@ -19,6 +19,7 @@ public class StateTracker : MonoBehaviour
 
     public void Update()
     {
+    
 
         if(!player.GetComponent<PlayerController>().weapon)
         {

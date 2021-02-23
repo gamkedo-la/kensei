@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public GameObject katana;
     public GameObject paddle;
     public int playerCombatPoints = 10;
-    public bool oneArm = false;
+  
 
    GameObject currentWeaponModel;
    int weaponSortType;
@@ -58,8 +58,8 @@ public class PlayerController : MonoBehaviour
             animator.SetInteger("Direction", 3);
             if(currentWeaponModel) 
             {
-                if(weaponSortType == 0) currentWeaponModel.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                else currentWeaponModel.GetComponent<SpriteRenderer>().sortingOrder = 3;
+                if(weaponSortType == 0) currentWeaponModel.GetComponent<SpriteRenderer>().sortingOrder = 2;
+                else currentWeaponModel.GetComponent<SpriteRenderer>().sortingOrder = 4;
             }
         }
         else 
@@ -67,8 +67,8 @@ public class PlayerController : MonoBehaviour
             animator.SetInteger("Direction", 0);
             if(currentWeaponModel) 
             {
-                if(weaponSortType == 0) currentWeaponModel.GetComponent<SpriteRenderer>().sortingOrder = 3;
-                else currentWeaponModel.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                if(weaponSortType == 0) currentWeaponModel.GetComponent<SpriteRenderer>().sortingOrder = 4;
+                else currentWeaponModel.GetComponent<SpriteRenderer>().sortingOrder = 2;
             }
         }
 
@@ -76,14 +76,12 @@ public class PlayerController : MonoBehaviour
         {
             if(inventoryOpen)
             {
-            Debug.Log("CloseInventory");
             Canvas.SetActive(false);
             inventoryOpen = false; 
             }
             
             else
             {
-            Debug.Log("Inventory");
             Canvas.SetActive(true);
             inventoryOpen = true;
             }
@@ -91,15 +89,16 @@ public class PlayerController : MonoBehaviour
 
         if( Input.GetButtonDown("PickUpItem"))
         {
-            Debug.Log("pickupattempt");
             AddItem();
         }
 
-        if(GetComponent<StateTracker>().oneArm) oneArm = true;
-        if(oneArm)
+        //Handle One Arm
+        if(GameDictionary.choiceDictionary["One Arm"])
         {
-            if(!clothing) GetComponent<Animator>().runtimeAnimatorController = nude1AAnimator as RuntimeAnimatorController;
-            if(clothing.tag == "BaseClothing")
+            if(GameDictionary.choiceDictionary["Nude"]) GetComponent<Animator>().runtimeAnimatorController = nude1AAnimator as RuntimeAnimatorController;
+
+            //choose the right animator
+            if(GameDictionary.choiceDictionary["Base Kimono"])
             {
             GetComponent<Animator>().runtimeAnimatorController = baseClothing1AAnimator as RuntimeAnimatorController;
             }
@@ -120,7 +119,7 @@ public class PlayerController : MonoBehaviour
     {
         if(targetItem != null)
             {
-                Debug.Log("pickupinitiate");
+            
             ItemClass.Slot slot;        
             slot = targetItem.GetComponent<ItemClass>().itemSlot;
             
@@ -132,26 +131,37 @@ public class PlayerController : MonoBehaviour
                             //spawn old item in Scene
                             GameObject newItem = Instantiate(weapon, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
+                            //flag old item false in dictionary
+                            GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
 
                             //swap weapon
                             currentWeaponModel.SetActive(false);
                             weapon = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
+                            //flag new item true in dictionary
+                            GameDictionary.Instance.UpdateEntry(weapon.GetComponent<ItemClass>().itemName, true);
+                            Debug.Log( GameDictionary.choiceDictionary[weapon.GetComponent<ItemClass>().itemName]);
                         
                         }
                         else 
                         { 
                             weapon = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
-                        }
+                            //flag new item true in dictionary
+                            GameDictionary.Instance.UpdateEntry(weapon.GetComponent<ItemClass>().itemName, true);
+                            Debug.Log( GameDictionary.choiceDictionary[weapon.GetComponent<ItemClass>().itemName]);
 
-                        if(weapon.tag == "Katana")
+                        }
+                        
+                        //change names to socket location
+                        if(GameDictionary.choiceDictionary["Base Katana"])
                         {
                             katana.SetActive(true);
                             currentWeaponModel = katana;
                             weaponSortType = 0;
                         }
-                        if(weapon.tag == "Paddle")
+                        if(GameDictionary.choiceDictionary["Paddle"])
                         {
                             paddle.SetActive(true);
                             currentWeaponModel = paddle;
@@ -166,17 +176,29 @@ public class PlayerController : MonoBehaviour
                             //spawn old item in Scene
                             GameObject newItem = Instantiate(clothing, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
-                            //swap weapon
+                            //flag old item false in dictionary
+                            GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
 
                             clothing = targetItem;
-                            targetItem.GetComponent<PickUpItem>().OnPickUp();                        }
+                            targetItem.GetComponent<PickUpItem>().OnPickUp();
+                            //flag new item true in dictionary
+                            GameDictionary.Instance.UpdateEntry(clothing.GetComponent<ItemClass>().itemName, true);
+                            Debug.Log( GameDictionary.choiceDictionary[clothing.GetComponent<ItemClass>().itemName]);
+                        }
                         else 
                         { 
                             clothing = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
+                            GameDictionary.Instance.UpdateEntry("Nude", false);
+                            Debug.Log( GameDictionary.choiceDictionary["Nude"]);
+                            //flag new item true in dictionary
+                            GameDictionary.Instance.UpdateEntry(clothing.GetComponent<ItemClass>().itemName, true);
+                            Debug.Log( GameDictionary.choiceDictionary[clothing.GetComponent<ItemClass>().itemName]);
                         }
 
-                        if(clothing.tag == "BaseClothing")
+                        //set proper animator
+                        if(GameDictionary.choiceDictionary["Base Kimono"])
                         {
                             GetComponent<Animator>().runtimeAnimatorController = baseClothingAnimator as RuntimeAnimatorController;
                         }
@@ -188,15 +210,24 @@ public class PlayerController : MonoBehaviour
                             //spawn old item in Scene
                             GameObject newItem = Instantiate(bigItem, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
-                            //swap weapon
+                            //flag old item false in dictionary
+                            GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
 
                             bigItem = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
+                            //flag new item true in dictionary
+                            GameDictionary.Instance.UpdateEntry(bigItem.GetComponent<ItemClass>().itemName, true);
+                            Debug.Log( GameDictionary.choiceDictionary[bigItem.GetComponent<ItemClass>().itemName]);
+
                         }
                         else 
                         { 
                             bigItem = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
+                            //flag new item true in dictionary
+                            GameDictionary.Instance.UpdateEntry(bigItem.GetComponent<ItemClass>().itemName, true);
+                            Debug.Log( GameDictionary.choiceDictionary[bigItem.GetComponent<ItemClass>().itemName]);
                         }
                 }
                 if(slot == ItemClass.Slot.SmallItem)
@@ -207,16 +238,23 @@ public class PlayerController : MonoBehaviour
                              //spawn old item in Scene
                             GameObject newItem = Instantiate(smallItem, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
-                            //swap weapon
+                            //flag old item false in dictionary
+                            GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
 
                             smallItem = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();  
-
+                            //flag new item true in dictionary
+                            GameDictionary.Instance.UpdateEntry(smallItem.GetComponent<ItemClass>().itemName, true);
+                            Debug.Log( GameDictionary.choiceDictionary[smallItem.GetComponent<ItemClass>().itemName]);
                         }
                         else 
                         { 
                             smallItem = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
+                            //flag new item true in dictionary
+                            GameDictionary.Instance.UpdateEntry(smallItem.GetComponent<ItemClass>().itemName, true);
+                            Debug.Log( GameDictionary.choiceDictionary[smallItem.GetComponent<ItemClass>().itemName]);
                         }
                 }
             }      
@@ -234,7 +272,10 @@ public class PlayerController : MonoBehaviour
                             GameObject newItem = Instantiate(weapon, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
                             currentWeaponModel.SetActive(false);
-                            weapon = null;                        
+                            weapon = null;
+                            //flag old item false in dictionary 
+                            GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);                      
                         }
 
                         
@@ -247,8 +288,14 @@ public class PlayerController : MonoBehaviour
                             //spawn old item in Scene
                             GameObject newItem = Instantiate(clothing, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
+                            GameDictionary.Instance.UpdateEntry("Nude", true);
+                            Debug.Log( GameDictionary.choiceDictionary["Nude"]);
+
                             clothing = null;
                             GetComponent<Animator>().runtimeAnimatorController = defaultController;
+                            //flag old item false in dictionary
+                            GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
                         }
                 }
                 if(slot == ItemClass.Slot.BigItem)
@@ -258,6 +305,9 @@ public class PlayerController : MonoBehaviour
                            GameObject newItem = Instantiate(bigItem, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
                             bigItem = null; 
+                            //flag old item false in dictionary
+                            GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
                         }
                        
                 }
@@ -268,6 +318,9 @@ public class PlayerController : MonoBehaviour
                             GameObject newItem = Instantiate(smallItem, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
                             smallItem = null;
+                            //flag old item false in dictionary
+                            GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
                         }
                         
                 }
