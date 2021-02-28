@@ -26,34 +26,23 @@ public class GameDictionary : MonoBehaviour
     public void Populate()
     {
         //populate dictionary with defaults at start of the game
+        //make each of these a function
         //refactor???? Using array from config???????
-        if (!GameDictionary.choiceDictionary.ContainsKey("Nude")) 
-        {
-            GameDictionary.choiceDictionary.Add("Nude", true);
-        }
-
-        if (!GameDictionary.choiceDictionary.ContainsKey("Base Kimono")) 
-        {
-            GameDictionary.choiceDictionary.Add("Base Kimono", false);
-        }
-
-        if (!GameDictionary.choiceDictionary.ContainsKey("Base Katana")) 
-        {
-            GameDictionary.choiceDictionary.Add("Base Katana", false);
-        }
-
-        if (!GameDictionary.choiceDictionary.ContainsKey("Paddle")) 
-        {
-            GameDictionary.choiceDictionary.Add("Paddle", false);
-        }
-
-        if (!GameDictionary.choiceDictionary.ContainsKey("One Arm")) 
-        {
-            GameDictionary.choiceDictionary.Add("One Arm", false);
-        }
+        AddEntry("Nude", true);
+        AddEntry("Base Kimono", false);
+        AddEntry("Base Katana", false);
+        AddEntry("Paddle", false);
+        AddEntry("One Arm", false);
 
     }
-
+    public void AddEntry(string key, bool value)   
+    {
+        if(!GameDictionary.choiceDictionary.ContainsKey(key))
+        {
+        GameDictionary.choiceDictionary.Add(key, value);
+        }
+        else{Debug.Log("Key match");}
+    }
     public void UpdateEntry(string key, bool value)
     {
         if(GameDictionary.choiceDictionary.ContainsKey(key))

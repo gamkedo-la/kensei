@@ -6,22 +6,22 @@ using UnityEngine.UI;
 public class DialogueTriggerMusashi : DialogueTrigger
 {
 public GameObject arm;
-public bool Dialogue1 = false;
+public bool challengingDialogue = false;
     public override void Start()
     {
        button.SetActive(false); 
        buttonA.SetActive(false);
-       buttonB.SetActive(false);
+       buttonB.SetActive(false); 
        combatScore.SetActive(false);
     }
 
     void Update()
     {
-        if(dialogueEnd && Dialogue1)
+        if(dialogueEnd && challengingDialogue)
         {
             DecisionDisplay("Challenge", "Walk Away");
             dialogueEnd = false;
-            Dialogue1 = false;
+            challengingDialogue = false;
         }
     }
 
@@ -37,7 +37,7 @@ public bool Dialogue1 = false;
             { 
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
             button.GetComponent<DialogueRun>().trigger = this;
-            Dialogue1 = true;
+            challengingDialogue = true;
 
             }
             else
@@ -71,7 +71,7 @@ public bool Dialogue1 = false;
         button.GetComponent<DialogueRun>().dialogue = null;
         button.GetComponent<DialogueRun>().trigger = null;
         dialogueEnd = false;
-        Dialogue1 = false;
+        challengingDialogue = false;
         panel.SetActive(false);
         buttonA.SetActive(false);
         buttonB.SetActive(false);

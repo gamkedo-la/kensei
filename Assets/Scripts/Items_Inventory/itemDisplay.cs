@@ -7,6 +7,8 @@ public class itemDisplay : MonoBehaviour
 {
     public int slot;
     public GameObject item;
+
+    public Sprite defaultSprite;
     public GameObject player;
     public Image image;
     Color c;
@@ -34,9 +36,9 @@ public class itemDisplay : MonoBehaviour
 
       if(!item) 
       {
-        image.sprite = null;
+        image.sprite = defaultSprite;
         c = image.color;
-        c.a = 0f;
+        c.a = 1f;
         image.color = c;
       }
       else
