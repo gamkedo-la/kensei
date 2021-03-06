@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,8 +26,8 @@ public class MovementTestScript : MonoBehaviour
 
         if(inc > 200)
         {
-        inc = 0;
-        speed = speed*-1;
+            inc = 0;
+            speed = speed*-1;
         }
     }   
 }

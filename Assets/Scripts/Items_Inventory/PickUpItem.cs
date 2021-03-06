@@ -9,6 +9,7 @@ public CircleCollider2D circle;
 
 public GameObject item;
 
+
     void OnTriggerEnter2D( Collider2D col )
     {
         col.GetComponent<PlayerController>().targetItem = item;

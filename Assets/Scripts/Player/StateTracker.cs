@@ -19,7 +19,7 @@ public class StateTracker : MonoBehaviour
 
     public void Update()
     {
-    
+    oneArm = GameDictionary.choiceDictionary["One Arm"];
 
         if(!player.GetComponent<PlayerController>().weapon)
         {

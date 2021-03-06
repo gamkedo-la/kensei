@@ -27,7 +27,7 @@ public class GameDictionary : MonoBehaviour
     {
         //populate dictionary with defaults at start of the game
         //make each of these a function
-        //refactor???? Using array from config???????
+
         AddEntry("Nude", true);
         AddEntry("Base Kimono", false);
         AddEntry("Base Katana", false);

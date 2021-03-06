@@ -23,15 +23,15 @@ public class PlayerController : MonoBehaviour
     public GameObject katana;
     public GameObject paddle;
     public int playerCombatPoints = 10;
-  
-
-   GameObject currentWeaponModel;
-   int weaponSortType;
+    GameObject currentWeaponModel;
+    int weaponSortType;
 
     void Start()
     {
      defaultController = GetComponent<Animator>().runtimeAnimatorController;
      Cursor.lockState = CursorLockMode.Confined;
+
+     //check for player pref data, if no data load defaults otherwise load save 
     }
 
     void Update()
@@ -98,13 +98,12 @@ public class PlayerController : MonoBehaviour
         {
             if(GameDictionary.choiceDictionary["Nude"]) GetComponent<Animator>().runtimeAnimatorController = nude1AAnimator as RuntimeAnimatorController;
 
-            //choose the right animator
+            //choose the right animator -- make switch
             if(GameDictionary.choiceDictionary["Base Kimono"])
             {
             GetComponent<Animator>().runtimeAnimatorController = baseClothing1AAnimator as RuntimeAnimatorController;
             }
-        }
-        
+        }   
     }
 
     // Update is called once per frame
