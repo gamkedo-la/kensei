@@ -18,6 +18,23 @@ public class LoadFile : MonoBehaviour
         if(ItemDictionary.itemDictionary["Clothing"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Clothing"]));
         if(ItemDictionary.itemDictionary["Small Item"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Small Item"]));
         if(ItemDictionary.itemDictionary["Big Item"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Big Item"]));
+
+        foreach(KeyValuePair<string, bool> dictionaryEntry in GameDictionary.choiceDictionary)
+        {
+            if(PlayerPrefs.HasKey(dictionaryEntry.Key))
+            {
+                switch(PlayerPrefs.GetInt(dictionaryEntry.Key))
+                {
+                    case 0:
+                        GameDictionary.Instance.UpdateEntry(dictionaryEntry.Key, false);
+                        break;
+
+                    case 1:
+                        GameDictionary.Instance.UpdateEntry(dictionaryEntry.Key, true);
+                        break;
+                }   
+            }   
+        }
    }
 
     public GameObject ConstructItem(ItemClass item)

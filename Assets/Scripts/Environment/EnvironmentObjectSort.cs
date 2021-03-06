@@ -12,10 +12,10 @@ public class EnvironmentObjectSort : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collider)
     {
-       GetComponent<SpriteRenderer>().sortingOrder = 10; 
+      if(collider.CompareTag("Player")) GetComponent<SpriteRenderer>().sortingOrder = 10; 
     }
     public void OnTriggerExit2D(Collider2D collider)
     {
-       GetComponent<SpriteRenderer>().sortingOrder = 1; 
+      if(collider.CompareTag("Player")) GetComponent<SpriteRenderer>().sortingOrder = 1;    
     }
 }

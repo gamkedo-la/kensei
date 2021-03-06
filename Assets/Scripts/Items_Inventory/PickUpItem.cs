@@ -12,13 +12,18 @@ public GameObject item;
 
     void OnTriggerEnter2D( Collider2D col )
     {
+        if(col.CompareTag("Player"))
+        {
         col.GetComponent<PlayerController>().targetItem = item;
-        Debug.Log(col.GetComponent<PlayerController>().targetItem);
+        }
     }
 
     void OnTriggerExit2D( Collider2D col )
-    {
+    {   
+        if(col.CompareTag("Player"))
+        {
         col.GetComponent<PlayerController>().targetItem = null;
+        }
     }
     public void OnPickUp()
     {

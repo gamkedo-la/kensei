@@ -25,6 +25,21 @@ public class SaveFile : MonoBehaviour
             ItemDictionary.Instance.UpdateEntry( "Small Item", player.GetComponent<PlayerController>().smallItem.GetComponent<ItemClass>());
             ItemDictionary.Instance.UpdateEntry( "Big Item", player.GetComponent<PlayerController>().bigItem.GetComponent<ItemClass>());
 
+            foreach(KeyValuePair<string, bool> dictionaryEntry in GameDictionary.choiceDictionary)
+            {
+               switch(dictionaryEntry.Value)
+               {
+                   case true:
+                        PlayerPrefs.SetInt(dictionaryEntry.Key, 1);
+                        break;
+
+                   case false: 
+                        PlayerPrefs.SetInt(dictionaryEntry.Key, 0);
+                        break;
+               }
+
+            }
+
         }
     }
 

@@ -653,7 +653,6 @@ GameObject:
   m_Component:
   - component: {fileID: 479535047}
   - component: {fileID: 479535046}
-  - component: {fileID: 479535057}
   - component: {fileID: 479535048}
   - component: {fileID: 479535049}
   - component: {fileID: 479535056}
@@ -663,6 +662,8 @@ GameObject:
   - component: {fileID: 479535050}
   - component: {fileID: 479535054}
   - component: {fileID: 479535055}
+  - component: {fileID: 479535058}
+  - component: {fileID: 479535057}
   m_Layer: 0
   m_Name: MusashiCharacter
   m_TagString: Untagged
@@ -737,7 +738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 4.5}
+  m_AnchoredPosition: {x: 18.8, y: 4.5}
   m_SizeDelta: {x: 6, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &479535048
@@ -760,7 +761,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &479535049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -899,7 +900,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &479535057
+--- !u!70 &479535057
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479535045}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.413579}
+  m_Size: {x: 3.0222244, y: 6.0148144}
+  m_Direction: 0
+--- !u!114 &479535058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -908,12 +925,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 479535045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: def90092a22a19c4aa15c4bf863936a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 55d4c5d6725345b4dae00b0543b5c9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 479535056}
-  rb: {fileID: 479535048}
-  speed: 5
+  onSwitch: 0
+  radius: 20
+  speed: 8
 --- !u!1 &507278396
 GameObject:
   m_ObjectHideFlags: 0
