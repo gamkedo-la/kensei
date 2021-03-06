@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
 
         if( Input.GetButtonDown("PickUpItem"))
         {
-            AddItem();
+            AddItem(targetItem);
         }
 
         //Handle One Arm
@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void AddItem()
+    public void AddItem(GameObject targetItem)
     {
         if(targetItem != null)
             {
