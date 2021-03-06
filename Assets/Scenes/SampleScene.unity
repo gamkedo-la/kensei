@@ -662,8 +662,8 @@ GameObject:
   - component: {fileID: 479535050}
   - component: {fileID: 479535054}
   - component: {fileID: 479535055}
-  - component: {fileID: 479535058}
   - component: {fileID: 479535057}
+  - component: {fileID: 479535058}
   m_Layer: 0
   m_Name: MusashiCharacter
   m_TagString: Untagged
@@ -925,12 +925,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 479535045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d4c5d6725345b4dae00b0543b5c9e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5207c543fe29ba44785dd9e4c41554ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onSwitch: 0
-  radius: 20
-  speed: 8
+  speed: 7
 --- !u!1 &507278396
 GameObject:
   m_ObjectHideFlags: 0
