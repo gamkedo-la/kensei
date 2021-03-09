@@ -117,6 +117,19 @@ public class PlayerController : MonoBehaviour
 
     public void AddItem(GameObject targetItem)
     {
+        if(targetItem == null)
+        {
+            Collider2D[] itemsNear = Physics2D.OverlapCircleAll(transform.position, 5f);
+
+            for(int i = 0; i < itemsNear.Length; i++)
+            {
+               if(itemsNear[i].GetComponent<ItemClass>() != null)
+               {
+                targetItem = itemsNear[i].gameObject;
+                break;
+               }
+            }
+        }
         if(targetItem != null)
             {
             

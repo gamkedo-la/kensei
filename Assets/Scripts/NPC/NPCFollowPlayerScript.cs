@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPCFollowPlayerScript : MonoBehaviour
 {
+    public Text text;
     public bool onSwitch;
     public float speed;
     private Rigidbody2D rb;
@@ -25,6 +27,9 @@ public class NPCFollowPlayerScript : MonoBehaviour
 
     private float xSeconds = .08f;
     private Vector3 lastCheckPos;
+    private float minDist = 7;
+    private float maxDist = 12; 
+    private float targetDist = 10;
 
 
     // Use this for initialization
@@ -48,10 +53,9 @@ public class NPCFollowPlayerScript : MonoBehaviour
         {
             if(stopped)
             {
-
-            reached = false;
+            //text.text = "Stopped";
             animator.SetFloat("Speed", 0f);
-            animator.SetInteger("Direction", 0);
+            //animator.SetInteger("Direction", 0);
             rb.velocity = new Vector3(0f,0f,0f);
 
                 if ((Time.time - lastCheckTime) > xSeconds)
@@ -69,15 +73,10 @@ public class NPCFollowPlayerScript : MonoBehaviour
             }
             else
             {
+                //text.text = "Moving";
                 // Update our progress to our destination
                 Vector2 Delta = new Vector2(destination.x - transform.position.x, destination.y - transform.position.y);
                 targetVector = Delta.normalized;
-                
-                // Check for the case when we overshoot or reach our destination
-                if (Delta.magnitude < 0.5f)
-                {
-                    reached = true;
-                }
 
                 if ((Time.time - lastCheckTime) > xSeconds)
                 {
@@ -97,32 +96,59 @@ public class NPCFollowPlayerScript : MonoBehaviour
                 rb.MovePosition(rb.position+targetVector*speed*Time.fixedDeltaTime);
                 animator.SetFloat("Speed", targetVector.magnitude * speed * Time.fixedDeltaTime);
 
-                if(targetVector.y > 0f)
+                if(reached == false)
                 {
-                    animator.SetInteger("Direction", 3);
+
+                    if(targetVector.y > 0.1f)
+                    {
+                        animator.SetInteger("Direction", 3);
+                    }
+                    else if(targetVector.y < -0.1f)
+                    {
+                        animator.SetInteger("Direction", 0);
+                    }
+
                 }
-                else{animator.SetInteger("Direction", 0);}
             }
         }
     }
 
     void FollowPlayer()
     {
+        //text.text = "Followed";
         //figure out where the player is 
-        Vector2 point = player.transform.InverseTransformPoint(transform.position);
-        destination = player.transform.TransformPoint(point.normalized * 7f);
+        float dist = Vector2.Distance(player.transform.position, transform.position);
+        float goalDist = Vector2.Distance(destination, transform.position);
+        
+        //for testing
+        if(text != null) text.text = ""+dist;
+
+        if(dist < minDist)
+        {
+            reached = false;
+            Vector2 point = player.transform.InverseTransformPoint(transform.position);
+            destination = player.transform.TransformPoint(point.normalized * targetDist);
+        }
+
+        else if(dist > maxDist)
+        {
+            reached = false;
+            Vector2 point = player.transform.InverseTransformPoint(transform.position);
+            destination = player.transform.TransformPoint(point.normalized * targetDist);
+        }
+
+        else if( goalDist < 0.5f)
+        {
+            destination = transform.position;
+
+            if(reached == false) 
+            {
+                animator.SetInteger("Direction", 0);
+            }
+            reached = true;
+        }
     }
 
-    IEnumerator Chill()
-    {
-        invoked = true;
-        animator.SetFloat("Speed", 0f);
-        animator.SetInteger("Direction", 0);
-        rb.velocity = new Vector3(0f,0f,0f);
-        yield return new WaitForSeconds(0.5f);
-        stopped = false;
-        invoked = false;
-        FollowPlayer();
-    }
+   
   
 }
