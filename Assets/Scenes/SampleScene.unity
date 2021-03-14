@@ -16163,6 +16163,7 @@ GameObject:
   - component: {fileID: 1792247340}
   - component: {fileID: 1792247339}
   - component: {fileID: 1792247338}
+  - component: {fileID: 1792247344}
   m_Layer: 0
   m_Name: FillerVillagerM
   m_TagString: Untagged
@@ -16305,6 +16306,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792247344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792247337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
+  name: Kujo the Shopkeep
+  sentences:
+  - Greetings! Your Father informed me you may be arriving. Are you excited to begin
+    your life outside of our humble village? You may need this katana, it will help
+    you on your travels. Do not worry about payment now, your Father has helped me
+    in the past, this is the least I can do to get you started.
 --- !u!1 &1801770050
 GameObject:
   m_ObjectHideFlags: 0
