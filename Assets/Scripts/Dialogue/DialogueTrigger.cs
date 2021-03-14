@@ -33,6 +33,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public virtual void OnTriggerEnter2D(Collider2D collider)
     {
+        if(collider.CompareTag("Player") == true)
+        {
         inRange = true;
         button.SetActive(true);
 
@@ -41,20 +43,24 @@ public class DialogueTrigger : MonoBehaviour
             //pick which Dialogue to run
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
             button.GetComponent<DialogueRun>().trigger = this;
-            }   
+            } 
+        }  
     }
     
     public virtual void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if(collider.CompareTag("Player") == true)
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+        }
     }
 
     public virtual void DecisionDisplay(string buttonAText, string buttonBText)

@@ -104,6 +104,7 @@ public bool challengingDialogue = false;
         GameDictionary.choiceDictionary["One Arm"] = true;
         arm.SetActive(true);
         screenEffect.SetActive(true);
+        FindObjectOfType<PlayerController>().ChooseAnimator();
     }
     public override void ButtonB()
     {

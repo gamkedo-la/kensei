@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PC_FarmersClothes Override
+  m_Controller: {fileID: 9100000, guid: 7453ab469d3123f4ab5c61e66d7ef75f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 49625ce7e6b13e24084e0d3042e4494c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: efd9f47bf873d0f42ad75ddbc2ca8e99, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 21fe58ae5162def4e8a2d9f095298ab2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8528f293993aef440a73a1c538acc7d6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 56d1cee13942a3b4d9977253c30d935e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5c19a0c976ecac64e8d43e2ba9ceeb09, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 56a933f62b1716a4982977e6432d9770, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ee41f3d63727e36488a6924f40396771, type: 2}
