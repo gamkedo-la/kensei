@@ -112,6 +112,9 @@ public bool challengingDialogue = false;
         buttonB.SetActive(false);
         combatScore.SetActive(false);
         particles.SetActive(true);
+        button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
+        button.GetComponent<DialogueRun>().trigger = this;
+        button.GetComponent<DialogueRun>().TriggerDialogue();
     }
 
 }

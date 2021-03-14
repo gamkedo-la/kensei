@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     public int playerCombatPoints = 10;
     GameObject currentWeaponModel;
     int weaponSortType;
+    public GameObject pickUpItemButton;
 
     void Start()
     {
@@ -90,6 +91,14 @@ public class PlayerController : MonoBehaviour
             inventoryOpen = true;
             }
         }
+
+        CheckForItems();
+        if(targetItem != null)
+        {
+            pickUpItemButton.SetActive(true);
+
+        } else { pickUpItemButton.SetActive(false); }
+
 
         if( Input.GetButtonDown("PickUpItem"))
         {
@@ -274,6 +283,7 @@ public class PlayerController : MonoBehaviour
                             //Debug.Log( GameDictionary.choiceDictionary[smallItem.GetComponent<ItemClass>().itemName]);
                         }
                 }
+                targetItem = null;
             }      
             else{return;}
     }
@@ -293,9 +303,7 @@ public class PlayerController : MonoBehaviour
                             //flag old item false in dictionary 
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                            // Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);                      
-                        }
-
-                        
+                        }         
                 }
 
                 if(slot == ItemClass.Slot.Clothing)
@@ -344,7 +352,20 @@ public class PlayerController : MonoBehaviour
                         
                 }
     }
+    public void CheckForItems()
+    {
+            Collider2D[] itemsNear = Physics2D.OverlapCircleAll(transform.position, 5f);
 
+            for(int i = 0; i < itemsNear.Length; i++)
+            {
+               if(itemsNear[i].GetComponent<ItemClass>() != null)
+               {
+                targetItem = itemsNear[i].gameObject;
+                break;
+               }
+               else { targetItem = null; }
+            }
+    }
     public void ChooseAnimator()
     {
         
