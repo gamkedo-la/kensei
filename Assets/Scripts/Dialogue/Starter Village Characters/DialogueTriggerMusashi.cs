@@ -29,55 +29,62 @@ public bool challengingDialogue = false;
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        inRange = true;
-        
-        button.SetActive(true);
-
-        if(!GameDictionary.choiceDictionary["Nude"])
+        if(collider.CompareTag("Player") == true)
         {
-            if(!GameDictionary.choiceDictionary["One Arm"])   
-            { 
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
-            button.GetComponent<DialogueRun>().trigger = this;
-            challengingDialogue = true;
+            //check for player
+            inRange = true;
+            
+            button.SetActive(true);
 
+            if(!GameDictionary.choiceDictionary["Nude"])
+            {
+                if(!GameDictionary.choiceDictionary["One Arm"])   
+                { 
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+                button.GetComponent<DialogueRun>().trigger = this;
+                challengingDialogue = true;
+
+                }
+                else
+                {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                button.GetComponent<DialogueRun>().trigger = this;
+                }
             }
             else
             {
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
-            button.GetComponent<DialogueRun>().trigger = this;
-            }
-        }
-        else
-        {
-            if(!GameDictionary.choiceDictionary["One Arm"])
-            {
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-            button.GetComponent<DialogueRun>().trigger = this;
+                if(!GameDictionary.choiceDictionary["One Arm"])
+                {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                button.GetComponent<DialogueRun>().trigger = this;
 
-            }
-            else
-            {
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
-            button.GetComponent<DialogueRun>().trigger = this;
+                }
+                else
+                {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
+                button.GetComponent<DialogueRun>().trigger = this;
 
+                }
             }
         }
     }
     
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        challengingDialogue = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+       if(collider.CompareTag("Player") == true)
+        {
+            inRange = false;
+            
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            challengingDialogue = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+            }        
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)
