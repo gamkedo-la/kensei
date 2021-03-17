@@ -54,8 +54,8 @@ public class NPCFollowPlayerScript : MonoBehaviour
             if(stopped)
             {
             //text.text = "Stopped";
-            animator.SetFloat("Speed", 0f);
-            //animator.SetInteger("Direction", 0);
+            if (animator) animator.SetFloat("Speed", 0f);
+            //if (animator) animator.SetInteger("Direction", 0);
             rb.velocity = new Vector3(0f,0f,0f);
 
                 if ((Time.time - lastCheckTime) > xSeconds)
@@ -94,18 +94,18 @@ public class NPCFollowPlayerScript : MonoBehaviour
                 // Update our position based on our start postion, destination and progress.
                 FollowPlayer();
                 rb.MovePosition(rb.position+targetVector*speed*Time.fixedDeltaTime);
-                animator.SetFloat("Speed", targetVector.magnitude * speed * Time.fixedDeltaTime);
+                if (animator) animator.SetFloat("Speed", targetVector.magnitude * speed * Time.fixedDeltaTime);
 
                 if(reached == false)
                 {
 
                     if(targetVector.y > 0.1f)
                     {
-                        animator.SetInteger("Direction", 3);
+                        if (animator) animator.SetInteger("Direction", 3);
                     }
                     else if(targetVector.y < -0.1f)
                     {
-                        animator.SetInteger("Direction", 0);
+                        if (animator) animator.SetInteger("Direction", 0);
                     }
 
                 }
@@ -143,7 +143,7 @@ public class NPCFollowPlayerScript : MonoBehaviour
 
             if(reached == false) 
             {
-                animator.SetInteger("Direction", 0);
+                if (animator) animator.SetInteger("Direction", 0);
             }
             reached = true;
         }
