@@ -4,10 +4,37 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4805908549870553792
-    second: smallCircle
+    second: sprite_eye
   - first:
       213: -3554316841901891929
-    second: smallTriangle
+    second: sprite_small_circle
+  - first:
+      213: -3911448232871592811
+    second: sprite_small_triangle
+  - first:
+      213: -2061123649814702428
+    second: sprite_large_circle
+  - first:
+      213: -1610110128689918417
+    second: sprite_capsule
+  - first:
+      213: 1468604247496189932
+    second: sprite_long
+  - first:
+      213: 8621324889921231683
+    second: sprite_torso
+  - first:
+      213: 8999410351757425366
+    second: sprite_large_rectangle
+  - first:
+      213: 1758842562513805917
+    second: sprite_arm
+  - first:
+      213: -2891301674931950803
+    second: sprite_small_capsule
+  - first:
+      213: -4929742602682613075
+    second: sprite_large_square
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smallCircle
+      name: sprite_eye
       rect:
         serializedVersion: 2
-        x: 0
-        y: 960
-        width: 64
-        height: 64
+        x: 14
+        y: 972
+        width: 18
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,11 +153,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smallTriangle
+      name: sprite_small_circle
       rect:
         serializedVersion: 2
         x: 64
-        y: 960
+        y: 945
         width: 64
         height: 64
       alignment: 0
@@ -142,6 +169,195 @@ TextureImporter:
       bones: []
       spriteID: 7aedf33f9a78caec0800000000000000
       internalID: -3554316841901891929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_small_triangle
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 945
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cfb525e8eb7b9c0800000000000000
+      internalID: -3911448232871592811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_large_circle
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 880
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a653a6f5fa6563e0800000000000000
+      internalID: -2061123649814702428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_capsule
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 752
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ecd226e5db7a9e0800000000000000
+      internalID: -1610110128689918417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_long
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 752
+        width: 64
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7e3a738c7816410800000000000000
+      internalID: 1468604247496189932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_torso
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 752
+        width: 192
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b1df44f4915a770800000000000000
+      internalID: 8621324889921231683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_large_rectangle
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 752
+        width: 192
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da7974b80454ec70800000000000000
+      internalID: 8999410351757425366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_arm
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 768
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52297aedf9a86810800000000000000
+      internalID: 1758842562513805917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_small_capsule
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b6037027800e7d0800000000000000
+      internalID: -2891301674931950803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_large_square
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 480
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da24ef4c839069bb0800000000000000
+      internalID: -4929742602682613075
       vertices: []
       indices: 
       edges: []
