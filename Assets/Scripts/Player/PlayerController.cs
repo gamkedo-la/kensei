@@ -98,24 +98,7 @@ public class PlayerController : MonoBehaviour
             pickUpItemButton.SetActive(true);
 
         } else { pickUpItemButton.SetActive(false); }
-
-
-        if( Input.GetButtonDown("PickUpItem"))
-        {
-            AddItem(targetItem);
-        }
-
-        //Handle One Arm
-        /* if(GameDictionary.choiceDictionary["One Arm"])
-        {
-            if(GameDictionary.choiceDictionary["Nude"]) GetComponent<Animator>().runtimeAnimatorController = nude1AAnimator as RuntimeAnimatorController;
-
-            //choose the right animator -- make switch
-            if(GameDictionary.choiceDictionary["Base Kimono"])
-            {
-            GetComponent<Animator>().runtimeAnimatorController = baseClothing1AAnimator as RuntimeAnimatorController;
-            }
-        }*/   
+  
     }
 
     // Update is called once per frame
@@ -158,7 +141,7 @@ public class PlayerController : MonoBehaviour
                             newItem.SetActive(true);
                             //flag old item false in dictionary
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-                           // Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
+                           
 
                             //swap weapon
                             currentWeaponModel.SetActive(false);
@@ -166,7 +149,7 @@ public class PlayerController : MonoBehaviour
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(weapon.GetComponent<ItemClass>().itemName, true);
-                           // Debug.Log( GameDictionary.choiceDictionary[weapon.GetComponent<ItemClass>().itemName]);
+                           
                         
                         }
                         else 
@@ -175,7 +158,7 @@ public class PlayerController : MonoBehaviour
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(weapon.GetComponent<ItemClass>().itemName, true);
-                            //Debug.Log( GameDictionary.choiceDictionary[weapon.GetComponent<ItemClass>().itemName]);
+                            
 
                         }
                         
@@ -203,31 +186,28 @@ public class PlayerController : MonoBehaviour
                             newItem.SetActive(true);
                             //flag old item false in dictionary
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-                           // Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
+                           
 
                             clothing = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(clothing.GetComponent<ItemClass>().itemName, true);
-                            //Debug.Log( GameDictionary.choiceDictionary[clothing.GetComponent<ItemClass>().itemName]);
+                           
                         }
                         else 
                         { 
                             clothing = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                             GameDictionary.Instance.UpdateEntry("Nude", false);
-                            //Debug.Log( GameDictionary.choiceDictionary["Nude"]);
+                            
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(clothing.GetComponent<ItemClass>().itemName, true);
-                           // Debug.Log( GameDictionary.choiceDictionary[clothing.GetComponent<ItemClass>().itemName]);
+                           
                         }
 
                         //set proper animator
                         ChooseAnimator();
-                        //if(GameDictionary.choiceDictionary["Base Kimono"])
-                        //{
-                          //  GetComponent<Animator>().runtimeAnimatorController = baseClothingAnimator as RuntimeAnimatorController;
-                       // }
+                        
                 }
                 if(slot == ItemClass.Slot.BigItem)
                 {
@@ -238,13 +218,13 @@ public class PlayerController : MonoBehaviour
                             newItem.SetActive(true);
                             //flag old item false in dictionary
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-                           // Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
+                           
 
                             bigItem = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(bigItem.GetComponent<ItemClass>().itemName, true);
-                           // Debug.Log( GameDictionary.choiceDictionary[bigItem.GetComponent<ItemClass>().itemName]);
+                           
 
                         }
                         else 
@@ -253,7 +233,7 @@ public class PlayerController : MonoBehaviour
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(bigItem.GetComponent<ItemClass>().itemName, true);
-                           // Debug.Log( GameDictionary.choiceDictionary[bigItem.GetComponent<ItemClass>().itemName]);
+                          
                         }
                 }
                 if(slot == ItemClass.Slot.SmallItem)
@@ -266,13 +246,13 @@ public class PlayerController : MonoBehaviour
                             newItem.SetActive(true);
                             //flag old item false in dictionary
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-                            Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
+                            
 
                             smallItem = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();  
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(smallItem.GetComponent<ItemClass>().itemName, true);
-                            //Debug.Log( GameDictionary.choiceDictionary[smallItem.GetComponent<ItemClass>().itemName]);
+                            
                         }
                         else 
                         { 
@@ -280,7 +260,7 @@ public class PlayerController : MonoBehaviour
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(smallItem.GetComponent<ItemClass>().itemName, true);
-                            //Debug.Log( GameDictionary.choiceDictionary[smallItem.GetComponent<ItemClass>().itemName]);
+                            
                         }
                 }
                 targetItem = null;
@@ -302,7 +282,7 @@ public class PlayerController : MonoBehaviour
                             weapon = null;
                             //flag old item false in dictionary 
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-                           // Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);                      
+                                                
                         }         
                 }
 
@@ -314,13 +294,12 @@ public class PlayerController : MonoBehaviour
                             GameObject newItem = Instantiate(clothing, new Vector2(rb.position.x,rb.position.y-4f), Quaternion.identity); 
                             newItem.SetActive(true);
                             GameDictionary.Instance.UpdateEntry("Nude", true);
-                           // Debug.Log( GameDictionary.choiceDictionary["Nude"]);
-
+                           
                             clothing = null;
                             GetComponent<Animator>().runtimeAnimatorController = defaultController;
                             //flag old item false in dictionary
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-                           // Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
+                           
                         }
 
                         ChooseAnimator();
@@ -334,7 +313,7 @@ public class PlayerController : MonoBehaviour
                             bigItem = null; 
                             //flag old item false in dictionary
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-                           // Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
+                           
                         }
                        
                 }
@@ -347,7 +326,7 @@ public class PlayerController : MonoBehaviour
                             smallItem = null;
                             //flag old item false in dictionary
                             GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-                           // Debug.Log( GameDictionary.choiceDictionary[newItem.GetComponent<ItemClass>().itemName]);
+                           
                         }
                         
                 }
