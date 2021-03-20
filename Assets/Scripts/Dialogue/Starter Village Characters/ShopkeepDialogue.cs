@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class ShopkeepDialogue : DialogueTrigger
 {
-
+    public GameObject player;
+    public GameObject baseKatana;
     public override void Start()
     {
        button.SetActive(false); 
@@ -25,6 +26,10 @@ public class ShopkeepDialogue : DialogueTrigger
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
+        if(collider.CompareTag("Player"))
+        {
+            player = collider.gameObject;
+        
         inRange = true;
         button.SetActive(true);
 
@@ -38,11 +43,13 @@ public class ShopkeepDialogue : DialogueTrigger
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
                 button.GetComponent<DialogueRun>().trigger = this;  
-            }   
+            } 
+        }
     }
     
     public override void OnTriggerExit2D(Collider2D collider)
     {
+        player = collider.gameObject;
         inRange = false;
         button.SetActive(false);
         button.GetComponent<DialogueRun>().dialogue = null;
@@ -60,6 +67,15 @@ public class ShopkeepDialogue : DialogueTrigger
         this.buttonB.GetComponentInChildren<Text>().text = buttonBText;
         this.buttonA.SetActive(true);
         this.buttonB.SetActive(true);
+    }
+
+    public override void ButtonA()
+    {
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
+        GameDictionary.choiceDictionary["Given Katana"] = true;
+        player.GetComponent<PlayerController>().AddItem(baseKatana);
     }
 
 

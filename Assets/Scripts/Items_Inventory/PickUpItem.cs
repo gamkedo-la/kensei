@@ -33,6 +33,5 @@ public GameObject item;
     public void OnPickUp()
     {
         item.SetActive(false);
-        player.GetComponent<PlayerController>().targetItem = null;
     }
 }

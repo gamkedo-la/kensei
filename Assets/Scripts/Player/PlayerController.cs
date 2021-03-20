@@ -138,11 +138,11 @@ public class PlayerController : MonoBehaviour
                         else 
                         { 
                             weapon = targetItem;
+                            Debug.Log(weapon.name);
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(weapon.GetComponent<ItemClass>().itemName, true);
-                            
-
+                            Debug.Log(GameDictionary.choiceDictionary[weapon.GetComponent<ItemClass>().itemName]);
                         }
                         
                         //change names to socket location
