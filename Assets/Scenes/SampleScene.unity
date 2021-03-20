@@ -5949,9 +5949,9 @@ GameObject:
   - component: {fileID: 479535053}
   - component: {fileID: 479535050}
   - component: {fileID: 479535054}
+  - component: {fileID: 479535058}
   - component: {fileID: 479535055}
   - component: {fileID: 479535057}
-  - component: {fileID: 479535058}
   m_Layer: 0
   m_Name: MusashiCharacter
   m_TagString: Untagged
@@ -14547,6 +14547,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1175087726}
   - component: {fileID: 1175087725}
+  - component: {fileID: 1175087731}
+  - component: {fileID: 1175087730}
+  - component: {fileID: 1175087729}
+  - component: {fileID: 1175087728}
+  - component: {fileID: 1175087727}
+  - component: {fileID: 1175087732}
   m_Layer: 0
   m_Name: FatherCharacter
   m_TagString: Untagged
@@ -14618,6 +14624,129 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1175087727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175087724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
+  name: Father
+  sentences:
+  - "The time has come for you to start making a name for yourself. I knew this day
+    would come, but it does not make it any easier.\r "
+  - "To help you get started, I talked with the Daimyo into allowing you to train
+    with them to become a Samurai. \n\nBefore you are allowed to become their student,
+    you first need a weapon.\r I spoke with Kujo, the shopkeeper, he has a Katana
+    to give you."
+  - 'Lastly, here is a bottle of sake. Do not forget to celebrate the little things
+    with your close friends when celebration is earned.
+
+
+    Now, go. Bring honor
+    to yourself and to our family!'
+--- !u!70 &1175087728
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175087724}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 5, y: 8}
+  m_Direction: 0
+--- !u!114 &1175087729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175087724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5c2b48b38fbda4ba6e1414420e8076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1175087727}
+  - {fileID: 1175087727}
+  collider: {fileID: 1175087730}
+  button: {fileID: 1696781454}
+  panel: {fileID: 877626234}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 0}
+  buttonA: {fileID: 0}
+  buttonAText: 
+  buttonB: {fileID: 0}
+  buttonBText: 
+--- !u!58 &1175087730
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175087724}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4
+--- !u!50 &1175087731
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175087724}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &1175087732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175087724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
+  name: Father
+  sentences:
+  - "I heard about your duel with Mushashi. While your outcome is unfortunate, I
+    am proud that you are seeking your own path in life and facing your own challenges.\r\nJust
+    don\u2019t lose too many more duels for your sake."
 --- !u!1 &1178606147
 GameObject:
   m_ObjectHideFlags: 0
@@ -15116,6 +15245,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270536385}
   m_CullTransparentMesh: 0
+--- !u!114 &1270536390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270536385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeeb2e75d3b1a504a840fe3e41f0dc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1312861836
 GameObject:
   m_ObjectHideFlags: 0
