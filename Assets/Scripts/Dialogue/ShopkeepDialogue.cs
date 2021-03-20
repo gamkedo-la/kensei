@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueTriggerBase : DialogueTrigger
+public class ShopkeepDialogue : DialogueTrigger
 {
 
     public override void Start()
@@ -17,6 +17,10 @@ public class DialogueTriggerBase : DialogueTrigger
     void Update()
     {
       //check for conditions for different dialogue options
+      if(dialogueEnd && !GameDictionary.choiceDictionary["Given Katana"])
+      {
+          DecisionDisplay("Take Katana", "Leave Katana");
+      }
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
@@ -24,11 +28,16 @@ public class DialogueTriggerBase : DialogueTrigger
         inRange = true;
         button.SetActive(true);
 
-            if(/*some condition*/true)
+            if(GameDictionary.choiceDictionary["Given Katana"])
             {
-            //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
-            button.GetComponent<DialogueRun>().trigger = this;
+                //pick which Dialogue to run
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
+            else
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+                button.GetComponent<DialogueRun>().trigger = this;  
             }   
     }
     
@@ -53,15 +62,6 @@ public class DialogueTriggerBase : DialogueTrigger
         this.buttonB.SetActive(true);
     }
 
-    public override void ButtonA()
-    {
-
-    }
-
-    public override void ButtonB()
-    {
-
-    }
 
 
 }

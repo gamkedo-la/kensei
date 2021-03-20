@@ -77,27 +77,10 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if( Input.GetButtonDown("Inventory"))
+      if( Input.GetButtonDown("PickUpItem"))
         {
-            if(inventoryOpen)
-            {
-            Canvas.SetActive(false);
-            inventoryOpen = false; 
-            }
-            
-            else
-            {
-            Canvas.SetActive(true);
-            inventoryOpen = true;
-            }
+            AddItem(targetItem);
         }
-
-        CheckForItems();
-        if(targetItem != null)
-        {
-            pickUpItemButton.SetActive(true);
-
-        } else { pickUpItemButton.SetActive(false); }
   
     }
 
@@ -263,7 +246,6 @@ public class PlayerController : MonoBehaviour
                             
                         }
                 }
-                targetItem = null;
             }      
             else{return;}
     }

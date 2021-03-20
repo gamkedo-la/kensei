@@ -38,6 +38,7 @@ public class GameDictionary : MonoBehaviour
         AddEntry("Ginkgo Seed", false);
         AddEntry("Farmers Clothes", false);
         AddEntry("Bloody Tanto Blade", false);
+        AddEntry("Given Katana", false);
 
     }
     public void AddEntry(string key, bool value)   

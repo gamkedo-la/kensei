@@ -12,4 +12,14 @@ public class DialogueRun : MonoBehaviour
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         FindObjectOfType<DialogueManager>().trigger = trigger;
     }
+
+    public void ButtonA()
+    {
+        trigger.ButtonA();
+    }
+
+    public void ButtonB()
+    {
+        trigger.ButtonB();
+    }
 }
