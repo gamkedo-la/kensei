@@ -77,10 +77,15 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-      if( Input.GetButtonDown("PickUpItem"))
+        if( Input.GetButtonDown("PickUpItem"))
         {
             AddItem(targetItem);
         }
+
+        if( targetItem )
+        {
+            pickUpItemButton.SetActive(true);
+        } else { pickUpItemButton.SetActive(false); }
   
     }
 
@@ -358,5 +363,10 @@ public class PlayerController : MonoBehaviour
             GetComponent<Animator>().runtimeAnimatorController = farmersClothesAnimator as RuntimeAnimatorController;
             }
         }
+    }
+
+    public void SimpleAddItem()
+    {
+         AddItem(targetItem);
     }
 }

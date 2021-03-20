@@ -5856,6 +5856,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304496218}
   m_CullTransparentMesh: 0
+--- !u!1 &326746143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1581628219822357149, guid: 345815714a835dd4b9d150b6b13e4aac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1581628219235913049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &326746146 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3036719314840957220, guid: 345815714a835dd4b9d150b6b13e4aac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1581628219235913049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &326746149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326746143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
+  name: Kujo the Merchant
+  sentences:
+  - I hope that blade serves you well in life! Do not worry about payment now, your
+    Father has helped me in the past, this is the least I can do to get you started.
+--- !u!114 &326746150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326746143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
+  name: Kujo the Merchant
+  sentences:
+  - Greetings! Your Father informed me you may be arriving. Are you excited to begin
+    your life outside of our humble village? You may need this katana, it will help
+    you on your travels. Do not worry about payment now, your Father has helped me
+    in the past, this is the least I can do to get you started.
+--- !u!114 &326746151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326746143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7110b83ce5000c44ba229ee98e9ec626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 326746150}
+  - {fileID: 326746149}
+  collider: {fileID: 326746146}
+  button: {fileID: 1696781454}
+  panel: {fileID: 877626234}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 100567264}
+  buttonA: {fileID: 537536253}
+  buttonAText: 
+  buttonB: {fileID: 1748321624}
+  buttonBText: 
+  player: {fileID: 0}
+  baseKatana: {fileID: 995955613}
 --- !u!1 &479535045
 GameObject:
   m_ObjectHideFlags: 0
@@ -6384,6 +6459,7 @@ GameObject:
   - component: {fileID: 529624311}
   - component: {fileID: 529624310}
   - component: {fileID: 529624309}
+  - component: {fileID: 529624313}
   m_Layer: 5
   m_Name: ScreenEffect
   m_TagString: Untagged
@@ -6471,6 +6547,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &529624313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529624308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d1aeb0b525f4e429ba49edd8b38b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &537536253
 GameObject:
   m_ObjectHideFlags: 0
@@ -13943,7 +14031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &995955614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14910,7 +14998,6 @@ GameObject:
   - component: {fileID: 1270536389}
   - component: {fileID: 1270536388}
   - component: {fileID: 1270536387}
-  - component: {fileID: 1270536390}
   m_Layer: 5
   m_Name: PickUpItem
   m_TagString: ItemPickUpButton
@@ -14981,8 +15068,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1270536390}
-        m_MethodName: PickSomethingUp
+      - m_Target: {fileID: 962802444}
+        m_MethodName: SimpleAddItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15029,19 +15116,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270536385}
   m_CullTransparentMesh: 0
---- !u!114 &1270536390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1270536385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeeb2e75d3b1a504a840fe3e41f0dc09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 962802443}
 --- !u!1 &1312861836
 GameObject:
   m_ObjectHideFlags: 0
@@ -17046,6 +17120,7 @@ GameObject:
   - component: {fileID: 1801770054}
   - component: {fileID: 1801770053}
   - component: {fileID: 1801770052}
+  - component: {fileID: 1801770056}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -17140,6 +17215,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801770050}
   m_CullTransparentMesh: 0
+--- !u!82 &1801770056
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801770050}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3e5a4182401a9834793720c3d88cfd29, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1841253138
 GameObject:
   m_ObjectHideFlags: 0
