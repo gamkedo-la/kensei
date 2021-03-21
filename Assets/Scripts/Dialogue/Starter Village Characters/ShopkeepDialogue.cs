@@ -76,8 +76,17 @@ public class ShopkeepDialogue : DialogueTrigger
         combatScore.SetActive(false);
         GameDictionary.choiceDictionary["Given Katana"] = true;
         player.GetComponent<PlayerController>().AddItem(baseKatana);
+      
     }
 
+    public override void ButtonB()
+    {
+        dialogueEnd = false;
+        panel.SetActive(false);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
+    }
 
 
 }
