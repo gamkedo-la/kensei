@@ -31,17 +31,26 @@ public class FatherDialogue : DialogueTrigger
             inRange = true;
             button.SetActive(true);
 
-            if (!GameDictionary.choiceDictionary["One Arm"])
+            if (!GameDictionary.choiceDictionary["Nude"])
             {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
-                button.GetComponent<DialogueRun>().trigger = this;
-
+                if (!GameDictionary.choiceDictionary["One Arm"])
+                {
+                    Debug.Log("Arm FALSE");
+                    Debug.Log(GameDictionary.choiceDictionary["One Arm"]);
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+                    button.GetComponent<DialogueRun>().trigger = this;
+                }
+                else
+                {
+                    Debug.Log("One Arm TRUE");
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                    button.GetComponent<DialogueRun>().trigger = this;
+                }
             }
             else
             {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                 button.GetComponent<DialogueRun>().trigger = this;
-
             }
         }
     }
