@@ -13770,6 +13770,7 @@ MonoBehaviour:
   smallItem: {fileID: 0}
   katana: {fileID: 1073756879}
   paddle: {fileID: 18743415}
+  sakeBottle: {fileID: 0}
   playerCombatPoints: 10
   pickUpItemButton: {fileID: 1270536385}
 --- !u!50 &962802445
@@ -14550,8 +14551,8 @@ GameObject:
   - component: {fileID: 1175087725}
   - component: {fileID: 1175087731}
   - component: {fileID: 1175087730}
-  - component: {fileID: 1175087729}
   - component: {fileID: 1175087728}
+  - component: {fileID: 1175087729}
   - component: {fileID: 1175087727}
   - component: {fileID: 1175087732}
   - component: {fileID: 1175087733}
@@ -14690,11 +14691,13 @@ MonoBehaviour:
   panel: {fileID: 877626234}
   inRange: 0
   dialogueEnd: 0
-  combatScore: {fileID: 0}
+  combatScore: {fileID: 100567264}
   buttonA: {fileID: 537536253}
   buttonAText: 
   buttonB: {fileID: 1748321624}
   buttonBText: 
+  player: {fileID: 0}
+  sakeBottle: {fileID: 160543672}
 --- !u!58 &1175087730
 CircleCollider2D:
   m_ObjectHideFlags: 0

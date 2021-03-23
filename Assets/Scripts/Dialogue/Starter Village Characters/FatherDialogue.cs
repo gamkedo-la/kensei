@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class FatherDialogue : DialogueTrigger
 {
 
+    public GameObject player;
+    public GameObject sakeBottle;
+    private bool giveSakeBottle = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +22,10 @@ public class FatherDialogue : DialogueTrigger
     // Update is called once per frame
     void Update()
     {
-        if (dialogueEnd)
+        //check for conditions for different dialogue options
+        if (dialogueEnd && !GameDictionary.choiceDictionary["Given Sake Bottle"])
         {
-            dialogueEnd = false;
+            DecisionDisplay("Take Sake Bottle", "");
         }
     }
 
@@ -28,21 +33,21 @@ public class FatherDialogue : DialogueTrigger
     {
         if (collider.CompareTag("Player") == true)
         {
+            player = collider.gameObject;
             inRange = true;
             button.SetActive(true);
 
             if (!GameDictionary.choiceDictionary["Nude"])
             {
-                if (!GameDictionary.choiceDictionary["One Arm"])
+                if (!GameDictionary.choiceDictionary["Given Sake Bottle"] && 
+                    !GameDictionary.choiceDictionary["One Arm"])
                 {
-                    Debug.Log("Arm FALSE");
-                    Debug.Log(GameDictionary.choiceDictionary["One Arm"]);
                     button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
                     button.GetComponent<DialogueRun>().trigger = this;
+                    giveSakeBottle = true;
                 }
                 else
                 {
-                    Debug.Log("One Arm TRUE");
                     button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
                     button.GetComponent<DialogueRun>().trigger = this;
                 }
@@ -78,5 +83,23 @@ public class FatherDialogue : DialogueTrigger
         this.buttonB.GetComponentInChildren<Text>().text = buttonBText;
         this.buttonA.SetActive(true);
         this.buttonB.SetActive(true);
+    }
+
+    public override void ButtonA()
+    {
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
+        GameDictionary.choiceDictionary["Given Sake Bottle"] = true;
+        player.GetComponent<PlayerController>().AddItem(sakeBottle);
+    }
+
+    public override void ButtonB()
+    {
+        dialogueEnd = false;
+        panel.SetActive(false);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
     }
 }
