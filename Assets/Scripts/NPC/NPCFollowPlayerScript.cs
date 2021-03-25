@@ -27,9 +27,9 @@ public class NPCFollowPlayerScript : MonoBehaviour
 
     private float xSeconds = .08f;
     private Vector3 lastCheckPos;
-    private float minDist = 7;
-    private float maxDist = 12; 
-    private float targetDist = 10;
+    public float minDist = 7;
+    public float maxDist = 12; 
+    public float targetDist = 10;
 
 
     // Use this for initialization
