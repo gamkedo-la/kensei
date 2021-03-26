@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueTriggerBase : DialogueTrigger
+public class VillageElderSVTrigger : DialogueTrigger
 {
 
     public override void Start()
@@ -26,12 +26,18 @@ public class DialogueTriggerBase : DialogueTrigger
         inRange = true;
         button.SetActive(true);
 
-            if(/*some condition*/true)
+            if(GameDictionary.choiceDictionary["One Arm"])
+            {
+            //pick which Dialogue to run
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+            button.GetComponent<DialogueRun>().trigger = this;
+            }
+            else
             {
             //pick which Dialogue to run
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
             button.GetComponent<DialogueRun>().trigger = this;
-            }
+            } 
         }   
     }
     

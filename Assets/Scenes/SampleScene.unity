@@ -13789,7 +13789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -225, y: 19.531}
+  m_AnchoredPosition: {x: -225, y: 19.531006}
   m_SizeDelta: {x: -510.00354, y: -99.06781}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877626236
@@ -16317,6 +16317,9 @@ GameObject:
   - component: {fileID: 1512665163}
   - component: {fileID: 1512665162}
   - component: {fileID: 1512665161}
+  - component: {fileID: 1512665168}
+  - component: {fileID: 1512665167}
+  - component: {fileID: 1512665166}
   m_Layer: 0
   m_Name: VillageElder
   m_TagString: Untagged
@@ -16441,6 +16444,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1512665166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512665160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
+  name: Umami Torakichi the Elder
+  sentences:
+  - "You have not fared well in a fight I presume. That only makes sense. Violence
+    has rarely solved any problems.\r Here in Daimyos\u2019s court, we refrain from
+    such unneeded violence.\r I'm sure you can no longer be a Samurai. If you wish
+    to lead a peaceful life, then there is a monk outside of this village you should
+    speak to - Takuan.\r He is considered a spiritual leader in these parts."
+  - "If your heart still yearns for violence. I hear there is a swordmaster is in
+    the forest secretly teaching honorable ronin the way of the blade.\r He once
+    trained with a swordsman here, but we do not seek to have violence in our peaceful
+    village.\r In the meantime, you may want to take care of that wound. I bid you
+    a good day."
+--- !u!114 &1512665167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512665160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
+  name: Umami Torakichi the Elder
+  sentences:
+  - "Greetings JoJo, we have seen you grow up in our village.\r I\u2019m sensing
+    you are ready to spread your wings to see who you can become.\r The populace
+    of our village has been uneasy with the latest round of taxes.\r The way of the
+    elders here is to keep peace while refraining from violence. We could use assistance
+    in keeping that peace.\r We're happy to have you at the Daimyos court to help
+    us maintain order.\r I wish you luck on your travels."
+--- !u!114 &1512665168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512665160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda1da1701adcac4cbf43c43e1439ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1512665167}
+  - {fileID: 1512665166}
+  collider: {fileID: 1512665162}
+  button: {fileID: 1696781454}
+  panel: {fileID: 877626234}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 0}
+  buttonA: {fileID: 0}
+  buttonAText: 
+  buttonB: {fileID: 0}
+  buttonBText: 
 --- !u!1 &1586784381
 GameObject:
   m_ObjectHideFlags: 0
@@ -18060,7 +18134,7 @@ GameObject:
   - component: {fileID: 1820334685}
   - component: {fileID: 1820334684}
   m_Layer: 0
-  m_Name: VillageElderGrandDaughter_F
+  m_Name: VillageElderGrandDaughter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

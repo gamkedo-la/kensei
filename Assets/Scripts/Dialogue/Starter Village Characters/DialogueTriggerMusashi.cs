@@ -5,21 +5,21 @@ using UnityEngine.UI;
 
 public class DialogueTriggerMusashi : DialogueTrigger
 {
-public GameObject arm;
-public GameObject screenEffect;
-public GameObject particles;
-public bool challengingDialogue = false;
+    public GameObject arm;
+    public GameObject screenEffect;
+    public GameObject particles;
+    public bool challengingDialogue = false;
     public override void Start()
     {
-       button.SetActive(false); 
-       buttonA.SetActive(false);
-       buttonB.SetActive(false); 
-       combatScore.SetActive(false);
+        button.SetActive(false);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
     }
 
     void Update()
     {
-        if(dialogueEnd && challengingDialogue)
+        if (dialogueEnd && challengingDialogue)
         {
             DecisionDisplay("Challenge", "Walk Away");
             dialogueEnd = false;
@@ -29,52 +29,55 @@ public bool challengingDialogue = false;
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.CompareTag("Player") == true)
+        if (collider.CompareTag("Player") == true)
         {
             //check for player
-            inRange = true;
-            
-            button.SetActive(true);
-
-            if(!GameDictionary.choiceDictionary["Nude"])
+            if (collider.CompareTag("Player"))
             {
-                if(!GameDictionary.choiceDictionary["One Arm"])   
-                { 
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
-                button.GetComponent<DialogueRun>().trigger = this;
-                challengingDialogue = true;
+                inRange = true;
 
+                button.SetActive(true);
+
+                if (!GameDictionary.choiceDictionary["Nude"])
+                {
+                    if (!GameDictionary.choiceDictionary["One Arm"])
+                    {
+                        button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+                        button.GetComponent<DialogueRun>().trigger = this;
+                        challengingDialogue = true;
+
+                    }
+                    else
+                    {
+                        button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                        button.GetComponent<DialogueRun>().trigger = this;
+                    }
                 }
                 else
                 {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
-                button.GetComponent<DialogueRun>().trigger = this;
-                }
-            }
-            else
-            {
-                if(!GameDictionary.choiceDictionary["One Arm"])
-                {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    if (!GameDictionary.choiceDictionary["One Arm"])
+                    {
+                        button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                        button.GetComponent<DialogueRun>().trigger = this;
 
-                }
-                else
-                {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    }
+                    else
+                    {
+                        button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
+                        button.GetComponent<DialogueRun>().trigger = this;
 
+                    }
                 }
             }
         }
     }
-    
+
     public override void OnTriggerExit2D(Collider2D collider)
     {
-       if(collider.CompareTag("Player") == true)
+        if (collider.CompareTag("Player") == true)
         {
             inRange = false;
-            
+
             button.SetActive(false);
             button.GetComponent<DialogueRun>().dialogue = null;
             button.GetComponent<DialogueRun>().trigger = null;
@@ -84,7 +87,7 @@ public bool challengingDialogue = false;
             buttonA.SetActive(false);
             buttonB.SetActive(false);
             combatScore.SetActive(false);
-            }        
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)
@@ -94,7 +97,7 @@ public bool challengingDialogue = false;
         buttonA.SetActive(true);
         buttonB.SetActive(true);
         combatScore.SetActive(true);
-        
+
     }
     public override void ButtonA()
     {
@@ -104,7 +107,7 @@ public bool challengingDialogue = false;
         GameDictionary.choiceDictionary["One Arm"] = true;
         arm.SetActive(true);
         screenEffect.SetActive(true);
-        FindObjectOfType<PlayerController>().ChooseAnimator();  
+        FindObjectOfType<PlayerController>().ChooseAnimator();
     }
     public override void ButtonB()
     {
