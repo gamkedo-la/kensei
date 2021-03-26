@@ -9,6 +9,9 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     public GameObject panel;
     public GameObject button;
+    public GameObject choiceA;
+    public GameObject choiceB;
+    public GameObject combatScore;
     public DialogueTrigger trigger;
     public Text nameText;
     public Text dialogueText;
@@ -19,6 +22,10 @@ public class DialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         panel.SetActive(false);
+        choiceA.SetActive(false);
+        choiceB.SetActive(false);
+        combatScore.SetActive(false);
+        button.SetActive(false);
     }
 
     public void StartDialogue(Dialogue dialogue)
