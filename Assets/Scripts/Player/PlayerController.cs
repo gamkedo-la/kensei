@@ -29,11 +29,15 @@ public class PlayerController : MonoBehaviour
     int weaponSortType;
     public GameObject pickUpItemButton;
 
+    public GameObject defaultClothing;
+
     void Start()
     {
+
      defaultController = GetComponent<Animator>().runtimeAnimatorController;
      Cursor.lockState = CursorLockMode.Confined;
      ChooseAnimator();
+     AddItem(defaultClothing);
 
      //check for player pref data, if no data load defaults otherwise load save 
     }

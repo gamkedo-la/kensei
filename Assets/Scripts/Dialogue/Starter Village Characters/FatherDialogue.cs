@@ -23,9 +23,9 @@ public class FatherDialogue : DialogueTrigger
     void Update()
     {
         //check for conditions for different dialogue options
-        if (dialogueEnd && !GameDictionary.choiceDictionary["Given Sake Bottle"])
+        if (dialogueEnd && !GameDictionary.choiceDictionary["Given Sake Bottle"] && !GameDictionary.choiceDictionary["Nude"])
         {
-            DecisionDisplay("Take Sake Bottle", "");
+            DecisionDisplay("Take Sake Bottle", "No Thanks");
         }
     }
 

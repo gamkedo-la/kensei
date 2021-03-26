@@ -20,7 +20,7 @@ public class ShopkeepDialogue : DialogueTrigger
       //check for conditions for different dialogue options
       if(dialogueEnd && !GameDictionary.choiceDictionary["Given Katana"])
       {
-          DecisionDisplay("Take Katana", "Leave Katana");
+          DecisionDisplay("Take Katana", "No Thanks");
       }
     }
 
