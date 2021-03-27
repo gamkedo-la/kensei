@@ -29,8 +29,6 @@ public class DialogueTriggerMusashi : DialogueTrigger
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player") == true)
-        {
             //check for player
             if (collider.CompareTag("Player"))
             {
@@ -69,7 +67,6 @@ public class DialogueTriggerMusashi : DialogueTrigger
                     }
                 }
             }
-        }
     }
 
     public override void OnTriggerExit2D(Collider2D collider)

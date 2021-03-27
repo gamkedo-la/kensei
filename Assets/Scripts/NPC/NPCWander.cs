@@ -29,7 +29,6 @@ public class NPCWander : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-        onSwitch = true;
         start = transform.localPosition;
         basestartpoint = transform.localPosition;
 

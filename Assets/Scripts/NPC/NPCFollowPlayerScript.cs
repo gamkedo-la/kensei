@@ -17,8 +17,8 @@ public class NPCFollowPlayerScript : MonoBehaviour
 
 
     // Start of our current move
-    bool reached = false;
-    bool stopped = false;
+    public bool reached = false;
+    public bool stopped = false;
     bool invoked = false;
 
     private GameObject player;
@@ -34,7 +34,6 @@ public class NPCFollowPlayerScript : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-        onSwitch = true;
         destination = transform.position;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
