@@ -29,8 +29,8 @@ public class NPCWander : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-        start = transform.localPosition;
-        basestartpoint = transform.localPosition;
+        start = transform.position;
+        basestartpoint = transform.position;
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

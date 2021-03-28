@@ -196,8 +196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
-  - {fileID: 3972467482997923153}
   - {fileID: 3972467482997923154}
+  - {fileID: 3972467482997923153}
   - {fileID: 3972467482997923155}
   - {fileID: 3972467482997923156}
   collider: {fileID: 3972467482997923176}
