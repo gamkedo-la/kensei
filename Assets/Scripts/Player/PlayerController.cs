@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
 
                 if(slot == ItemClass.Slot.Clothing)
                 {
-                        GameDictionary.Instance.UpdateEntry("Nude", false);
+                        
                         if(clothing != null)
                         {
                             //spawn old item in Scene
@@ -191,6 +191,7 @@ public class PlayerController : MonoBehaviour
                         { 
                             clothing = targetItem;
                             targetItem.GetComponent<PickUpItem>().OnPickUp();
+                            GameDictionary.Instance.UpdateEntry("Nude", false);
                             
                             //flag new item true in dictionary
                             GameDictionary.Instance.UpdateEntry(clothing.GetComponent<ItemClass>().itemName, true);

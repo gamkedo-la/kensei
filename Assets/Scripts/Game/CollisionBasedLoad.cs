@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionBasedLoad : MonoBehaviour
 {
-    public CircleCollider2D circle;
+    public Collider2D collider2D;
     public SceneLoader.Scene scene;
 
     public void OnTriggerEnter2D(Collider2D collider)
