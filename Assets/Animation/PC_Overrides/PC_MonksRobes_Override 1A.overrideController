@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PC_MonksRobes_Override 1A
+  m_Controller: {fileID: 9100000, guid: 7453ab469d3123f4ab5c61e66d7ef75f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 49625ce7e6b13e24084e0d3042e4494c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 11c2ef7ea0b4faf4ea5e89edbd68c5f0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 21fe58ae5162def4e8a2d9f095298ab2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 17f9ec7211991ab4fbf0708c35bf3b08, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 56d1cee13942a3b4d9977253c30d935e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0f9be1e83670230429722523d5ec213e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 56a933f62b1716a4982977e6432d9770, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4488d6397f9f0b44984eb6ed11040bdd, type: 2}

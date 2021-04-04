@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
     public AnimatorOverrideController nude1AAnimator;
     public AnimatorOverrideController farmersClothesAnimator;
     public AnimatorOverrideController farmersClothes1AAnimator;
+
+    public AnimatorOverrideController wornKimonoAnimator;
+    public AnimatorOverrideController wornKimono1AAnimator;
+    public AnimatorOverrideController monkClothesAnimator;
+    public AnimatorOverrideController monkClothes1AAnimator;
     public GameObject Canvas;
     Vector2 movement;
     bool facingUp;
@@ -353,6 +358,16 @@ public class PlayerController : MonoBehaviour
             {
             GetComponent<Animator>().runtimeAnimatorController = farmersClothes1AAnimator as RuntimeAnimatorController;
             }
+
+            if(GameDictionary.choiceDictionary["Monk Robes"])
+            {
+            GetComponent<Animator>().runtimeAnimatorController = monkClothes1AAnimator as RuntimeAnimatorController;
+            }
+
+            if(GameDictionary.choiceDictionary["Worn Kimono"])
+            {
+            GetComponent<Animator>().runtimeAnimatorController = wornKimono1AAnimator as RuntimeAnimatorController;
+            }
         }
         else
         {
@@ -366,6 +381,16 @@ public class PlayerController : MonoBehaviour
             if(GameDictionary.choiceDictionary["Farmers Clothes"])
             {
             GetComponent<Animator>().runtimeAnimatorController = farmersClothesAnimator as RuntimeAnimatorController;
+            }
+
+            if(GameDictionary.choiceDictionary["Monk Robes"])
+            {
+            GetComponent<Animator>().runtimeAnimatorController = monkClothesAnimator as RuntimeAnimatorController;
+            }
+
+            if(GameDictionary.choiceDictionary["Worn Kimono"])
+            {
+            GetComponent<Animator>().runtimeAnimatorController = wornKimonoAnimator as RuntimeAnimatorController;
             }
         }
     }

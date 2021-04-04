@@ -40,7 +40,8 @@ public class GameDictionary : MonoBehaviour
         AddEntry("Bloody Tanto Blade", false);
         AddEntry("Given Katana", false);
         AddEntry("Given Sake Bottle", false);
-
+        AddEntry("Monk Robes", false);
+        AddEntry("Worn Kimono", false);
     }
     public void AddEntry(string key, bool value)   
     {

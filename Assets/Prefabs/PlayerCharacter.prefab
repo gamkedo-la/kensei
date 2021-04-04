@@ -2072,7 +2072,7 @@ GameObject:
   - component: {fileID: 8068239843639634202}
   - component: {fileID: 8068239843639634203}
   m_Layer: 0
-  m_Name: PlayerCharacter 1
+  m_Name: PlayerCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2190,6 +2190,13 @@ MonoBehaviour:
   farmersClothesAnimator: {fileID: 22100000, guid: 5bfdfca9afb4b8344bbc343d00456d54,
     type: 2}
   farmersClothes1AAnimator: {fileID: 22100000, guid: a4f9349d321d4ee44bccbd02196a13e9,
+    type: 2}
+  wornKimonoAnimator: {fileID: 22100000, guid: 04e08ab2473333d42bb1f8d008dd50f7, type: 2}
+  wornKimono1AAnimator: {fileID: 22100000, guid: 7bd1f0d05079e5647b59120a269f03f5,
+    type: 2}
+  monkClothesAnimator: {fileID: 22100000, guid: fe7226c4429922a4bb9b869b67c61ad3,
+    type: 2}
+  monkClothes1AAnimator: {fileID: 22100000, guid: 24ec3ffaee261c7488687c962625599a,
     type: 2}
   Canvas: {fileID: 8068239841721193708}
   targetItem: {fileID: 0}
