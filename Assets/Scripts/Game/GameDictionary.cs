@@ -26,7 +26,7 @@ public class GameDictionary : MonoBehaviour
     public void Populate()
     {
         //populate dictionary with defaults at start of the game
-        //make each of these a function
+        //Add new items or conditions here!
 
         AddEntry("Nude", true);
         AddEntry("Base Kimono", false);
@@ -42,6 +42,9 @@ public class GameDictionary : MonoBehaviour
         AddEntry("Given Sake Bottle", false);
         AddEntry("Monk Robes", false);
         AddEntry("Worn Kimono", false);
+        AddEntry("Naginata", false);
+        AddEntry("Shinzo Fragment", false);
+        AddEntry("Broken Haniwa", false);
     }
     public void AddEntry(string key, bool value)   
     {

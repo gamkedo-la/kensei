@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     public GameObject smallItem;
     public GameObject katana;
     public GameObject paddle;
+    public GameObject naginata;
     public int playerCombatPoints = 10;
     GameObject currentWeaponModel;
     int weaponSortType;
@@ -158,7 +159,7 @@ public class PlayerController : MonoBehaviour
                             GameDictionary.Instance.UpdateEntry(weapon.GetComponent<ItemClass>().itemName, true);
                             Debug.Log(GameDictionary.choiceDictionary[weapon.GetComponent<ItemClass>().itemName]);
                         }
-                        
+
                         //change names to socket location
                         if(GameDictionary.choiceDictionary["Base Katana"])
                         {
@@ -166,10 +167,18 @@ public class PlayerController : MonoBehaviour
                             currentWeaponModel = katana;
                             weaponSortType = 0;
                         }
+
                         if(GameDictionary.choiceDictionary["Paddle"])
                         {
                             paddle.SetActive(true);
                             currentWeaponModel = paddle;
+                            weaponSortType = 1;
+                        }
+
+                        if(GameDictionary.choiceDictionary["Naginata"])
+                        {
+                            naginata.SetActive(true);
+                            currentWeaponModel = naginata;
                             weaponSortType = 1;
                         }
                 }
