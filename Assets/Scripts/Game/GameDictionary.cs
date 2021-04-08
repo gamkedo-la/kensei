@@ -45,6 +45,7 @@ public class GameDictionary : MonoBehaviour
         AddEntry("Naginata", false);
         AddEntry("Shinzo Fragment", false);
         AddEntry("Broken Haniwa", false);
+        AddEntry("Game Saved", false);
     }
     public void AddEntry(string key, bool value)   
     {

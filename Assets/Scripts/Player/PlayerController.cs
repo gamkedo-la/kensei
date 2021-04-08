@@ -45,7 +45,8 @@ public class PlayerController : MonoBehaviour
      ChooseAnimator();
      AddItem(defaultClothing);
 
-     //check for player pref data, if no data load defaults otherwise load save 
+     //check for player pref data, if no data load defaults otherwise load save
+     if(GameDictionary.choiceDictionary["Game Saved"] == true) LoadFile.LoadGame();
     }
 
     void Update()

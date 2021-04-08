@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoadFile : MonoBehaviour
+public static class LoadFile 
 {
-    public GameObject player;
-    private GameObject itemToSpawn;
+    //public GameObject player;
+    //private GameObject itemToSpawn;
     // Start is called before the first frame update
-    public void LoadGame()
+    public static void LoadGame()
     {
+        GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
         Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
         //spawn player at location
-        GameObject.Instantiate(player, position, Quaternion.EulerRotation(0,0,0));
+        //GameObject.Instantiate(player, position, Quaternion.EulerRotation(0,0,0));
 
         //iterate through item dictionary and load variables using 'add item' function
         if(ItemDictionary.itemDictionary["Weapon"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Weapon"]));
@@ -37,9 +38,9 @@ public class LoadFile : MonoBehaviour
         }
    }
 
-    public GameObject ConstructItem(ItemClass item)
+    public static GameObject ConstructItem(ItemClass item)
     {
-        itemToSpawn = new GameObject(item.itemName);
+        GameObject itemToSpawn = new GameObject(item.itemName);
 
         itemToSpawn.AddComponent<CanvasRenderer>();
 
