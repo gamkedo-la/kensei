@@ -22,6 +22,11 @@ public static class SaveFile
             PlayerPrefs.SetFloat("PlayerPosition.y", player.transform.position.y);
             PlayerPrefs.SetFloat("PlayerPosition.z", player.transform.position.z);
 
+            foreach(KeyValuePair<string,bool> pair in GameDictionary.choiceDictionary)
+            {
+                PlayerPrefs.SetInt(pair.Key, (pair.Value ? 1 : 0));
+            }
+
             if(player.GetComponent<PlayerController>().weapon)
             {
                 ItemDictionary.Instance.UpdateEntry( "Weapon", player.GetComponent<PlayerController>().weapon.GetComponent<ItemClass>());
@@ -45,21 +50,6 @@ public static class SaveFile
                 ItemDictionary.Instance.UpdateEntry( "Big Item", player.GetComponent<PlayerController>().bigItem.GetComponent<ItemClass>());
             }
             else{ItemDictionary.Instance.UpdateEntry( "Big Item",null);}
-            
-            foreach(KeyValuePair<string, bool> dictionaryEntry in GameDictionary.choiceDictionary)
-            {
-               switch(dictionaryEntry.Value)
-               {
-                   case true:
-                        PlayerPrefs.SetInt(dictionaryEntry.Key, 1);
-                        break;
-
-                   case false: 
-                        PlayerPrefs.SetInt(dictionaryEntry.Key, 0);
-                        break;
-               }
-
-            }
 
         }
     }

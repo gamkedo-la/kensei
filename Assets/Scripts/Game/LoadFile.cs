@@ -22,19 +22,7 @@ public static class LoadFile
 
         foreach(KeyValuePair<string, bool> dictionaryEntry in GameDictionary.choiceDictionary)
         {
-            if(PlayerPrefs.HasKey(dictionaryEntry.Key))
-            {
-                switch(PlayerPrefs.GetInt(dictionaryEntry.Key))
-                {
-                    case 0:
-                        GameDictionary.Instance.UpdateEntry(dictionaryEntry.Key, false);
-                        break;
-
-                    case 1:
-                        GameDictionary.Instance.UpdateEntry(dictionaryEntry.Key, true);
-                        break;
-                }   
-            }   
+            GameDictionary.Instance.UpdateEntry(dictionaryEntry.Key, PlayerPrefs.GetInt(dictionaryEntry.Key, 0) == 1);   
         }
    }
 
@@ -63,5 +51,10 @@ public static class LoadFile
 
         itemToSpawn.SetActive(false);
         return itemToSpawn;
+    }
+    public static void EnforceDictionary()
+    {
+        GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+        //player.EnforceDictionary();
     }
 }
