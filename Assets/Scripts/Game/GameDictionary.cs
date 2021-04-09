@@ -6,12 +6,16 @@ public class GameDictionary : MonoBehaviour
 { 
     private static GameDictionary _instance;
     public static Dictionary<string, bool> choiceDictionary = new Dictionary<string, bool>();
+
+    private static List<string> dictionaryList;
     public static GameDictionary Instance 
     { 
         get { return _instance; }   
     } 
     private void Awake() 
     { 
+        dictionaryList = new List<string>(){"Nude", "Base Kimono", "Base Katana", "Paddle", "One Arm", "Sake Bottle", "Rusted Key", "Ginkgo Seed", "Farmers Clothes", "Bloody Tanto Blade", "Given Katana", "Given Sake Bottle", "Monk Robes", "Worn Kimono", "Naginata", "Shinzo Fragment", "Broken Haniwa", "Game Saved"};
+
         if (_instance != null && _instance != this) 
         { 
             Destroy(this.gameObject);
@@ -26,26 +30,14 @@ public class GameDictionary : MonoBehaviour
     public void Populate()
     {
         //populate dictionary with defaults at start of the game
+        foreach(string flag in dictionaryList)
+        {
+            AddEntry(flag, false);
+        }
         //Add new items or conditions here!
 
-        AddEntry("Nude", true);
-        AddEntry("Base Kimono", false);
-        AddEntry("Base Katana", false);
-        AddEntry("Paddle", false);
-        AddEntry("One Arm", false);
-        AddEntry("Sake Bottle", false);
-        AddEntry("Rusted Key", false);
-        AddEntry("Ginkgo Seed", false);
-        AddEntry("Farmers Clothes", false);
-        AddEntry("Bloody Tanto Blade", false);
-        AddEntry("Given Katana", false);
-        AddEntry("Given Sake Bottle", false);
-        AddEntry("Monk Robes", false);
-        AddEntry("Worn Kimono", false);
-        AddEntry("Naginata", false);
-        AddEntry("Shinzo Fragment", false);
-        AddEntry("Broken Haniwa", false);
-        AddEntry("Game Saved", false);
+        UpdateEntry("Nude", true);
+        
     }
     public void AddEntry(string key, bool value)   
     {

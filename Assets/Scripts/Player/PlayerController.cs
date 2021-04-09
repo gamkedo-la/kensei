@@ -46,7 +46,11 @@ public class PlayerController : MonoBehaviour
      AddItem(defaultClothing);
 
      //check for player pref data, if no data load defaults otherwise load save
-     if(GameDictionary.choiceDictionary["Game Saved"] == true) LoadFile.LoadGame();
+     if(GameDictionary.choiceDictionary["Game Saved"])
+     { 
+        LoadFile.LoadGame();
+     }
+
     }
 
     void Update()
@@ -97,6 +101,15 @@ public class PlayerController : MonoBehaviour
         {
             pickUpItemButton.SetActive(true);
         } else { pickUpItemButton.SetActive(false); }
+
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            Debug.Log("Input");
+            GameObject newGO = Instantiate(Resources.Load("Bloody Tanto Blade") as GameObject);
+            Debug.Log(newGO != null);
+            newGO.SetActive(true);
+            newGO.transform.position = transform.position + Vector3.up*2f; 
+        }
   
     }
 
