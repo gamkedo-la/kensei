@@ -50,8 +50,6 @@ public static class SaveFile
                 ItemDictionary.Instance.UpdateEntry( "Big Item", player.GetComponent<PlayerController>().bigItem.GetComponent<ItemClass>());
             }
             else{ItemDictionary.Instance.UpdateEntry( "Big Item",null);}
-
         }
     }
-
 }

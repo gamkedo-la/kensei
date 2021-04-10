@@ -26,11 +26,13 @@ public class HaniwaDialogueTrigger : DialogueTrigger
       if (dialogueEnd && GameDictionary.choiceDictionary["Broken Haniwa"])
       {
           DecisionDisplay("Repair the Haniwa", "Do nothing");
+          dialogueEnd = false;
       }
 
       if(dialogueEnd && !GameDictionary.choiceDictionary["Broken Haniwa"])
       {
           GiveChokuto();
+          dialogueEnd = false;
       }
     }
 
