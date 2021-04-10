@@ -34,12 +34,11 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
           sakichi.SetActive(true);
       }
 
-      if(GameDictionary.choiceDictionary["Monk Path"] && GameDictionary.choiceDictionary["Spoke to Sakichi"])
+      if(GameDictionary.choiceDictionary["Spoke to Sakichi"] && !GameDictionary.choiceDictionary["Spoke to Takuan"] && dialogueEnd)
       {
             switchInt = 2;
             DecisionDisplay("Ishida Shigie is planning an attack", "Ishida Sakichi needs our help");
             dialogueEnd = false;
-
       }
 
     }
@@ -68,6 +67,12 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
             if(GameDictionary.choiceDictionary["Monk Path"] && GameDictionary.choiceDictionary["Spoke to Sakichi"])
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
+
+            if(GameDictionary.choiceDictionary["Spoke to Takuan"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
         }   
@@ -118,6 +123,11 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
                 break;
             
             case 2:
+                sakichi.SetActive(false);
+                buttonA.SetActive(false);
+                buttonB.SetActive(false);
+                combatScore.SetActive(false);
+                GameDictionary.Instance.UpdateEntry("Spoke to Takuan", true);
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
                 button.GetComponent<DialogueRun>().trigger = this;
                 button.GetComponent<DialogueRun>().TriggerDialogue();
@@ -142,6 +152,11 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
                 break;
             
             case 2:
+                sakichi.SetActive(false);
+                buttonA.SetActive(false);
+                buttonB.SetActive(false);
+                combatScore.SetActive(false);
+                GameDictionary.Instance.UpdateEntry("Spoke to Takuan", true);
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
                 button.GetComponent<DialogueRun>().trigger = this;
                 button.GetComponent<DialogueRun>().TriggerDialogue();

@@ -202,6 +202,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 21532807}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &148536948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148536947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Takuan S\u014Dh\u014D"
+  sentences:
+  - The Daimyo's castle is south of here, the guards should let you past. Good luck
+    and may Buddha guide you.
 --- !u!58 &148536950 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 3036719314840957220, guid: 345815714a835dd4b9d150b6b13e4aac,
@@ -248,6 +264,7 @@ MonoBehaviour:
   - {fileID: 148536953}
   - {fileID: 148536957}
   - {fileID: 148536956}
+  - {fileID: 148536955}
   - {fileID: 148536955}
   collider: {fileID: 148536950}
   button: {fileID: 865944195}
@@ -3100,12 +3117,94 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 364540296}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &1840723868 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3036719314840957220, guid: 345815714a835dd4b9d150b6b13e4aac,
+    type: 3}
+  m_PrefabInstance: {fileID: 364540296}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1840723870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
     type: 3}
   m_PrefabInstance: {fileID: 364540296}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1840723871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840723865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - 'Have you spoken with Takuan yet? I am sure he would agree with me. '
+--- !u!114 &1840723872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840723865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - Thank you. Please talk it over with Takuan, he may help provide ideas.
+--- !u!114 &1840723873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840723865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - Thank you for meeting with me. I find it easier to speak with members of the
+    Temple about these issues. I have found out that my brother, Shigie, is plotting
+    an event that will lead to unnecessary bloodshed.
+  - I need to find a way to stop the plan from happening, but as he is my blood I
+    cannot fully betray him. As somone who holds all life sacred, could you help
+    me stop the events being set in motion?
+--- !u!114 &1840723874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840723865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0853466fb7fbc499f4abb804784dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1840723873}
+  - {fileID: 1840723872}
+  - {fileID: 1840723871}
+  collider: {fileID: 1840723868}
+  button: {fileID: 865944195}
+  panel: {fileID: 736885643}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 766828930}
+  buttonA: {fileID: 490498034}
+  buttonAText: 
+  buttonB: {fileID: 1829347351}
+  buttonBText: 
 --- !u!1 &2040883644
 GameObject:
   m_ObjectHideFlags: 0

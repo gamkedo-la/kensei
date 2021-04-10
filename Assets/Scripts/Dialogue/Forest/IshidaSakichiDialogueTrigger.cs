@@ -17,6 +17,11 @@ public class IshidaSakichiDialogueTrigger : DialogueTrigger
     void Update()
     {
       //check for conditions for different dialogue options
+      if(!GameDictionary.choiceDictionary["Spoke to Sakichi"] && dialogueEnd)
+      {
+        dialogueEnd = false;
+        DecisionDisplay("Leave it to me", "I'll think about it");
+      }
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
@@ -26,10 +31,17 @@ public class IshidaSakichiDialogueTrigger : DialogueTrigger
         inRange = true;
         button.SetActive(true);
 
-            if(/*some condition*/true)
+            if(!GameDictionary.choiceDictionary["Spoke to Sakichi"])
             {
             //pick which Dialogue to run
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+            button.GetComponent<DialogueRun>().trigger = this;
+            }
+
+            if(GameDictionary.choiceDictionary["Spoke to Sakichi"])
+            {
+            //pick which Dialogue to run
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
             button.GetComponent<DialogueRun>().trigger = this;
             }
         }   
@@ -58,12 +70,26 @@ public class IshidaSakichiDialogueTrigger : DialogueTrigger
 
     public override void ButtonA()
     {
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
+        GameDictionary.Instance.UpdateEntry("Spoke to Sakichi", true);
 
+        button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+        button.GetComponent<DialogueRun>().trigger = this;
+        button.GetComponent<DialogueRun>().TriggerDialogue();
     }
 
     public override void ButtonB()
     {
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
+        GameDictionary.Instance.UpdateEntry("Spoke to Sakichi", true);
 
+        button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+        button.GetComponent<DialogueRun>().trigger = this;
+        button.GetComponent<DialogueRun>().TriggerDialogue();
     }
 
 
