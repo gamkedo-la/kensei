@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     public GameObject katana;
     public GameObject paddle;
     public GameObject naginata;
+    public GameObject dullKatana;
     public int playerCombatPoints = 10;
     GameObject currentWeaponModel;
     int weaponSortType;
@@ -50,7 +51,7 @@ public class PlayerController : MonoBehaviour
      { 
         LoadFile.LoadGame();
      }
-
+        
     }
 
     void Update()
@@ -194,6 +195,13 @@ public class PlayerController : MonoBehaviour
                             naginata.SetActive(true);
                             currentWeaponModel = naginata;
                             weaponSortType = 1;
+                        }
+
+                        if(GameDictionary.choiceDictionary["Dull Katana"])
+                        {
+                            dullKatana.SetActive(true);
+                            currentWeaponModel = dullKatana;
+                            weaponSortType = 0;
                         }
                 }
 

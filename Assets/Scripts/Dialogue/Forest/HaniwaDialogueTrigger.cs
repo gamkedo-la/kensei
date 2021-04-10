@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class HaniwaDialogueTrigger : DialogueTrigger
 {
+    public GameObject player;
+
+    public GameObject brokenHaniwaStand;
+    public GameObject fixedHaniwaStand; 
+
+    public GameObject chokuto;
 
     public override void Start()
     {
@@ -17,6 +23,15 @@ public class HaniwaDialogueTrigger : DialogueTrigger
     void Update()
     {
       //check for conditions for different dialogue options
+      if (dialogueEnd && GameDictionary.choiceDictionary["Broken Haniwa"])
+      {
+          DecisionDisplay("Repair the Haniwa", "Do nothing");
+      }
+
+      if(dialogueEnd && !GameDictionary.choiceDictionary["Broken Haniwa"])
+      {
+          GiveChokuto();
+      }
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
@@ -24,11 +39,12 @@ public class HaniwaDialogueTrigger : DialogueTrigger
         if(collider.CompareTag("Player"))
         {
         inRange = true;
-        button.SetActive(true);
+        player = collider.gameObject;
 
-            if("Broken Haniwa")
+            if(GameDictionary.choiceDictionary["Broken Haniwa"])
             {
             //pick which Dialogue to run
+            button.SetActive(true);
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
             button.GetComponent<DialogueRun>().trigger = this;
             }
@@ -37,6 +53,7 @@ public class HaniwaDialogueTrigger : DialogueTrigger
     
     public override void OnTriggerExit2D(Collider2D collider)
     {
+        player = collider.gameObject;
         inRange = false;
         button.SetActive(false);
         button.GetComponent<DialogueRun>().dialogue = null;
@@ -58,13 +75,45 @@ public class HaniwaDialogueTrigger : DialogueTrigger
 
     public override void ButtonA()
     {
+        player.GetComponent<PlayerController>().smallItem = null;
+        GameDictionary.Instance.UpdateEntry("Broken Haniwa", false);
+        brokenHaniwaStand.SetActive(false);
+        fixedHaniwaStand.SetActive(true);
+        dialogueEnd = false;
 
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
+        button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+        button.GetComponent<DialogueRun>().trigger = this;
+        button.GetComponent<DialogueRun>().TriggerDialogue();
+    
     }
 
     public override void ButtonB()
     {
-
+        inRange = false;
+        button.SetActive(false);
+        button.GetComponent<DialogueRun>().dialogue = null;
+        button.GetComponent<DialogueRun>().trigger = null;
+        dialogueEnd = false;
+        panel.SetActive(false);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
     }
-
+    public void GiveChokuto()
+    {
+        player.GetComponent<PlayerController>().AddItem(chokuto);
+        inRange = false;
+        button.SetActive(false);
+        button.GetComponent<DialogueRun>().dialogue = null;
+        button.GetComponent<DialogueRun>().trigger = null;
+        dialogueEnd = false;
+        panel.SetActive(false);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
+    }
 
 }
