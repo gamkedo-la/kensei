@@ -91,6 +91,13 @@ public class FillerVillagerDialogue : DialogueTrigger
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
+            else
+            {
+                Dialogue dialogue = GetComponent<Dialogue>();
+                dialogue.sentences[0] = "Maybe you should get dressed...";
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
         }
     }
 
