@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     public GameObject paddle;
     public GameObject naginata;
     public GameObject dullKatana;
+    public GameObject ancientChokuto;
     public int playerCombatPoints = 10;
     GameObject currentWeaponModel;
     int weaponSortType;
@@ -201,6 +202,13 @@ public class PlayerController : MonoBehaviour
                         {
                             dullKatana.SetActive(true);
                             currentWeaponModel = dullKatana;
+                            weaponSortType = 0;
+                        }
+
+                        if(GameDictionary.choiceDictionary["Ancient Chokuto"])
+                        {
+                            ancientChokuto.SetActive(true);
+                            currentWeaponModel = ancientChokuto;
                             weaponSortType = 0;
                         }
                 }
