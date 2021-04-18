@@ -8,6 +8,8 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
     public GameObject player;
     public GameObject screen;
 
+    public GameObject villageMessenger;
+
     public override void Start()
     {
         button.SetActive(false);
@@ -81,7 +83,8 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
-        GetComponent<SimpleMovementScript>().onSwitch = true;
+        //GetComponent<SimpleMovementScript>().onSwitch = true;
+
     }
 
     public override void ButtonB()
@@ -101,6 +104,8 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
     {
         yield return new WaitForSeconds(2);
         screen.SetActive(false);
+        villageMessenger.SetActive(true);
+        villageMessenger.GetComponent<SimpleMovementScript>().onSwitch = true;
     }
 
 }
