@@ -13,9 +13,10 @@ public class StateTracker : MonoBehaviour
     public int currentBigItemPoints;
     public GameObject currentSmallItem;
     public int currentSmallItemPoints;
-    public int playerCombatPoints;
+    public int playerCombatPoints = 10; 
     public int combatScore;
     public bool oneArm = false;
+    public bool incrementedCombatPoints = false;
 
     public void Update()
     {
@@ -57,7 +58,11 @@ public class StateTracker : MonoBehaviour
         currentSmallItemPoints = currentSmallItem.GetComponent<ItemClass>().combatPoints;
         }
 
-        playerCombatPoints = player.GetComponent<PlayerController>().playerCombatPoints;
+        if( !incrementedCombatPoints && GameDictionary.choiceDictionary["Ronin Path"])
+        {
+            incrementedCombatPoints = true;
+            playerCombatPoints = playerCombatPoints + 10;
+        }
         
         if(oneArm) combatScore = (currentWeaponPoints + currentClothingPoints + currentBigItemPoints + currentSmallItemPoints + playerCombatPoints) / 2;
         else combatScore = currentWeaponPoints + currentClothingPoints + currentBigItemPoints + currentSmallItemPoints + playerCombatPoints;

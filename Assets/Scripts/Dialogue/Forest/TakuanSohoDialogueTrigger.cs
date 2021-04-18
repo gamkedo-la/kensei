@@ -8,6 +8,7 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
     public int switchInt;
     public GameObject player;
     public GameObject sakichi;
+    public GameObject sasaki;
     public GameObject monksRobes; 
     public GameObject screen;
     public override void Start()
@@ -110,6 +111,7 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
                 GameDictionary.Instance.UpdateEntry("Monk Robes", true);
                 GameDictionary.Instance.UpdateEntry("Monk Path", true);
                 GameDictionary.Instance.UpdateEntry("Path Chosen", true);
+                sasaki.SetActive(false);
                 StartCoroutine(TimePasses());
 
                 button.SetActive(false);

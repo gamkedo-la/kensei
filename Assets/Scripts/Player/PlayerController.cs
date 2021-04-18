@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     public GameObject naginata;
     public GameObject dullKatana;
     public GameObject ancientChokuto;
-    public int playerCombatPoints = 10;
     GameObject currentWeaponModel;
     int weaponSortType;
     public GameObject pickUpItemButton;
