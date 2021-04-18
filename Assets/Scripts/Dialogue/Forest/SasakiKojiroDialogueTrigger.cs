@@ -30,20 +30,21 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
             dialogueEnd = false;
         }
 
-        if(GameDictionary.choiceDictionary["Message Delivered"] && !spoke)
+        if (GameDictionary.choiceDictionary["Message Delivered"] && !spoke)
         {
             button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
             button.GetComponent<DialogueRun>().trigger = this;
             button.GetComponent<DialogueRun>().TriggerDialogue();
             spoke = true;
         }
-        
-        if(spoke && dialogueEnd && !left)
+
+        if (spoke && dialogueEnd && !left)
         {
             GetComponent<SimpleMovementScript>().onSwitch = true;
             left = true;
+            GameDictionary.Instance.UpdateEntry("Sasaki Returned", true);
         }
-        if(left && !GetComponent<SimpleMovementScript>().onSwitch)
+        if (left && !GetComponent<SimpleMovementScript>().onSwitch)
         {
             gameObject.SetActive(false);
         }
@@ -69,15 +70,24 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
 
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if (!left && !spoke)
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+        }
+
+        if (!left && spoke)
+        {
+            GetComponent<SimpleMovementScript>().onSwitch = true;
+            left = true;
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)

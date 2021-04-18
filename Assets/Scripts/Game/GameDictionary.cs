@@ -14,7 +14,7 @@ public class GameDictionary : MonoBehaviour
     } 
     private void Awake() 
     { 
-        dictionaryList = new List<string>(){"Nude", "Base Kimono", "Base Katana", "Paddle", "One Arm", "Sake Bottle", "Rusted Key", "Ginkgo Seed", "Farmers Clothes", "Bloody Tanto Blade", "Given Katana", "Given Sake Bottle", "Monk Robes", "Worn Kimono", "Naginata", "Shinzo Fragment", "Broken Haniwa", "Game Saved", "Dull Katana", "Monk Path", "Ronin Path", "Samurai Path", "Spoke to Sakichi", "Path Chosen", "Spoke to Takuan", "Ancient Chokuto", "Onigawara Fragment", "Message Delivered"};
+        dictionaryList = new List<string>(){"Nude", "Base Kimono", "Base Katana", "Paddle", "One Arm", "Sake Bottle", "Rusted Key", "Ginkgo Seed", "Farmers Clothes", "Bloody Tanto Blade", "Given Katana", "Given Sake Bottle", "Monk Robes", "Worn Kimono", "Naginata", "Shinzo Fragment", "Broken Haniwa", "Game Saved", "Dull Katana", "Monk Path", "Ronin Path", "Samurai Path", "Spoke to Sakichi", "Path Chosen", "Spoke to Takuan", "Ancient Chokuto", "Onigawara Fragment", "Message Delivered", "Sasaki Returned", "Player Leads", "Shigenari Leads"};
 
         if (_instance != null && _instance != this) 
         { 

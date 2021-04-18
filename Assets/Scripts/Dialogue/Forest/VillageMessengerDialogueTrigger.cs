@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class VillageMessengerDialogueTrigger : DialogueTrigger
 {
     bool spoke = false;
+    bool spokeAgain = false;
     public override void Start()
     {
         button.SetActive(false);
@@ -24,10 +25,26 @@ public class VillageMessengerDialogueTrigger : DialogueTrigger
             button.GetComponent<DialogueRun>().TriggerDialogue();
             spoke = true;
         }
-        if(dialogueEnd)
+        if (dialogueEnd && spoke && !spokeAgain)
         {
             GameDictionary.Instance.UpdateEntry("Message Delivered", true);
+            dialogueEnd = false;
         }
+
+        if (GameDictionary.choiceDictionary["Sasaki Returned"] && !spokeAgain)
+        {
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+            button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            spokeAgain = true;
+        }
+
+        if (spokeAgain && dialogueEnd && !(GameDictionary.choiceDictionary["Player Leads"] || GameDictionary.choiceDictionary["Shigenari Leads"]))
+        {
+            Debug.Log("Made it to decision");
+            DecisionDisplay("Lead the Villagers", "Let Shigenari Lead");
+        }
+
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
@@ -69,12 +86,22 @@ public class VillageMessengerDialogueTrigger : DialogueTrigger
 
     public override void ButtonA()
     {
-
+        button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+        button.GetComponent<DialogueRun>().trigger = this;
+        button.GetComponent<DialogueRun>().TriggerDialogue();
+        GameDictionary.Instance.UpdateEntry("Player Leads", true);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
     }
 
     public override void ButtonB()
     {
-
+        button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
+        button.GetComponent<DialogueRun>().trigger = this;
+        button.GetComponent<DialogueRun>().TriggerDialogue();
+        GameDictionary.Instance.UpdateEntry("Shigenari Leads", true);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
     }
 
 

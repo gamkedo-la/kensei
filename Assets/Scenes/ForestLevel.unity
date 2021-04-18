@@ -466,7 +466,7 @@ PrefabInstance:
     - target: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
@@ -716,7 +716,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &32653267
 PrefabInstance:
@@ -3591,7 +3591,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &95697492
 GameObject:
@@ -5718,6 +5718,7 @@ MonoBehaviour:
   player: {fileID: 0}
   sakichi: {fileID: 1840723865}
   sasaki: {fileID: 1190041516}
+  shigenari: {fileID: 835117056}
   monksRobes: {fileID: 1011031564}
   screen: {fileID: 1326212868}
 --- !u!114 &148536955
@@ -7455,27 +7456,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1896572655}
     m_Modifications:
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -95.60311
+      value: 87.17376
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -354.61264
+      value: -161.16975
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3163.7188
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
@@ -7485,17 +7486,17 @@ PrefabInstance:
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
@@ -12617,7 +12618,7 @@ Transform:
   - {fileID: 1959931173}
   - {fileID: 1535264388}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &285557763
 GameObject:
@@ -15440,7 +15441,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 148536952}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1581628219822357148, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
@@ -15461,17 +15462,17 @@ PrefabInstance:
     - target: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.332222
+      value: -64.599976
       objectReference: {fileID: 0}
     - target: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5093689
+      value: -359.56
       objectReference: {fileID: 0}
     - target: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
@@ -16734,6 +16735,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 899442067}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &398075158 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 186701532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &400474989
 GameObject:
   m_ObjectHideFlags: 0
@@ -17106,7 +17113,7 @@ PrefabInstance:
     - target: {fileID: 8068239843639634205, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068239843639634205, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
@@ -17951,7 +17958,7 @@ Transform:
   - {fileID: 510489594}
   - {fileID: 1565771900}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &427137247
 PrefabInstance:
@@ -30806,7 +30813,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &773150904
 GameObject:
@@ -33131,6 +33138,8 @@ GameObject:
   - component: {fileID: 835117059}
   - component: {fileID: 835117058}
   - component: {fileID: 835117057}
+  - component: {fileID: 835117062}
+  - component: {fileID: 835117061}
   m_Layer: 0
   m_Name: Ishida Shigenari
   m_TagString: Untagged
@@ -33228,12 +33237,56 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835117056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -79.01, y: -368.09, z: 0}
+  m_LocalPosition: {x: -80.04, y: -354.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &835117061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835117056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - Am I Sasaki Kojiro? Hah! I wish, I've come to meet him too. I heard he is a sword
+    saint and sometimes trains Ronin in this part of the forest. My brothers are
+    in the service of the Daimyo but I can't stand them, so I came here to forge
+    my own destiny.
+--- !u!114 &835117062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835117056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ef544bd5819794aa7761a85e32475c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 835117061}
+  - {fileID: 0}
+  - {fileID: 0}
+  collider: {fileID: 835117058}
+  button: {fileID: 865944195}
+  panel: {fileID: 736885643}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 766828930}
+  buttonA: {fileID: 490498034}
+  buttonAText: 
+  buttonB: {fileID: 1829347351}
+  buttonBText: 
 --- !u!1 &836437305
 GameObject:
   m_ObjectHideFlags: 0
@@ -38456,7 +38509,7 @@ PrefabInstance:
     - target: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1581628219822357151, guid: 345815714a835dd4b9d150b6b13e4aac,
         type: 3}
@@ -41161,7 +41214,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011535220
 GameObject:
@@ -41915,7 +41968,7 @@ Transform:
   m_LocalScale: {x: 0.4052302, y: 0.4052302, z: 0.4052302}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027068164
 GameObject:
@@ -43779,7 +43832,7 @@ PrefabInstance:
     - target: {fileID: 2560466133927752613, guid: f5e732d0fe7da3b45a3db68ae2f79cf9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2560466133927752613, guid: f5e732d0fe7da3b45a3db68ae2f79cf9,
         type: 3}
@@ -44454,7 +44507,7 @@ PrefabInstance:
     - target: {fileID: 4855295428969838247, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4855295428969838247, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
@@ -48760,7 +48813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190041516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.19, y: -363.28, z: 0}
+  m_LocalPosition: {x: -91.82, y: -363.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48972,6 +49025,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 746905430417193139, guid: 0f9ec2d09d47cf844bf1698ae87e055c,
     type: 3}
   m_PrefabInstance: {fileID: 887377401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1192396928 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1668195969}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1193689720
 GameObject:
@@ -51539,11 +51598,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258830593}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -72.23, y: -363.72, z: -781.1885}
+  m_LocalPosition: {x: -74.4, y: -357.13, z: -781.1885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1259916570
 GameObject:
@@ -52297,6 +52356,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogues:
   - {fileID: 1280050414}
+  - {fileID: 1280050424}
+  - {fileID: 1280050423}
+  - {fileID: 1280050422}
   collider: {fileID: 1280050420}
   button: {fileID: 865944195}
   panel: {fileID: 736885643}
@@ -52307,6 +52369,57 @@ MonoBehaviour:
   buttonAText: 
   buttonB: {fileID: 1829347351}
   buttonBText: 
+--- !u!114 &1280050422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280050412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - 'I will lead them! This kind of injustice has my brother Shigie''s name written
+    all over it. I will return to the village to set up defences, you should find
+    a way to infiltrate the Daimyo''s castle and deliver our message. Prepare for
+    the worst. '
+--- !u!114 &1280050423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280050412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Messenger from the Village
+  sentences:
+  - Thank you, I will tell the Elder and your Father you are going to entreat the
+    Daimyo on our behalf. First you will need to find a way into the Daimyo's castle,
+    I doubt they will just let you in the front door without a fight.
+--- !u!114 &1280050424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280050412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Messenger from the Village
+  sentences:
+  - What say you? Will you lead us against the Daimyo? We lack the skill with warfare
+    to be taken seriously.
 --- !u!1 &1281573261
 GameObject:
   m_ObjectHideFlags: 0
@@ -54774,7 +54887,7 @@ RectTransform:
   m_Children:
   - {fileID: 1199696935}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -57650,7 +57763,7 @@ Transform:
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
 --- !u!1 &1398690530
 GameObject:
@@ -62595,7 +62708,7 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1524867057
 GameObject:
@@ -68122,27 +68235,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1896572655}
     m_Modifications:
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.426384
+      value: 159.3505
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -383.697
+      value: -190.2541
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3163.7188
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
@@ -68152,17 +68265,17 @@ PrefabInstance:
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 815872515391970027, guid: 97e3fcfad12dd39469335e73845541aa,
         type: 3}
@@ -68427,7 +68540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1675095204
 GameObject:
@@ -68779,23 +68892,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3866649638315369964, guid: 8b883384a8bc43c47a9af54baceed707,
         type: 3}
+      propertyPath: sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3866649638315369964, guid: 8b883384a8bc43c47a9af54baceed707,
+        type: 3}
       propertyPath: sentences.Array.data[0]
-      value: A message!
+      value: Much has changed since your last visit to the village. Our people are
+        starving. Our taxes are too steep. Our citizens are growing impatient and
+        frustrated.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3866649638315369964, guid: 8b883384a8bc43c47a9af54baceed707,
+        type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: The elite of our society do not understand our plight, they do not listen
+        to our commands. It is time for us to act. We need strong Ronin to help us
+        confront the Daimyo and take back what is ours.
       objectReference: {fileID: 0}
     - target: {fileID: 3866649638315369971, guid: 8b883384a8bc43c47a9af54baceed707,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3866649638315369971, guid: 8b883384a8bc43c47a9af54baceed707,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -85.4
+      value: -73.9
       objectReference: {fileID: 0}
     - target: {fileID: 3866649638315369971, guid: 8b883384a8bc43c47a9af54baceed707,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -316.5
+      value: -332.3
       objectReference: {fileID: 0}
     - target: {fileID: 3866649638315369971, guid: 8b883384a8bc43c47a9af54baceed707,
         type: 3}
@@ -71698,7 +71825,7 @@ Transform:
   - {fileID: 621536677}
   - {fileID: 657533650}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1774867250
 GameObject:
@@ -77130,8 +77257,10 @@ Transform:
   - {fileID: 2137732269}
   - {fileID: 370301308}
   - {fileID: 1708384741}
+  - {fileID: 398075158}
+  - {fileID: 1192396928}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1902407027
 PrefabInstance:
@@ -77466,7 +77595,7 @@ PrefabInstance:
     - target: {fileID: 1649902248549962673, guid: 2e029b6319666b44aa82ba235be692e2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1649902248549962673, guid: 2e029b6319666b44aa82ba235be692e2,
         type: 3}
@@ -82783,7 +82912,7 @@ Transform:
   - {fileID: 972981553}
   - {fileID: 475821826}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2040883652
 MonoBehaviour:
@@ -83655,7 +83784,7 @@ PrefabInstance:
     - target: {fileID: 3740566487813743602, guid: 771c62b7bc5018d45900965b7901a38a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3740566487813743602, guid: 771c62b7bc5018d45900965b7901a38a,
         type: 3}
@@ -87023,7 +87152,7 @@ PrefabInstance:
     - target: {fileID: 1296241537157771547, guid: b9468d8003854e3488aeabba7179cf46,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1296241537157771547, guid: b9468d8003854e3488aeabba7179cf46,
         type: 3}
@@ -87119,7 +87248,7 @@ Transform:
   m_Children:
   - {fileID: 3683041143985290124}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &3683041143985290124
 RectTransform:
@@ -122223,7 +122352,7 @@ PrefabInstance:
     - target: {fileID: 4811503777378947270, guid: a9e8be08925f9f240b52f4f97c649123,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4811503777378947270, guid: a9e8be08925f9f240b52f4f97c649123,
         type: 3}
@@ -122297,7 +122426,7 @@ PrefabInstance:
     - target: {fileID: 5581920249318527531, guid: d786fe5596a28654ab0adab1d9e5996f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5581920249318527531, guid: d786fe5596a28654ab0adab1d9e5996f,
         type: 3}
