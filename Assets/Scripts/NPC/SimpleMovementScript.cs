@@ -37,7 +37,6 @@ public class SimpleMovementScript : MonoBehaviour
 
             else 
             {
-                Debug.Log("stopped");
                 animator.SetFloat("Speed", 0f);
                 if (animator) animator.SetInteger("Direction", 0);
                 onSwitch = false;

@@ -9,6 +9,8 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
     public GameObject screen;
 
     public GameObject villageMessenger;
+    bool left = false;
+    bool spoke = false;
 
     public override void Start()
     {
@@ -26,6 +28,24 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
         {
             DecisionDisplay("Train as Ronin", "Pass for Now");
             dialogueEnd = false;
+        }
+
+        if(GameDictionary.choiceDictionary["Message Delivered"] && !spoke)
+        {
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+            button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            spoke = true;
+        }
+        
+        if(spoke && dialogueEnd && !left)
+        {
+            GetComponent<SimpleMovementScript>().onSwitch = true;
+            left = true;
+        }
+        if(left && !GetComponent<SimpleMovementScript>().onSwitch)
+        {
+            gameObject.SetActive(false);
         }
 
     }
