@@ -12,7 +12,6 @@ public class DisplayItemName : MonoBehaviour, IPointerEnterHandler
     public Text itemName;
     public void OnPointerEnter(PointerEventData eventData)
     {
-        UnityEngine.Debug.Log("'DISPLAY ITEM Name'");
         //player.GetComponent<PlayerController>().checkItemInInventory(slot);
         item = player.GetComponent<PlayerController>().targetItem;
         UnityEngine.Debug.Log("item");

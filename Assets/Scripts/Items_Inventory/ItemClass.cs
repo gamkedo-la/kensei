@@ -10,5 +10,6 @@ public class ItemClass : MonoBehaviour
     public Slot itemSlot;
     public int combatPoints;
     public Sprite itemSprite;
+    public string itemDescription;
 
 }
