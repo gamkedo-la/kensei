@@ -7135,7 +7135,8 @@ MonoBehaviour:
   itemSlot: 2
   combatPoints: 0
   itemSprite: {fileID: 21300000, guid: 351af5f82f336cb4bbe6952de2293c75, type: 3}
-  itemDescription: 
+  itemDescription: Fine sake gifted to you by your Father. Sake is best enjoyed with
+    someone else.
 --- !u!1001 &201347754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8983,7 +8984,8 @@ MonoBehaviour:
   itemSlot: 1
   combatPoints: 2
   itemSprite: {fileID: 21300000, guid: 3c71b20aebaa565428b6e63c1e12d1e2, type: 3}
-  itemDescription: 
+  itemDescription: Clothing typical to a farmer of these parts, affords significant
+    protection against the sun.
 --- !u!1001 &259237440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12327,27 +12329,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d26237c38005b9419a516413633ba32, type: 3}
---- !u!1 &341352442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8068239843859883823, guid: ec41ab8670d852d45a70769b8f7e3eed,
-    type: 3}
-  m_PrefabInstance: {fileID: 8068239841874693707}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &341352447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341352442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02104940b4d41a418dc8c7ef5c4da0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  player: {fileID: 1532812149}
-  panel: {fileID: 1886111564}
 --- !u!1 &346019369
 GameObject:
   m_ObjectHideFlags: 0
@@ -20230,21 +20211,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8068239841874693707}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &523259153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523259148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02104940b4d41a418dc8c7ef5c4da0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  player: {fileID: 1532812149}
-  panel: {fileID: 1886111564}
 --- !u!114 &523259154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37255,27 +37221,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &830962300 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8068239843826959274, guid: ec41ab8670d852d45a70769b8f7e3eed,
-    type: 3}
-  m_PrefabInstance: {fileID: 8068239841874693707}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &830962305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830962300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02104940b4d41a418dc8c7ef5c4da0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  player: {fileID: 1532812149}
-  panel: {fileID: 1886111564}
 --- !u!1 &841577135
 GameObject:
   m_ObjectHideFlags: 0
@@ -39239,7 +39184,8 @@ MonoBehaviour:
   itemSlot: 3
   combatPoints: 0
   itemSprite: {fileID: 21300000, guid: 893b11310afc84c4897af13290e17bfe, type: 3}
-  itemDescription: 
+  itemDescription: A ginkgo seed, though there are no ginkgo trees in the village.
+    Wise men and women hold ginkgos to symbolize endurance.
 --- !u!4 &891706942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5032507351697596855, guid: 7d26237c38005b9419a516413633ba32,
@@ -39841,27 +39787,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.184418, y: 17.772224}
   m_EdgeRadius: 0
---- !u!1 &906487326 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8068239842524111856, guid: ec41ab8670d852d45a70769b8f7e3eed,
-    type: 3}
-  m_PrefabInstance: {fileID: 8068239841874693707}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &906487331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906487326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02104940b4d41a418dc8c7ef5c4da0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  player: {fileID: 1532812149}
-  panel: {fileID: 1886111564}
 --- !u!1 &907210798
 GameObject:
   m_ObjectHideFlags: 0
@@ -43928,7 +43853,7 @@ PrefabInstance:
     - target: {fileID: 4855295428969838243, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4855295428969838247, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
@@ -44167,7 +44092,8 @@ MonoBehaviour:
   itemSlot: 3
   combatPoints: 1
   itemSprite: {fileID: 21300000, guid: 0392e265f39690c4bbf5a3f2ab2b5448, type: 3}
-  itemDescription: 
+  itemDescription: 'A blade found on the recent murder victim, its handle was wrenched
+    off when the blade got stuck. '
 --- !u!114 &1021462754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47697,7 +47623,7 @@ GameObject:
   - component: {fileID: 1133160734}
   - component: {fileID: 1133160733}
   m_Layer: 5
-  m_Name: CSDIsplay
+  m_Name: CombatScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56045,6 +55971,11 @@ PrefabInstance:
       propertyPath: itemName
       value: Base Kimono
       objectReference: {fileID: 0}
+    - target: {fileID: 2560466133927752609, guid: f5e732d0fe7da3b45a3db68ae2f79cf9,
+        type: 3}
+      propertyPath: itemDescription
+      value: 'A simple and unnotable Kimono, though not without its worth. '
+      objectReference: {fileID: 0}
     - target: {fileID: 2560466133927752613, guid: f5e732d0fe7da3b45a3db68ae2f79cf9,
         type: 3}
       propertyPath: m_Pivot.x
@@ -64147,12 +64078,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3795585892147555523, guid: fabc59e62b7f2b446b7999e0f8410546,
     type: 3}
   m_PrefabInstance: {fileID: 2043362840}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1532812149 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8068239843639634180, guid: ec41ab8670d852d45a70769b8f7e3eed,
-    type: 3}
-  m_PrefabInstance: {fileID: 8068239841874693707}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1536852504
 PrefabInstance:
@@ -94393,7 +94318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1886111565
 RectTransform:
   m_ObjectHideFlags: 0
@@ -102870,6 +102795,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1187690138298770794, guid: bb5e8d818e5c669438e7f7b8c78ef30f,
+        type: 3}
+      propertyPath: itemDescription
+      value: A rusty key found hidden behind your house with no indication of what
+        it opens.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb5e8d818e5c669438e7f7b8c78ef30f, type: 3}
 --- !u!1001 &1384012221145288127
@@ -103828,18 +103759,73 @@ PrefabInstance:
     - target: {fileID: 8068239841721193708, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068239841925622038, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068239842150025712, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068239842162601668, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068239842162601691, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8068239842524111862, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemNameText
+      value: 
+      objectReference: {fileID: 897960976}
+    - target: {fileID: 8068239842524111862, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemInfoPanel
+      value: 
+      objectReference: {fileID: 1886111564}
+    - target: {fileID: 8068239842524111862, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemCombatScore
+      value: 
+      objectReference: {fileID: 1197943617}
+    - target: {fileID: 8068239842524111862, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 1522765437}
+    - target: {fileID: 8068239842547274259, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068239843585388330, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemNameText
+      value: 
+      objectReference: {fileID: 897960976}
+    - target: {fileID: 8068239843585388330, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemInfoPanel
+      value: 
+      objectReference: {fileID: 1886111564}
+    - target: {fileID: 8068239843585388330, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemCombatScore
+      value: 
+      objectReference: {fileID: 1197943617}
+    - target: {fileID: 8068239843585388330, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 1522765437}
     - target: {fileID: 8068239843639634180, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: m_Name
@@ -103910,6 +103896,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8068239843826959272, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemNameText
+      value: 
+      objectReference: {fileID: 897960976}
+    - target: {fileID: 8068239843826959272, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemInfoPanel
+      value: 
+      objectReference: {fileID: 1886111564}
+    - target: {fileID: 8068239843826959272, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemCombatScore
+      value: 
+      objectReference: {fileID: 1197943617}
+    - target: {fileID: 8068239843826959272, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 1522765437}
+    - target: {fileID: 8068239843859883821, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemNameText
+      value: 
+      objectReference: {fileID: 897960976}
+    - target: {fileID: 8068239843859883821, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemInfoPanel
+      value: 
+      objectReference: {fileID: 1886111564}
+    - target: {fileID: 8068239843859883821, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemCombatScore
+      value: 
+      objectReference: {fileID: 1197943617}
+    - target: {fileID: 8068239843859883821, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 1522765437}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec41ab8670d852d45a70769b8f7e3eed, type: 3}
 --- !u!224 &8068239841874693708 stripped
