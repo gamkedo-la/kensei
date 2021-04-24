@@ -2343,7 +2343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d7bb02d3e05ee459055085857cffe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 15
   rb: {fileID: 8068239843639634207}
   animator: {fileID: 8068239843639634201}
   defaultController: {fileID: 0}
@@ -2374,7 +2374,6 @@ MonoBehaviour:
   naginata: {fileID: 4858298878843694057}
   dullKatana: {fileID: 8773584648603329812}
   ancientChokuto: {fileID: 1026234817531033449}
-  playerCombatPoints: 10
   pickUpItemButton: {fileID: 8068239843037907904}
   defaultClothing: {fileID: 0}
 --- !u!95 &8068239843639634201
@@ -2436,6 +2435,7 @@ MonoBehaviour:
   playerCombatPoints: 0
   combatScore: 0
   oneArm: 0
+  incrementedCombatPoints: 0
 --- !u!1 &8068239843668736226
 GameObject:
   m_ObjectHideFlags: 0

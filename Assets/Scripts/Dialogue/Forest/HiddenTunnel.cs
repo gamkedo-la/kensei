@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HiddenTunnel : DialogueTrigger
 {
-
+public SceneLoader.Scene scene;
     public override void Start()
     {
        button.SetActive(false); 
@@ -24,6 +24,8 @@ public class HiddenTunnel : DialogueTrigger
         if(collider.CompareTag("Player"))
         {
         inRange = true;
+        button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+        button.GetComponent<DialogueRun>().trigger = this;
 
             if(GameDictionary.choiceDictionary["Rusted Key"])
             {
@@ -59,6 +61,8 @@ public class HiddenTunnel : DialogueTrigger
         //load in daimyo stronghold
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
+        SaveFile.SaveGame();
+        SceneLoader.Load(scene);
     }
 
     public override void ButtonB()
