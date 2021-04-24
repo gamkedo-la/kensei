@@ -18,6 +18,11 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
+        
+        if(GameDictionary.choiceDictionary["Samurai Path"])
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     void Update()
