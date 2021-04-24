@@ -30,8 +30,7 @@ public SceneLoader.Scene scene;
             if(GameDictionary.choiceDictionary["Rusted Key"])
             {
                 DecisionDisplay("Use the Rusty Key", "Do Nothing");
-            }
-            
+            }            
         }   
     }
     
