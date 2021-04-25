@@ -25,6 +25,25 @@ public class GameDictionary : MonoBehaviour
         _instance = this;
         DontDestroyOnLoad(this.gameObject);
         Populate();
+
+        foreach(KeyValuePair<string,bool> pair in GameDictionary.choiceDictionary)
+        {
+            if(PlayerPrefs.HasKey(pair.Key))
+            {
+                int switchInt;
+                switchInt = PlayerPrefs.GetInt(pair.Key);
+                switch(switchInt)
+                {
+                    case 0:
+                        GameDictionary.Instance.UpdateEntry(pair.Key,false);
+                        break;
+
+                    case 1:
+                        GameDictionary.Instance.UpdateEntry(pair.Key,true);
+                        break;
+                }
+            }
+        }
     } 
 
     public void Populate()

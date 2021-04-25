@@ -45,13 +45,7 @@ public class PlayerController : MonoBehaviour
      Cursor.lockState = CursorLockMode.Confined;
      ChooseAnimator();
      AddItem(defaultClothing);
-
-     //check for player pref data, if no data load defaults otherwise load save
-     if(GameDictionary.choiceDictionary["Game Saved"])
-     { 
-        LoadFile.LoadGame();
-     }
-        
+  
     }
 
     void Update()

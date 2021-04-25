@@ -7,12 +7,15 @@ public static class LoadFile
     //public GameObject player;
     //private GameObject itemToSpawn;
     // Start is called before the first frame update
-    public static void LoadGame()
+    public static void LoadGame(SceneLoader.Scene scene)
     {
+        SceneLoader.Load(scene);
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
         Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
         //spawn player at location
-        //GameObject.Instantiate(player, position, Quaternion.EulerRotation(0,0,0));
+        EnforceDictionary(scene);
+
+        /*GameObject.Instantiate(player, position, Quaternion.EulerRotation(0,0,0));
 
         //iterate through item dictionary and load variables using 'add item' function
         if(ItemDictionary.itemDictionary["Weapon"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Weapon"]));
@@ -23,7 +26,7 @@ public static class LoadFile
         foreach(KeyValuePair<string, bool> dictionaryEntry in GameDictionary.choiceDictionary)
         {
             GameDictionary.Instance.UpdateEntry(dictionaryEntry.Key, PlayerPrefs.GetInt(dictionaryEntry.Key, 0) == 1);   
-        }
+        }*/
    }
 
     public static GameObject ConstructItem(ItemClass item)
@@ -52,9 +55,10 @@ public static class LoadFile
         itemToSpawn.SetActive(false);
         return itemToSpawn;
     }
-    public static void EnforceDictionary()
+    public static void EnforceDictionary(SceneLoader.Scene scene)
     {
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+        
         //player.EnforceDictionary();
     }
 }
