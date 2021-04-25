@@ -2373,7 +2373,8 @@ MonoBehaviour:
     type: 2}
   daimyoArmorAnimator: {fileID: 22100000, guid: 911f1e4f92b608542b4a119946344f81,
     type: 2}
-  daimyoArmorAnimator1A: {fileID: 0}
+  daimyoArmorAnimator1A: {fileID: 22100000, guid: c15e50b518f70c846a5b37ef12b5bf86,
+    type: 2}
   Canvas: {fileID: 8068239841721193708}
   targetItem: {fileID: 0}
   weapon: {fileID: 0}
