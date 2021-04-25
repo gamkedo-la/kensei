@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public AnimatorOverrideController wornKimono1AAnimator;
     public AnimatorOverrideController monkClothesAnimator;
     public AnimatorOverrideController monkClothes1AAnimator;
+    public AnimatorOverrideController daimyoArmorAnimator;
+    public AnimatorOverrideController daimyoArmorAnimator1A;
     public GameObject Canvas;
     Vector2 movement;
     bool facingUp;
@@ -400,6 +402,10 @@ public class PlayerController : MonoBehaviour
             {
             GetComponent<Animator>().runtimeAnimatorController = wornKimono1AAnimator as RuntimeAnimatorController;
             }
+            if(GameDictionary.choiceDictionary["Daimyo Armor"])
+            {
+            GetComponent<Animator>().runtimeAnimatorController = daimyoArmorAnimator1A as RuntimeAnimatorController;
+            }
         }
         else
         {
@@ -423,6 +429,10 @@ public class PlayerController : MonoBehaviour
             if(GameDictionary.choiceDictionary["Worn Kimono"])
             {
             GetComponent<Animator>().runtimeAnimatorController = wornKimonoAnimator as RuntimeAnimatorController;
+            }
+            if(GameDictionary.choiceDictionary["Daimyo Armor"])
+            {
+            GetComponent<Animator>().runtimeAnimatorController = daimyoArmorAnimator as RuntimeAnimatorController;
             }
         }
     }

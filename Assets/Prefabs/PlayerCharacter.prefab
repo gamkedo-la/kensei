@@ -1359,6 +1359,10 @@ MonoBehaviour:
   drop: {fileID: 8068239842454014565}
   player: {fileID: 8068239843639634180}
   slot: 1
+  itemInfoPanel: {fileID: 0}
+  itemNameText: {fileID: 0}
+  itemDescriptionText: {fileID: 0}
+  itemCombatScore: {fileID: 0}
 --- !u!1 &8068239842547274259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2218,6 +2222,10 @@ MonoBehaviour:
   drop: {fileID: 8068239843811485595}
   player: {fileID: 8068239843639634180}
   slot: 0
+  itemInfoPanel: {fileID: 0}
+  itemNameText: {fileID: 0}
+  itemDescriptionText: {fileID: 0}
+  itemCombatScore: {fileID: 0}
 --- !u!1 &8068239843639634180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,6 +2371,9 @@ MonoBehaviour:
     type: 2}
   monkClothes1AAnimator: {fileID: 22100000, guid: 24ec3ffaee261c7488687c962625599a,
     type: 2}
+  daimyoArmorAnimator: {fileID: 22100000, guid: 911f1e4f92b608542b4a119946344f81,
+    type: 2}
+  daimyoArmorAnimator1A: {fileID: 0}
   Canvas: {fileID: 8068239841721193708}
   targetItem: {fileID: 0}
   weapon: {fileID: 0}
@@ -2783,6 +2794,10 @@ MonoBehaviour:
   drop: {fileID: 8068239842918023877}
   player: {fileID: 8068239843639634180}
   slot: 2
+  itemInfoPanel: {fileID: 0}
+  itemNameText: {fileID: 0}
+  itemDescriptionText: {fileID: 0}
+  itemCombatScore: {fileID: 0}
 --- !u!1 &8068239843859883823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2874,6 +2889,10 @@ MonoBehaviour:
   drop: {fileID: 8068239843376336795}
   player: {fileID: 8068239843639634180}
   slot: 3
+  itemInfoPanel: {fileID: 0}
+  itemNameText: {fileID: 0}
+  itemDescriptionText: {fileID: 0}
+  itemCombatScore: {fileID: 0}
 --- !u!1 &8773584648603329812
 GameObject:
   m_ObjectHideFlags: 0
