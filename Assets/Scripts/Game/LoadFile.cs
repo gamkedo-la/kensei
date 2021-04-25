@@ -7,13 +7,14 @@ public static class LoadFile
     //public GameObject player;
     //private GameObject itemToSpawn;
     // Start is called before the first frame update
-    public static void LoadGame(SceneLoader.Scene scene)
+    public static void LoadGame()
     {
-        SceneLoader.Load(scene);
+        SceneLoader.Load(PlayerPrefs.GetString("Scene"));
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
         Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
+        
         //spawn player at location
-        EnforceDictionary(scene);
+        EnforceDictionary();
 
         /*GameObject.Instantiate(player, position, Quaternion.EulerRotation(0,0,0));
 
@@ -55,10 +56,9 @@ public static class LoadFile
         itemToSpawn.SetActive(false);
         return itemToSpawn;
     }
-    public static void EnforceDictionary(SceneLoader.Scene scene)
+    public static void EnforceDictionary()
     {
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
-        
         //player.EnforceDictionary();
     }
 }

@@ -42,6 +42,10 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
             DecisionDisplay("Ishida Shigie is planning an attack", "Ishida Sakichi needs our help");
             dialogueEnd = false;
       }
+      if(GameDictionary.choiceDictionary["Samurai Path"] && dialogueEnd)
+      {
+          GetComponent<NPCFollowPlayerScript>().onSwitch = true;
+      }
 
     }
 
@@ -75,6 +79,11 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
             if(GameDictionary.choiceDictionary["Spoke to Takuan"])
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
+            if(GameDictionary.choiceDictionary["Samurai Path"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
         }   

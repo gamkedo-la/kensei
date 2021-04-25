@@ -13,6 +13,7 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
     public GameObject arm;
     public GameObject deadShigenari;
     int switchInt;
+    public GameObject takuan;
 
     public override void Start()
     {
@@ -64,6 +65,7 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
 
             if(GameDictionary.choiceDictionary["With Takuan"])
             {
+                takuan.GetComponent<NPCFollowPlayerScript>().onSwitch = false;
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
                 button.GetComponent<DialogueRun>().trigger = this;
                 takuanDialogue = true;

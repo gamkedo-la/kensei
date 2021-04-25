@@ -9,8 +9,8 @@ public static class SceneLoader
         TheVillage, ForestLevel, Stronghold
     }
     // Start is called before the first frame update
-    public static void Load(Scene scene)
+    public static void Load(String scene)
     {    
-    SceneManager.LoadScene(scene.ToString());  
+    SceneManager.LoadScene(scene);  
     }
 }

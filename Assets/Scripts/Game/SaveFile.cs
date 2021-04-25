@@ -8,7 +8,7 @@ using UnityEngine;
 public static class SaveFile 
 {
     //public GameObject player;
-    public static void SaveGame()
+    public static void SaveGame(SceneLoader.Scene scene)
     {
 
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
@@ -17,7 +17,7 @@ public static class SaveFile
         else
         {   
             GameDictionary.Instance.UpdateEntry("Game Saved", true);
-
+            PlayerPrefs.SetString("Scene", scene.ToString());
             PlayerPrefs.SetFloat("PlayerPosition.x", player.transform.position.x);
             PlayerPrefs.SetFloat("PlayerPosition.y", player.transform.position.y);
             PlayerPrefs.SetFloat("PlayerPosition.z", player.transform.position.z);
