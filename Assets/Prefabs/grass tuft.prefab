@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7550315380362448920}
   - component: {fileID: 4119676951761207667}
+  - component: {fileID: 870553882019438139}
   m_Layer: 0
   m_Name: grass tuft
   m_TagString: Untagged
@@ -82,3 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &870553882019438139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2951008581186499270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0701037f76e5db34ea5a8122b009bb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windSpeedMin: 2
+  windSpeedMax: 4
+  windStrengthMin: 0.75
+  windStrengthMax: 1.25

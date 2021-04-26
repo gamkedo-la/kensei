@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8292392090490646082}
   - component: {fileID: 2517632185642483497}
+  - component: {fileID: 1457031742566738163}
   m_Layer: 0
   m_Name: grass blade
   m_TagString: Untagged
@@ -82,3 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1457031742566738163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3686323655640878236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0701037f76e5db34ea5a8122b009bb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windSpeedMin: 2
+  windSpeedMax: 4
+  windStrengthMin: 0.75
+  windStrengthMax: 1.25
