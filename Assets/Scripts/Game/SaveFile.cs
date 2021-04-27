@@ -27,7 +27,7 @@ public static class SaveFile
                 PlayerPrefs.SetInt(pair.Key, (pair.Value ? 1 : 0));
             }
 
-            if(player.GetComponent<PlayerController>().weapon)
+           /* if(player.GetComponent<PlayerController>().weapon)
             {
                 ItemDictionary.Instance.UpdateEntry( "Weapon", player.GetComponent<PlayerController>().weapon.GetComponent<ItemClass>());
             }
@@ -49,7 +49,7 @@ public static class SaveFile
             {
                 ItemDictionary.Instance.UpdateEntry( "Big Item", player.GetComponent<PlayerController>().bigItem.GetComponent<ItemClass>());
             }
-            else{ItemDictionary.Instance.UpdateEntry( "Big Item",null);}
+            else{ItemDictionary.Instance.UpdateEntry( "Big Item",null);}*/
         }
     }
 }

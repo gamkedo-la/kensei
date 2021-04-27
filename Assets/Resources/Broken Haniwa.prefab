@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5581920249318527536
+--- !u!1 &7200798748947846088
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5581920249318527531}
-  - component: {fileID: 5581920249318527532}
-  - component: {fileID: 5581920249318527533}
-  - component: {fileID: 5581920249318527534}
-  - component: {fileID: 5581920249318527535}
+  - component: {fileID: 7200798748947846069}
+  - component: {fileID: 7200798748947846068}
+  - component: {fileID: 7200798748947846071}
+  - component: {fileID: 7200798748947846070}
+  - component: {fileID: 7200798748947846089}
   m_Layer: 0
-  m_Name: Dull Katana
-  m_TagString: Paddle
+  m_Name: Broken Haniwa
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5581920249318527531
+--- !u!4 &7200798748947846069
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5581920249318527536}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -201.42798, y: -208.16061, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_GameObject: {fileID: 7200798748947846088}
+  m_LocalRotation: {x: -0, y: -0, z: 0.2588191, w: 0.9659258}
+  m_LocalPosition: {x: 350.3532, y: 12.059479, z: 2825.661}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5581920249318527532
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+--- !u!212 &7200798748947846068
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5581920249318527536}
+  m_GameObject: {fileID: 7200798748947846088}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f6f53b1cdb2090d4da7d2aa6d0bcf18e, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 7a2b1252676a8e64a9ac812bbdcc47fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,13 +84,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &5581920249318527533
+--- !u!58 &7200798748947846071
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5581920249318527536}
+  m_GameObject: {fileID: 7200798748947846088}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -99,34 +99,35 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.045
---- !u!114 &5581920249318527534
+  m_Radius: 3
+--- !u!114 &7200798748947846070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5581920249318527536}
+  m_GameObject: {fileID: 7200798748947846088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6dad84be831823e4b9bc1496294a039c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Dull Katana
-  itemSlot: 0
-  combatPoints: 5
-  itemSprite: {fileID: 21300000, guid: f6f53b1cdb2090d4da7d2aa6d0bcf18e, type: 3}
---- !u!114 &5581920249318527535
+  itemName: Broken Haniwa
+  itemSlot: 3
+  combatPoints: 1
+  itemSprite: {fileID: 21300000, guid: 7a2b1252676a8e64a9ac812bbdcc47fd, type: 3}
+  itemDescription: 
+--- !u!114 &7200798748947846089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5581920249318527536}
+  m_GameObject: {fileID: 7200798748947846088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 416bd985c5c50344d9db4012d32daf70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circle: {fileID: 5581920249318527533}
-  item: {fileID: 5581920249318527536}
+  circle: {fileID: 7200798748947846071}
+  item: {fileID: 7200798748947846088}

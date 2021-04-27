@@ -11,6 +11,9 @@ public static class SceneLoader
     // Start is called before the first frame update
     public static void Load(String scene)
     {    
-    SceneManager.LoadScene(scene);  
+    SceneManager.LoadScene(scene);
+    Debug.Log("loaded");
     }
+
+
 }

@@ -9,12 +9,13 @@ public static class LoadFile
     // Start is called before the first frame update
     public static void LoadGame()
     {
-        SceneLoader.Load(PlayerPrefs.GetString("Scene"));
+        Debug.Log("LoadGame Called");
+        //SceneLoader.Load(PlayerPrefs.GetString("Scene"));
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+        
         Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
         
-        //spawn player at location
-        EnforceDictionary();
+        //spawn player at locatio
 
         /*GameObject.Instantiate(player, position, Quaternion.EulerRotation(0,0,0));
 
@@ -23,11 +24,13 @@ public static class LoadFile
         if(ItemDictionary.itemDictionary["Clothing"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Clothing"]));
         if(ItemDictionary.itemDictionary["Small Item"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Small Item"]));
         if(ItemDictionary.itemDictionary["Big Item"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Big Item"]));
-
+        */
         foreach(KeyValuePair<string, bool> dictionaryEntry in GameDictionary.choiceDictionary)
         {
             GameDictionary.Instance.UpdateEntry(dictionaryEntry.Key, PlayerPrefs.GetInt(dictionaryEntry.Key, 0) == 1);   
-        }*/
+        }
+        Debug.Log("made it to enforce");
+        EnforceDictionary();
    }
 
     public static GameObject ConstructItem(ItemClass item)
@@ -58,7 +61,8 @@ public static class LoadFile
     }
     public static void EnforceDictionary()
     {
+        Debug.Log("enforcing");
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
-        //player.EnforceDictionary();
+        player.GetComponent<PlayerController>().EnforceDictionary();
     }
 }

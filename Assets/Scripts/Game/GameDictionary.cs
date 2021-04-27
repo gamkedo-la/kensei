@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameDictionary : MonoBehaviour
 { 
     private static GameDictionary _instance;
@@ -14,7 +14,7 @@ public class GameDictionary : MonoBehaviour
     } 
     private void Awake() 
     { 
-        dictionaryList = new List<string>(){"Nude", "Base Kimono", "Base Katana", "Paddle", "One Arm", "Sake Bottle", "Rusted Key", "Ginkgo Seed", "Farmers Clothes", "Bloody Tanto Blade", "Given Katana", "Given Sake Bottle", "Monk Robes", "Worn Kimono", "Naginata", "Shinzo Fragment", "Broken Haniwa", "Game Saved", "Dull Katana", "Monk Path", "Ronin Path", "Samurai Path", "Spoke to Sakichi", "Path Chosen", "Spoke to Takuan", "Ancient Chokuto", "Onigawara Fragment", "Message Delivered", "Sasaki Returned", "Player Leads", "Shigenari Leads", "With Takuan", "Shigenari Dead", "Gave Naginata", "Sake Cup", "Bladeless Tanto", "Blooded Tanto", "Daimyo Armor"};
+        dictionaryList = new List<string>(){"Nude", "Base Kimono", "Base Katana", "Paddle", "One Arm", "Sake Bottle", "Rusted Key", "Ginkgo Seed", "Farmers Clothes", "Bloody Tanto Blade", "Given Katana", "Given Sake Bottle", "Monk Robes", "Mysterious Clothing", "Naginata", "Shinzo Fragment", "Broken Haniwa", "Game Saved", "Dull Katana", "Monk Path", "Ronin Path", "Samurai Path", "Spoke to Sakichi", "Path Chosen", "Spoke to Takuan", "Ancient Chokuto", "Onigawara Fragment", "Message Delivered", "Sasaki Returned", "Player Leads", "Shigenari Leads", "With Takuan", "Shigenari Dead", "Gave Naginata", "Sake Cup", "Bladeless Tanto", "Blooded Tanto", "Daimyo Armor"};
 
         if (_instance != null && _instance != this) 
         { 
@@ -74,5 +74,6 @@ public class GameDictionary : MonoBehaviour
         }
         else{Debug.Log("No key match");}
     }
+
 }
 

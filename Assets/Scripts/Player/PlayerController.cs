@@ -45,8 +45,8 @@ public class PlayerController : MonoBehaviour
 
      defaultController = GetComponent<Animator>().runtimeAnimatorController;
      Cursor.lockState = CursorLockMode.Confined;
-     ChooseAnimator();
-     AddItem(defaultClothing);
+     //ChooseAnimator();
+     //AddItem(defaultClothing);
   
     }
 
@@ -398,7 +398,7 @@ public class PlayerController : MonoBehaviour
             GetComponent<Animator>().runtimeAnimatorController = monkClothes1AAnimator as RuntimeAnimatorController;
             }
 
-            if(GameDictionary.choiceDictionary["Worn Kimono"])
+            if(GameDictionary.choiceDictionary["Mysterious Clothing"])
             {
             GetComponent<Animator>().runtimeAnimatorController = wornKimono1AAnimator as RuntimeAnimatorController;
             }
@@ -426,7 +426,7 @@ public class PlayerController : MonoBehaviour
             GetComponent<Animator>().runtimeAnimatorController = monkClothesAnimator as RuntimeAnimatorController;
             }
 
-            if(GameDictionary.choiceDictionary["Worn Kimono"])
+            if(GameDictionary.choiceDictionary["Mysterious Clothing"])
             {
             GetComponent<Animator>().runtimeAnimatorController = wornKimonoAnimator as RuntimeAnimatorController;
             }
@@ -440,5 +440,27 @@ public class PlayerController : MonoBehaviour
     public void SimpleAddItem()
     {
          AddItem(targetItem);
+    }
+
+    public void EnforceDictionary()
+    {
+        GameObject[] objArray = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
+        Debug.Log(objArray.Length);
+        foreach (KeyValuePair<string, bool> pair in GameDictionary.choiceDictionary)
+        {
+            if(pair.Value)
+            {
+                foreach (GameObject obj in objArray)
+                {
+                    if(pair.Key == obj.GetComponent<ItemClass>().itemName)
+                    {
+                        Debug.Log("tried add");
+                        AddItem(obj);
+                        break;
+                    }
+                }
+            }
+        }
+        ChooseAnimator();
     }
 }
