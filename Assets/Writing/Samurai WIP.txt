@@ -1,0 +1,235 @@
+Samurai Path 
+Plan to meet Sasaki in the Stronghold 
+Travel to Stronghold along main path 
+Passersby: 
+Lovely weather for this time of year
+I’ve heard the Daimyo is in a foul mood. Best stay away from the Stronghold. 
+Off to the Stronghold? The life of a Samurai is one of righteous nobility.
+There is a general unease in the air tonight, isn’t there?
+Guards let you in (if weapon and 2 arms) 
+Guard: Halt, stat your purpose. 
+Player: I wish to become a Samurai or I wish to speak with the Daimyo 
+Guard: Proceed. Do not cause a disturbance.
+Meet Shigie Mitsunari who questions you 
+Mitsunari: Off to waste your life pledging your services to a Daimyo who will not listen?
+Sasaki interrupts him, and invites you to meet the Daimyo 
+Sasaki: Let us not be so hasty. Let us see what they have to say. 
+Sasaki: Greetings, I am Sasaki, a ranking samurai in the court of the Daimyo of Terumoto. To what do we owe the pleasure?
+Player: I wish to become a Samurai or I am passing through.
+I wish to become a Samurai 
+Sasaki: (to Mitsunari ) See, Mitsunari? Some humble citizens wish to pledge to the Daimyo. 
+Sasaki: (to player) Ah, well, we are looking for more men pledging their loyalty to the Diamyo. You appear in good physical condition. Tell me, why do you want to serve the Daimyo?
+Player: To protect the community or To be a part of something bigger than myself.
+Sasaki: A noble reason indeed. We would be willing you accept you, but first - do you pledge that you will always put the Daimyo first even if your life depends upon it? The life of the samurai requires unwavering loyalty.
+Player: I do or I’m reconsidering. 
+I do
+Sasaki: Excellent. Let me introduce you to the Daimyo so you may pledge yourself to him.
+(to  Meet Mori Terumoto (Daimyo) and are accepted into his service )
+I’m reconsidering
+Sasaki: The way of the samurai can not be taken lightly. Come back when you have grown a backbone (player is escorted out of the stronghold) 
+I am passing through 
+Sasaki: I am afraid at this time, we are not allowing tourism of the stronghold. We must ask that you leave. 
+(player is escorted out of the stronghold)
+Meet Mori Terumoto (Daimyo) and are accepted into his service 
+Sasaki: Daimyo, I have a new recruit for you. 
+Daimyo: It is good to meet you. I heard rumors of a possible samurai coming to meet me. 
+Daimyo: Sasaki, has he taken his pledge? 
+Sasaki: Yes he has. Undying, unyielding loyalty to you.
+Daimyo: (to the player) Thank you. We are in much need of servicemen like yourself. We do mean well, but sometimes our service can run a little slim. We have much land to protect and I am but one person. 
+Daimyo: We try our best and that is all we can ask. 
+Daimyo: Now then, you will be serving me and if I give you a task, I mean for it to be done. 
+Daimyo: Now, please work with Sasaki on your swordsmanship. Our samurai are well known for their craft. 
+Train with Sasaki Kojiro 
+Time passes, Combat score +10 
+Player is free to explore the Stronghold until talking to Daimyo 
+Samurai in stronghold
+I can teach you this new move later. 
+I am glad to be serving under such a firm leader.
+I do miss going home, but I know I gave it up for a worthy cause.
+Sasaki: You have made much progress since we started. You are a promising up and coming Samurai.
+Daimyo: I have heard positive things about you, PLAYER , I have a request to make of you. 
+Daimyo tells you of news of upcoming peasant revolt 
+Daimyo: There are rumors of many peasants starting to plot and revolt against us. I need you to go to the Temple and speak with the leader to verify the validity of these claims. 
+Player: You can count on me. Or Of Course. 
+Daimyo: Thank you. Report back to me when it is finished. 
+The Daimyo orders you to investigate the claims in the forest 
+Travel to forest 
+Passersby: (Farmers or Ronin)
+Farmer: ... 
+Farmer: I do not speak with Samurai.
+Farmer: Down with the Daimyo!
+Ronin: You must be ready.
+Ronin: … Nothing nice to say, say nothing at all. 
+Ronin: We pledge our loyalty to what is right. I wish you could say the same. 
+Speak with Takuan Soho (leader of the temple)  
+Soho: Greetings to our fine Temple, servant of the Daimyo. How can I assist you?
+Player: What have you heard of the rebellion or Have there been any disturbances?
+What have you heard of the rebellion?
+Soho: I’m sorry, bringing such hostility to our Temple is no way to collect information. 
+Player: My apologies or I demand you answer as a servant to the Daimyo. 
+My apologies
+Soho: Thank you. I have heard many unhappy people walk through my doors in search of guidance and help. 
+Soho: It seems soon they will be taking matters into their own hands. 
+Soho: If you wish to know more, please speak with Shigenari, in the clearing. 
+(he does not come along)
+I demand you answer as a servant to the Daimyo. 
+Soho: I am under no obligation to serve to the Daimyo. 
+Soho: I must ask that you leave this Temple. You are causing a disturbance. 
+Soho: Speak with Shigenari in the clearing if you want more information. Good bye. 
+(he does not come along)
+Have there been any disturbances?
+Soho: Yes, there have been many unhappy patrons walking through these doors. 
+Soho: I believe several are looking for justice. 
+Player: Do you know what they want? Or Are there threats being made?
+Do you know what they want? 
+Soho: Unfortunately, I do not. 
+Soho: But - I do know who may know. 
+Soho: His name is Shigenari, he congregates in the clearing hear here. I can point him out if you’d like. 
+Player: Yes, please or No, I can find him. 
+Yes, please
+Soho: Then we best be off. 
+(Soho joins)
+No, I can find him. 
+Soho: Understood. Samurai honor and that. I wish you luck on your quest.
+Are there threats being made?
+Soho: There are always threats being made. These however, seem a little more concrete. 
+Soho: If you wish to find answers, please speak with Shigenari, he is a Ronin that resides in the clearing near here. I can introduce him if you’d like. 
+Player: Yes, please or No, I can find him. 
+Yes, please
+Soho: Then we best be off. 
+(Soho joins)
+No, I can find him. 
+Soho: Understood. Samurai honor and that. I wish you luck on your quest.
+He tells you to speak with Shigenari (he asks if you want him to come along) 
+Speak with Shigenari in the clearing
+If Soho if with you
+Shigenari: Who is there?
+Soho: A friend and a guest. 
+Shigenari: Soho, you know we are training and preparing, what do you need?
+Soho: This Samurai would like to talk to you. 
+Shigenari: I do not speak with Samurai. You will get what is coming soon enough. 
+Soho: is this violence really necessary?
+Shigenari: Ask them! They are the ones inflicting the pain against us. We must cleanse ourselves of them. 
+Player: We mean no harm or How have we wronged you?
+We mean no harm
+Shigenari: That is easy for you to say. You’re not the one struggling. 
+Shigenari: If Soho was not here, I would have dueled you. Now get out of my sight. Soho, do not bring Samurai around here again.
+Shigenari: I would sleep with one eye open tonight.
+How have we wronged you?
+Shigenari: Are you really that blind that you cannot see the pain in your own community? 
+Shigenari: Be gone. If Soho was not here, I would have dueled you. Now get out of my sight. Soho, do not bring Samurai around here again.
+Shigenari: I would sleep with one eye open tonight.
+If Soho not with you 
+Shigenari: Who is there? A samurai? 
+Shigenari: You are very brave to come into my territory by yourself. 
+Player: Who says I’m alone? Or I’m here to talk.
+Who says I’m alone? 
+Shigenari: Samurai do not travel this way in a group. You had to be led here by some one. Was it Soho? I will have a word with him. 
+Shigenari: What do you want? 
+Player: I’m here to talk or You need to stop this. 
+I’m here to talk
+Shigenari: The time for talk is over. The Daimyo has had many chances to speak with and listen to the peasants. He has not. 
+Shigenari: Now he sends a newly appointed samurai to do his bidding? How cowardice. 
+Shigenari: Let’s see what this new samurai can do against the Ronin protecting the people. 
+Shigenari: Come at me! 
+Player: Duel or Decline
+Duel
+If combat score > Shigenari
+Shigenari: I concede. The rebellion will go on even if I cannot. Mark my words.
+If combat score < Shigenari (you lose arm)
+Shigenari: Let that be a lesson, we are here for our voices to be heard. Go back to your Daimyo and tell him to prepare for more than that. 
+Decline
+Shigenari: A coward? Fine. So be it for now, but we will have a duel. You better be ready. 
+Shigenari: Go back to your Daimyo and tell him we mean business. The peasants will rise!
+You need to stop this
+Shigenari: I will not rest until our people can be heard. They have been pushed down and ignored for too long.
+Shigenari: You and the Daimyo and my brother all in the Stronghold feasting while we starve. It has gone on too long. 
+Shigenari: There is no point in holding back, duel me like the samurai you are. 
+Player: Duel or Decline
+Duel
+If combat score > Shigenari
+Shigenari: I concede. The rebellion will go on even if I cannot. Mark my words.
+If combat score < Shigenari (you lose arm)
+Shigenari: Let that be a lesson, we are here for our voices to be heard. Go back to your Daimyo and tell him to prepare for more than that. 
+Decline
+Shigenari: A coward? Fine. So be it for now, but we will have a duel. You better be ready. 
+Shigenari: Go back to your Daimyo and tell him we mean business. The peasants will rise!
+I’m here to talk.
+Shigenari: The time for talk is over. The Daimyo has had many chances to speak with and listen to the peasants. He has not. 
+Shigenari: Now he sends a newly appointed samurai to do his bidding? How cowardice. 
+Shigenari: Let’s see what this new samurai can do against the Ronin protecting the people. 
+Shigenari: Come at me! 
+Player: Duel or Decline
+Duel
+If combat score > Shigenari
+Shigenari: I concede. The rebellion will go on even if I cannot. Mark my words.
+If combat score < Shigenari (you lose arm)
+Shigenari: Let that be a lesson, we are here for our voices to be heard. Go back to your Daimyo and tell him to prepare for more than that. 
+Decline
+Shigenari: A coward? Fine. So be it for now, but we will have a duel. You better be ready. 
+Shigenari: Go back to your Daimyo and tell him we mean business. The peasants will rise!
+Report to the Daimyo 
+Counsel War 
+Shigie sides with you 
+Daimyo chooses war 
+Daimyo sends troops to village 
+If Sake and cup 
+Drink with the Daimyo, learn of his suspicions 
+News comes the villagers have been subdued 
+Destroyed village 
+If bloody blade and bladeless tanto 
+Confront shigie about murder 
+Shigie is taken in custody 
+Peaceful village  
+Counsel peace 
+Sasaki sides with you 
+Daimyo chooses peace 
+Shigie goes to subdue the village anyway 
+If Sake bottle and cup 
+Drink with Daimyo, learn of his suspicions 
+News comes the villagers have been subdued 
+Destroyed village 
+Peaceful Village 
+Meet the Daimyo party at the village 
+The Daimyo lays a sakura blossom behind the murder mystery house 
+Musahsi remains at his location, shows respect for the Daimyo 
+Musashi hails Sasaki, tells him he looks forward to their upcoming duel 
+Sasaki responds 
+If player killed Shigenari, Sakichi says he’s going away since his whole family is gone 
+Else – Shigenari and Sakichi entreat the Daimyo ot be merciful with Shigie 
+Sasaki recites a poem, gives you sensei kimono 
+Free to walk village 
+Father tells you he’s proud of your service to the Daimyo 
+Sasaki Kojiro – moves plot along 
+Destroyed Village 
+Go with the Daimyo to the village  
+The Daimyo reviews the scene at the village, he comments to you about your father’s death 
+Musashi stands alone among many slain Mori samurai 
+Sasaki, outraged confronts Musashi 
+Musashi tells Sasaki they were bothering him, reminds them they have a duel coming up 
+Ignore Musashi 
+Duel Musashi 
+If two arms 
+Lose arm 
+If one arm 
+Die 
+The Daimyo sees the grief of the town, the bloodshed and realized his mistake 
+Shigie moves to kill the Daimyo and seize power 
+Save Daimyo 
+You stop Shigie  
+Shigie dies  
+The Daimyo commends your loyalty and wishes to make right your father’s death 
+Do nothing 
+Sasaki saves the Daimyo  
+You are scolded and told samurai require unwavering loyalty 
+You are free to walk the village 
+Sasaki Kojiro – moves plot along 
+Epilogue 
+Sasaki Kojiro will ask you to come with him as his witness to the duel 
+You travel with the Daimyo and Sasaki to the duel 
+Daimyo speaks of the political nature of the duel 
+Sasaki and Musashi exchange insults 
+Musashi and Sasaki fight, Musashi using the paddle.  
+Sasaki loses and dies.  
+Musashi flees on the boat leaving you behind  
+End 
