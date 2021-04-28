@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     public GameObject pickUpItemButton;
 
     public GameObject defaultClothing;
+    public Transform[] teleportList;
 
     void Start()
     {
@@ -107,6 +108,22 @@ public class PlayerController : MonoBehaviour
             Debug.Log(newGO != null);
             newGO.SetActive(true);
             newGO.transform.position = transform.position + Vector3.up * 2f;
+        }
+
+        //Remove for release
+        if(Input.GetKeyDown(KeyCode.Alpha1) && teleportList[0] != null)
+        {
+            transform.position = teleportList[0].position;
+        }
+        
+        if(Input.GetKeyDown(KeyCode.Alpha2) && teleportList[1] != null)
+        {
+            transform.position = teleportList[1].position;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha3) && teleportList[2] != null)
+        {
+            transform.position = teleportList[2].position;
         }
 
     }
@@ -445,14 +462,16 @@ public class PlayerController : MonoBehaviour
 
     public void EnforceDictionary()
     {
-        GameObject[] objArray = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
-        Debug.Log(objArray.Length);
+        //GameObject[] objArray = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
+        //Debug.Log(objArray.Length);
 
         foreach (KeyValuePair<string, bool> pair in GameDictionary.choiceDictionary)
         {
             if (pair.Value)
             {
-                foreach (GameObject obj in objArray)
+                GameObject obj = Resources.Load(pair.Key) as GameObject;
+
+                if(obj != null)
                 {
                     ItemClass thisItem = obj.GetComponent<ItemClass>();
 
@@ -463,6 +482,10 @@ public class PlayerController : MonoBehaviour
                         break;
                     }
                     else{Debug.Log("Broken item is" + obj.name);}
+                }
+                else
+                {
+                    Debug.Log(pair.Key + " Failed to load from resources");
                 }
             }
         }
