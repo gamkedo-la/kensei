@@ -7,7 +7,7 @@ public class GameDictionary : MonoBehaviour
     private static GameDictionary _instance;
     public static Dictionary<string, bool> choiceDictionary = new Dictionary<string, bool>();
 
-    private static List<string> dictionaryList;
+    public static List<string> dictionaryList;
     public static GameDictionary Instance 
     { 
         get { return _instance; }   
@@ -26,20 +26,20 @@ public class GameDictionary : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         Populate();
 
-        foreach(KeyValuePair<string,bool> pair in GameDictionary.choiceDictionary)
+        foreach(string key in dictionaryList)
         {
-            if(PlayerPrefs.HasKey(pair.Key))
+            if(PlayerPrefs.HasKey(key))
             {
                 int switchInt;
-                switchInt = PlayerPrefs.GetInt(pair.Key);
+                switchInt = PlayerPrefs.GetInt(key);
                 switch(switchInt)
                 {
                     case 0:
-                        GameDictionary.Instance.UpdateEntry(pair.Key,false);
+                        GameDictionary.Instance.UpdateEntry(key,false);
                         break;
 
                     case 1:
-                        GameDictionary.Instance.UpdateEntry(pair.Key,true);
+                        GameDictionary.Instance.UpdateEntry(key,true);
                         break;
                 }
             }
