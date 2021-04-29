@@ -2388,6 +2388,10 @@ MonoBehaviour:
   ancientChokuto: {fileID: 1026234817531033449}
   pickUpItemButton: {fileID: 8068239843037907904}
   defaultClothing: {fileID: 0}
+  teleportList: []
+  movementLocked: 0
+  bloodedTanto: {fileID: 5993816356027387797, guid: f4ca504556a585f41bded64e769f1964,
+    type: 3}
 --- !u!95 &8068239843639634201
 Animator:
   serializedVersion: 3

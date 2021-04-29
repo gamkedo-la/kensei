@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     public GameObject defaultClothing;
     public Transform[] teleportList;
     public bool movementLocked;
+    public GameObject bloodedTanto;
 
     void Start()
     {
@@ -128,6 +129,16 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha3) && teleportList[2] != null)
         {
             transform.position = teleportList[2].position;
+        }
+
+        if(GameDictionary.choiceDictionary["Bloody Tanto Blade"] && GameDictionary.choiceDictionary["Bladeless Tanto"])
+        {
+            GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", false);
+            GameDictionary.Instance.UpdateEntry("Bladeless Tanto", false);
+            GameDictionary.Instance.UpdateEntry("Blooded Tanto", false);
+            bigItem = null;
+            smallItem = null;
+            AddItem(bloodedTanto);
         }
 
     }
