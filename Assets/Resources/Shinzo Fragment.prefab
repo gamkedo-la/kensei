@@ -100,7 +100,8 @@ MonoBehaviour:
   itemSlot: 2
   combatPoints: -5
   itemSprite: {fileID: 21300000, guid: b0e0e16660e05d94b906414a1b6c2bd3, type: 3}
-  itemDescription: 
+  itemDescription: A piece of a Shinzo statue, defiled by mischievous Yokai. Such
+    things are avoided by reasonable people.
 --- !u!114 &3648238305195074861
 MonoBehaviour:
   m_ObjectHideFlags: 0

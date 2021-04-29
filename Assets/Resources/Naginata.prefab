@@ -116,6 +116,9 @@ MonoBehaviour:
   itemSlot: 0
   combatPoints: 10
   itemSprite: {fileID: 21300000, guid: 5580402ec1eb1e24fa1f7316cefde82b, type: 3}
+  itemDescription: This Naginata once belonged to a Sohei of little renown, their
+    name lost to time. It has been kept pristine, should the need ever arise it be
+    used again.
 --- !u!114 &1296241537157771551
 MonoBehaviour:
   m_ObjectHideFlags: 0

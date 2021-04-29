@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3430644606490954493}
   - component: {fileID: 3430644606490954494}
   m_Layer: 0
-  m_Name: Bloody Tanto Blade 1
+  m_Name: Bloody Tanto Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,5 +130,6 @@ MonoBehaviour:
   itemSlot: 3
   combatPoints: 1
   itemSprite: {fileID: 21300000, guid: 0392e265f39690c4bbf5a3f2ab2b5448, type: 3}
-  itemDescription: 'A blade found on the recent murder victim, its handle was wrenched
-    off when the blade got stuck. '
+  itemDescription: "Found in a freshly dug grave, the bloody blade tells a tale of
+    murder. The victim was once a beautiful woman known to frequent the Daimyo\u2019s
+    court. Strangely, the handle is missing."

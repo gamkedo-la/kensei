@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7307422971288131831}
   - component: {fileID: 7307422971288131830}
   m_Layer: 0
-  m_Name: OnigawaraFragment
+  m_Name: Onigawara Fragment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +116,8 @@ MonoBehaviour:
   itemSlot: 2
   combatPoints: 0
   itemSprite: {fileID: 21300000, guid: 93837c83539db9c4ebf01babdf5723be, type: 3}
-  itemDescription: 
+  itemDescription: A fragment of a broken Onigawara, what spirit it represents is
+    muddled by the damage to it.
 --- !u!114 &7307422971288131830
 MonoBehaviour:
   m_ObjectHideFlags: 0

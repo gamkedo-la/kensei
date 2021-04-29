@@ -100,6 +100,8 @@ MonoBehaviour:
   itemSlot: 3
   combatPoints: 0
   itemSprite: {fileID: 21300000, guid: 1f8e63858881d76429959d959050e2cc, type: 3}
+  itemDescription: One of the many things that time has forgotten, this key itself
+    may no longer remember what it once opened. Found behind your house in the village.
 --- !u!114 &1187690138298770793
 MonoBehaviour:
   m_ObjectHideFlags: 0

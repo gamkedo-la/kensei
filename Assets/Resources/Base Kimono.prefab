@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 3088640529063317327, guid: 2cbf5de4faff4da47b812ca66131ff09,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3088640529063317327, guid: 2cbf5de4faff4da47b812ca66131ff09,
         type: 3}
@@ -42,6 +42,11 @@ PrefabInstance:
         type: 3}
       propertyPath: combatPoints
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3088640529063317362, guid: 2cbf5de4faff4da47b812ca66131ff09,
+        type: 3}
+      propertyPath: itemDescription
+      value: 'A simple and unnotable Kimono, though not without its worth. '
       objectReference: {fileID: 0}
     - target: {fileID: 3088640529063317363, guid: 2cbf5de4faff4da47b812ca66131ff09,
         type: 3}

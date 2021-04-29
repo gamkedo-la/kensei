@@ -106,7 +106,8 @@ MonoBehaviour:
   itemSlot: 0
   combatPoints: 5
   itemSprite: {fileID: 21300000, guid: 184590017de595b45ad71eb0f90c3425, type: 3}
-  itemDescription: 
+  itemDescription: A well made if not simple Katana. A single stroke can cut through
+    flesh and bone, certainly not a toy.
 --- !u!58 &3502521069607441012
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -116,7 +116,9 @@ MonoBehaviour:
   itemSlot: 3
   combatPoints: 1
   itemSprite: {fileID: 21300000, guid: 7a2b1252676a8e64a9ac812bbdcc47fd, type: 3}
-  itemDescription: 
+  itemDescription: "Figures of terracotta buried with the dead centuries ago, this
+    one is cracked, it\u2019s legs missing to time. The face of its master looks
+    ever outward, calm and unwavering--yet it seems to belong elsewhere. "
 --- !u!114 &7200798748947846089
 MonoBehaviour:
   m_ObjectHideFlags: 0

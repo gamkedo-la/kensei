@@ -116,7 +116,9 @@ MonoBehaviour:
   itemSlot: 0
   combatPoints: 5
   itemSprite: {fileID: 21300000, guid: f6f53b1cdb2090d4da7d2aa6d0bcf18e, type: 3}
-  itemDescription: 
+  itemDescription: "A dull katana, leaning against a tree, a scrap of cloth tied
+    to the hilt, fluttering in the wind. It\u2019s master gave it up long ago. Despite
+    its lack of cutting power, it makes a decent club."
 --- !u!114 &4064578634948757907
 MonoBehaviour:
   m_ObjectHideFlags: 0

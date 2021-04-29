@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5164654544412803344}
   - component: {fileID: 5164654544412803347}
   m_Layer: 0
-  m_Name: Worn Kimono
+  m_Name: Mysterious Clothing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,8 @@ MonoBehaviour:
   itemSlot: 1
   combatPoints: 10
   itemSprite: {fileID: 21300000, guid: d8d96dec157d957428d74804e091a5ce, type: 3}
-  itemDescription: 
+  itemDescription: A garment worn from many years of warfare. Its master must wear
+    a different kind of cloth these days. Found in the forest with the dull katana.
 --- !u!114 &5164654544412803344
 MonoBehaviour:
   m_ObjectHideFlags: 0

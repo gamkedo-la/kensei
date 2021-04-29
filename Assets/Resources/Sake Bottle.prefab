@@ -100,8 +100,8 @@ MonoBehaviour:
   itemSlot: 2
   combatPoints: 0
   itemSprite: {fileID: 21300000, guid: 351af5f82f336cb4bbe6952de2293c75, type: 3}
-  itemDescription: Fine sake gifted to you by your Father. Sake is best enjoyed with
-    someone else.
+  itemDescription: This bottle of sake is a fine variety. Sake has a way of easing
+    tensions and opening up conversation. Brings temporary comfort to those who regret.
 --- !u!114 &4645662058315942672
 MonoBehaviour:
   m_ObjectHideFlags: 0

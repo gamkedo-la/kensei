@@ -100,7 +100,8 @@ MonoBehaviour:
   itemSlot: 0
   combatPoints: 8
   itemSprite: {fileID: 21300000, guid: 8d4fc4c5973cbd24da1cdd56b758569c, type: 3}
-  itemDescription: 
+  itemDescription: An ancient sword, this Chokuto was buried with its unwavering
+    master. It has, miraculously, been kept sharp the many centuries it lay here.
 --- !u!114 &4217348627255326038
 MonoBehaviour:
   m_ObjectHideFlags: 0

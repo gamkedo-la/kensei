@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7858003664920300006}
   - component: {fileID: 7858003664920300007}
   m_Layer: 0
-  m_Name: FarmersClothes Item Sprite
+  m_Name: Farmers Clothes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
   itemSlot: 1
   combatPoints: 2
   itemSprite: {fileID: 21300000, guid: 3c71b20aebaa565428b6e63c1e12d1e2, type: 3}
-  itemDescription: Clothing typical to a farmer of these parts, affords significant
-    protection against the sun.
+  itemDescription: The humble clothes of a farmer. Simple and utilitarian, they are
+    comfortable. They afford almost no protection.
 --- !u!114 &7858003664920300006
 MonoBehaviour:
   m_ObjectHideFlags: 0
