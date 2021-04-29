@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject defaultClothing;
     public Transform[] teleportList;
+    public bool movementLocked;
 
     void Start()
     {
@@ -54,8 +55,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //input
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        if(!movementLocked)
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+        }
 
         if (Input.GetKeyUp("w") && movement.magnitude == 0)
         {
@@ -100,7 +104,7 @@ public class PlayerController : MonoBehaviour
             pickUpItemButton.SetActive(true);
         }
         else { pickUpItemButton.SetActive(false); }
-
+        /*
         if (Input.GetKeyDown(KeyCode.G))
         {
             Debug.Log("Input");
@@ -109,13 +113,13 @@ public class PlayerController : MonoBehaviour
             newGO.SetActive(true);
             newGO.transform.position = transform.position + Vector3.up * 2f;
         }
-
+        */
         //Remove for release
         if(Input.GetKeyDown(KeyCode.Alpha1) && teleportList[0] != null)
         {
             transform.position = teleportList[0].position;
         }
-        
+
         if(Input.GetKeyDown(KeyCode.Alpha2) && teleportList[1] != null)
         {
             transform.position = teleportList[1].position;

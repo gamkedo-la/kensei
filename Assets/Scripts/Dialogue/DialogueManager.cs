@@ -30,6 +30,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        FindObjectsOfType<PlayerController>()[0].movementLocked = true;
+
         sentences.Clear();
         panel.SetActive(true);
         button.SetActive(false);
@@ -59,6 +61,7 @@ public class DialogueManager : MonoBehaviour
     {
         panel.SetActive(false);
         trigger.dialogueEnd = true;
+        FindObjectsOfType<PlayerController>()[0].movementLocked = false;
     }
 
 }
