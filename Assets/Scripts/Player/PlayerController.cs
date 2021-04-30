@@ -240,6 +240,7 @@ public class PlayerController : MonoBehaviour
                     currentWeaponModel = ancientChokuto;
                     weaponSortType = 0;
                 }
+                
                 if (GameDictionary.choiceDictionary["Old Tachi"])
                 {
                     oldTachi.SetActive(true);
