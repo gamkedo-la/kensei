@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     public GameObject naginata;
     public GameObject dullKatana;
     public GameObject ancientChokuto;
+    public GameObject oldTachi;
     GameObject currentWeaponModel;
     int weaponSortType;
     public GameObject pickUpItemButton;
@@ -238,6 +239,12 @@ public class PlayerController : MonoBehaviour
                     ancientChokuto.SetActive(true);
                     currentWeaponModel = ancientChokuto;
                     weaponSortType = 0;
+                }
+                if (GameDictionary.choiceDictionary["Old Tachi"])
+                {
+                    oldTachi.SetActive(true);
+                    currentWeaponModel = oldTachi;
+                    weaponSortType = 1;
                 }
             }
 
