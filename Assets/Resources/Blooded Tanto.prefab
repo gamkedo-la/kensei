@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Blooded Tanto
-  itemSlot: 2
+  itemSlot: 3
   combatPoints: 4
   itemSprite: {fileID: 21300000, guid: 903cfd8b64a82364cbe9be83d4de7bf4, type: 3}
   itemDescription: 
