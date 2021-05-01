@@ -53647,6 +53647,7 @@ GameObject:
   - component: {fileID: 1286575782}
   - component: {fileID: 1286575781}
   - component: {fileID: 1286575780}
+  - component: {fileID: 1286575783}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -53692,6 +53693,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1286575783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286575779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500ba6817dcc17d43bf06500fb4eef04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorImage: {fileID: 2800000, guid: 7cc619671e734d645ab7a33ab292ce99, type: 3}
 --- !u!1 &1289633435
 GameObject:
   m_ObjectHideFlags: 0
