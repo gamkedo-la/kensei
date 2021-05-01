@@ -53705,7 +53705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 500ba6817dcc17d43bf06500fb4eef04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorImage: {fileID: 2800000, guid: 7cc619671e734d645ab7a33ab292ce99, type: 3}
+  cursorImage: {fileID: 2800000, guid: bed7c6dea81ebc04e920931ba9358f89, type: 3}
 --- !u!1 &1289633435
 GameObject:
   m_ObjectHideFlags: 0
