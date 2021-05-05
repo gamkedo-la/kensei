@@ -74,5 +74,6 @@ public static class LoadFile
         Debug.Log("enforcing");
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
         player.GetComponent<PlayerController>().EnforceDictionary();
+        
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -106,6 +107,12 @@ public class PlayerController : MonoBehaviour
             pickUpItemButton.SetActive(true);
         }
         else { pickUpItemButton.SetActive(false); }
+
+        if(Input.GetKeyDown(KeyCode.Alpha9))
+        {
+           // SaveFile.SaveGame();
+        }
+
         /*
         if (Input.GetKeyDown(KeyCode.G))
         {
@@ -342,6 +349,8 @@ public class PlayerController : MonoBehaviour
 
     public void DropItem(ItemClass.Slot slot)
     {
+        
+
         if (slot == ItemClass.Slot.Weapon)
         {
             if (weapon != null)

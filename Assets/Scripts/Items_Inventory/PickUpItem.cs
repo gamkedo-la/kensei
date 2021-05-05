@@ -11,6 +11,27 @@ private GameObject player;
 public GameObject item;
 
 
+    void Start()
+    {
+        ItemClass icScript = gameObject.GetComponent<ItemClass>();
+
+
+        if(icScript == null)
+        {
+            Debug.LogWarning(gameObject.name+ " did not have item class");
+        }
+        else if(GameDictionary.choiceDictionary.ContainsKey(icScript.itemName) == false)
+        {
+            Debug.LogWarning(icScript.itemName+ " did not match dictionary");
+        }
+        else if(GameDictionary.choiceDictionary[icScript.itemName])
+        {
+            Debug.Log(icScript.itemName + " has been picked up");
+            Debug.Log(GameDictionary.choiceDictionary[icScript.itemName]);
+            Destroy(gameObject);
+        }
+    }
+
     void OnTriggerEnter2D( Collider2D col )
     {
         if(col.CompareTag("Player"))
@@ -33,5 +54,6 @@ public GameObject item;
     public void OnPickUp()
     {
         item.SetActive(false);
+
     }
 }
