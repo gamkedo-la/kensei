@@ -16,6 +16,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
     public bool monkChoice;
     public bool decided;
     public bool alreadyMoved;
+    public bool followed;
     public GameObject screenEffect;
 
 
@@ -101,9 +102,10 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
             dialogueEnd = false;
         }
 
-        if(dialogueEnd && decided)
+        if(dialogueEnd && decided && !followed)
         {
             GetComponent<NPCFollowPlayerScript>().onSwitch = true;
+            followed = true;
         }
 
         if(sasakiDone)
@@ -142,6 +144,13 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[9];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
+
+            if(GameDictionary.choiceDictionary["Shigie Arrested"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[10];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
+
         }
     }
 

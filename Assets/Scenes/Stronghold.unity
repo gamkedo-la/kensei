@@ -339,7 +339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3572335
 PrefabInstance:
@@ -1679,7 +1679,7 @@ Transform:
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &134170144
 MonoBehaviour:
@@ -1972,7 +1972,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &149347339
 CircleCollider2D:
@@ -3045,7 +3045,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &227515811
 Animator:
@@ -3165,6 +3165,7 @@ MonoBehaviour:
   buttonB: {fileID: 871259934}
   buttonBText: 
   sasaki: {fileID: 8814317049793591061}
+  shigie: {fileID: 1692442874}
   offeredSakeChoice: 0
   accusedShigieChoice: 0
   choicesShown: 0
@@ -4410,6 +4411,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &315703877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2411251743385217293, guid: cdfe8a936f731b54aa0814846e2c7832,
+    type: 3}
+  m_PrefabInstance: {fileID: 1241069740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &315703880 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2207316818980463284, guid: cdfe8a936f731b54aa0814846e2c7832,
+    type: 3}
+  m_PrefabInstance: {fileID: 1241069740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &315703883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315703877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad2fb46ef0218f42806b8ab3b0c1482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 315703884}
+  collider: {fileID: 315703880}
+  button: {fileID: 1332023229}
+  panel: {fileID: 790871734}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 181314869}
+  buttonA: {fileID: 1359784851}
+  buttonAText: 
+  buttonB: {fileID: 871259934}
+  buttonBText: 
+--- !u!114 &315703884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315703877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - Sakichi Dialogue
 --- !u!1 &320551818
 GameObject:
   m_ObjectHideFlags: 0
@@ -7475,7 +7527,7 @@ Transform:
   - {fileID: 1819405874}
   - {fileID: 2135288787}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &563426252
 PrefabInstance:
@@ -7790,7 +7842,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &600533824
 BoxCollider2D:
@@ -8718,6 +8770,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 688053588}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &688611790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 688611792}
+  - component: {fileID: 688611791}
+  m_Layer: 0
+  m_Name: PlayerSpawnerThing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &688611791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688611790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c39cd5fb1d7a6349802450328b0237d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 709022792}
+  tunnel: {fileID: 1823389802}
+--- !u!4 &688611792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688611790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -453.10742, y: -153.68, z: -3432.5671}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &692649808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8874,6 +8971,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &709022792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8068239843639634180, guid: ec41ab8670d852d45a70769b8f7e3eed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1492584797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &712540712
 GameObject:
   m_ObjectHideFlags: 0
@@ -9541,7 +9644,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &759111742
 GameObject:
@@ -13706,7 +13809,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1062826206
 GameObject:
@@ -14123,7 +14226,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1082846913
 GameObject:
@@ -14701,6 +14804,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1123935865}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1136005742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -462.65198
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -119.88581
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 114.817245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954433, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_Name
+      value: Bloody Tanto Blade
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0553561c295b36f4cbbb26f814d97d2f, type: 3}
 --- !u!1 &1136803941
 GameObject:
   m_ObjectHideFlags: 0
@@ -14729,7 +14901,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1136836172
 GameObject:
@@ -14861,7 +15033,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1136836178
 Animator:
@@ -16404,7 +16576,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1241069740
 PrefabInstance:
@@ -16421,7 +16593,7 @@ PrefabInstance:
     - target: {fileID: 2411251743385217295, guid: cdfe8a936f731b54aa0814846e2c7832,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2411251743385217295, guid: cdfe8a936f731b54aa0814846e2c7832,
         type: 3}
@@ -17754,7 +17926,7 @@ PrefabInstance:
     - target: {fileID: 3740566487813743602, guid: 771c62b7bc5018d45900965b7901a38a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3740566487813743602, guid: 771c62b7bc5018d45900965b7901a38a,
         type: 3}
@@ -18267,7 +18439,7 @@ Transform:
   - {fileID: 1790558447}
   - {fileID: 1413602855}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1410270066
 PrefabInstance:
@@ -18983,7 +19155,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1456724503
 MonoBehaviour:
@@ -19924,7 +20096,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498110826
 GameObject:
@@ -20782,7 +20954,7 @@ Transform:
   - {fileID: 962917254}
   - {fileID: 320551819}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1591350549
 PrefabInstance:
@@ -22026,7 +22198,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1691820715
 GameObject:
@@ -22136,6 +22308,7 @@ GameObject:
   - component: {fileID: 1692442889}
   - component: {fileID: 1692442888}
   - component: {fileID: 1692442893}
+  - component: {fileID: 1692442894}
   m_Layer: 0
   m_Name: Ishida Shigie
   m_TagString: Shigie
@@ -22237,7 +22410,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1692442879
 Animator:
@@ -22362,6 +22535,7 @@ MonoBehaviour:
   - {fileID: 1692442889}
   - {fileID: 1692442888}
   - {fileID: 1692442893}
+  - {fileID: 1692442894}
   collider: {fileID: 1692442875}
   button: {fileID: 1332023229}
   panel: {fileID: 790871734}
@@ -22385,6 +22559,7 @@ MonoBehaviour:
   monkChoice: 0
   decided: 0
   alreadyMoved: 0
+  followed: 0
   screenEffect: {fileID: 1875978481}
 --- !u!114 &1692442886
 MonoBehaviour:
@@ -22513,6 +22688,21 @@ MonoBehaviour:
   name: Ishida Shigie
   sentences:
   - After training
+--- !u!114 &1692442894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692442874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigie
+  sentences:
+  - Arrested!
 --- !u!1001 &1704322021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22952,7 +23142,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1734957345
 MonoBehaviour:
@@ -23876,7 +24066,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1830178775
 PrefabInstance:
@@ -24417,7 +24607,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1875978481 stripped
 GameObject:
@@ -25130,7 +25320,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940705386
 GameObject:
@@ -25201,7 +25391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1944105296
 GameObject:
@@ -26477,7 +26667,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2123705143
 PrefabInstance:
@@ -40304,7 +40494,7 @@ Transform:
   m_Children:
   - {fileID: 3332715156680249909}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5993816357589931857
 PrefabInstance:
@@ -40392,7 +40582,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8814317049793591050
 Animator:

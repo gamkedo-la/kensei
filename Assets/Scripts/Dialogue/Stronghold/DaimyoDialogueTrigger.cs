@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DaimyoDialogueTrigger : DialogueTrigger
 {
     public GameObject sasaki;
+    public GameObject shigie;
     public bool offeredSakeChoice;
     public bool accusedShigieChoice;
     public bool choicesShown;
@@ -143,7 +144,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
                 shigieDialogue = true;
             }
 
-            if(dialogueEnd && choicesShown && shigieDialogue)
+            if(dialogueEnd && choicesShown && shigieDialogue && !exchangeOver)
             {
                 dialogueEnd = false;
 
@@ -170,8 +171,9 @@ public class DaimyoDialogueTrigger : DialogueTrigger
                 exchangeOver = true;
             }
 
-            if(exchangeOver)
+            if(dialogueEnd && exchangeOver)
             {
+                dialogueEnd = false;
                 //load the next scene
                 //SceneLoader.Load()
             }
@@ -183,6 +185,8 @@ public class DaimyoDialogueTrigger : DialogueTrigger
         {
             inRange = true;
             button.SetActive(true);
+            shigie.GetComponent<NPCFollowPlayerScript>().onSwitch = false;
+            shigie.GetComponent<NPCFollowPlayerScript>().StopMotion();
 
             if (GameDictionary.choiceDictionary["Samurai Path"] && !GameDictionary.choiceDictionary["Left Stronghold"])
             {
@@ -268,6 +272,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
             button.GetComponent<DialogueRun>().trigger = this;
             button.GetComponent<DialogueRun>().TriggerDialogue();
+            GameDictionary.Instance.UpdateEntry("Shigie Arrested",true);
         }
 
         else
@@ -276,6 +281,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             button.GetComponent<DialogueRun>().trigger = this;
             button.GetComponent<DialogueRun>().TriggerDialogue();
         }
+        choicesShown = true;
     }
 
     public override void ButtonB()
@@ -285,6 +291,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
         button.GetComponent<DialogueRun>().dialogue = Dialogues[7];
         button.GetComponent<DialogueRun>().trigger = this;
         button.GetComponent<DialogueRun>().TriggerDialogue();
+        choicesShown = true;
     }
 
 
