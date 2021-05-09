@@ -25,7 +25,7 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
 
     void Update()
     {
-        if(GameDictionary.choiceDictionary["Monk Path"] || GameDictionary.choiceDictionary["Ronin Path"])
+        if (GameDictionary.choiceDictionary["Monk Path"] || GameDictionary.choiceDictionary["Ronin Path"])
         {
             this.gameObject.SetActive(false);
         }
@@ -80,7 +80,12 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
                 button.GetComponent<DialogueRun>().trigger = this;
                 spokeToDaimyo = true;
-
+            }
+            if (GameDictionary.choiceDictionary["Trained as Samurai"])
+            {
+                //pick which Dialogue to run
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                button.GetComponent<DialogueRun>().trigger = this;
             }
         }
     }
@@ -89,15 +94,15 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
     {
         if (collider.CompareTag("Player"))
         {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
         }
     }
 

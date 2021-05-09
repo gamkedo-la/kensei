@@ -132,6 +132,12 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
+
+            if (GameDictionary.choiceDictionary["Trained as Samurai"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[9];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
         }
     }
 
