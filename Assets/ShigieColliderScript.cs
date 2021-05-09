@@ -11,8 +11,18 @@ public GameObject shigie;
         if(collider.CompareTag("Player"))
         {
             collider.GetComponent<PlayerController>().movementLocked = true;
-            shigie.GetComponent<SimpleMovementScript>().targetPosition = this.gameObject;
-            shigie.GetComponent<SimpleMovementScript>().onSwitch = true;
+            shigie.GetComponent<ShigieMovementScript>().targetPosition = this.gameObject;
+            shigie.GetComponent<ShigieMovementScript>().onSwitch = true;
+
+                if(!GameDictionary.choiceDictionary["Monk Path"] && !GameDictionary.choiceDictionary["Ronin Path"])
+                {
+                    GameDictionary.Instance.UpdateEntry("Samurai Path", true);
+                }
+        }
+    
+        if(collider.CompareTag("Shigie"))
+        {
+            collider.GetComponent<IshidaShigieDialogueTrigger>().reachedEntrance = true;
         }
     }
 

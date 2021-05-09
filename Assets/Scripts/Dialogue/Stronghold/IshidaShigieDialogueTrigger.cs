@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class IshidaShigieDialogueTrigger : DialogueTrigger
 {
     public GameObject player;
+    public GameObject sasaki;
+    public GameObject[] targetlocations;
+    public bool reachedEntrance;
+    public bool sasakiDone;
 
 
     public override void Start()
@@ -14,12 +18,63 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
+
+        if(GameDictionary.choiceDictionary["Left Stronghold"])
+        {
+            this.gameObject.SetActive(false);
+        }
         
     }
 
     void Update()
     {
         //check for conditions for different dialogue options
+        if(reachedEntrance)
+        {
+            if(GameDictionary.choiceDictionary["Samurai Path"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
+            }
+
+            if(GameDictionary.choiceDictionary["Ronin Path"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
+            }
+
+            if(GameDictionary.choiceDictionary["Monk Path"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
+            }
+            reachedEntrance = false;
+        }
+
+        if(dialogueEnd)
+        {
+            if(GameDictionary.choiceDictionary["Samurai Path"])
+            {
+                sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
+                sasaki.GetComponent<SasakiKojiroDialogueTrigger2>().shigieDone = true;
+            }
+            dialogueEnd = false;
+        }
+
+        if(sasakiDone)
+        {
+            // go to location
+            GetComponent<ShigieMovementScript>().targetPosition = targetlocations[0];
+            GetComponent<ShigieMovementScript>().onSwitch = true;
+
+            if(GetComponent<ShigieMovementScript>().onSwitch == false)
+            {
+                
+            }
+        }
 
     }
 
@@ -31,9 +86,10 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
             button.SetActive(true);
             player = collider.gameObject;
 
-            if (!GameDictionary.choiceDictionary["Path Chosen"])
+            if (GameDictionary.choiceDictionary["Passed Shigie"])
             {
-
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
+                button.GetComponent<DialogueRun>().trigger = this;
             }
         }
     }
@@ -41,6 +97,8 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
     public override void OnTriggerExit2D(Collider2D collider)
     {
 
+        if (collider.CompareTag("Player"))
+        {
             inRange = false;
             button.SetActive(false);
             button.GetComponent<DialogueRun>().dialogue = null;
@@ -50,6 +108,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
             buttonA.SetActive(false);
             buttonB.SetActive(false);
             combatScore.SetActive(false);
+        }
 
     }
 

@@ -11,6 +11,7 @@ TagManager:
   - Paddle
   - ItemPickUpButton
   - GameManager
+  - Shigie
   layers:
   - Default
   - TransparentFX

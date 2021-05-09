@@ -60,6 +60,7 @@ public SceneLoader.Scene scene;
         //load in daimyo stronghold
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
+        GameDictionary.Instance.UpdateEntry("Used Hidden Tunnel", true);
         SaveFile.SaveGame(scene);
         SceneLoader.Load(scene.ToString());
     }
