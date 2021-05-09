@@ -53,8 +53,8 @@ public class PlayerController : MonoBehaviour
         //ChooseAnimator();
         //AddItem(defaultClothing);
         LoadFile.LoadGame();
-        GameDictionary.Instance.UpdateEntry("Monk Path", true);
-        GameDictionary.Instance.UpdateEntry("Monk Entry", true);
+        //GameDictionary.Instance.UpdateEntry("Monk Path", true);
+        //GameDictionary.Instance.UpdateEntry("Monk Entry", true);
     }
 
     void Update()

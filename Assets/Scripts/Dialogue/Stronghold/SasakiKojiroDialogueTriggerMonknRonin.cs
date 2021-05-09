@@ -13,15 +13,15 @@ public class SasakiKojiroDialogueTriggerMonknRonin : DialogueTrigger
         buttonB.SetActive(false);
         combatScore.SetActive(false);
 
-        if (GameDictionary.choiceDictionary["Samurai Path"])
-        {
-            this.gameObject.SetActive(false);
-        }
     }
 
     void Update()
     {
         //check for conditions for different dialogue options
+        if (GameDictionary.choiceDictionary["Samurai Path"])
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)

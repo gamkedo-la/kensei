@@ -147,7 +147,13 @@ public class NPCFollowPlayerScript : MonoBehaviour
             reached = true;
         }
     }
-
-   
+    public void StopMotion()
+    {
+        if (animator) 
+        {
+            animator.SetInteger("Direction", 0);
+            animator.SetFloat("Speed", 0f);
+        }
+    }
   
 }

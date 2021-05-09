@@ -45,4 +45,10 @@ public class SimpleMovementScript : MonoBehaviour
         }
 
     }
+
+    void StopMotion()
+    {
+        animator.SetFloat("Speed", 0f);
+        if (animator) animator.SetInteger("Direction", 0);
+    }
 }

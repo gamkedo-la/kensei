@@ -8,7 +8,11 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
     public GameObject player;
     public GameObject shigie;
     public GameObject triggerCollider;
+    public GameObject timePasses;
     public bool shigieDone;
+    public bool timePassed;
+    public bool interrupted;
+    public bool spokeToDaimyo;
 
     public override void Start()
     {
@@ -26,7 +30,7 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
             this.gameObject.SetActive(false);
         }
 
-        if (shigieDone)
+        if (shigieDone && !GameDictionary.choiceDictionary["Daimyo Service"] && !interrupted)
         {
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
             button.GetComponent<DialogueRun>().trigger = this;
@@ -50,6 +54,16 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
             buttonB.SetActive(false);
             combatScore.SetActive(false);
             triggerCollider.SetActive(false);
+            GetComponent<SimpleMovementScript>().onSwitch = false;
+            interrupted = true;
+        }
+
+        if (dialogueEnd && spokeToDaimyo && !timePassed)
+        {
+            dialogueEnd = false;
+            GameDictionary.Instance.UpdateEntry("Trained as Samurai", true);
+            StartCoroutine(WaitForTime());
+            timePassed = true;
         }
     }
 
@@ -65,6 +79,8 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
                 //pick which Dialogue to run
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
                 button.GetComponent<DialogueRun>().trigger = this;
+                spokeToDaimyo = true;
+
             }
         }
     }
@@ -103,5 +119,10 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
 
     }
 
-
+    private IEnumerator WaitForTime()
+    {
+        timePasses.SetActive(true);
+        yield return new WaitForSeconds(2);
+        timePasses.SetActive(false);
+    }
 }

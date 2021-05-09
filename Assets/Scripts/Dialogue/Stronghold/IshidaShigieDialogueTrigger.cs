@@ -15,6 +15,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
     public bool beggarChoice;
     public bool monkChoice;
     public bool decided;
+    public bool alreadyMoved;
     public GameObject screenEffect;
 
 
@@ -69,10 +70,11 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
 
         if(dialogueEnd && !decided)
         {
-            if(GameDictionary.choiceDictionary["Samurai Path"])
+            if(GameDictionary.choiceDictionary["Samurai Path"] && !alreadyMoved)
             {
                 sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
                 sasaki.GetComponent<SasakiKojiroDialogueTriggerSamurai>().shigieDone = true;
+                alreadyMoved = true;
             }
 
             if(GameDictionary.choiceDictionary["Duel Entry"])
@@ -234,6 +236,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
 
     private IEnumerator WaitForTime()
     {
+
         yield return new WaitForSeconds(2);
     }
 
