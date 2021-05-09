@@ -72,7 +72,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
             if(GameDictionary.choiceDictionary["Samurai Path"])
             {
                 sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
-                sasaki.GetComponent<SasakiKojiroDialogueTrigger2>().shigieDone = true;
+                sasaki.GetComponent<SasakiKojiroDialogueTriggerSamurai>().shigieDone = true;
             }
 
             if(GameDictionary.choiceDictionary["Duel Entry"])
@@ -97,7 +97,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
 
         if(dialogueEnd && decided)
         {
-
+            GetComponent<NPCFollowPlayerScript>().onSwitch = true;
         }
 
         if(sasakiDone)
