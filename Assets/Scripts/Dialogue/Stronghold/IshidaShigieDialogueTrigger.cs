@@ -30,6 +30,10 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
         {
             this.gameObject.SetActive(false);
         }
+        if(GameDictionary.choiceDictionary["Used Hidden Tunnel"])
+        {
+            this.gameObject.SetActive(false);
+        }
         
     }
 
