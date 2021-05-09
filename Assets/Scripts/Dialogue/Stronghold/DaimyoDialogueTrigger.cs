@@ -7,6 +7,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
 {
     public GameObject sasaki;
     public GameObject shigie;
+    public GameObject leaveStrongholdBlocker;
     public bool offeredSakeChoice;
     public bool accusedShigieChoice;
     public bool choicesShown;
@@ -220,6 +221,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
                 //pick which Dialogue to run
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
                 button.GetComponent<DialogueRun>().trigger = this;
+                leaveStrongholdBlocker.SetActive(false);
             }
 
             if(GameDictionary.choiceDictionary["Left Stronghold"])
