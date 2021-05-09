@@ -10,6 +10,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
     public GameObject[] targetlocations;
     public bool reachedEntrance;
     public bool sasakiDone;
+    public bool point1;
 
 
     public override void Start()
@@ -69,11 +70,14 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
             // go to location
             GetComponent<ShigieMovementScript>().targetPosition = targetlocations[0];
             GetComponent<ShigieMovementScript>().onSwitch = true;
-
-            if(GetComponent<ShigieMovementScript>().onSwitch == false)
-            {
-                
-            }
+            sasakiDone = false;
+            point1 = true;
+        }
+        if(point1 && !GetComponent<ShigieMovementScript>().onSwitch)
+        {
+            GetComponent<ShigieMovementScript>().targetPosition = targetlocations[1];
+            GetComponent<ShigieMovementScript>().onSwitch = true;
+            point1 = false;
         }
 
     }

@@ -34,7 +34,6 @@ public class ShigieMovementScript : MonoBehaviour
                 rb.MovePosition(rb.position+targetVector*speed*Time.fixedDeltaTime);
                 if(animator) animator.SetFloat("Speed", targetVector.magnitude * speed * Time.fixedDeltaTime);
             }
-
             else 
             {
                 animator.SetFloat("Speed", 0f);
