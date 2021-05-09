@@ -155,8 +155,12 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         //movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        animator.SetFloat("Speed", movement.magnitude * moveSpeed * Time.fixedDeltaTime);
+        if(!movementLocked)
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            animator.SetFloat("Speed", movement.magnitude * moveSpeed * Time.fixedDeltaTime);
+        }
+        else{ animator.SetFloat("Speed", 0);}
 
     }
 
