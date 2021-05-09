@@ -16,6 +16,11 @@ public class SasakiKojiroDialogueTrigger2 : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
+
+        if(GameDictionary.choiceDictionary["Monk Path"] || GameDictionary.choiceDictionary["Ronin Path"])
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     void Update()

@@ -11,6 +11,11 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
     public bool reachedEntrance;
     public bool sasakiDone;
     public bool point1;
+    public bool duelChoice;
+    public bool beggarChoice;
+    public bool monkChoice;
+    public bool decided;
+    public GameObject screenEffect;
 
 
     public override void Start()
@@ -39,30 +44,60 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
                 button.GetComponent<DialogueRun>().TriggerDialogue();
             }
 
-            if(GameDictionary.choiceDictionary["Ronin Path"])
+            if(GameDictionary.choiceDictionary["Duel Entry"])
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
                 button.GetComponent<DialogueRun>().trigger = this;
                 button.GetComponent<DialogueRun>().TriggerDialogue();
             }
 
-            if(GameDictionary.choiceDictionary["Monk Path"])
+            if(GameDictionary.choiceDictionary["Beggar Entry"])
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
+            }
+
+            if(GameDictionary.choiceDictionary["Monk Entry"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
                 button.GetComponent<DialogueRun>().trigger = this;
                 button.GetComponent<DialogueRun>().TriggerDialogue();
             }
             reachedEntrance = false;
         }
 
-        if(dialogueEnd)
+        if(dialogueEnd && !decided)
         {
             if(GameDictionary.choiceDictionary["Samurai Path"])
             {
                 sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
                 sasaki.GetComponent<SasakiKojiroDialogueTrigger2>().shigieDone = true;
             }
+
+            if(GameDictionary.choiceDictionary["Duel Entry"])
+            {
+                duelChoice = true;
+                DecisionDisplay("Duel Ishida Shigie", "Intimidate Ishida Shigie");
+            }
+
+            if(GameDictionary.choiceDictionary["Beggar Entry"])
+            {
+                beggarChoice = true;
+                DecisionDisplay("I have a message", "I bring a warning");
+            }
+
+            if(GameDictionary.choiceDictionary["Monk Entry"])
+            {
+                monkChoice = true;
+                DecisionDisplay("I have a message", "I bring a warning");
+            }
             dialogueEnd = false;
+        }
+
+        if(dialogueEnd && decided)
+        {
+
         }
 
         if(sasakiDone)
@@ -92,7 +127,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
 
             if (GameDictionary.choiceDictionary["Passed Shigie"])
             {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
         }
@@ -126,12 +161,75 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
 
     public override void ButtonA()
     {
-        
+        if(duelChoice)
+        {
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+            screenEffect.SetActive(true);
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
+            button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            decided = true;
+        }
+
+        if(beggarChoice)
+        {
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
+            button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            decided = true;
+        }
+
+        if(monkChoice)
+        {
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[7];
+            button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            decided = true;
+        }
     }
 
     public override void ButtonB()
     {
+        if(duelChoice)
+        {
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[8];
+            button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            decided = true;
+        }
 
+        if(beggarChoice)
+        {
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
+            button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            decided = true;
+        }
+
+        if(monkChoice)
+        {
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[7];
+            button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            decided = true;
+        }
     }
 
     private IEnumerator WaitForTime()

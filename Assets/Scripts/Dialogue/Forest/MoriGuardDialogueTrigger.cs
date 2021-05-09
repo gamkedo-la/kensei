@@ -35,12 +35,14 @@ public class MoriGuardDialogueTrigger : DialogueTrigger
         if (dialogueEnd && beggarDialogue)
         {
             doorCollider.SetActive(true);
+            GameDictionary.Instance.UpdateEntry("Beggar Entry", true);
             beggarDialogue = false;
             dialogueEnd = false;
         }
         if (dialogueEnd && monkDialogue)
         {
             doorCollider.SetActive(true);
+            GameDictionary.Instance.UpdateEntry("Monk Entry", true);
             monkDialogue = false;
             dialogueEnd = false;
         }
@@ -166,7 +168,9 @@ public class MoriGuardDialogueTrigger : DialogueTrigger
         guardTwoD.SetActive(true);
         guardTwoL.SetActive(false);
         doorCollider.SetActive(true);
+        GameDictionary.Instance.UpdateEntry("Duel Entry", true);
         this.gameObject.SetActive(false);
+        
 
     }
 
