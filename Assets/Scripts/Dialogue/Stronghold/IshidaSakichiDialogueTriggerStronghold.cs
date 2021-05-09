@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IshidaShigieDialogueTriggerHiddenTunnel : DialogueTrigger
+public class IshidaSakichiDialogueTriggerStronghold : DialogueTrigger
 {
 
     public override void Start()
@@ -12,14 +12,6 @@ public class IshidaShigieDialogueTriggerHiddenTunnel : DialogueTrigger
        buttonA.SetActive(false);
        buttonB.SetActive(false);
        combatScore.SetActive(false);
-
-       if(!GameDictionary.choiceDictionary["Left Stronghold"])
-       {
-           if(!GameDictionary.choiceDictionary["Used Hidden Tunnel"])
-           {
-           this.gameObject.SetActive(false);
-           }
-       }
     }
 
     void Update()
@@ -33,27 +25,9 @@ public class IshidaShigieDialogueTriggerHiddenTunnel : DialogueTrigger
         {
         inRange = true;
         button.SetActive(true);
-
-            if(GameDictionary.choiceDictionary["Left Stronghold"])
-            {
             //pick which Dialogue to run
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
             button.GetComponent<DialogueRun>().trigger = this;
-            }
-
-            if(GameDictionary.choiceDictionary["Ronin Path"])
-            {
-            //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
-            button.GetComponent<DialogueRun>().trigger = this;
-            }
-            
-            if(GameDictionary.choiceDictionary["Monk Path"])
-            {
-            //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-            button.GetComponent<DialogueRun>().trigger = this;
-            }
         }   
     }
     
