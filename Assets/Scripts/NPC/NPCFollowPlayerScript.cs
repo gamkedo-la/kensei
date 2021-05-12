@@ -46,7 +46,7 @@ public class NPCFollowPlayerScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() 
+    void FixedUpdate() 
     {
         if(onSwitch)
         {
@@ -77,7 +77,7 @@ public class NPCFollowPlayerScript : MonoBehaviour
                 Vector2 Delta = new Vector2(destination.x - transform.position.x, destination.y - transform.position.y);
                 targetVector = Delta.normalized;
 
-                if ((Time.time - lastCheckTime) > xSeconds)
+                //if ((Time.time - lastCheckTime) > xSeconds)
                 {
                     if(player.transform.position == lastCheckPos && reached)
                     {
@@ -92,8 +92,10 @@ public class NPCFollowPlayerScript : MonoBehaviour
     
                 // Update our position based on our start postion, destination and progress.
                 FollowPlayer();
-                rb.MovePosition(rb.position+targetVector*speed*Time.fixedDeltaTime);
-                if (animator) animator.SetFloat("Speed", targetVector.magnitude * speed * Time.fixedDeltaTime);
+                rb.MovePosition(rb.position+targetVector*speed*Time.deltaTime);
+                //Vector3 move3D = targetVector * speed * Time.deltaTime;
+                //transform.position += move3D;
+                if (animator) animator.SetFloat("Speed", targetVector.magnitude * speed * Time.deltaTime);
 
                 if(reached == false)
                 {
@@ -136,7 +138,7 @@ public class NPCFollowPlayerScript : MonoBehaviour
             destination = player.transform.TransformPoint(point.normalized * targetDist);
         }
 
-        else if( goalDist < 0.5f)
+        else if( goalDist < 1f)
         {
             destination = transform.position;
 
