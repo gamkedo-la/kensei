@@ -21,6 +21,11 @@ public class PlayerController : MonoBehaviour
     public AnimatorOverrideController monkClothes1AAnimator;
     public AnimatorOverrideController daimyoArmorAnimator;
     public AnimatorOverrideController daimyoArmorAnimator1A;
+    public AnimatorOverrideController monkRakusu;
+    public AnimatorOverrideController monkRakusu1A;
+    public AnimatorOverrideController roninArmor;
+    public AnimatorOverrideController roninArmor1A;
+
     public GameObject Canvas;
     Vector2 movement;
     bool facingUp;
@@ -53,8 +58,6 @@ public class PlayerController : MonoBehaviour
         //ChooseAnimator();
         //AddItem(defaultClothing);
         LoadFile.LoadGame();
-        //GameDictionary.Instance.UpdateEntry("Ronin Path", true);
-        //GameDictionary.Instance.UpdateEntry("Duel Entry", true);
     }
 
     void Update()
@@ -462,6 +465,14 @@ public class PlayerController : MonoBehaviour
             {
                 GetComponent<Animator>().runtimeAnimatorController = daimyoArmorAnimator1A as RuntimeAnimatorController;
             }
+            if (GameDictionary.choiceDictionary["Monk Rakusu"])
+            {
+                GetComponent<Animator>().runtimeAnimatorController = monkRakusu1A as RuntimeAnimatorController;
+            }
+            if (GameDictionary.choiceDictionary["Ronin Armor"])
+            {
+                GetComponent<Animator>().runtimeAnimatorController = roninArmor1A as RuntimeAnimatorController;
+            }
         }
         else
         {
@@ -489,6 +500,14 @@ public class PlayerController : MonoBehaviour
             if (GameDictionary.choiceDictionary["Daimyo Armor"])
             {
                 GetComponent<Animator>().runtimeAnimatorController = daimyoArmorAnimator as RuntimeAnimatorController;
+            }
+            if (GameDictionary.choiceDictionary["Monk Rakusu"])
+            {
+                GetComponent<Animator>().runtimeAnimatorController = monkRakusu as RuntimeAnimatorController;
+            }
+            if (GameDictionary.choiceDictionary["Ronin Armor"])
+            {
+                GetComponent<Animator>().runtimeAnimatorController = roninArmor as RuntimeAnimatorController;
             }
         }
     }
