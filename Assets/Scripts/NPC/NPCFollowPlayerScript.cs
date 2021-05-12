@@ -140,10 +140,10 @@ public class NPCFollowPlayerScript : MonoBehaviour
 
         else if( goalDist < 1f)
         {
-            destination = transform.position;
 
             if(reached == false) 
             {
+                destination = transform.position;
                 if (animator) animator.SetInteger("Direction", 0);
             }
             reached = true;
