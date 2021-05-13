@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fc8f19d91c13d3344844589c7fdd5651
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - musicPrefab: {fileID: 6447796782089459505, guid: efb0fbba4cc933545a65de4716132dea,
+      type: 3}
+  - light: {fileID: 8300000, guid: 90ae7e619f0712d40b8cc30761a5fbbd, type: 3}
+  - dark: {fileID: 8300000, guid: 37622a29d570a974883099cd402e8a26, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
