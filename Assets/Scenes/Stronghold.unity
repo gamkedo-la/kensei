@@ -339,7 +339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3572335
 PrefabInstance:
@@ -759,7 +759,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &29016846
 GameObject:
@@ -1479,7 +1479,7 @@ PrefabInstance:
     - target: {fileID: 7615578717957156650, guid: 586b507e08975a4439874d6f99f3a86d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7615578717957156650, guid: 586b507e08975a4439874d6f99f3a86d,
         type: 3}
@@ -1654,137 +1654,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &134170141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 134170143}
-  - component: {fileID: 134170142}
-  - component: {fileID: 134170146}
-  - component: {fileID: 134170145}
-  - component: {fileID: 134170144}
-  m_Layer: 0
-  m_Name: Old Tachi
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &134170142
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134170141}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c03566b9f867b514f8b25004a877febe, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6, y: 6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &134170143
+--- !u!4 &134170143 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6996994372431898327}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134170141}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -387, y: -212.8, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &134170144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134170141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dad84be831823e4b9bc1496294a039c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Old Tachi
-  itemSlot: 0
-  combatPoints: 10
-  itemSprite: {fileID: 21300000, guid: c03566b9f867b514f8b25004a877febe, type: 3}
-  itemDescription: 
---- !u!114 &134170145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134170141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416bd985c5c50344d9db4012d32daf70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circle: {fileID: 134170146}
-  item: {fileID: 134170141}
---- !u!58 &134170146
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134170141}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.9999998
 --- !u!1 &142264664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,137 +1822,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &149347336
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 149347338}
-  - component: {fileID: 149347337}
-  - component: {fileID: 149347341}
-  - component: {fileID: 149347340}
-  - component: {fileID: 149347339}
-  m_Layer: 0
-  m_Name: SakeCup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &149347337
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149347336}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: bf88e3fab24422f479654cc126ca3310, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6, y: 6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &149347338
+--- !u!4 &149347338 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+    type: 3}
+  m_PrefabInstance: {fileID: 3959756893226382824}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149347336}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -470.6, y: -246, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &149347339
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149347336}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.9999998
---- !u!114 &149347340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149347336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dad84be831823e4b9bc1496294a039c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Sake Cup
-  itemSlot: 3
-  combatPoints: 0
-  itemSprite: {fileID: 21300000, guid: bf88e3fab24422f479654cc126ca3310, type: 3}
-  itemDescription: 
---- !u!114 &149347341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149347336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416bd985c5c50344d9db4012d32daf70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circle: {fileID: 149347339}
-  item: {fileID: 149347336}
 --- !u!1001 &151002314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3102,7 +2852,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &227515811
 Animator:
@@ -3137,7 +2887,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - Monk 1
+  - Oubasan, your kind is always welcome here but I must ask what brings you to my
+    chamber?
 --- !u!114 &227515813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3152,7 +2903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - Beggar 1
+  - A beggar enters my chamber directly? What is the meaning of this?
 --- !u!114 &227515814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3167,7 +2918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - Duel 1
+  - You injure my guards and apparently my loyal advisor, and now you seek my ear
+    for a message? What is the meaning of this?
 --- !u!114 &227515815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3182,7 +2934,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - Samurai 1
+  - ' It is good to meet you. I heard rumors of a possible samurai coming to meet
+    me. We are in much need of servicemen like yourself. We do mean well, but sometimes
+    our ranks can run a little slim. We have much land to protect and I am but one
+    person. Now, please work with Sasaki on your swordsmanship. Our samurai are well
+    known for their craft.'
 --- !u!114 &227515816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3245,9 +3001,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 'Investigate
-
-'
+  - "You have made much progress since we started. You are a promising up and coming
+    Samurai. I have a request to make of you. There are rumors of  peasants starting
+    to plot and revolt against us. I need you to go to the Temple and speak with
+    the leader to verify the validity of these claims. Report back to me when it
+    is finished. \n"
 --- !u!114 &227515818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3337,7 +3095,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 10
+  - "Thank you for bringing this to my attention. I don\u2019t need blame the citizens
+    of the village anymore.  Will you accompany us to the village so we may make
+    amends?"
 --- !u!114 &227515824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3352,7 +3112,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 9
+  - Your plea has moved my heart. I will make a visit to the village myself to honor
+    the townsfolk and relax their troubles. You have shown me the way to reconnect
+    with my past to build a stronger future.
 --- !u!114 &227515825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3367,7 +3129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 8
+  - 'Your plea does not fall on deaf ears, although I must confess I remain unconvinced.
+    We must move to quell any unrest before it turns into a full scale rebellion,
+    and force is the only language rebels understand. '
 --- !u!114 &227515826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3382,7 +3146,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 7
+  - "Shigeie murdered Mitsune? The blade and the handle match, I know this blade
+    was passed to Shigeie by his father... and I recognize the cloth. This is a terrible
+    betrayal! Under my nose and as the assistant protector in this region, you\u2019ve
+    committed this heinous act? Shigeie you are under arrest, do not move from where
+    you stand. "
 --- !u!114 &227515827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3397,7 +3165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 6
+  - You come into my house, with a message for me, yet you come offering me a drink?
+    Actually, now that I see your cup, it does remind me of someone from a long time
+    ago. I'll raise a cup with you.
 --- !u!1 &228235334
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,7 +4289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ishida Sakichi
   sentences:
-  - Sakichi Dialogue
+  - 'I am just here to support the Daimyo and my brother however I can. '
 --- !u!1 &320551818
 GameObject:
   m_ObjectHideFlags: 0
@@ -4666,75 +4436,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 320762085}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &326556466
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -519.08856
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -296.1903
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 114.817245
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543406, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8602516205650543407, guid: 97751239c8619374983954a6b61f746c,
-        type: 3}
-      propertyPath: m_Name
-      value: Ginkgo Seed
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 97751239c8619374983954a6b61f746c, type: 3}
 --- !u!1001 &331100541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7414,7 +7115,7 @@ PrefabInstance:
     - target: {fileID: 4059309548771083463, guid: d00de55bc1e8c3e4390b0126e56c52f7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4059309548771083463, guid: d00de55bc1e8c3e4390b0126e56c52f7,
         type: 3}
@@ -7654,7 +7355,7 @@ Transform:
   - {fileID: 1819405874}
   - {fileID: 2135288787}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &563426252
 PrefabInstance:
@@ -7969,7 +7670,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &600533824
 BoxCollider2D:
@@ -8940,7 +8641,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &692649808
 PrefabInstance:
@@ -9771,7 +9472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &759111742
 GameObject:
@@ -11097,7 +10798,7 @@ PrefabInstance:
     - target: {fileID: 4855295428969838247, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4855295428969838247, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
@@ -12691,6 +12392,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 922677348}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &924787706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924787707}
+  m_Layer: 0
+  m_Name: Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &924787707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924787706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -489.116, y: -188.71477, z: -4724.0254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 149347338}
+  - {fileID: 1734957344}
+  - {fileID: 1136836177}
+  - {fileID: 1931485034}
+  - {fileID: 134170143}
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &930282517
 GameObject:
   m_ObjectHideFlags: 0
@@ -13936,7 +13672,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1062826206
 GameObject:
@@ -14353,7 +14089,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1082846913
 GameObject:
@@ -14959,77 +14695,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1136005742
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -462.65198
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -119.88581
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 114.817245
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954432, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3430644606490954433, guid: 0553561c295b36f4cbbb26f814d97d2f,
-        type: 3}
-      propertyPath: m_Name
-      value: Bloody Tanto Blade
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0553561c295b36f4cbbb26f814d97d2f, type: 3}
 --- !u!1 &1136803941
 GameObject:
   m_ObjectHideFlags: 0
@@ -15058,159 +14725,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1136836172
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1136836177}
-  - component: {fileID: 1136836176}
-  - component: {fileID: 1136836175}
-  - component: {fileID: 1136836174}
-  - component: {fileID: 1136836173}
-  - component: {fileID: 1136836178}
-  m_Layer: 0
-  m_Name: DaimyoArmor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1136836173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136836172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416bd985c5c50344d9db4012d32daf70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circle: {fileID: 1136836175}
-  item: {fileID: 1136836172}
---- !u!114 &1136836174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136836172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dad84be831823e4b9bc1496294a039c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Daimyo Armor
-  itemSlot: 1
-  combatPoints: 15
-  itemSprite: {fileID: 21300000, guid: c98705f78108bb64cbe3ba112f42c7c3, type: 3}
-  itemDescription: 
---- !u!58 &1136836175
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136836172}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 4
---- !u!212 &1136836176
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136836172}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 56543a7ca47751d4caa3e8c92b7ae8a4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6, y: 8}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1136836177
+--- !u!4 &1136836177 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6100928739303027147}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136836172}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -391.75, y: -159.94, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1136836178
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136836172}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f078c6a3ea19e9f4d97dabaae4b7c2a1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1152183788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16733,7 +16255,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1241069740
 PrefabInstance:
@@ -16750,7 +16272,7 @@ PrefabInstance:
     - target: {fileID: 2411251743385217295, guid: cdfe8a936f731b54aa0814846e2c7832,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2411251743385217295, guid: cdfe8a936f731b54aa0814846e2c7832,
         type: 3}
@@ -16907,7 +16429,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1260547687
 PrefabInstance:
@@ -18113,7 +17635,7 @@ PrefabInstance:
     - target: {fileID: 3740566487813743602, guid: 771c62b7bc5018d45900965b7901a38a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3740566487813743602, guid: 771c62b7bc5018d45900965b7901a38a,
         type: 3}
@@ -18626,7 +18148,7 @@ Transform:
   - {fileID: 1790558447}
   - {fileID: 1413602855}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1410270066
 PrefabInstance:
@@ -19342,7 +18864,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1456724503
 MonoBehaviour:
@@ -19999,7 +19521,7 @@ PrefabInstance:
     - target: {fileID: 8068239843639634205, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8068239843639634205, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
@@ -20105,9 +19627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - 3
+  - Hold monk. What is a member of the Temple doing here? State your business.
 --- !u!114 &1494229205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20120,9 +19642,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - 2
+  - Hmm you appear to be some armed riff raff... how did you get in here? best leave
+    before I draw my sword...
 --- !u!114 &1494229206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20135,9 +19658,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - 1
+  - Welcome back, should you not make your report to the Daimyo?
 --- !u!114 &1494229207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20298,7 +19821,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498110826
 GameObject:
@@ -21156,7 +20679,7 @@ Transform:
   - {fileID: 962917254}
   - {fileID: 320551819}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1591350549
 PrefabInstance:
@@ -21976,7 +21499,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1675957692
 GameObject:
@@ -22470,7 +21993,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1691820715
 GameObject:
@@ -22682,7 +22205,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1692442879
 Animator:
@@ -22736,9 +22259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Monk Dialogue 1
+  - Hold monk. What is a member of the Temple doing here? State your business.
 --- !u!114 &1692442882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22751,9 +22274,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Beggar Dialogue 1
+  - A beggar walks into the Daimyo's castle? Surely you are here to profit off of
+    misdeeds.
 --- !u!114 &1692442883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22766,9 +22290,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Duel Dialogue 1
+  - How did you get in here? A rebellious criminal no doubt, I will strike you down
+    where you stand!
 --- !u!114 &1692442884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22781,9 +22306,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Samurai Dialogue 1
+  - How did you get in here? A prospective samurai looking to join the Daimyo's service?
+    A likely story... Begone fool!
 --- !u!114 &1692442885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22882,9 +22408,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Post Initimidate Dialogue
+  - 'So be it, I will not die for this folly. Go and speak to the Daimyo, I have
+    no doubt he will have your head when you are done. '
 --- !u!114 &1692442889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22897,9 +22424,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - post monk dialogue
+  - ' Fine. But be quick about it. I will have my eye on you. The Daimyo is a busy
+    man.'
 --- !u!114 &1692442890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22912,9 +22440,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Post beggar dialogue
+  - ' Fine. But be quick about it. I will have my eye on you. The Daimyo is a busy
+    man.'
 --- !u!114 &1692442891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22927,9 +22456,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Post duel dialogue
+  - 'Ouch! Enough, I will not die for this folly. Go and speak to the Daimyo, I have
+    no doubt he will have your head when you are done. '
 --- !u!114 &1692442892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22942,9 +22472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Samurai Dialogue 2
+  - Well, aren't you here to see the Daimyo? Why are you bothering me then...
 --- !u!114 &1692442893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22957,9 +22487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - After training
+  - Do you need something? I am very busy and have no time for small talk.
 --- !u!114 &1692442894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22972,9 +22502,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigie
+  name: Ishida Shigeie
   sentences:
-  - Arrested!
+  - You caught me but I have no regrets. This kingdom is rotten to its core, my father
+    would be ashamed if I had done nothing less.
 --- !u!1001 &1704322021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23332,137 +22863,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1729072951}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1734957342
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1734957344}
-  - component: {fileID: 1734957343}
-  - component: {fileID: 1734957347}
-  - component: {fileID: 1734957346}
-  - component: {fileID: 1734957345}
-  m_Layer: 0
-  m_Name: Bladeless Tanto
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1734957343
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734957342}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: dd6ab416e595d5043b36c3f070ecd9e3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6, y: 6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1734957344
+--- !u!4 &1734957344 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+    type: 3}
+  m_PrefabInstance: {fileID: 6285317793280542306}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734957342}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -531.4, y: -189.9, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1734957345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734957342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416bd985c5c50344d9db4012d32daf70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circle: {fileID: 1734957347}
-  item: {fileID: 1734957342}
---- !u!114 &1734957346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734957342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dad84be831823e4b9bc1496294a039c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Bladeless Tanto
-  itemSlot: 2
-  combatPoints: 0
-  itemSprite: {fileID: 21300000, guid: dd6ab416e595d5043b36c3f070ecd9e3, type: 3}
-  itemDescription: 
---- !u!58 &1734957347
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734957342}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 5
 --- !u!1001 &1739107748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24338,7 +23744,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1830178775
 PrefabInstance:
@@ -24879,7 +24285,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1875978481 stripped
 GameObject:
@@ -25463,137 +24869,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4983826, y: 47.608704}
   m_EdgeRadius: 0
---- !u!1 &1931485029
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1931485034}
-  - component: {fileID: 1931485033}
-  - component: {fileID: 1931485032}
-  - component: {fileID: 1931485031}
-  - component: {fileID: 1931485030}
-  m_Layer: 0
-  m_Name: Sakura Blossom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1931485030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931485029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dad84be831823e4b9bc1496294a039c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Sakura Blossom
-  itemSlot: 3
-  combatPoints: 0
-  itemSprite: {fileID: 21300000, guid: ea8805ef430d87141b48133aab4eedfd, type: 3}
-  itemDescription: 
---- !u!114 &1931485031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931485029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416bd985c5c50344d9db4012d32daf70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circle: {fileID: 1931485032}
-  item: {fileID: 1931485029}
---- !u!58 &1931485032
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931485029}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 3
---- !u!212 &1931485033
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931485029}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ea8805ef430d87141b48133aab4eedfd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6, y: 6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1931485034
+--- !u!4 &1931485034 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+    type: 3}
+  m_PrefabInstance: {fileID: 2163388397147306955}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931485029}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -383.4, y: -252.3, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940705386
 GameObject:
   m_ObjectHideFlags: 0
@@ -25663,7 +24944,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1944105296
 GameObject:
@@ -26775,6 +26056,8 @@ GameObject:
   - component: {fileID: 2120722236}
   - component: {fileID: 2120722235}
   - component: {fileID: 2120722234}
+  - component: {fileID: 2120722242}
+  - component: {fileID: 2120722241}
   m_Layer: 0
   m_Name: Sasaki Kojiro (1)
   m_TagString: Untagged
@@ -26794,7 +26077,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044fc2b6c48940c4d930da3666b704db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialogues: []
+  Dialogues:
+  - {fileID: 2120722242}
+  - {fileID: 2120722241}
   collider: {fileID: 2120722237}
   button: {fileID: 1332023229}
   panel: {fileID: 790871734}
@@ -26939,8 +26224,38 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2120722241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120722233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - '*Nods approvingly but says nothing*'
+--- !u!114 &2120722242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120722233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - '*winks at you but says nothing*'
 --- !u!1001 &2123705143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28207,6 +27522,82 @@ Transform:
   m_Father: {fileID: 1409079181}
   m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2163388397147306955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 924787707}
+    m_Modifications:
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 105.716
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -63.585236
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4724.0254
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824033, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824045, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: itemDescription
+      value: 'Picked from the branch of a blooming tree, the Sakura Blossom lives
+        with grace before its time is over. A lone Sakura tree stands in the village,
+        the beauty of the flowers brings out fond memories in many. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163388395215824046, guid: 68e3a7ffaf8517f46bd760374ccab988,
+        type: 3}
+      propertyPath: m_Name
+      value: Sakura Blossom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 68e3a7ffaf8517f46bd760374ccab988, type: 3}
 --- !u!1 &3332715156680249908
 GameObject:
   m_ObjectHideFlags: 0
@@ -40766,8 +40157,77 @@ Transform:
   m_Children:
   - {fileID: 3332715156680249909}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3959756893226382824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 924787707}
+    m_Modifications:
+    - target: {fileID: 3959756893086247392, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_Name
+      value: SakeCup
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.515991
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.285233
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4724.0254
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e7523044618e1048bc086ea6cfac351, type: 3}
 --- !u!1001 &5993816357589931857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40788,7 +40248,7 @@ PrefabInstance:
     - target: {fileID: 5993816356027387798, guid: f4ca504556a585f41bded64e769f1964,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5993816356027387798, guid: f4ca504556a585f41bded64e769f1964,
         type: 3}
@@ -40842,6 +40302,237 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4ca504556a585f41bded64e769f1964, type: 3}
+--- !u!1001 &6100928739303027147
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 924787707}
+    m_Modifications:
+    - target: {fileID: 6100928738225180549, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: itemDescription
+      value: "Very fine samurai armor found within the Daimyo\u2019s stronghold.
+        Likely the suit the Daimyo dons themselves when they go into battle, it has
+        more embellishments than most warriors would spend for."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180551, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_Name
+      value: DaimyoArmor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180569, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f078c6a3ea19e9f4d97dabaae4b7c2a1, type: 2}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 97.366
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 28.774765
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4724.0254
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100928738225180570, guid: 99161c1d2ff7f4f4c98deed83af2d77f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 99161c1d2ff7f4f4c98deed83af2d77f, type: 3}
+--- !u!1001 &6285317793280542306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 924787707}
+    m_Modifications:
+    - target: {fileID: 6285317791780478784, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: itemDescription
+      value: Its blade gone, all that remains is the handle of carved maplewood.
+        Etched into the handle is the mark of the Ishida family.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.284027
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1852264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4724.0254
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478786, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285317791780478844, guid: 384fef84ca303684ba7126c01b5d6063,
+        type: 3}
+      propertyPath: m_Name
+      value: Bladeless Tanto
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 384fef84ca303684ba7126c01b5d6063, type: 3}
+--- !u!1001 &6996994372431898327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 924787707}
+    m_Modifications:
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 102.116
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -24.085236
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4724.0254
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085768, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085770, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: m_Name
+      value: Old Tachi
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996994372559085815, guid: c052761535a079047a85c1028faa667f,
+        type: 3}
+      propertyPath: itemDescription
+      value: "This old sword remains sharp, it\u2019s steel glinting in the sun.
+        Some political gift from long ago, its blade is untouched. "
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c052761535a079047a85c1028faa667f, type: 3}
 --- !u!4 &8814317049793591049
 Transform:
   m_ObjectHideFlags: 0
@@ -40854,7 +40545,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8814317049793591050
 Animator:
@@ -41036,7 +40727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sasaki Kojiro
   sentences:
-  - Shigie Stop It
+  - Shigie why do you harass this young man? Do you not know that the Daimyo is expecting
+    a new recruit? We should make him welcome, come I will follow you to the Daimyo's
+    chamber.
 --- !u!114 &8814317049793591066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41105,7 +40798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sasaki Kojiro
   sentences:
-  - You should go talk to Daimyo
+  - You should go talk to Daimyo...
 --- !u!114 &8814317049793591069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41120,4 +40813,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sasaki Kojiro
   sentences:
-  - Train with me
+  - 'So you wish to train a samurai? It will not be easy, but by the time I am finished
+    with you the Daimyo will count you as one of his finest swordsmen. '

@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
         //ChooseAnimator();
         //AddItem(defaultClothing);
         LoadFile.LoadGame();
+        GameDictionary.Instance.UpdateEntry("Beggar Entry", true);
     }
 
     void Update()
