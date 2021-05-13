@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     public AnimatorOverrideController monkRakusu1A;
     public AnimatorOverrideController roninArmor;
     public AnimatorOverrideController roninArmor1A;
+    public AnimatorOverrideController senseiKashimono;
+    public AnimatorOverrideController senseiKashimono1A;
 
     public GameObject Canvas;
     Vector2 movement;
@@ -473,6 +475,10 @@ public class PlayerController : MonoBehaviour
             {
                 GetComponent<Animator>().runtimeAnimatorController = roninArmor1A as RuntimeAnimatorController;
             }
+            if (GameDictionary.choiceDictionary["Sensei Kashimono"])
+            {
+                GetComponent<Animator>().runtimeAnimatorController = senseiKashimono1A as RuntimeAnimatorController;
+            }
         }
         else
         {
@@ -508,6 +514,10 @@ public class PlayerController : MonoBehaviour
             if (GameDictionary.choiceDictionary["Ronin Armor"])
             {
                 GetComponent<Animator>().runtimeAnimatorController = roninArmor as RuntimeAnimatorController;
+            }
+            if (GameDictionary.choiceDictionary["Sensei Kashimono"])
+            {
+                GetComponent<Animator>().runtimeAnimatorController = senseiKashimono as RuntimeAnimatorController;
             }
         }
     }

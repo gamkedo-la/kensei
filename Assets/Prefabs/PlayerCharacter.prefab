@@ -2462,6 +2462,8 @@ MonoBehaviour:
   monkRakusu1A: {fileID: 22100000, guid: a5cbb8ae08141ca4aaad368eaf5b6b81, type: 2}
   roninArmor: {fileID: 22100000, guid: 8ec64bb35909be14790e498227b1b6b4, type: 2}
   roninArmor1A: {fileID: 22100000, guid: 3cf32b6a35c7d6b40b5103bd94bd1531, type: 2}
+  senseiKashimono: {fileID: 22100000, guid: 24e248ed972d5874da21b10edb2c960e, type: 2}
+  senseiKashimono1A: {fileID: 22100000, guid: 0cfa02571bad828418e7ce0f45ab3c0e, type: 2}
   Canvas: {fileID: 8068239841721193708}
   targetItem: {fileID: 0}
   weapon: {fileID: 0}
