@@ -6,14 +6,14 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PC_SenseiKashimono_Override
+  m_Name: PC_SenseiKashimono_Override_1A
   m_Controller: {fileID: 9100000, guid: 7453ab469d3123f4ab5c61e66d7ef75f, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: 49625ce7e6b13e24084e0d3042e4494c, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: b010e1ac57e87ab41be4daacac15be0e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 21a4c1b6a98115747ba9afc0684bcf06, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 21fe58ae5162def4e8a2d9f095298ab2, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 3784c2d0cfd516d4d913221d20de2934, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cb14ce0db39a0634c919b5a5c2825fe7, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 56d1cee13942a3b4d9977253c30d935e, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 17dd5e2bd97e6c24e9ee18fb7b506cd3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9cd444283a78a6846975a89bc9559079, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 56a933f62b1716a4982977e6432d9770, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: dcdd7ec2522a84b4a852ac86ccea8d05, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 37931e857e4943e40929e4e91c43d9cc, type: 2}
