@@ -29,17 +29,17 @@ public class MusicManager : MonoBehaviour {
 		if (newTone == tone) return;
 
 		tone = newTone;
-		float playbackPosition = currentSource.time;
-		StartCoroutine(FadeOutAndStop(currentSource, trackFadeTime));
+		AudioSource oldSource = currentSource;
+		StartCoroutine(WaitAndFadeOutAndStop(currentSource, 0.25f, trackFadeTime));
 
 		currentSource = Instantiate(musicPrefab);
 		currentSource.transform.parent = transform;
 		currentSource.clip = GetAudioClip();
 		currentSource.gameObject.name =currentSource.clip.name;
 
-		currentSource.time = playbackPosition;
-		StartCoroutine(FadeIn(currentSource, trackFadeTime));
+		StartCoroutine(WaitAndFadeIn(currentSource, 0.25f, trackFadeTime));
 		currentSource.Play();
+		StartCoroutine(WaitAndSync(currentSource, oldSource, 0.25f));
 	}
 
 	private void StartMusic () {
@@ -75,6 +75,26 @@ public class MusicManager : MonoBehaviour {
 		source.volume = 1f;
 	}
 
+	IEnumerator WaitAndFadeIn(AudioSource source, float waitTime, float fadeTime) {
+		float startTime = Time.unscaledTime + waitTime;
+		float currentTime = 0f;
+
+		source.volume = 0f;
+
+		while (startTime > Time.unscaledTime) {
+			yield return null;
+		}
+
+		while (startTime + fadeTime > Time.unscaledTime) {
+			currentTime = Time.unscaledTime - startTime;
+
+			source.volume = Mathf.Lerp(0f, 1f, currentTime / fadeTime);
+			yield return null;
+		}
+
+		source.volume = 1f;
+	}
+
 	IEnumerator FadeOutAndStop(AudioSource source, float fadeTime) {
 		float startTime = Time.unscaledTime;
 		float currentTime = 0f;
@@ -90,6 +110,35 @@ public class MusicManager : MonoBehaviour {
 
 		source.Stop();
 		Destroy(source.gameObject);
+	}
+
+	IEnumerator WaitAndFadeOutAndStop(AudioSource source, float waitTime, float fadeTime) {
+		float startTime = Time.unscaledTime + waitTime;
+		float currentTime = 0f;
+
+		while (startTime > Time.unscaledTime) {
+			yield return null;
+		}
+
+		while (startTime + fadeTime > Time.unscaledTime) {
+			currentTime = Time.unscaledTime - startTime;
+
+			source.volume = Mathf.Lerp(1f, 0f, currentTime / fadeTime);
+			yield return null;
+		}
+
+		source.Stop();
+		Destroy(source.gameObject);
+	}
+
+	IEnumerator WaitAndSync(AudioSource source, AudioSource sync, float waitTime) {
+		float startTime = Time.unscaledTime + waitTime;
+
+		while (startTime > Time.unscaledTime) {
+			yield return null;
+		}
+
+		source.time = sync.time;
 	}
 
 	public enum Tone {
