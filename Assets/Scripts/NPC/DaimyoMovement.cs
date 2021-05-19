@@ -58,6 +58,7 @@ public class DaimyoMovement : MonoBehaviour
 
     IEnumerator DropSakuras() {
         stopped = true;
+        animator.SetFloat("Speed", 0f);
         yield return new WaitForSeconds(2);
         Instantiate(sakuraBlossom, transform.position, Quaternion.identity);
         stopped = false;

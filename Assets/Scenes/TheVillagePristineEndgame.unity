@@ -36013,7 +36013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   paths: {fileID: 942866477}
-  sakuraBlossom: {fileID: 3429911429935156794, guid: cb529636c36c82d4eba4baeb14d72453,
+  sakuraBlossom: {fileID: 2163388395215824046, guid: 68e3a7ffaf8517f46bd760374ccab988,
     type: 3}
 --- !u!95 &804921348
 Animator:
@@ -105654,7 +105654,7 @@ PrefabInstance:
     - target: {fileID: 8068239842162601668, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068239842162601691, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
