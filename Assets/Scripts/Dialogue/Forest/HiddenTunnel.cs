@@ -23,14 +23,17 @@ public SceneLoader.Scene scene;
     {
         if(collider.CompareTag("Player"))
         {
-        inRange = true;
-        button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
-        button.GetComponent<DialogueRun>().trigger = this;
-
-            if(GameDictionary.choiceDictionary["Rusted Key"])
+            if(GameDictionary.choiceDictionary["Ronin Path"] || GameDictionary.choiceDictionary["Monk Path"])
             {
-                DecisionDisplay("Use the Rusty Key", "Do Nothing");
-            }            
+            inRange = true;
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+            button.GetComponent<DialogueRun>().trigger = this;
+
+                if(GameDictionary.choiceDictionary["Rusted Key"])
+                {
+                    DecisionDisplay("Use the Rusty Key", "Do Nothing");
+                }  
+            }          
         }   
     }
     

@@ -28,6 +28,29 @@ public class DaimyoDialogueTrigger : DialogueTrigger
     void Update()
     {
         //check for conditions for different dialogue options
+        if (GameDictionary.choiceDictionary["Used Hidden Tunnel"] && dialogueEnd && !choicesShown)
+            {
+                dialogueEnd = false;
+
+                if(GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
+                {
+                    DecisionDisplay("Offer a Drink of Sake", "Plead with the Daimyo");
+                    offeredSakeChoice = true;
+                }
+
+                else if(GameDictionary.choiceDictionary["Blooded Tanto"])
+                {
+                    DecisionDisplay("Accuse Ishida Shigie of Murder", "Plead with the Daimyo");
+                    accusedShigieChoice = true;
+                }
+
+                else
+                {
+                    DecisionDisplay("???", "Plead with the Daimyo");
+                }
+
+            }
+
             if (GameDictionary.choiceDictionary["Duel Entry"] && dialogueEnd && !choicesShown)
             {
                 dialogueEnd = false;
@@ -230,6 +253,12 @@ public class DaimyoDialogueTrigger : DialogueTrigger
                 button.GetComponent<DialogueRun>().trigger = this;
             }
 
+            if(GameDictionary.choiceDictionary["Used Hidden Tunnel"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[15];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
+
         }
     }
 
@@ -267,6 +296,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
             button.GetComponent<DialogueRun>().trigger = this;
             button.GetComponent<DialogueRun>().TriggerDialogue();
+            talkedSake = true;
         }
 
         else if(accusedShigieChoice)
@@ -275,6 +305,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             button.GetComponent<DialogueRun>().trigger = this;
             button.GetComponent<DialogueRun>().TriggerDialogue();
             GameDictionary.Instance.UpdateEntry("Shigie Arrested",true);
+            accusedShigie = true;
         }
 
         else

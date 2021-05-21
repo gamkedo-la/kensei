@@ -60,7 +60,8 @@ public class PlayerController : MonoBehaviour
         //ChooseAnimator();
         //AddItem(defaultClothing);
         LoadFile.LoadGame();
-        GameDictionary.Instance.UpdateEntry("Beggar Entry", true);
+        GameDictionary.Instance.UpdateEntry("Used Hidden Tunnel", true);
+        GameDictionary.Instance.UpdateEntry("Monk Path", true);
     }
 
     void Update()

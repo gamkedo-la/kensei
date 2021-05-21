@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class ShigieColliderScript : MonoBehaviour
 {
-
 public GameObject shigie;
+
+    void Update()
+    {
+        if(GameDictionary.choiceDictionary["Used Hidden Tunnel"])
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
     void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.CompareTag("Player"))
