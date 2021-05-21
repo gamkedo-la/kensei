@@ -2751,6 +2751,7 @@ GameObject:
   - component: {fileID: 227515820}
   - component: {fileID: 227515819}
   - component: {fileID: 227515818}
+  - component: {fileID: 227515828}
   m_Layer: 0
   m_Name: Daimyo Mori Terumoto_F
   m_TagString: Untagged
@@ -2967,6 +2968,7 @@ MonoBehaviour:
   - {fileID: 227515820}
   - {fileID: 227515819}
   - {fileID: 227515818}
+  - {fileID: 227515828}
   collider: {fileID: 227515807}
   button: {fileID: 1332023229}
   panel: {fileID: 790871734}
@@ -3020,7 +3022,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 15
+  - What news do you bring from your investigation? Do you believe we should make
+    our move now?
 --- !u!114 &227515819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3035,7 +3038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 14
+  - 'I''m sorry, but this is the way of the world. Might is the only right, the Shogun
+    taught me that 12 years ago. '
 --- !u!114 &227515820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3050,7 +3054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 13
+  - Will you accompany us to the village so we may make amends?
 --- !u!114 &227515821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3065,57 +3069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 12
+  - You have shown me the way to reconnect with my past to build a stronger future.
 --- !u!114 &227515822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227515806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: "Daimyo M\u014Dri Terumoto"
-  sentences:
-  - 11
---- !u!114 &227515823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227515806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: "Daimyo M\u014Dri Terumoto"
-  sentences:
-  - "Thank you for bringing this to my attention. I don\u2019t need blame the citizens
-    of the village anymore.  Will you accompany us to the village so we may make
-    amends?"
---- !u!114 &227515824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227515806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: "Daimyo M\u014Dri Terumoto"
-  sentences:
-  - Your plea has moved my heart. I will make a visit to the village myself to honor
-    the townsfolk and relax their troubles. You have shown me the way to reconnect
-    with my past to build a stronger future.
---- !u!114 &227515825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3132,6 +3087,54 @@ MonoBehaviour:
   - 'Your plea does not fall on deaf ears, although I must confess I remain unconvinced.
     We must move to quell any unrest before it turns into a full scale rebellion,
     and force is the only language rebels understand. '
+--- !u!114 &227515823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227515806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Daimyo M\u014Dri Terumoto"
+  sentences:
+  - "Thank you for bringing this to my attention. I don\u2019t need blame the citizens
+    of the village anymore.  "
+--- !u!114 &227515824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227515806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Daimyo M\u014Dri Terumoto"
+  sentences:
+  - 'Your plea has moved my heart. I will make a visit to the village myself to honor
+    the townsfolk and relax their troubles. '
+--- !u!114 &227515825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227515806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - Daimyo we should consider this plea carefully, the people of the village have
+    always been loyal. Let us not jump to conclusions.
 --- !u!114 &227515826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3168,6 +3171,22 @@ MonoBehaviour:
   - You come into my house, with a message for me, yet you come offering me a drink?
     Actually, now that I see your cup, it does remind me of someone from a long time
     ago. I'll raise a cup with you.
+--- !u!114 &227515828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227515806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Daimyo M\u014Dri Terumoto"
+  sentences:
+  - Are you a thief? How did you get in here? I see you knew about the secret passage...
+    You say you have a message for me?
 --- !u!1 &228235334
 GameObject:
   m_ObjectHideFlags: 0

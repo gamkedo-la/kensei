@@ -51,8 +51,15 @@ public class DaimyoMovement : MonoBehaviour
                 }
 
                 nextTarget = paths.GetChild(targetIndex).transform.position;
-                if (animator) animator.SetInteger("Direction", 0);
             }
+            if(delta.y > 0.1f)
+                    {
+                        if (animator) animator.SetInteger("Direction", 3);
+                    }
+                    else if(delta.y < -0.1f)
+                    {
+                        if (animator) animator.SetInteger("Direction", 0);
+                    }
         }
     }
 
