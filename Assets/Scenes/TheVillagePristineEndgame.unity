@@ -52740,7 +52740,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sasaki Kojiro
   sentences:
-  - 4
+  - Wear that Kashimono proudly, it is an heirloom from my school of swordsmanship.
+    Only those who are worthy receive one.
 --- !u!114 &1225503814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52755,7 +52756,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sasaki Kojiro
   sentences:
-  - 3
+  - Sometimes the gods bestow great gifts upon fools. There is no use in trying to
+    reason with these truths. Perhaps your folks at the Temple will be able to figure
+    it out someday.
 --- !u!114 &1225503815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52770,7 +52773,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sasaki Kojiro
   sentences:
-  - 2
+  - Sometimes the gods bestow great gifts upon fools. There is no use in trying to
+    reason with these truths. However, you are no fool and I am proud to have trained
+    you.
 --- !u!114 &1225503816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52785,7 +52790,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sasaki Kojiro
   sentences:
-  - 1
+  - Sometimes the gods bestow great gifts upon fools. There is no use in trying to
+    reason with these truths. However, you are no fool and I am proud to have trained
+    you. Please accept this gift to commemorate my respect for you.
 --- !u!114 &1225503817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105556,7 +105563,7 @@ MonoBehaviour:
   sentences:
   - Oh my skilled Samurai has returned home at last. You've grown so much since I
     saw you last, I am glad that you were able to help us come to better terms with
-    the Daimyo. Perhaps you can stay a while?
+    the Daimyo. Perhaps if you are free later, we may be able to take a walk?
 --- !u!114 &3972467482672051329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105573,7 +105580,7 @@ MonoBehaviour:
   sentences:
   - Oh my wise Oubasan has returned home at last. You've grown so much since I saw
     you last, I am glad that you were able to help us come to better terms with the
-    Daimyo. Perhaps you can stay a while?
+    Daimyo. Perhaps if you are free later, we may be able to take a walk?
 --- !u!114 &3972467482672051330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105590,7 +105597,7 @@ MonoBehaviour:
   sentences:
   - Oh my brave Ronin has returned home at last. You've grown so much since I saw
     you last, I am glad that you were able to help us come to better terms with the
-    Daimyo. Perhaps you can stay a while?
+    Daimyo. Perhaps if you are free later, we may be able to take a walk?
 --- !u!95 &3972467482672051332
 Animator:
   serializedVersion: 3
