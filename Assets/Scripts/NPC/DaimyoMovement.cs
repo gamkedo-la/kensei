@@ -7,6 +7,7 @@ public class DaimyoMovement : NPCFollowPath
     public bool dropSakuras;
     private bool droppedSakuras = false;
     private bool continueMoving = false;
+    public DialogueTrigger graveTrigger;
 
     protected override void Start()
     {
@@ -23,15 +24,23 @@ public class DaimyoMovement : NPCFollowPath
         }
         if(targetIndex == 4 && !droppedSakuras) // Reached the grave, movement will be stopped for 2 secs
         {
+            stopped = true;
+            if(graveTrigger.dialogueEnd)
+            {
             DropSakuras();
+            }
         }
     }
 
     void DropSakuras() {
-        stopped = true;
         droppedSakuras = true;
         animator.SetFloat("Speed", 0f);
         if(dropSakuras) Instantiate(sakuraBlossom, transform.position, Quaternion.identity); // Only drop sakuras if you are the daimyo
+        stopped = false;
+        if(gameObject.GetComponent<PlayerController>())
+        {
+        GetComponent<PlayerController>().movementLocked = true;
+        }
     }
 
     public void ContinueMoving() {
