@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class DaimyoPathEndDialogueTrigger : DialogueTrigger
 {
+    public void Update()
+    {
+        if(dialogueEnd)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
     public override void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Player"))

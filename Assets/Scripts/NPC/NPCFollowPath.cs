@@ -27,32 +27,39 @@ public class NPCFollowPath : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        if(!finishedMovement && !stopped) {
+        if(stopped)
+        {
+            if (animator) animator.SetFloat("Speed", 0f);
+        }
+        if (!finishedMovement && !stopped)
+        {
             Vector2 delta = new Vector2(nextTarget.x - transform.position.x, nextTarget.y - transform.position.y);
-            if(delta.y > 0.1f)
+            if (delta.y > 0.1f)
             {
                 if (animator) animator.SetInteger("Direction", 3);
-                if(gameObject.CompareTag("Player")){
+                if (gameObject.CompareTag("Player"))
+                {
                     GetComponent<PlayerController>().facingUp = true;
                 }
             }
-            else if(delta.y < -0.1f)
+            else if (delta.y < -0.1f)
             {
                 if (animator) animator.SetInteger("Direction", 0);
-                if(gameObject.CompareTag("Player")){
+                if (gameObject.CompareTag("Player"))
+                {
                     GetComponent<PlayerController>().facingUp = false;
                 }
             }
 
-            if(delta.magnitude > 1)
+            if (delta.magnitude > 1)
             {
-                rb.MovePosition(rb.position+ delta.normalized * speed * Time.fixedDeltaTime);
-                if(animator) animator.SetFloat("Speed", nextTarget.magnitude * speed * Time.fixedDeltaTime);
+                rb.MovePosition(rb.position + delta.normalized * speed * Time.fixedDeltaTime);
+                if (animator) animator.SetFloat("Speed", nextTarget.magnitude * speed * Time.fixedDeltaTime);
             }
             else
             {
                 targetIndex++;
-                if(targetIndex > finalPoint -1) // Finished moving
+                if (targetIndex > finalPoint - 1) // Finished moving
                 {
                     FinishMoving();
                     return;
@@ -65,7 +72,8 @@ public class NPCFollowPath : MonoBehaviour
     protected virtual void FinishMoving()
     {
         finishedMovement = true;
-        if (animator) {
+        if (animator)
+        {
             animator.SetFloat("Speed", 0f);
             animator.SetInteger("Direction", 0); // face downwards after moving
         }
