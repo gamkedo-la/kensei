@@ -12613,8 +12613,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Father
   sentences:
-  - It's good to see you! I'm so proud of what you've accomplished as a Samurai to
-    the Daimyo. Keep up the good work!
+  - Son, I must say, I could not be more proud of the path you have chosen. The way
+    of the samurai under the leadership of the Daimyo is a noble cause. The Daimyo
+    already filled me in on your invaluable assistance in keeping the peace in our
+    village. Keep up the good work!
 --- !u!114 &353018884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33754,6 +33756,11 @@ GameObject:
   m_Component:
   - component: {fileID: 729877617}
   - component: {fileID: 729877616}
+  - component: {fileID: 729877622}
+  - component: {fileID: 729877621}
+  - component: {fileID: 729877620}
+  - component: {fileID: 729877619}
+  - component: {fileID: 729877618}
   m_Layer: 0
   m_Name: ConfrontationCollider
   m_TagString: Untagged
@@ -33771,7 +33778,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -33791,6 +33798,98 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729877618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729877615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - 'I will see no darkness, only red. Your presence here is as a pawn, I hope you
+    know you are being used. '
+--- !u!114 &729877619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729877615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Miyamoto Musashi
+  sentences:
+  - That's the spirit! Our way is to face death with a smile, I hope you are still
+    grinning when everything goes dark.
+--- !u!114 &729877620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729877615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - Musashi your tongue is as blasphemous as the rumors say. I look forward to cutting
+    you down and stopping your breath from uttering such insults again.
+--- !u!114 &729877621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729877615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Miyamoto Musashi
+  sentences:
+  - Oi Kojiro, let's hope that your blade is as long and sharp as they say it is.
+    I will not hold back in our duel, and I have never lost. Your death will be a
+    harsh blow to this dishonored kingdom.
+--- !u!114 &729877622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729877615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9eeaa2cb2ef5a4fbf58664df5328d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 729877621}
+  - {fileID: 729877620}
+  - {fileID: 729877619}
+  - {fileID: 729877618}
+  collider: {fileID: 729877616}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!1 &730868215
 GameObject:
   m_ObjectHideFlags: 0
