@@ -61,7 +61,14 @@ public class DialogueManager : MonoBehaviour
     {
         panel.SetActive(false);
         trigger.dialogueEnd = true;
-        FindObjectsOfType<PlayerController>()[0].movementLocked = false;
+        if(nameText.text == "Daimyo's Words"){
+            foreach (DaimyoMovement item in FindObjectsOfType<DaimyoMovement>())
+            {
+                item.ContinueMoving();
+            }
+        } else {
+            FindObjectsOfType<PlayerController>()[0].movementLocked = false;
+        }
     }
 
 }

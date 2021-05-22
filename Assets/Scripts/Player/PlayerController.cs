@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Canvas;
     Vector2 movement;
-    bool facingUp;
+    public bool facingUp;
     bool inventoryOpen = false;
     public GameObject targetItem;
     public GameObject weapon;

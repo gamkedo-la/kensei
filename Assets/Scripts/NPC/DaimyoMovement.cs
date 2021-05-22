@@ -1,73 +1,50 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class DaimyoMovement : MonoBehaviour
+public class DaimyoMovement : NPCFollowPath
 {
-    private Animator animator;
-    private Rigidbody2D rb;
-    private bool finishedMovement;
-    private bool stopped;
-    private Vector2 nextTarget;
-    private int targetIndex;
-    public float speed;
-    public Transform paths;
     public GameObject sakuraBlossom;
+    public bool dropSakuras;
+    private bool droppedSakuras = false;
+    private bool continueMoving = false;
 
-    // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
-        animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-        finishedMovement = false;
-        nextTarget = paths.GetChild(0).transform.position;
-        targetIndex = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(!finishedMovement && !stopped) {
-
-            Vector2 delta = new Vector2(nextTarget.x - transform.position.x, nextTarget.y - transform.position.y);
-
-            if(delta.magnitude > 1)
-            {
-                rb.MovePosition(rb.position+ delta.normalized * speed * Time.fixedDeltaTime);
-                if(animator) animator.SetFloat("Speed", nextTarget.magnitude * speed * Time.fixedDeltaTime);
-            }
-            else
-            {
-                targetIndex++;
-                if(targetIndex == 4) // Reached the grave, movement will be stopped for 2 secs
-                {
-                    StartCoroutine("DropSakuras");
-                }
-                if(targetIndex == 7) // Finished moving
-                {
-                    finishedMovement = true;
-                    animator.SetFloat("Speed", 0f);
-                    return;
-                }
-
-                nextTarget = paths.GetChild(targetIndex).transform.position;
-            }
-            if(delta.y > 0.1f)
-                    {
-                        if (animator) animator.SetInteger("Direction", 3);
-                    }
-                    else if(delta.y < -0.1f)
-                    {
-                        if (animator) animator.SetInteger("Direction", 0);
-                    }
+        base.Start();
+        if(gameObject.CompareTag("Player")){
+            GetComponent<PlayerController>().movementLocked = true;
         }
     }
 
-    IEnumerator DropSakuras() {
+    protected override void Update() {
+        base.Update(); // run the original update first
+        if(targetIndex == 3 && gameObject.CompareTag("Player")){ // Enable collider for player before arriving to the grave
+            GetComponent<CapsuleCollider2D>().enabled = true;
+        }
+        if(targetIndex == 4 && !droppedSakuras) // Reached the grave, movement will be stopped for 2 secs
+        {
+            DropSakuras();
+        }
+    }
+
+    void DropSakuras() {
         stopped = true;
+        droppedSakuras = true;
         animator.SetFloat("Speed", 0f);
-        yield return new WaitForSeconds(2);
-        Instantiate(sakuraBlossom, transform.position, Quaternion.identity);
+        if(dropSakuras) Instantiate(sakuraBlossom, transform.position, Quaternion.identity); // Only drop sakuras if you are the daimyo
+    }
+
+    public void ContinueMoving() {
         stopped = false;
+    }
+
+    protected override void FinishMoving()
+    {
+        base.FinishMoving();
+        if(gameObject.CompareTag("Player")){
+            GetComponent<PlayerController>().movementLocked = false;
+        } else {
+            GetComponent<CircleCollider2D>().enabled = true;
+        }
     }
 }
