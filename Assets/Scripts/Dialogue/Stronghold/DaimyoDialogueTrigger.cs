@@ -199,7 +199,14 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             {
                 dialogueEnd = false;
                 //load the next scene
-                //SceneLoader.Load()
+                if(talkedSake || accusedShigie)
+                {
+                    //SceneLoader.Load() pristine village
+                }
+                else
+                {
+                    //SceneLoader.Load() destroyed village
+                }
             }
     }
 
@@ -297,6 +304,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             button.GetComponent<DialogueRun>().trigger = this;
             button.GetComponent<DialogueRun>().TriggerDialogue();
             talkedSake = true;
+            GameDictionary.Instance.UpdateEntry("Sake with Daimyo", true);
         }
 
         else if(accusedShigieChoice)

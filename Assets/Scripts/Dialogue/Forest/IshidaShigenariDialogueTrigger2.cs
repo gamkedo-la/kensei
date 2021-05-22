@@ -130,7 +130,6 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
                     button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                     button.GetComponent<DialogueRun>().trigger = this;
                     player.GetComponent<PlayerController>().ChooseAnimator();
-
                 }
                 break;
         }
