@@ -52790,9 +52790,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sasaki Kojiro
   sentences:
-  - Sometimes the gods bestow great gifts upon fools. There is no use in trying to
-    reason with these truths. However, you are no fool and I am proud to have trained
-    you. Please accept this gift to commemorate my respect for you.
+  - 'Sometimes the gods bestow great gifts upon fools. There is no use in trying
+    to reason with these truths. However, you are no fool and I am proud to have
+    trained you. '
+  - 'I am reminded of a poem by an old emperor''s wife as she lay on her deathbed...
+
+
+    The
+    sun goes down
+
+    behind the mountain peaks
+
+    and bells ring.'
+  - Though I may face my own demise, the bells ring for the new shoots of spring.
+    Please accept this gift to commemorate my respect for you.
 --- !u!114 &1225503817
 MonoBehaviour:
   m_ObjectHideFlags: 0
