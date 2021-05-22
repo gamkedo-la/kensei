@@ -5767,7 +5767,7 @@ Transform:
   - {fileID: 467359677}
   - {fileID: 763584234}
   m_Father: {fileID: 1436614713}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &159202644
 MonoBehaviour:
@@ -11465,10 +11465,14 @@ GameObject:
   - component: {fileID: 323366287}
   - component: {fileID: 323366299}
   - component: {fileID: 323366298}
-  - component: {fileID: 323366297}
   - component: {fileID: 323366288}
-  - component: {fileID: 323366296}
+  - component: {fileID: 323366297}
   - component: {fileID: 323366289}
+  - component: {fileID: 323366294}
+  - component: {fileID: 323366293}
+  - component: {fileID: 323366292}
+  - component: {fileID: 323366291}
+  - component: {fileID: 323366290}
   m_Layer: 0
   m_Name: MusashiCharacter
   m_TagString: Untagged
@@ -11492,7 +11496,7 @@ RectTransform:
   - {fileID: 546957780}
   - {fileID: 1217632808}
   m_Father: {fileID: 1436614713}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11523,25 +11527,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323366286}
   m_CullTransparentMesh: 0
---- !u!95 &323366296
-Animator:
-  serializedVersion: 3
+--- !u!114 &323366290
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323366286}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9c8480474470ee64ea15cb2ab26a6489, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Miyamoto Musashi
+  sentences:
+  - Ronin 2
+--- !u!114 &323366291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Miyamoto Musashi
+  sentences:
+  - Monk
+--- !u!114 &323366292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Miyamoto Musashi
+  sentences:
+  - Samurai
+--- !u!114 &323366293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Miyamoto Musashi
+  sentences:
+  - Ronin
+--- !u!114 &323366294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac7333ee52bbbf4baa06b7dbf268e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  collider: {fileID: 323366297}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
+  oldRoninArmor: {fileID: 978768693}
+  player: {fileID: 0}
 --- !u!58 &323366297
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42879,6 +42953,92 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.642151, y: 17.726673}
   m_EdgeRadius: 0
+--- !u!1001 &978768692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1436614713}
+    m_Modifications:
+    - target: {fileID: 8770180397539536238, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_Name
+      value: RoninArmorItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536238, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -42.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 309.06992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: caf0f8471c1011341a17aeabe448359a, type: 3}
+--- !u!1 &978768693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8770180397539536238, guid: caf0f8471c1011341a17aeabe448359a,
+    type: 3}
+  m_PrefabInstance: {fileID: 978768692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &978768694 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8770180397539536243, guid: caf0f8471c1011341a17aeabe448359a,
+    type: 3}
+  m_PrefabInstance: {fileID: 978768692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &979620765
 GameObject:
   m_ObjectHideFlags: 0
@@ -43633,7 +43793,7 @@ Transform:
   - {fileID: 23513567}
   - {fileID: 606500619}
   m_Father: {fileID: 1436614713}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1006478611
 GameObject:
@@ -61632,6 +61792,7 @@ Transform:
   m_Children:
   - {fileID: 353018879}
   - {fileID: 1723887863}
+  - {fileID: 978768694}
   - {fileID: 323366287}
   - {fileID: 159202643}
   - {fileID: 1987952081}
@@ -100411,7 +100572,7 @@ Transform:
   - {fileID: 44677116}
   - {fileID: 61601497}
   m_Father: {fileID: 1436614713}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1987952085
 CapsuleCollider2D:
