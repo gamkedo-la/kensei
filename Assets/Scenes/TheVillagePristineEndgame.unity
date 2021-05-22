@@ -5139,6 +5139,96 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &140070041
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -24.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600824, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600837, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_Name
+      value: SenseiKashimonoIcon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664694571415600837, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5, type: 3}
+--- !u!1 &140070042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8664694571415600837, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 140070041}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &144178853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33796,7 +33886,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &729877618
 MonoBehaviour:
@@ -52528,6 +52618,11 @@ GameObject:
   - component: {fileID: 1225503811}
   - component: {fileID: 1225503810}
   - component: {fileID: 1225503809}
+  - component: {fileID: 1225503817}
+  - component: {fileID: 1225503816}
+  - component: {fileID: 1225503815}
+  - component: {fileID: 1225503814}
+  - component: {fileID: 1225503813}
   m_Layer: 0
   m_Name: Sasaki Kojiro
   m_TagString: Untagged
@@ -52629,8 +52724,97 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225503813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - 4
+--- !u!114 &1225503814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - 3
+--- !u!114 &1225503815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - 2
+--- !u!114 &1225503816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sasaki Kojiro
+  sentences:
+  - 1
+--- !u!114 &1225503817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f7704dff961e67429b36f2e7093bcdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1225503816}
+  - {fileID: 1225503815}
+  - {fileID: 1225503814}
+  - {fileID: 1225503813}
+  collider: {fileID: 1225503809}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
+  senseiKashimono: {fileID: 140070042}
+  player: {fileID: 0}
 --- !u!1001 &1227219208
 PrefabInstance:
   m_ObjectHideFlags: 0

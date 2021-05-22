@@ -60,8 +60,8 @@ public class PlayerController : MonoBehaviour
         //ChooseAnimator();
         //AddItem(defaultClothing);
         LoadFile.LoadGame();
-        GameDictionary.Instance.UpdateEntry("Used Hidden Tunnel", true);
-        GameDictionary.Instance.UpdateEntry("Monk Path", true);
+        GameDictionary.Instance.UpdateEntry("Samurai Path", true);
+
     }
 
     void Update()
