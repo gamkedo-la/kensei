@@ -11541,7 +11541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Miyamoto Musashi
   sentences:
-  - Ronin 2
+  - Wear that armor proudly, it was well made. Perhaps it will save your life someday.
 --- !u!114 &323366291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11556,7 +11556,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Miyamoto Musashi
   sentences:
-  - Monk
+  - Oubasan, it's good to see someone of the Way taking in the scene. Perhaps you
+    can bless me with good fortune before my next duel.
 --- !u!114 &323366292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11571,7 +11572,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Miyamoto Musashi
   sentences:
-  - Samurai
+  - Ah young Samurai, you were wise not to face me that day. Your journey could have
+    ended before it began. Someday you may find that service to lords is menial,
+    and you wish to strike out on your own. Myself, I am loyal only to my art.
 --- !u!114 &323366293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11586,7 +11589,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Miyamoto Musashi
   sentences:
-  - Ronin
+  - Well well you certainly have become more proficient with weapons since we last
+    met. As you master your craft further perhaps I can share a bit of wisdom with
+    you. It may sound philosophical but it is part of a book of swordsmanship I am
+    writing...
+  - By knowing things that exist, you can know that which does not exist. In the
+    void is virtue, and no evil. Wisdom has existence, principle has existence, the
+    Way has existence, spirit is nothingness.
+  - As my master of the sword has progressed I have less need for other protection.
+    Perhaps this suit of armor would suit you better.
 --- !u!114 &323366294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11600,10 +11611,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 323366293}
+  - {fileID: 323366292}
+  - {fileID: 323366291}
+  - {fileID: 323366290}
   collider: {fileID: 323366297}
   button: {fileID: 1016599175}
   panel: {fileID: 1016599176}
