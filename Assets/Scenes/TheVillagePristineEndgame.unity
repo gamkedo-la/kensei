@@ -12524,6 +12524,10 @@ GameObject:
   - component: {fileID: 353018886}
   - component: {fileID: 353018885}
   - component: {fileID: 353018880}
+  - component: {fileID: 353018884}
+  - component: {fileID: 353018883}
+  - component: {fileID: 353018882}
+  - component: {fileID: 353018881}
   m_Layer: 0
   m_Name: FatherCharacter
   m_TagString: Untagged
@@ -12563,6 +12567,80 @@ CapsuleCollider2D:
   m_Offset: {x: -0.028894782, y: 0.14447212}
   m_Size: {x: 2.8216412, y: 5.3995247}
   m_Direction: 0
+--- !u!114 &353018881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353018878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Father
+  sentences:
+  - It's good to see you! I'm so proud of what you've accomplished as an Oubasan.
+    Keep up the good work!
+--- !u!114 &353018882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353018878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Father
+  sentences:
+  - It's good to see you! I'm so proud of what you've accomplished as an independent
+    Ronin. Keep up the good work!
+--- !u!114 &353018883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353018878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Father
+  sentences:
+  - It's good to see you! I'm so proud of what you've accomplished as a Samurai to
+    the Daimyo. Keep up the good work!
+--- !u!114 &353018884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353018878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016b05343fbc63146a296c43d3804c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 353018883}
+  - {fileID: 353018882}
+  - {fileID: 353018881}
+  collider: {fileID: 353018885}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!58 &353018885
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14438,6 +14516,14 @@ GameObject:
   - component: {fileID: 396522799}
   - component: {fileID: 396522798}
   - component: {fileID: 396522797}
+  - component: {fileID: 396522808}
+  - component: {fileID: 396522807}
+  - component: {fileID: 396522806}
+  - component: {fileID: 396522805}
+  - component: {fileID: 396522804}
+  - component: {fileID: 396522803}
+  - component: {fileID: 396522802}
+  - component: {fileID: 396522801}
   m_Layer: 0
   m_Name: Ishida Shigenari
   m_TagString: Untagged
@@ -14541,6 +14627,151 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &396522801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396522796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - Oh hi, sorry about the arm. Honestly I was prepared to lose that duel, I feel
+    like you must have gone easy on me. If I can do anything to help you in the future
+    let me know. I'm not going to ask you any favors after what I did.
+--- !u!114 &396522802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396522796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - Oh it's good to see you Oubasan. I'm glad things worked out for your home town,
+--- !u!114 &396522803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396522796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - 'Oh it''s good to see you! I''m glad things worked out for your home town. It''s
+    nice to be back with my brothers even if Shigeie is a bit of a prick. '
+--- !u!114 &396522804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396522796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - 'Oh it''s you, I''m glad things worked out. It''s nice to be back with my brothers
+    even if Shigeie is a bit of a prick. '
+--- !u!114 &396522805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396522796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - Oh it's good to see you Oubasan. I'm glad things worked out for your home town,
+    but I hope the Daimyo is merciful with Shigeie. He may have done some terrible
+    things, but he is still my brother and I'd rather he kept his head.
+--- !u!114 &396522806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396522796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - Oh it's good to see you! I'm glad things worked out for your home town, but I
+    hope the Daimyo is merciful with Shigeie. He may have done some terrible things
+    but he is still my brother and I'd rather he kept his head.
+--- !u!114 &396522807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396522796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigenari
+  sentences:
+  - Oh it's you, if you wouldn't mind please put in a good word for Shigeie for me
+    with the Daimyo. He may have done some terrible things but he is still my brother
+    and I'd rather he kept his head.
+--- !u!114 &396522808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396522796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3718e2e3b2c2b24d8c7ddfb57af9f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 396522807}
+  - {fileID: 396522806}
+  - {fileID: 396522805}
+  - {fileID: 396522804}
+  - {fileID: 396522803}
+  - {fileID: 396522802}
+  - {fileID: 396522801}
+  collider: {fileID: 396522798}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!1001 &397119998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33558,7 +33789,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &730868215
 GameObject:
@@ -48491,6 +48722,15 @@ GameObject:
   - component: {fileID: 1154729221}
   - component: {fileID: 1154729220}
   - component: {fileID: 1154729219}
+  - component: {fileID: 1154729231}
+  - component: {fileID: 1154729230}
+  - component: {fileID: 1154729229}
+  - component: {fileID: 1154729228}
+  - component: {fileID: 1154729227}
+  - component: {fileID: 1154729226}
+  - component: {fileID: 1154729225}
+  - component: {fileID: 1154729224}
+  - component: {fileID: 1154729223}
   m_Layer: 0
   m_Name: Ishida Sakichi
   m_TagString: Untagged
@@ -48594,6 +48834,167 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154729223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - 'It''s nice to catch up with both my brothers. They may have their differences
+    but I love them both. I am glad that everything worked out in the end. '
+--- !u!114 &1154729224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - 'It''s nice to catch up with both my brothers. They may have their differences
+    but I love them both. I am glad that everything worked out in the end. '
+--- !u!114 &1154729225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - 'It''s nice to catch up with both my brothers. They may have their differences
+    but I love them both. I am glad that everything worked out in the end. '
+--- !u!114 &1154729226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - 'Ah, my brother''s killer. At least I still have Shigeie... I don''t really want
+    to talk to you to be honest. '
+--- !u!114 &1154729227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - I knew Shigeie was up to no good, but murder? I did not know he had it in him.
+    I hope the Daimyo is merciful although I know that to be unlikely.
+--- !u!114 &1154729228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - I knew Shigeie was up to no good, but murder? I did not know he had it in him.
+    I hope the Daimyo is merciful although I know that to be unlikely.
+--- !u!114 &1154729229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - I knew Shigeie was up to no good, but murder? I did not know he had it in him.
+    I hope the Daimyo is merciful although I know that to be unlikely.
+--- !u!114 &1154729230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Sakichi
+  sentences:
+  - Shigenari is dead, Shigeie is arrested. I am the last free Ishida now, truly
+    alone. There is nothing left for me in Japan, I am leaving to the mainland to
+    start a new life. Too many bad memories here. Did you really have to take them
+    both from me?
+--- !u!114 &1154729231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154729218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06bb85bd02074d49a9f566b98ff1352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1154729230}
+  - {fileID: 1154729229}
+  - {fileID: 1154729228}
+  - {fileID: 1154729227}
+  - {fileID: 1154729226}
+  - {fileID: 1154729225}
+  - {fileID: 1154729224}
+  - {fileID: 1154729223}
+  collider: {fileID: 1154729219}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!1001 &1157399792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52129,7 +52530,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1227219208
 PrefabInstance:
@@ -57109,6 +57510,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7196098753082407238, guid: b3bda5a14de181d4fad67a132795a3e9,
     type: 3}
   m_PrefabInstance: {fileID: 1345189431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1348375239
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8251365173482942091, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_Name
+      value: MonkRakusuIcon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942091, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -85.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -34.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251365173482942092, guid: 46a641fad70302b4a88893c428975a55,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 46a641fad70302b4a88893c428975a55, type: 3}
+--- !u!1 &1348375240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8251365173482942091, guid: 46a641fad70302b4a88893c428975a55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1348375239}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1348740440
 GameObject:
@@ -88618,6 +89109,92 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1723887862}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1723887864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1581628219822357149, guid: 345815714a835dd4b9d150b6b13e4aac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1723887862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1723887865 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3036719314840957220, guid: 345815714a835dd4b9d150b6b13e4aac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1723887862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1723887866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723887864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kujo the Shopkeep
+  sentences:
+  - Ah the wise Oubasan returns! Don't worry about the sword, rumor is you helped
+    us all avert disaster and I'm grateful for that.
+--- !u!114 &1723887867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723887864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kujo the Shopkeep
+  sentences:
+  - Ah the brave Ronin returns! Don't worry about the sword, rumor is you helped
+    us all avert disaster and I'm grateful for that.
+--- !u!114 &1723887868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723887864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kujo the Shopkeep
+  sentences:
+  - Ah the loyal Samurai returns! Don't worry about the sword, rumor is you helped
+    us all avert disaster and I'm grateful for that.
+--- !u!114 &1723887869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723887864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57330d7ef549cc948a0e79ffa006cd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1723887868}
+  - {fileID: 1723887867}
+  - {fileID: 1723887866}
+  collider: {fileID: 1723887865}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!1001 &1724441892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91827,6 +92404,11 @@ GameObject:
   - component: {fileID: 1801235668}
   - component: {fileID: 1801235667}
   - component: {fileID: 1801235666}
+  - component: {fileID: 1801235674}
+  - component: {fileID: 1801235673}
+  - component: {fileID: 1801235672}
+  - component: {fileID: 1801235671}
+  - component: {fileID: 1801235670}
   m_Layer: 0
   m_Name: Ishida Shigie
   m_TagString: Untagged
@@ -91930,6 +92512,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1801235670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801235665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigeie
+  sentences:
+  - Being here with my brothers makes me feel young again. I miss my Father, but
+    perhaps revenge is a dish best not served. Death begets death, but there is only
+    one way to break the cycle. Thank you for helping me understand, I wish to repent
+    my evil actions. Perhaps I will join the monks myself.
+--- !u!114 &1801235671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801235665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigeie
+  sentences:
+  - 'Being here with my brothers makes me feel young again. I miss my Father, but
+    perhaps revenge is a dish best not served. Death begets death, but there is only
+    one way to break the cycle. Thank you for helping me understand, I wish to repent
+    my evil actions. May you use your sword more nobly than I. '
+--- !u!114 &1801235672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801235665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigeie
+  sentences:
+  - 'Being here with my brothers makes me feel young again. I miss my Father, but
+    perhaps revenge is a dish best not served. Death begets death, but there is only
+    one way to break the cycle. Thank you for helping me understand, I wish to repent
+    my evil actions. May you serve the Daimyo more nobly than I. '
+--- !u!114 &1801235673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801235665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ishida Shigeie
+  sentences:
+  - Oh look, the guy who killed my brother. Please don't speak to me.
+--- !u!114 &1801235674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801235665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2af6943a21d122c408043be51f3dd528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1801235673}
+  - {fileID: 1801235672}
+  - {fileID: 1801235671}
+  - {fileID: 1801235670}
+  collider: {fileID: 1801235667}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!1 &1801547604
 GameObject:
   m_ObjectHideFlags: 0
@@ -96306,6 +96984,11 @@ GameObject:
   - component: {fileID: 1918766579}
   - component: {fileID: 1918766578}
   - component: {fileID: 1918766577}
+  - component: {fileID: 1918766585}
+  - component: {fileID: 1918766584}
+  - component: {fileID: 1918766583}
+  - component: {fileID: 1918766582}
+  - component: {fileID: 1918766581}
   m_Layer: 0
   m_Name: TakuanSohoSprite
   m_TagString: Untagged
@@ -96407,8 +97090,121 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1918766581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918766576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Takuan S\u014Dh\u014D"
+  sentences:
+  - I am happy to be here with you. Let us take in the sight and sounds of the ocean
+    for a time together with unfettered minds.
+--- !u!114 &1918766582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918766576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Takuan S\u014Dh\u014D"
+  sentences:
+  - 'Ah young Oubasan, the world is better when it is at peace is it not? You have
+    done well to avert the bloodshed that could have taken place here. I am proud
+    to call you my disciple. '
+  - 'The snow at the peaks,
+
+    The ice at the mountain depths
+
+    Melt and raise
+
+    The
+    sound in the foothills:
+
+    The water of spring.'
+  - Is it a nice poem no? It is one of my musings on embodiment. If a thing is possesed
+    of form, nature, and embodiment it must also have power. Power is the strength
+    to be able to function efficaciously; it is the strength behind the achievement
+    of all phenomena.
+  - You have achieved effect through your power this day, saving the people of the
+    village. I would be happy to welcome you into the highest standing in our order.
+    Will you accept?
+--- !u!114 &1918766583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918766576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Takuan S\u014Dh\u014D"
+  sentences:
+  - 'Ah young Ronin, the world is better when it is at peace is it not? Perhaps someday
+    we will all put our swords up on the wall and the bloodshed will end. Only then
+    will we all achieve enlightenment. '
+--- !u!114 &1918766584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918766576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Takuan S\u014Dh\u014D"
+  sentences:
+  - 'Ah young Samurai, the world is better when it is at peace is it not? Perhaps
+    someday we will all put our swords up on the wall and the bloodshed will end.
+    Only then will we all achieve enlightenment. '
+--- !u!114 &1918766585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918766576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c006ec119f21240bec053fac7ded08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1918766584}
+  - {fileID: 1918766583}
+  - {fileID: 1918766582}
+  - {fileID: 1918766581}
+  collider: {fileID: 1918766577}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
+  player: {fileID: 0}
+  rakusu: {fileID: 1348375240}
 --- !u!1001 &1921199413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104475,7 +105271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Umami Isa
   sentences:
-  - Samurai Path Dialogue
+  - Oh my skilled Samurai has returned home at last. You've grown so much since I
+    saw you last, I am glad that you were able to help us come to better terms with
+    the Daimyo. Perhaps you can stay a while?
 --- !u!114 &3972467482672051329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104490,7 +105288,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Umami Isa
   sentences:
-  - Monk Path Dialogue
+  - Oh my wise Oubasan has returned home at last. You've grown so much since I saw
+    you last, I am glad that you were able to help us come to better terms with the
+    Daimyo. Perhaps you can stay a while?
 --- !u!114 &3972467482672051330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104505,7 +105305,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Umami Isa
   sentences:
-  - Ronin Path Dialogue!
+  - Oh my brave Ronin has returned home at last. You've grown so much since I saw
+    you last, I am glad that you were able to help us come to better terms with the
+    Daimyo. Perhaps you can stay a while?
 --- !u!95 &3972467482672051332
 Animator:
   serializedVersion: 3
