@@ -11440,7 +11440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.4, y: -43.37}
+  m_AnchoredPosition: {x: 26.4, y: -48.6}
   m_SizeDelta: {x: 6, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!70 &323366288
@@ -33838,7 +33838,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 10
 --- !u!4 &729877617
 Transform:
   m_ObjectHideFlags: 0
@@ -36288,6 +36288,11 @@ GameObject:
   - component: {fileID: 804921348}
   - component: {fileID: 804921346}
   - component: {fileID: 804921347}
+  - component: {fileID: 804921357}
+  - component: {fileID: 804921356}
+  - component: {fileID: 804921355}
+  - component: {fileID: 804921354}
+  - component: {fileID: 804921353}
   m_Layer: 0
   m_Name: Daimyo Mori Terumoto_F
   m_TagString: Untagged
@@ -36333,6 +36338,7 @@ MonoBehaviour:
   sakuraBlossom: {fileID: 2163388395215824046, guid: 68e3a7ffaf8517f46bd760374ccab988,
     type: 3}
   dropSakuras: 1
+  graveTrigger: {fileID: 8367287392897387781}
 --- !u!95 &804921348
 Animator:
   serializedVersion: 3
@@ -36448,6 +36454,93 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &804921353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804921345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  sentences:
+  - 4
+--- !u!114 &804921354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804921345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  sentences:
+  - 3
+--- !u!114 &804921355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804921345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  sentences:
+  - 2
+--- !u!114 &804921356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804921345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  sentences:
+  - 1
+--- !u!114 &804921357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804921345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc9d314170b33b4384d5e6511a523a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 804921356}
+  - {fileID: 804921355}
+  - {fileID: 804921354}
+  - {fileID: 804921353}
+  collider: {fileID: 804921349}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!1001 &811763658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52705,7 +52798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225503808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.2, y: -29.6, z: 0}
+  m_LocalPosition: {x: 23.2, y: -26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55556,8 +55649,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   paths: {fileID: 8367287392121277354}
-  sakuraBlossom: {fileID: 0}
+  sakuraBlossom: {fileID: 2163388395215824046, guid: 68e3a7ffaf8517f46bd760374ccab988,
+    type: 3}
   dropSakuras: 0
+  graveTrigger: {fileID: 8367287392897387781}
 --- !u!1 &1294154262
 GameObject:
   m_ObjectHideFlags: 0
@@ -107641,7 +107736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8367287392955066453}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -35.98, y: -26.38, z: 0}
+  m_LocalPosition: {x: -35.98, y: -26.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8367287392121277354}
@@ -107696,14 +107791,14 @@ MonoBehaviour:
   Dialogues:
   - {fileID: 8367287392955066454}
   collider: {fileID: 8367287392955066456}
-  button: {fileID: 0}
-  panel: {fileID: 0}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
   inRange: 0
   dialogueEnd: 0
-  combatScore: {fileID: 0}
-  buttonA: {fileID: 0}
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
   buttonAText: 
-  buttonB: {fileID: 0}
+  buttonB: {fileID: 1016599173}
   buttonBText: 
 --- !u!58 &8367287392955066456
 CircleCollider2D:
@@ -107789,7 +107884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8367287393369436581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.67, y: -26.38, z: 0}
+  m_LocalPosition: {x: -47.16, y: -26.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8367287392410695350}
