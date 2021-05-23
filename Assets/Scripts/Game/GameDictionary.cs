@@ -26,7 +26,7 @@ public class GameDictionary : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         Populate();
 
-        foreach(string key in dictionaryList)
+        /*foreach(string key in dictionaryList)
         {
             if(PlayerPrefs.HasKey(key))
             {
@@ -43,7 +43,7 @@ public class GameDictionary : MonoBehaviour
                         break;
                 }
             }
-        }
+        }*/
     } 
 
     public void Populate()

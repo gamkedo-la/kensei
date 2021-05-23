@@ -5661,7 +5661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5207c543fe29ba44785dd9e4c41554ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
   onSwitch: 0
   speed: 5
   reached: 0
@@ -103266,6 +103265,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rusted Key
       objectReference: {fileID: 0}
+    - target: {fileID: 1187690138298770788, guid: bb5e8d818e5c669438e7f7b8c78ef30f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1187690138298770789, guid: bb5e8d818e5c669438e7f7b8c78ef30f,
         type: 3}
       propertyPath: m_RootOrder
@@ -103995,6 +103999,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base Katana
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502521069607441014, guid: 99f9f20acb5c0434fb49edc12cdb3b51,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99f9f20acb5c0434fb49edc12cdb3b51, type: 3}

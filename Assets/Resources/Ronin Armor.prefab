@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8770180397539536240}
   - component: {fileID: 8770180397539536239}
   m_Layer: 0
-  m_Name: RoninArmorItem
+  m_Name: Ronin Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

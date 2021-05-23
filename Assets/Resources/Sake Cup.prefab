@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6100928738225180551
+--- !u!1 &3959756893086247392
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6100928738225180570}
-  - component: {fileID: 6100928738225180571}
-  - component: {fileID: 6100928738225180548}
-  - component: {fileID: 6100928738225180549}
-  - component: {fileID: 6100928738225180550}
-  - component: {fileID: 6100928738225180569}
+  - component: {fileID: 3959756893086247394}
+  - component: {fileID: 3959756893086247393}
+  - component: {fileID: 3959756893086247397}
+  - component: {fileID: 3959756893086247396}
+  - component: {fileID: 3959756893086247395}
   m_Layer: 0
-  m_Name: DaimyoArmor
+  m_Name: Sake Cup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6100928738225180570
+--- !u!4 &3959756893086247394
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6100928738225180551}
+  m_GameObject: {fileID: 3959756893086247392}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 97.366, y: 28.774765, z: 4724.0254}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 18.515991, y: -57.285233, z: 4724.0254}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6100928738225180571
+--- !u!212 &3959756893086247393
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6100928738225180551}
+  m_GameObject: {fileID: 3959756893086247392}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,24 +73,55 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 56543a7ca47751d4caa3e8c92b7ae8a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf88e3fab24422f479654cc126ca3310, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6, y: 8}
+  m_Size: {x: 6, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &6100928738225180548
+--- !u!114 &3959756893086247397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959756893086247392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416bd985c5c50344d9db4012d32daf70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 3959756893086247395}
+  item: {fileID: 3959756893086247392}
+--- !u!114 &3959756893086247396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959756893086247392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dad84be831823e4b9bc1496294a039c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Sake Cup
+  itemSlot: 3
+  combatPoints: 0
+  itemSprite: {fileID: 21300000, guid: bf88e3fab24422f479654cc126ca3310, type: 3}
+  itemDescription: 
+--- !u!58 &3959756893086247395
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6100928738225180551}
+  m_GameObject: {fileID: 3959756893086247392}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -100,54 +130,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4
---- !u!114 &6100928738225180549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6100928738225180551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dad84be831823e4b9bc1496294a039c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Daimyo Armor
-  itemSlot: 1
-  combatPoints: 15
-  itemSprite: {fileID: 21300000, guid: c98705f78108bb64cbe3ba112f42c7c3, type: 3}
-  itemDescription: 
---- !u!114 &6100928738225180550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6100928738225180551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416bd985c5c50344d9db4012d32daf70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circle: {fileID: 6100928738225180548}
-  item: {fileID: 6100928738225180551}
---- !u!95 &6100928738225180569
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6100928738225180551}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_Radius: 2.9999998

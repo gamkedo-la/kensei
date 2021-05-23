@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     {
         scene = SceneManager.GetActiveScene();
 
-        if(scene.name == "TheVillage")
+        if(scene.name == "TheVillage" && !GameDictionary.choiceDictionary["Game Saved"])
         {
             AddItem(defaultClothing);
         }
@@ -538,28 +538,27 @@ public class PlayerController : MonoBehaviour
     {
         //GameObject[] objArray = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
         //Debug.Log(objArray.Length);
-
-        foreach (KeyValuePair<string, bool> pair in GameDictionary.choiceDictionary)
+        
+        foreach (string entry in GameDictionary.dictionaryList)
         {
-            if (pair.Value)
+            if (GameDictionary.choiceDictionary[entry])
             {
-                GameObject obj = Resources.Load(pair.Key) as GameObject;
+                GameObject obj = Resources.Load(entry) as GameObject;
 
                 if(obj != null)
                 {
                     ItemClass thisItem = obj.GetComponent<ItemClass>();
 
-                    if (thisItem != null && pair.Key == thisItem.itemName)
+                    if (thisItem != null && entry == thisItem.itemName)
                     {
-                        Debug.Log("tried add");
+                        Debug.Log("tried add" + obj.GetComponent<ItemClass>().itemName);
                         AddItem(obj);
-                        break;
                     }
                     else{Debug.Log("Broken item is" + obj.name);}
                 }
                 else
                 {
-                    Debug.Log(pair.Key + " Failed to load from resources");
+                    Debug.Log(entry + " Failed to load from resources");
                 }
             }
         }

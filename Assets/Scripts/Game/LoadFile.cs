@@ -4,39 +4,24 @@ using UnityEngine;
 
 public static class LoadFile 
 {
-    //public GameObject player;
-    //private GameObject itemToSpawn;
-    // Start is called before the first frame update
+    static List<string> dictionaryList;
     public static void LoadGame()
     {
+        dictionaryList = new List<string>();
         Debug.Log("LoadGame Called");
-        //SceneLoader.Load(PlayerPrefs.GetString("Scene"));
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
 
         Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
         
-        //spawn player at locatio
-
-        /*GameObject.Instantiate(player, position, Quaternion.EulerRotation(0,0,0));
-
-        //iterate through item dictionary and load variables using 'add item' function
-        if(ItemDictionary.itemDictionary["Weapon"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Weapon"]));
-        if(ItemDictionary.itemDictionary["Clothing"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Clothing"]));
-        if(ItemDictionary.itemDictionary["Small Item"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Small Item"]));
-        if(ItemDictionary.itemDictionary["Big Item"]) player.GetComponent<PlayerController>().AddItem(ConstructItem(ItemDictionary.itemDictionary["Big Item"]));
-        */
-        
-        
-       /* int dictionaryLength = GameDictionary.choiceDictionary.Count;
-        var keyList = GameDictionary.choiceDictionary.Keys;
-        
-        for(int i = 0; i < dictionaryLength; i++)
-        */
-        foreach(string key in GameDictionary.dictionaryList)
+        foreach(KeyValuePair<string,bool> pair in GameDictionary.choiceDictionary)
         {
-            
-            //GameDictionary.choiceDictionary[dictionaryEntry.Key] = false;
-            GameDictionary.Instance.UpdateEntry(key, PlayerPrefs.GetInt(key, 0) == 1);   
+            dictionaryList.Add(pair.Key);
+            //GameDictionary.choiceDictionary[dictionaryEntry.Key] = false;   
+        }
+
+        foreach(string entry in dictionaryList)
+        {
+            GameDictionary.Instance.UpdateEntry(entry, PlayerPrefs.GetInt(entry, 0) == 1);
         }
         
         Debug.Log("made it to enforce");

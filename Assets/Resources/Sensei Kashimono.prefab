@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8664694571415600827}
   - component: {fileID: 8664694571415600836}
   m_Layer: 0
-  m_Name: SenseiKashimonoIcon
+  m_Name: Sensei Kashimono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
