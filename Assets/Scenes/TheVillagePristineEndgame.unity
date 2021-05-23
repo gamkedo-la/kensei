@@ -902,8 +902,8 @@ GameObject:
   - component: {fileID: 23513571}
   - component: {fileID: 23513570}
   - component: {fileID: 23513569}
-  - component: {fileID: 23513568}
   - component: {fileID: 23513575}
+  - component: {fileID: 23513568}
   - component: {fileID: 23513574}
   - component: {fileID: 23513573}
   m_Layer: 0
@@ -1089,7 +1089,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 23513566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3d14f4cbacf4d547bdfbbd8efc861ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 90cbe036e34158f419cdd39846249334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
@@ -8096,8 +8096,8 @@ GameObject:
   - component: {fileID: 238204759}
   - component: {fileID: 238204756}
   - component: {fileID: 238204755}
+  - component: {fileID: 238204754}
   - component: {fileID: 238204761}
-  - component: {fileID: 238204760}
   - component: {fileID: 238204757}
   m_Layer: 0
   m_Name: FillerVillagerM
@@ -8121,6 +8121,30 @@ Transform:
   m_Father: {fileID: 1004372764}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238204754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238204752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cbe036e34158f419cdd39846249334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 238204757}
+  collider: {fileID: 238204761}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!70 &238204755
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -8223,30 +8247,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &238204760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238204752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3d14f4cbacf4d547bdfbbd8efc861ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dialogues:
-  - {fileID: 238204757}
-  collider: {fileID: 238204761}
-  button: {fileID: 1016599175}
-  panel: {fileID: 1016599176}
-  inRange: 0
-  dialogueEnd: 0
-  combatScore: {fileID: 1016599172}
-  buttonA: {fileID: 1016599174}
-  buttonAText: 
-  buttonB: {fileID: 1016599173}
-  buttonBText: 
 --- !u!58 &238204761
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26741,9 +26741,9 @@ GameObject:
   - component: {fileID: 566152222}
   - component: {fileID: 566152221}
   - component: {fileID: 566152220}
+  - component: {fileID: 566152223}
   - component: {fileID: 566152219}
   - component: {fileID: 566152224}
-  - component: {fileID: 566152223}
   - component: {fileID: 566152218}
   m_Layer: 0
   m_Name: FillerVillagerF
@@ -26898,7 +26898,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 566152216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3d14f4cbacf4d547bdfbbd8efc861ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 90cbe036e34158f419cdd39846249334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
@@ -28480,10 +28480,10 @@ GameObject:
   - component: {fileID: 606500624}
   - component: {fileID: 606500623}
   - component: {fileID: 606500622}
+  - component: {fileID: 606500626}
   - component: {fileID: 606500621}
   - component: {fileID: 606500620}
   - component: {fileID: 606500627}
-  - component: {fileID: 606500626}
   - component: {fileID: 606500625}
   m_Layer: 0
   m_Name: FillerVillagerF (3)
@@ -28652,7 +28652,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 606500618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3d14f4cbacf4d547bdfbbd8efc861ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 90cbe036e34158f419cdd39846249334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
@@ -55315,8 +55315,8 @@ GameObject:
   - component: {fileID: 1289633441}
   - component: {fileID: 1289633439}
   - component: {fileID: 1289633438}
-  - component: {fileID: 1289633443}
   - component: {fileID: 1289633440}
+  - component: {fileID: 1289633443}
   - component: {fileID: 1289633437}
   m_Layer: 0
   m_Name: FillerVillagerM (2)
@@ -55402,7 +55402,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1289633435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3d14f4cbacf4d547bdfbbd8efc861ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 90cbe036e34158f419cdd39846249334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
@@ -68733,9 +68733,9 @@ GameObject:
   - component: {fileID: 1618060472}
   - component: {fileID: 1618060471}
   - component: {fileID: 1618060470}
+  - component: {fileID: 1618060473}
   - component: {fileID: 1618060469}
   - component: {fileID: 1618060474}
-  - component: {fileID: 1618060473}
   - component: {fileID: 1618060468}
   m_Layer: 0
   m_Name: FillerVillagerF (2)
@@ -68890,7 +68890,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1618060466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3d14f4cbacf4d547bdfbbd8efc861ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 90cbe036e34158f419cdd39846249334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
@@ -100436,6 +100436,8 @@ GameObject:
   - component: {fileID: 1987952087}
   - component: {fileID: 1987952086}
   - component: {fileID: 1987952085}
+  - component: {fileID: 1987952083}
+  - component: {fileID: 1987952082}
   m_Layer: 0
   m_Name: VillageElder
   m_TagString: Untagged
@@ -100459,6 +100461,47 @@ Transform:
   m_Father: {fileID: 1436614713}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1987952082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987952080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Elder Umami
+  sentences:
+  - Hey there! I suppose you are the one who saved us, it seems my old age had clouded
+    my reason. The Daimyo is not such a bad guy after all. I am thankful we were
+    able to avoid conflict.
+--- !u!114 &1987952083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987952080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615d9f10edc75944a8d3690eb75526ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 1987952082}
+  collider: {fileID: 1987952086}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!70 &1987952085
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
