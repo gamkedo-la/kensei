@@ -36466,9 +36466,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 4
+  - It seems we accomplished what we came here for. Is now the time for closure?
 --- !u!114 &804921354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36481,9 +36481,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 3
+  - Through your spiritual wisdom you have served our little state well. I am in
+    your debt for helping me and my subjects come to peace.
 --- !u!114 &804921355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36496,9 +36497,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 2
+  - Despite your independence you have served our little state well. I am in your
+    debt for helping me and my subjects come to peace.
 --- !u!114 &804921356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36511,9 +36513,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 1
+  - 'You have proven to be a loyal Samurai to me. I am in your debt for helping me
+    and my subjects come to peace. '
 --- !u!114 &804921357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107711,9 +107714,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Daimyo's Words
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - Some Sad Words
+  - There has been much sadness and turmoil in this village as of late. I will do
+    everything I can to help out where it is necessary.
 --- !u!4 &8367287392897387783
 Transform:
   m_ObjectHideFlags: 0
@@ -107773,9 +107777,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 'Daimyo '
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - End dialogue
+  - Though we may not agree, I would like to extend my respect for my friends as
+    well as my enemies. For friendship and understanding is how we truly begin to
+    understand one another.
 --- !u!114 &8367287392955066455
 MonoBehaviour:
   m_ObjectHideFlags: 0
