@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class NPCFollowPlayerScript : MonoBehaviour
 {
-    public Text text;
     public bool onSwitch;
     public float speed;
     private Rigidbody2D rb;
@@ -120,9 +119,6 @@ public class NPCFollowPlayerScript : MonoBehaviour
         //figure out where the player is 
         float dist = Vector2.Distance(player.transform.position, transform.position);
         float goalDist = Vector2.Distance(destination, transform.position);
-        
-        //for testing
-        if(text != null) text.text = ""+dist;
 
         if(dist < minDist)
         {

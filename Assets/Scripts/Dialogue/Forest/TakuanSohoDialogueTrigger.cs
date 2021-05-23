@@ -45,6 +45,7 @@ public class TakuanSohoDialogueTrigger : DialogueTrigger
       if(GameDictionary.choiceDictionary["Samurai Path"] && dialogueEnd)
       {
           GetComponent<NPCFollowPlayerScript>().onSwitch = true;
+          GameDictionary.Instance.UpdateEntry("With Takuan", true);
       }
 
     }

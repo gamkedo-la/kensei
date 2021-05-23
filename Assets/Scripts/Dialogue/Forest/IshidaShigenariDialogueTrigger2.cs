@@ -9,6 +9,7 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
     public GameObject shigenariBlocker;
     public bool takuanDialogue = false;
     public bool duelDialogue = false;
+    bool dueled;
     public GameObject screenEffect;
     public GameObject arm;
     public GameObject deadShigenari;
@@ -22,7 +23,7 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
         buttonB.SetActive(false);
         combatScore.SetActive(false);
 
-        if(GameDictionary.choiceDictionary["Samurai Path"])
+        if (GameDictionary.choiceDictionary["Samurai Path"])
         {
             this.gameObject.SetActive(true);
             shigenariBlocker.SetActive(true);
@@ -38,14 +39,14 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
     void Update()
     {
         //check for conditions for different dialogue options
-        if(dialogueEnd && takuanDialogue)
+        if (dialogueEnd && takuanDialogue)
         {
             switchInt = 0;
             DecisionDisplay("I've Heard Enough", "You've Made Your Point");
             takuanDialogue = false;
             dialogueEnd = false;
         }
-        if(dialogueEnd && duelDialogue)
+        if (dialogueEnd && duelDialogue && !dueled)
         {
             switchInt = 1;
             DecisionDisplay("Fight the Duel", "Back Off");
@@ -63,26 +64,26 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
             button.SetActive(true);
             player = collider.gameObject;
 
-            if(GameDictionary.choiceDictionary["With Takuan"])
+            if (GameDictionary.choiceDictionary["With Takuan"])
             {
                 takuan.GetComponent<NPCFollowPlayerScript>().onSwitch = false;
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
                 button.GetComponent<DialogueRun>().trigger = this;
                 takuanDialogue = true;
             }
-            else if (GameDictionary.choiceDictionary["One Arm"])
-            {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-                button.GetComponent<DialogueRun>().trigger = this;
-            }
-            else
+            else if (!GameDictionary.choiceDictionary["With Takuan"] && !dueled)
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
                 button.GetComponent<DialogueRun>().trigger = this;
                 duelDialogue = true;
             }
+            else if (!GameDictionary.choiceDictionary["With Takuan"] && dueled)
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
 
-            
+
 
         }
     }
@@ -110,18 +111,18 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
 
     public override void ButtonA()
     {
-        switch(switchInt)
+        switch (switchInt)
         {
             case 0:
                 break;
 
             case 1:
                 screenEffect.SetActive(true);
-                if(player.GetComponent<StateTracker>().combatScore >20)
+                if (player.GetComponent<StateTracker>().combatScore > 20)
                 {
-                   deadShigenari.SetActive(true); 
-                   GameDictionary.Instance.UpdateEntry("Shigenari Dead", true);
-                   this.gameObject.SetActive(false);
+                    deadShigenari.SetActive(true);
+                    GameDictionary.Instance.UpdateEntry("Shigenari Dead", true);
+                    this.gameObject.SetActive(false);
                 }
                 else
                 {
@@ -130,17 +131,20 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
                     button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                     button.GetComponent<DialogueRun>().trigger = this;
                     player.GetComponent<PlayerController>().ChooseAnimator();
+                    dueled = true;
                 }
                 break;
         }
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
+
     }
 
     public override void ButtonB()
     {
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
+
     }
 
 

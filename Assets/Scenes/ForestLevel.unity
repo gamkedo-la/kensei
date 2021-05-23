@@ -5551,7 +5551,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Takuan S\u014Dh\u014D"
   sentences:
-  - FPO
+  - Greetings to our fine Temple, servant of the Daimyo. How can I assist you?
+  - I have heard many unhappy people walk through my doors in search of guidance
+    and help. It seems soon they will be taking matters into their own hands.
+  - If you wish to know more, please speak with Shigenari, in the clearing. I will
+    join you in case tensions run hot.
 --- !u!58 &148536950 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 3036719314840957220, guid: 345815714a835dd4b9d150b6b13e4aac,
@@ -5570,7 +5574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5207c543fe29ba44785dd9e4c41554ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
   onSwitch: 0
   speed: 15
   reached: 0
@@ -15242,7 +15245,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0367355, y: 1.1428909}
+  m_Offset: {x: 11.894386, y: -6.05159}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15253,7 +15256,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 54.053787, y: 6.211624}
+  m_Size: {x: 79.91603, y: 20.600586}
   m_EdgeRadius: 0
 --- !u!4 &344207925
 Transform:
@@ -15263,7 +15266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344207923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -214.9, y: -141.3, z: -2428.2734}
+  m_LocalPosition: {x: -214.9, y: -229.3, z: -2428.2734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21543,7 +21546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508751287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -214.6, y: -147.1, z: 0}
+  m_LocalPosition: {x: -214.6, y: -251.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408784183}
@@ -21564,7 +21567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ishida Shigenari
   sentences:
-  - 2
+  - Let that be a lesson, we are here for our voices to be heard. Go back to your
+    Daimyo and tell him to prepare for more than that.
 --- !u!114 &508751293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21579,7 +21583,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ishida Shigenari
   sentences:
-  - 1
+  - You are very brave to come into my territory by yourself. The time for talk is
+    over. The Daimyo has had many chances to speak with and listen to the peasants.
+    He has not.
+  - "Now he sends a newly appointed samurai to do his bidding? How cowardly. Let\u2019s
+    see what this new samurai can do against the Ronin protecting the people."
 --- !u!114 &508751294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21594,7 +21602,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ishida Shigenari
   sentences:
-  - 0
+  - I do not speak with Samurai. You will get what is coming soon enough.
+  - Representatives of the Daimyo are inflicting the pain against the village in
+    more ways than one. We must cleanse ourselves of them.
+  - If Soho was not here, I would have dueled you. Now get out of my sight. Soho,
+    do not bring Samurai around here again.
 --- !u!114 &508751295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21628,7 +21640,7 @@ MonoBehaviour:
   screenEffect: {fileID: 803162539}
   arm: {fileID: 408784181}
   deadShigenari: {fileID: 1055548323}
-  takuan: {fileID: 0}
+  takuan: {fileID: 148536947}
 --- !u!1 &510489593
 GameObject:
   m_ObjectHideFlags: 0

@@ -83,7 +83,7 @@ public class DialogueTriggerMusashi : DialogueTrigger
             panel.SetActive(false);
             buttonA.SetActive(false);
             buttonB.SetActive(false);
-            combatScore.SetActive(false);
+
         }
     }
 
@@ -93,14 +93,14 @@ public class DialogueTriggerMusashi : DialogueTrigger
         buttonB.GetComponentInChildren<Text>().text = buttonBText;
         buttonA.SetActive(true);
         buttonB.SetActive(true);
-        combatScore.SetActive(true);
+
 
     }
     public override void ButtonA()
     {
         buttonA.SetActive(false);
         buttonB.SetActive(false);
-        combatScore.SetActive(false);
+
         GameDictionary.choiceDictionary["One Arm"] = true;
         arm.SetActive(true);
         screenEffect.SetActive(true);
@@ -110,7 +110,7 @@ public class DialogueTriggerMusashi : DialogueTrigger
     {
         buttonA.SetActive(false);
         buttonB.SetActive(false);
-        combatScore.SetActive(false);
+
         particles.SetActive(true);
         button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
         button.GetComponent<DialogueRun>().trigger = this;
