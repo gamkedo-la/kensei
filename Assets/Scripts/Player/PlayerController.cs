@@ -52,15 +52,21 @@ public class PlayerController : MonoBehaviour
     public bool movementLocked;
     public GameObject bloodedTanto;
 
+    Scene scene;
+
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
+
+        if(scene.name == "TheVillage")
+        {
+            AddItem(defaultClothing);
+        }
 
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;
-        //ChooseAnimator();
-        //AddItem(defaultClothing);
-        //LoadFile.LoadGame();
-        GameDictionary.Instance.UpdateEntry("Samurai Path", true);
+        LoadFile.LoadGame();
+        ChooseAnimator();
     }
 
     void Update()
@@ -118,7 +124,7 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Alpha9))
         {
-           // SaveFile.SaveGame();
+           PlayerPrefs.DeleteAll();
         }
 
         /*
