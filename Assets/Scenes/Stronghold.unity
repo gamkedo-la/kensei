@@ -8565,6 +8565,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 630945962895559674, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1690490091}
+    - target: {fileID: 630945962895559674, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 630945963014219905, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -8579,6 +8589,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 630945963189033762, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1690490091}
+    - target: {fileID: 630945963189033762, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleSound
       objectReference: {fileID: 0}
     - target: {fileID: 630945963368380101, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
@@ -8723,7 +8743,7 @@ PrefabInstance:
     - target: {fileID: 630945964186298605, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PauseGame
+      value: ResumeGame
       objectReference: {fileID: 0}
     - target: {fileID: 630945964186298605, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
@@ -22624,6 +22644,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1393681682}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1690490091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690490090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640cb4ecbdd73bd4fb1150d0d97ec92e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1690490096
 MonoBehaviour:
   m_ObjectHideFlags: 0
