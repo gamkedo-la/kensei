@@ -59,9 +59,8 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         //ChooseAnimator();
         //AddItem(defaultClothing);
-        LoadFile.LoadGame();
+        //LoadFile.LoadGame();
         GameDictionary.Instance.UpdateEntry("Samurai Path", true);
-
     }
 
     void Update()

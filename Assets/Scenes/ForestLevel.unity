@@ -50585,8 +50585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  sentences: []
+  name: Mori Guard
+  sentences:
+  - Returning so soon? You look somewhat worse for the wear, I hope the news you
+    bring is less grim than your expression.
 --- !u!1 &1222791333
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,12 +6,14 @@ public class PlayerSpawnPlacerStronghold : MonoBehaviour
 {
     public GameObject player;
     public GameObject tunnel;
+    bool moved;
     // Start is called before the first frame update
-    void Awake()
+    void Update()
     {
-       if(GameDictionary.choiceDictionary["Used Hidden Tunnel"])
+       if(GameDictionary.choiceDictionary["Used Hidden Tunnel"] && !moved)
        {
            player.transform.position = tunnel.transform.position;
+           moved = true;
        }
     }
 }
