@@ -104234,6 +104234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bloody Tanto Blade
       objectReference: {fileID: 0}
+    - target: {fileID: 3430644606490954433, guid: 0553561c295b36f4cbbb26f814d97d2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0553561c295b36f4cbbb26f814d97d2f, type: 3}
 --- !u!1001 &3502521070325907947
@@ -105332,6 +105337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FarmersClothes Item Sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858003664920300010, guid: 284a858dd0ab4e040a50a131ebabcf62,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 284a858dd0ab4e040a50a131ebabcf62, type: 3}
