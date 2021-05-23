@@ -15739,6 +15739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1351719769}
   isPaused: 0
+  mainMenuSceneName: Titlescreen
 --- !u!114 &1679986860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18203,11 +18204,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1140632410}
     m_Modifications:
+    - target: {fileID: 630945962342017079, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1679986859}
+    - target: {fileID: 630945962342017079, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 630945962342017079, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 630945962895559674, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1679986860}
+    - target: {fileID: 630945963014219905, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1679986859}
+    - target: {fileID: 630945963014219905, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 630945963014219905, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 630945963189033762, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public bool isPaused;
+    public string mainMenuSceneName = "Titlescreen";
 
 
     // Start is called before the first frame update
@@ -44,4 +46,16 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
+    public void MainMenu()
+    {
+        ResumeGame();
+        SceneManager.LoadScene(mainMenuSceneName);
+        Destroy(gameObject);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game Quitting... (Not really, this doesn't work while in the Editor, but will on a build)");
+    }
 }
