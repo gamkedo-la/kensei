@@ -23,7 +23,7 @@ public static class LoadFile
         {
             GameDictionary.Instance.UpdateEntry(entry, PlayerPrefs.GetInt(entry, 0) == 1);
         }
-        
+
         Debug.Log("made it to enforce");
         EnforceDictionary();
    }
