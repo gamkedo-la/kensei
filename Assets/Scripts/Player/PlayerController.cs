@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
         {
             AddItem(defaultClothing);
         }
-
+        SaveFile.SaveGame();
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;
         LoadFile.LoadGame();
@@ -125,6 +125,12 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha9))
         {
            PlayerPrefs.DeleteAll();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            
+           Debug.Log(PlayerPrefs.GetInt("Base Kimono"));
         }
 
         /*
@@ -300,7 +306,7 @@ public class PlayerController : MonoBehaviour
 
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(clothing.GetComponent<ItemClass>().itemName, true);
-
+                    Debug.Log("Made it to add clothing");
                 }
 
                 //set proper animator

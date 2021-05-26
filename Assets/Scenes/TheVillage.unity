@@ -33630,12 +33630,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4059309549392692646}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &726408313 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2560466133927752604, guid: f5e732d0fe7da3b45a3db68ae2f79cf9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1330850821}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &728075807
 GameObject:
   m_ObjectHideFlags: 0
@@ -105580,9 +105574,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
+      propertyPath: bloodedTanto
+      value: 
+      objectReference: {fileID: 8664694571415600837, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+        type: 3}
+    - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
       propertyPath: defaultClothing
       value: 
-      objectReference: {fileID: 726408313}
+      objectReference: {fileID: 2560466133927752604, guid: f5e732d0fe7da3b45a3db68ae2f79cf9,
+        type: 3}
     - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: teleportList.Array.size

@@ -10,7 +10,7 @@ public static class SaveFile
 {
     
     //public GameObject player;
-    public static void SaveGame(SceneLoader.Scene scene)
+    public static void SaveGame(SceneLoader.Scene scene = SceneLoader.Scene.None)
     {
         
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
