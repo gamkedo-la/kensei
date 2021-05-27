@@ -8,11 +8,12 @@ using UnityEngine.SceneManagement;
 
 public static class SaveFile 
 {
-    
+    private static Scene scene;
     //public GameObject player;
-    public static void SaveGame(SceneLoader.Scene scene = SceneLoader.Scene.None)
+    public static void SaveGame()
     {
-        
+        scene = SceneManager.GetActiveScene();
+
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
         if (!player) return;
 

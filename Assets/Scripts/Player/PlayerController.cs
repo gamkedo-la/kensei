@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
         {
             AddItem(defaultClothing);
         }
+        
         SaveFile.SaveGame();
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;

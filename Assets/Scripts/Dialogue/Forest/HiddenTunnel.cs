@@ -64,7 +64,7 @@ public SceneLoader.Scene scene;
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
         GameDictionary.Instance.UpdateEntry("Used Hidden Tunnel", true);
-        SaveFile.SaveGame(scene);
+        SaveFile.SaveGame();
         SceneLoader.Load(scene.ToString());
     }
 

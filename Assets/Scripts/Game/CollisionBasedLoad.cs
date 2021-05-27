@@ -9,7 +9,7 @@ public class CollisionBasedLoad : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        SaveFile.SaveGame(scene);
+        SaveFile.SaveGame();
         if(collider.CompareTag("Player")) SceneLoader.Load(scene.ToString());
     }
 }
