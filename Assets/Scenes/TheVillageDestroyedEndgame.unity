@@ -980,13 +980,11 @@ GameObject:
   m_Component:
   - component: {fileID: 23513567}
   - component: {fileID: 23513572}
-  - component: {fileID: 23513571}
   - component: {fileID: 23513570}
   - component: {fileID: 23513569}
-  - component: {fileID: 23513575}
+  - component: {fileID: 23513573}
   - component: {fileID: 23513568}
   - component: {fileID: 23513574}
-  - component: {fileID: 23513573}
   m_Layer: 0
   m_Name: FillerVillagerM (3)
   m_TagString: Untagged
@@ -1018,12 +1016,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 23513566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d4c5d6725345b4dae00b0543b5c9e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b1b9c7801a4bbb42bb576e6473c72b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onSwitch: 1
-  radius: 5
-  speed: 6
+  Dialogues:
+  - {fileID: 23513574}
+  collider: {fileID: 23513573}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!70 &23513569
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1061,25 +1068,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &23513571
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23513566}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 513ee7f272e3449449934e0192b45a26, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &23513572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1161,30 +1149,6 @@ MonoBehaviour:
   name: Taro
   sentences:
   - 
---- !u!114 &23513575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23513566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90cbe036e34158f419cdd39846249334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dialogues:
-  - {fileID: 23513574}
-  collider: {fileID: 23513573}
-  button: {fileID: 1016599175}
-  panel: {fileID: 1016599176}
-  inRange: 0
-  dialogueEnd: 0
-  combatScore: {fileID: 1016599172}
-  buttonA: {fileID: 1016599174}
-  buttonAText: 
-  buttonB: {fileID: 1016599173}
-  buttonBText: 
 --- !u!1001 &25290182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26580,7 +26544,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1810633338}
-  - {fileID: 1246933362}
   m_Father: {fileID: 1004372764}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 50.941}
@@ -28257,10 +28220,8 @@ GameObject:
   - component: {fileID: 606500624}
   - component: {fileID: 606500623}
   - component: {fileID: 606500622}
-  - component: {fileID: 606500626}
-  - component: {fileID: 606500621}
-  - component: {fileID: 606500620}
   - component: {fileID: 606500627}
+  - component: {fileID: 606500620}
   - component: {fileID: 606500625}
   m_Layer: 0
   m_Name: FillerVillagerF (3)
@@ -28293,31 +28254,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 606500618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d4c5d6725345b4dae00b0543b5c9e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b1b9c7801a4bbb42bb576e6473c72b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onSwitch: 1
-  radius: 4
-  speed: 5
---- !u!95 &606500621
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 606500618}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: edbb5e8f2d1aeb6458007664fdd9462b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  Dialogues:
+  - {fileID: 606500625}
+  collider: {fileID: 606500627}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!70 &606500622
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -28420,30 +28371,6 @@ MonoBehaviour:
   name: Tomoe
   sentences:
   - 
---- !u!114 &606500626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 606500618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90cbe036e34158f419cdd39846249334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dialogues:
-  - {fileID: 606500625}
-  collider: {fileID: 606500627}
-  button: {fileID: 1016599175}
-  panel: {fileID: 1016599176}
-  inRange: 0
-  dialogueEnd: 0
-  combatScore: {fileID: 1016599172}
-  buttonA: {fileID: 1016599174}
-  buttonAText: 
-  buttonB: {fileID: 1016599173}
-  buttonBText: 
 --- !u!58 &606500627
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52632,12 +52559,6 @@ Transform:
   m_Father: {fileID: 1148450288}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1246933362 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1741606751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1249445816
 GameObject:
   m_ObjectHideFlags: 0
@@ -88905,80 +88826,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fabc59e62b7f2b446b7999e0f8410546, type: 3}
---- !u!1001 &1741606751
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 566152217}
-    m_Modifications:
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008889672327327640, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1263628731474758105, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5382496887326242978, guid: 192cc4a8badc5ec449eca9284435fdc3,
-        type: 3}
-      propertyPath: m_Name
-      value: Shadow
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 192cc4a8badc5ec449eca9284435fdc3, type: 3}
 --- !u!4 &1743116439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5032507351697596855, guid: 7d26237c38005b9419a516413633ba32,
