@@ -11442,6 +11442,11 @@ GameObject:
   - component: {fileID: 323366288}
   - component: {fileID: 323366297}
   - component: {fileID: 323366289}
+  - component: {fileID: 323366294}
+  - component: {fileID: 323366293}
+  - component: {fileID: 323366292}
+  - component: {fileID: 323366291}
+  - component: {fileID: 323366290}
   m_Layer: 0
   m_Name: MusashiCharacter
   m_TagString: Untagged
@@ -11496,6 +11501,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323366286}
   m_CullTransparentMesh: 0
+--- !u!114 &323366290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 4
+  sentences: []
+--- !u!114 &323366291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 3
+  sentences: []
+--- !u!114 &323366292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 2
+  sentences: []
+--- !u!114 &323366293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 1
+  sentences: []
+--- !u!114 &323366294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323366286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8640cf5cafdc9f448dab727ea7ac444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 323366293}
+  - {fileID: 323366292}
+  - {fileID: 323366291}
+  - {fileID: 323366290}
+  collider: {fileID: 323366297}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!58 &323366297
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33557,6 +33645,7 @@ GameObject:
   - component: {fileID: 729877620}
   - component: {fileID: 729877619}
   - component: {fileID: 729877618}
+  - component: {fileID: 729877627}
   m_Layer: 0
   m_Name: ConfrontationCollider
   m_TagString: Untagged
@@ -33726,6 +33815,7 @@ MonoBehaviour:
   - {fileID: 729877620}
   - {fileID: 729877619}
   - {fileID: 729877618}
+  - {fileID: 729877627}
   collider: {fileID: 729877616}
   button: {fileID: 1016599175}
   panel: {fileID: 1016599176}
@@ -33739,6 +33829,20 @@ MonoBehaviour:
   armScene: {fileID: 960559208}
   screenEffect: {fileID: 4059309549392692647}
   player: {fileID: 0}
+--- !u!114 &729877627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729877615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 8
+  sentences: []
 --- !u!1 &730868215
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,6 @@ public class ConfrontationDialogueDestroyedVillage : DialogueTrigger
     bool initialDialogue;
     bool secondDialogue;
     bool thirdDialogue;
-    bool fourthDialogue;
     bool duelDialogue;
     bool noMoreDialogue;
     public GameObject armScene;
@@ -44,18 +43,26 @@ public class ConfrontationDialogueDestroyedVillage : DialogueTrigger
             secondDialogue = false;
             thirdDialogue = true;
         }
-        if (thirdDialogue && dialogueEnd && !GameDictionary.choiceDictionary["One Arm"])
+        if (thirdDialogue && dialogueEnd && !GameDictionary.choiceDictionary["One Arm"] && GameDictionary.choiceDictionary["Samurai Path"])
         {
             DecisionDisplay("Challenge Musashi", "Do Nothing");
         }
-        if (thirdDialogue && dialogueEnd && GameDictionary.choiceDictionary["One Arm"])
+        if (thirdDialogue && dialogueEnd && GameDictionary.choiceDictionary["One Arm"] && GameDictionary.choiceDictionary["Samurai Path"])
         {
             button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
             button.GetComponent<DialogueRun>().trigger = this;
             dialogueEnd = false;
             button.GetComponent<DialogueRun>().TriggerDialogue();
             thirdDialogue = false;
-            fourthDialogue = true;
+        }
+        if (thirdDialogue && dialogueEnd && !GameDictionary.choiceDictionary["Samurai Path"])
+        {
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[7];
+            button.GetComponent<DialogueRun>().trigger = this;
+            dialogueEnd = false;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
+            thirdDialogue = false;
+            noMoreDialogue = true;
         }
         if(duelDialogue && dialogueEnd)
         {
@@ -63,6 +70,7 @@ public class ConfrontationDialogueDestroyedVillage : DialogueTrigger
             armScene.SetActive(true);
             GameDictionary.Instance.UpdateEntry("One Arm", true);
             player.GetComponent<PlayerController>().ChooseAnimator();
+            GameDictionary.Instance.UpdateEntry("Dueled Musashi Destroyed", true);
             button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
             button.GetComponent<DialogueRun>().trigger = this;
             dialogueEnd = false;
