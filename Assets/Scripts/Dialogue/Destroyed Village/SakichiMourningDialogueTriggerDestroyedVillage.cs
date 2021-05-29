@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SakichiDialogueTriggerDestroyedVillage : DialogueTrigger
+public class SakichiMourningDialogueTriggerDestroyedVillage : DialogueTrigger
 {
 
     public override void Start()
@@ -25,27 +25,10 @@ public class SakichiDialogueTriggerDestroyedVillage : DialogueTrigger
         {
         inRange = true;
         button.SetActive(true);
-
-            if(GameDictionary.choiceDictionary["Samurai Path"])
-            {
             //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
-            button.GetComponent<DialogueRun>().trigger = this;
-            }
-
-            if(GameDictionary.choiceDictionary["Ronin Path"])
-            {
-            //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
-            button.GetComponent<DialogueRun>().trigger = this;
-            }
-
-            if(GameDictionary.choiceDictionary["Monk Path"])
-            {
-            //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-            button.GetComponent<DialogueRun>().trigger = this;
-            }
+        button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+        button.GetComponent<DialogueRun>().trigger = this;
+            
         }   
     }
     

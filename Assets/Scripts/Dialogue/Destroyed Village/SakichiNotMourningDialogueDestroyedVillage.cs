@@ -3,50 +3,52 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DeadShigenariDialogueTrigger : DialogueTrigger
+public class SakichiNotMourningDialogueDestroyedVillage : DialogueTrigger
 {
-    public GameObject shigeie;
-    public GameObject sakichi;
-    public GameObject shigeie1;
-    public GameObject sakichi1;
 
     public override void Start()
     {
-        button.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
-
-        if (GameDictionary.choiceDictionary["Shigenari Dead"])
-        {
-            this.gameObject.SetActive(false);
-            shigeie.SetActive(false);
-            sakichi.SetActive(false);
-        }
-        else
-        {
-            shigeie1.SetActive(false);
-            sakichi1.SetActive(false);
-        }
+       button.SetActive(false); 
+       buttonA.SetActive(false);
+       buttonB.SetActive(false);
+       combatScore.SetActive(false);
     }
 
     void Update()
     {
-        //check for conditions for different dialogue options
+      //check for conditions for different dialogue options
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if(collider.CompareTag("Player"))
         {
-            inRange = true;
-            button.SetActive(true);
+        inRange = true;
+        button.SetActive(true);
+
+            if(GameDictionary.choiceDictionary["Samurai Path"])
+            {
+            //pick which Dialogue to run
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
             button.GetComponent<DialogueRun>().trigger = this;
+            }
 
-        }
+            if(GameDictionary.choiceDictionary["Ronin Path"])
+            {
+            //pick which Dialogue to run
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+            button.GetComponent<DialogueRun>().trigger = this;
+            }
+
+            if(GameDictionary.choiceDictionary["Monk Path"])
+            {
+            //pick which Dialogue to run
+            button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+            button.GetComponent<DialogueRun>().trigger = this;
+            }
+        }   
     }
-
+    
     public override void OnTriggerExit2D(Collider2D collider)
     {
         inRange = false;
