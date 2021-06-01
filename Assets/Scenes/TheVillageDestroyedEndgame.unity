@@ -49228,8 +49228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  sentences: []
+  name: Ishida Sakichi
+  sentences:
+  - Shigenari... I'm so sorry...
 --- !u!1001 &1157399792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102035,8 +102036,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 3
-  sentences: []
+  name: Ishida Sakichi
+  sentences:
+  - 'Oh it''s you... I guess you weren''t able to stop any of this in the end. Shigeie
+    got his wicked way. '
 --- !u!58 &2048171813
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102145,8 +102148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 2
-  sentences: []
+  name: Ishida Sakichi
+  sentences:
+  - 'Oh it''s you... I guess you weren''t able to stop any of this in the end. Shigeie
+    got his wicked way. '
 --- !u!114 &2048171818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102159,8 +102164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 1
-  sentences: []
+  name: Ishida Sakichi
+  sentences:
+  - Oh it's you... Looks like there may be a fight between Sasaki and Musashi.
 --- !u!114 &2048171819
 MonoBehaviour:
   m_ObjectHideFlags: 0
