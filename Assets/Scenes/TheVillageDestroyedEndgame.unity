@@ -1148,7 +1148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Taro
   sentences:
-  - 
+  - Is it over? We ran over here to hide. The Daimyo's men came with swords drawn
+    and no warning!
 --- !u!1001 &25290182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14735,9 +14736,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Ishida Shigenari
+  name: 
   sentences:
-  - 
+  - Ishida Shigenari lies dead.
 --- !u!114 &396522802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28507,7 +28508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Tomoe
   sentences:
-  - 
+  - Is it over? We ran over here to hide. I hope everyone is safe.
 --- !u!58 &606500627
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105473,7 +105474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Umami Isa
   sentences:
-  - 3
+  - 'The Daimyo is crueler than I ever imagined. Look at the state of our peaceful
+    village, our friends all massacred. I would be dead if not for Musashi. '
 --- !u!114 &3972467482672051329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105488,7 +105490,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Umami Isa
   sentences:
-  - 2
+  - 'The Daimyo is crueler than I ever imagined. Look at the state of our peaceful
+    village, our friends all massacred. I would be dead if not for Musashi. '
 --- !u!114 &3972467482672051330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105503,7 +105506,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Umami Isa
   sentences:
-  - 1
+  - I can't believe you let this happen. My grandfather lies dead, cut down by the
+    Daimyo's men. Your own father was slaughtered! Do you feel no remorse?
 --- !u!95 &3972467482672051332
 Animator:
   serializedVersion: 3
@@ -105681,7 +105685,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Umami Isa
   sentences:
-  - 4
+  - Oh, I see that you've held this to remind yourself of our village for a while.
+    Maybe I harshly judged you, I'm sure you did your best to save us. Why wouldn't
+    you?
 --- !u!114 &3972467482672051393
 MonoBehaviour:
   m_ObjectHideFlags: 0
