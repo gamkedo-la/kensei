@@ -34,7 +34,6 @@ public static class LoadFile
         
         foreach (GameObject obj in objArray)
         {
-            Debug.Log(obj.name);
             if (obj != null)
             {
                 if (PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".x"))

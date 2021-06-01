@@ -94,6 +94,7 @@ public class ConfrontationDialogueDestroyedVillage : DialogueTrigger
             //pick which Dialogue to run
             button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
             button.GetComponent<DialogueRun>().trigger = this;
+            button.GetComponent<DialogueRun>().TriggerDialogue();
             initialDialogue = true;
         }
     }
