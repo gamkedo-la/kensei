@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickUpItem : MonoBehaviour
 {
@@ -10,9 +11,10 @@ private GameObject player;
 
 public GameObject item;
 
-
+public Scene scene;
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
         ItemClass icScript = gameObject.GetComponent<ItemClass>();
 
 
@@ -28,6 +30,11 @@ public GameObject item;
         {
             Debug.Log(icScript.itemName + " has been picked up");
             Debug.Log(GameDictionary.choiceDictionary[icScript.itemName]);
+            Destroy(gameObject);
+        }
+        else if(PlayerPrefs.HasKey(scene.name + "_" + this.gameObject.GetComponent<ItemClass>().itemName + ".x"))
+        {
+            Debug.Log(icScript.itemName + " has been picked up and dropped");
             Destroy(gameObject);
         }
     }

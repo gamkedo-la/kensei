@@ -31,4 +31,20 @@ public static class SaveFile
             }
         }
     }
+
+    public static void StoreItemLocation(GameObject item)
+    {
+        scene = SceneManager.GetActiveScene();
+
+        PlayerPrefs.SetFloat(scene.name + "_" + item.GetComponent<ItemClass>().itemName + ".x", item.transform.position.x);
+        PlayerPrefs.SetFloat(scene.name + "_" + item.GetComponent<ItemClass>().itemName + ".y", item.transform.position.y);
+    }
+
+    public static void ClearItemLocation(GameObject item)
+    {
+        scene = SceneManager.GetActiveScene();
+
+        PlayerPrefs.DeleteKey(scene.name + "_" + item.GetComponent<ItemClass>().itemName + ".x");
+        PlayerPrefs.DeleteKey(scene.name + "_" + item.GetComponent<ItemClass>().itemName + ".y");
+    }
 }

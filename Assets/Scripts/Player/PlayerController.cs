@@ -58,11 +58,11 @@ public class PlayerController : MonoBehaviour
     {
         scene = SceneManager.GetActiveScene();
 
-        if(scene.name == "TheVillage" && !GameDictionary.choiceDictionary["Game Saved"])
+        if (scene.name == "TheVillage" && !GameDictionary.choiceDictionary["Game Saved"])
         {
             AddItem(defaultClothing);
         }
-        
+
         SaveFile.SaveGame();
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //input
-        if(!movementLocked)
+        if (!movementLocked)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
@@ -123,15 +123,15 @@ public class PlayerController : MonoBehaviour
         }
         else { pickUpItemButton.SetActive(false); }
 
-        if(Input.GetKeyDown(KeyCode.Alpha9))
+        if (Input.GetKeyDown(KeyCode.Alpha9))
         {
-           PlayerPrefs.DeleteAll();
+            PlayerPrefs.DeleteAll();
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha8))
+        if (Input.GetKeyDown(KeyCode.Alpha8))
         {
-            
-           Debug.Log(PlayerPrefs.GetInt("Base Kimono"));
+
+            Debug.Log(PlayerPrefs.GetInt("Base Kimono"));
         }
 
         /*
@@ -145,22 +145,22 @@ public class PlayerController : MonoBehaviour
         }
         */
         //Remove for release
-        if(Input.GetKeyDown(KeyCode.Alpha1) && teleportList[0] != null)
+        if (Input.GetKeyDown(KeyCode.Alpha1) && teleportList[0] != null)
         {
             transform.position = teleportList[0].position;
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha2) && teleportList[1] != null)
+        if (Input.GetKeyDown(KeyCode.Alpha2) && teleportList[1] != null)
         {
             transform.position = teleportList[1].position;
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha3) && teleportList[2] != null)
+        if (Input.GetKeyDown(KeyCode.Alpha3) && teleportList[2] != null)
         {
             transform.position = teleportList[2].position;
         }
 
-        if(GameDictionary.choiceDictionary["Bloody Tanto Blade"] && GameDictionary.choiceDictionary["Bladeless Tanto"])
+        if (GameDictionary.choiceDictionary["Bloody Tanto Blade"] && GameDictionary.choiceDictionary["Bladeless Tanto"])
         {
             GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", false);
             GameDictionary.Instance.UpdateEntry("Bladeless Tanto", false);
@@ -176,12 +176,12 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         //movement
-        if(!movementLocked)
+        if (!movementLocked)
         {
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
             animator.SetFloat("Speed", movement.magnitude * moveSpeed * Time.fixedDeltaTime);
         }
-        else{ animator.SetFloat("Speed", 0);}
+        else { animator.SetFloat("Speed", 0); }
 
     }
 
@@ -216,7 +216,7 @@ public class PlayerController : MonoBehaviour
                     newItem.SetActive(true);
                     //flag old item false in dictionary
                     GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-
+                    SaveFile.StoreItemLocation(newItem);
 
                     //swap weapon
                     currentWeaponModel.SetActive(false);
@@ -224,6 +224,7 @@ public class PlayerController : MonoBehaviour
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(weapon.GetComponent<ItemClass>().itemName, true);
+                    SaveFile.ClearItemLocation(weapon);
 
 
                 }
@@ -235,6 +236,7 @@ public class PlayerController : MonoBehaviour
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(weapon.GetComponent<ItemClass>().itemName, true);
                     Debug.Log(GameDictionary.choiceDictionary[weapon.GetComponent<ItemClass>().itemName]);
+                    SaveFile.ClearItemLocation(weapon);
                 }
 
                 //change names to socket location
@@ -272,7 +274,7 @@ public class PlayerController : MonoBehaviour
                     currentWeaponModel = ancientChokuto;
                     weaponSortType = 0;
                 }
-                
+
                 if (GameDictionary.choiceDictionary["Old Tachi"])
                 {
                     oldTachi.SetActive(true);
@@ -291,12 +293,13 @@ public class PlayerController : MonoBehaviour
                     newItem.SetActive(true);
                     //flag old item false in dictionary
                     GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-
+                    SaveFile.StoreItemLocation(newItem);
 
                     clothing = targetItem;
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(clothing.GetComponent<ItemClass>().itemName, true);
+                    SaveFile.ClearItemLocation(clothing);
 
                 }
                 else
@@ -307,7 +310,7 @@ public class PlayerController : MonoBehaviour
 
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(clothing.GetComponent<ItemClass>().itemName, true);
-                    Debug.Log("Made it to add clothing");
+                    SaveFile.ClearItemLocation(clothing);
                 }
 
                 //set proper animator
@@ -323,13 +326,13 @@ public class PlayerController : MonoBehaviour
                     newItem.SetActive(true);
                     //flag old item false in dictionary
                     GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-
+                    SaveFile.StoreItemLocation(newItem);
 
                     bigItem = targetItem;
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(bigItem.GetComponent<ItemClass>().itemName, true);
-
+                    SaveFile.ClearItemLocation(bigItem);
 
                 }
                 else
@@ -338,7 +341,7 @@ public class PlayerController : MonoBehaviour
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(bigItem.GetComponent<ItemClass>().itemName, true);
-
+                    SaveFile.ClearItemLocation(bigItem);
                 }
             }
             if (slot == ItemClass.Slot.SmallItem)
@@ -351,13 +354,13 @@ public class PlayerController : MonoBehaviour
                     newItem.SetActive(true);
                     //flag old item false in dictionary
                     GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
-
+                    SaveFile.StoreItemLocation(newItem);
 
                     smallItem = targetItem;
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(smallItem.GetComponent<ItemClass>().itemName, true);
-
+                    SaveFile.ClearItemLocation(smallItem);
                 }
                 else
                 {
@@ -365,7 +368,7 @@ public class PlayerController : MonoBehaviour
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
                     //flag new item true in dictionary
                     GameDictionary.Instance.UpdateEntry(smallItem.GetComponent<ItemClass>().itemName, true);
-
+                    SaveFile.ClearItemLocation(smallItem);
                 }
             }
         }
@@ -374,7 +377,7 @@ public class PlayerController : MonoBehaviour
 
     public void DropItem(ItemClass.Slot slot)
     {
-        
+
 
         if (slot == ItemClass.Slot.Weapon)
         {
@@ -388,6 +391,7 @@ public class PlayerController : MonoBehaviour
                 weapon = null;
                 //flag old item false in dictionary 
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                SaveFile.StoreItemLocation(newItem);
 
             }
         }
@@ -405,6 +409,7 @@ public class PlayerController : MonoBehaviour
                 GetComponent<Animator>().runtimeAnimatorController = defaultController;
                 //flag old item false in dictionary
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                SaveFile.StoreItemLocation(newItem);
 
             }
 
@@ -419,6 +424,7 @@ public class PlayerController : MonoBehaviour
                 bigItem = null;
                 //flag old item false in dictionary
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                SaveFile.StoreItemLocation(newItem);
 
             }
 
@@ -432,6 +438,7 @@ public class PlayerController : MonoBehaviour
                 smallItem = null;
                 //flag old item false in dictionary
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
+                SaveFile.StoreItemLocation(newItem);
 
             }
 
@@ -545,14 +552,14 @@ public class PlayerController : MonoBehaviour
     {
         //GameObject[] objArray = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
         //Debug.Log(objArray.Length);
-        
+
         foreach (string entry in GameDictionary.dictionaryList)
         {
             if (GameDictionary.choiceDictionary[entry])
             {
                 GameObject obj = Resources.Load(entry) as GameObject;
 
-                if(obj != null)
+                if (obj != null)
                 {
                     ItemClass thisItem = obj.GetComponent<ItemClass>();
 
@@ -561,7 +568,7 @@ public class PlayerController : MonoBehaviour
                         Debug.Log("tried add" + obj.GetComponent<ItemClass>().itemName);
                         AddItem(obj);
                     }
-                    else{Debug.Log("Broken item is" + obj.name);}
+                    else { Debug.Log("Broken item is" + obj.name); }
                 }
                 else
                 {
