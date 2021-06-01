@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public static class LoadFile
 {
     static List<string> dictionaryList;
     public static Scene scene;
+
+    private static GameObject[] objArray;
     public static void LoadGame()
     {
         scene = SceneManager.GetActiveScene();
@@ -27,8 +30,11 @@ public static class LoadFile
             GameDictionary.Instance.UpdateEntry(entry, PlayerPrefs.GetInt(entry, 0) == 1);
         }
 
-        foreach (GameObject obj in Resources.FindObjectsOfTypeAll<GameObject>())
+        objArray = Resources.LoadAll("", typeof(GameObject)).Cast<GameObject>().ToArray();
+        
+        foreach (GameObject obj in objArray)
         {
+            Debug.Log(obj.name);
             if (obj != null)
             {
                 if (PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".x"))

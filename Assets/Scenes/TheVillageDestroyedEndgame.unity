@@ -14758,9 +14758,9 @@ MonoBehaviour:
   buttonAText: 
   buttonB: {fileID: 1016599173}
   buttonBText: 
-  shigeie: {fileID: 1801235665}
+  shigeie: {fileID: 1534889097}
   sakichi: {fileID: 1154729218}
-  shigeie1: {fileID: 1534889097}
+  shigeie1: {fileID: 1801235665}
   sakichi1: {fileID: 2048171811}
 --- !u!1001 &397119998
 PrefabInstance:
@@ -55194,30 +55194,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1293932498 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8068239843639634180, guid: ec41ab8670d852d45a70769b8f7e3eed,
-    type: 3}
-  m_PrefabInstance: {fileID: 8068239841874693707}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1293932499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293932498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd240e4a3201ca2408f5b87f26dc7943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
-  paths: {fileID: 8367287392121277354}
-  sakuraBlossom: {fileID: 2163388395215824046, guid: 68e3a7ffaf8517f46bd760374ccab988,
-    type: 3}
-  dropSakuras: 0
-  graveTrigger: {fileID: 8367287392897387781}
 --- !u!1 &1294154262
 GameObject:
   m_ObjectHideFlags: 0
