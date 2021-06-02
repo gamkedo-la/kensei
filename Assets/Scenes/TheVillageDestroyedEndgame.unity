@@ -101908,7 +101908,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Takuan Soho
   sentences:
-  - 3
+  - Sometimes it seems we must shed an ocean of blood before we learn to find peace.
+    I am glad you have joined us to pursue enlightenment, perhaps we will find our
+    way to nirvana from this dark place.
 --- !u!114 &1918766582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101923,7 +101925,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Takuan Soho
   sentences:
-  - 2
+  - 'Sometimes it seems we must shed an ocean of blood before we learn to find peace.
+    This is only the beginning for you, soon you will be so deep in the sea of blood
+    you will drown. '
 --- !u!114 &1918766583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101938,7 +101942,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Takuan Soho
   sentences:
-  - 1
+  - 'Sometimes it seems we must shed an ocean of blood before we learn to find peace.
+    This is only the beginning for you, soon you will be so deep in the sea of blood
+    you will drown. '
 --- !u!114 &1918766584
 MonoBehaviour:
   m_ObjectHideFlags: 0
