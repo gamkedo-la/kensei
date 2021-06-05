@@ -10,7 +10,6 @@ public class SimpleMovementScript : MonoBehaviour
     public float speed;
     public bool onSwitch;
     private Vector2 targetVector;
-
     public Animator animator;
 
     void Update()
@@ -41,9 +40,7 @@ public class SimpleMovementScript : MonoBehaviour
                 if (animator) animator.SetInteger("Direction", 0);
                 onSwitch = false;
             }
-
         }
-
     }
 
     void StopMotion()
