@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     public DialogueTrigger trigger;
     public Text nameText;
     public Text dialogueText;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,8 +47,10 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        Debug.Log("Button Push");
+        if (sentences.Count == 0)
         {
+            Debug.Log("End D");
             EndDialogue();
             return;
         }
@@ -61,14 +63,8 @@ public class DialogueManager : MonoBehaviour
     {
         panel.SetActive(false);
         trigger.dialogueEnd = true;
-        /*if(nameText.text == "Daimyo's Words"){
-            foreach (DaimyoMovement item in FindObjectsOfType<DaimyoMovement>())
-            {
-                item.ContinueMoving();
-            }
-        } else {*/
-            FindObjectsOfType<PlayerController>()[0].movementLocked = false;
-        
+        FindObjectsOfType<PlayerController>()[0].movementLocked = false;
+
     }
 
 }

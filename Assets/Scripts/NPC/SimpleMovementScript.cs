@@ -19,6 +19,7 @@ public class SimpleMovementScript : MonoBehaviour
 
         if (onSwitch)
         {
+            this.gameObject.GetComponent<CircleCollider2D>().radius = 0;
             if (targetVector.y > 0.1f)
             {
                 if (animator) animator.SetInteger("Direction", 3);
@@ -38,6 +39,7 @@ public class SimpleMovementScript : MonoBehaviour
             {
                 animator.SetFloat("Speed", 0f);
                 if (animator) animator.SetInteger("Direction", 0);
+                this.gameObject.GetComponent<CircleCollider2D>().radius = 4;
                 onSwitch = false;
             }
         }

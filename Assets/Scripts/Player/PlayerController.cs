@@ -68,6 +68,15 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         LoadFile.LoadGame();
         ChooseAnimator();
+        //TESTING
+        GameDictionary.Instance.UpdateEntry("Samurai Path", true); 
+        GameDictionary.Instance.UpdateEntry("Naginata", true);
+        GameDictionary.Instance.UpdateEntry("Sensei Kashimono", true); 
+        GameDictionary.Instance.UpdateEntry("Shigenari Dead", false);
+        GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", true);
+        SaveFile.SaveGame();
+        LoadFile.LoadGame();
+        ChooseAnimator();
     }
 
     void Update()

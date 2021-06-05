@@ -81,6 +81,7 @@ public class ConfrontationDialogueDestroyedVillage : DialogueTrigger
         if(noMoreDialogue && dialogueEnd)
         {
             this.gameObject.SetActive(false);
+            player.GetComponent<PlayerController>().movementLocked = false;
         }
     }
 
@@ -124,6 +125,7 @@ public class ConfrontationDialogueDestroyedVillage : DialogueTrigger
     {
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
+        thirdDialogue = false;
         duelDialogue = true;
         button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
         button.GetComponent<DialogueRun>().trigger = this;
@@ -134,6 +136,7 @@ public class ConfrontationDialogueDestroyedVillage : DialogueTrigger
     {
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
+        thirdDialogue = false;
         button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
         button.GetComponent<DialogueRun>().trigger = this;
         button.GetComponent<DialogueRun>().TriggerDialogue();
