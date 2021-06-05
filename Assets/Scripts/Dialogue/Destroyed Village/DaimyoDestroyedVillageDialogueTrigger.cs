@@ -9,9 +9,12 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
     bool shigeieDialogueEnd;
     public GameObject shigeie;
     public GameObject sasaki;
+    public GameObject shigeie1;
+    public GameObject sasaki1;
     public GameObject screenEffect;
     public GameObject deadDaimyo;
     public GameObject armScene;
+    public GameObject player;
     bool shigeieApprehended;
     bool shigeieAttacks;
     bool interactionOver;
@@ -33,6 +36,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
         //check for conditions for different dialogue options
         if (!GameDictionary.choiceDictionary["Shigeie Apprehended"] || GameDictionary.choiceDictionary["Last Scene Over"])
         {
+
             switchInt = 0;
             if (!skipDialogue)
             {
@@ -53,15 +57,13 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                     {
                         dialogueEnd = false;
                         shigeieDialogueEnd = false;
-                        //shigeie.GetComponent<SimpleMovementScript>().onSwitch = true;
-                        DecisionDisplay("Save the Daimyo", "Do Nothing");
+                        shigeie.GetComponent<EndgameSimpleMovementScript>().onSwitch = true;
                     }
                     else
                     {
                         dialogueEnd = false;
                         shigeieDialogueEnd = false;
                         shigeieAttacks = true;
-                        sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
                         //Sasaki says something
                         button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                         button.GetComponent<DialogueRun>().trigger = this;
@@ -71,11 +73,10 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                 }
                 if (dialogueEnd && shigeieApprehended && shigeieAttacks)
                 {
+                    
                     dialogueEnd = false;
                     interactionOver = true;
                     shigeieAttacks = false;
-                    screenEffect.SetActive(true);
-                    screenEffect.GetComponent<ScreenEffect>().StartCoroutine("WaitForAnim");
                     GameDictionary.Instance.UpdateEntry("Shigeie Apprehended", true);
                     shigeie.GetComponent<SpriteRenderer>().sprite = shigeie1A;
                     armScene.SetActive(true);
@@ -102,11 +103,9 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                     {
                         dialogueEnd = false;
                         shigeieDialogueEnd = false;
-                        sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
+                        shigeieAttacks = false;
                         //Sasaki says something
-                        button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-                        button.GetComponent<DialogueRun>().trigger = this;
-                        button.GetComponent<DialogueRun>().TriggerDialogue();
+                        sasaki.GetComponent<EndgameSasakiSimpleMovementScript>().onSwitch = true;
                         shigeieApprehended = true;
                     }
                 }
@@ -138,6 +137,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                 }
             }
         }
+
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
@@ -146,6 +146,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
         {
             inRange = true;
             button.SetActive(true);
+            player = collider.gameObject;
 
             if (!GameDictionary.choiceDictionary["Shigenari Dead"])
             {
@@ -162,6 +163,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
                 button.GetComponent<DialogueRun>().trigger = this;
                 skipDialogue = true;
+
             }
             if (GameDictionary.choiceDictionary["Shigeie Apprehended"])
             {
@@ -181,15 +183,18 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
 
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if (collider.CompareTag("Player"))
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)
@@ -225,16 +230,19 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
         }
         if (GameDictionary.choiceDictionary["Samurai Path"])
         {
-            sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
             //Sasaki says something
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-            button.GetComponent<DialogueRun>().trigger = this;
-            button.GetComponent<DialogueRun>().TriggerDialogue();
             shigeieApprehended = true;
             GameDictionary.Instance.UpdateEntry("Opted Let Die", true);
             dialogueEnd = true;
+            sasaki.GetComponent<EndgameSasakiSimpleMovementScript>().onSwitch = true;
+            
         }
 
+    }
+
+    public void MoveSasaki()
+    {
+        sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
     }
 
 
