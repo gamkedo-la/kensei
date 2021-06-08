@@ -8,8 +8,9 @@ public class PickUpItem : MonoBehaviour
 
 public CircleCollider2D circle;    
 private GameObject player;
-
+private ItemClass icScript;
 public GameObject item;
+public bool dropped;
 
 public Scene scene;
     void Start()
@@ -32,10 +33,9 @@ public Scene scene;
             Debug.Log(GameDictionary.choiceDictionary[icScript.itemName]);
             Destroy(gameObject);
         }
-        else if(GameDictionary.choiceDictionary["Loading Game"] && PlayerPrefs.HasKey(scene.name + "_" + this.gameObject.GetComponent<ItemClass>().itemName + ".x"))
+        else if(!dropped && PlayerPrefs.HasKey(scene.name + "_" + this.gameObject.GetComponent<ItemClass>().itemName + ".x"))
         {
-            Debug.Log(icScript.itemName + " has been picked up and dropped");
-            Destroy(gameObject);
+            CheckForDestroy(this.gameObject);
         }
     }
 
@@ -62,5 +62,10 @@ public Scene scene;
     {
         item.SetActive(false);
 
+    }
+    public void CheckForDestroy(GameObject gameObject)
+    {
+            //Debug.Log(icScript.itemName + " has been picked up and dropped");
+            Destroy(gameObject);
     }
 }

@@ -226,6 +226,7 @@ public class PlayerController : MonoBehaviour
                     //flag old item false in dictionary
                     GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                     SaveFile.StoreItemLocation(newItem);
+                    newItem.GetComponent<PickUpItem>().dropped = true;
 
                     //swap weapon
                     currentWeaponModel.SetActive(false);
@@ -303,6 +304,7 @@ public class PlayerController : MonoBehaviour
                     //flag old item false in dictionary
                     GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                     SaveFile.StoreItemLocation(newItem);
+                    newItem.GetComponent<PickUpItem>().dropped = true;
 
                     clothing = targetItem;
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
@@ -336,6 +338,7 @@ public class PlayerController : MonoBehaviour
                     //flag old item false in dictionary
                     GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                     SaveFile.StoreItemLocation(newItem);
+                    newItem.GetComponent<PickUpItem>().dropped = true;
 
                     bigItem = targetItem;
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
@@ -364,6 +367,7 @@ public class PlayerController : MonoBehaviour
                     //flag old item false in dictionary
                     GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                     SaveFile.StoreItemLocation(newItem);
+                    newItem.GetComponent<PickUpItem>().dropped = true;
 
                     smallItem = targetItem;
                     targetItem.GetComponent<PickUpItem>().OnPickUp();
@@ -401,6 +405,7 @@ public class PlayerController : MonoBehaviour
                 //flag old item false in dictionary 
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                 SaveFile.StoreItemLocation(newItem);
+                newItem.GetComponent<PickUpItem>().dropped = true;
 
             }
         }
@@ -419,6 +424,7 @@ public class PlayerController : MonoBehaviour
                 //flag old item false in dictionary
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                 SaveFile.StoreItemLocation(newItem);
+                newItem.GetComponent<PickUpItem>().dropped = true;
             }
 
             ChooseAnimator();
@@ -433,6 +439,7 @@ public class PlayerController : MonoBehaviour
                 //flag old item false in dictionary
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                 SaveFile.StoreItemLocation(newItem);
+                newItem.GetComponent<PickUpItem>().dropped = true;
 
             }
 
@@ -447,6 +454,7 @@ public class PlayerController : MonoBehaviour
                 //flag old item false in dictionary
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                 SaveFile.StoreItemLocation(newItem);
+                newItem.GetComponent<PickUpItem>().dropped = true;
 
             }
 

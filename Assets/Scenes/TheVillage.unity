@@ -108947,10 +108947,21 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
+      propertyPath: nudeAnimator
+      value: 
+      objectReference: {fileID: 22100000, guid: 333abc03ff5839e468b661817cda7afb,
+        type: 2}
+    - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
       propertyPath: defaultClothing
       value: 
       objectReference: {fileID: 2560466133927752604, guid: f5e732d0fe7da3b45a3db68ae2f79cf9,
         type: 3}
+    - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: defaultController
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: teleportList.Array.size
@@ -108971,6 +108982,11 @@ PrefabInstance:
       propertyPath: teleportList.Array.data[2]
       value: 
       objectReference: {fileID: 2133407}
+    - target: {fileID: 8068239843639634201, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7453ab469d3123f4ab5c61e66d7ef75f, type: 2}
     - target: {fileID: 8068239843639634205, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: m_RootOrder

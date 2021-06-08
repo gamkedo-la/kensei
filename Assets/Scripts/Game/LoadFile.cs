@@ -14,8 +14,6 @@ public static class LoadFile
     {
         scene = SceneManager.GetActiveScene();
         dictionaryList = new List<string>();
-        Debug.Log("LoadGame Called");
-        GameDictionary.Instance.UpdateEntry("Loading Game", true);
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
 
         Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
@@ -41,6 +39,7 @@ public static class LoadFile
                 {
                     if (PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".y"))
                     {
+                        //obj.GetComponent<PickUpItem>().CheckForDestroy(obj);
                         player.GetComponent<PlayerController>().SpawnItem(obj);
                     }
                 }
@@ -49,7 +48,6 @@ public static class LoadFile
 
         Debug.Log("made it to enforce");
         EnforceDictionary();
-        GameDictionary.Instance.UpdateEntry("Loading Game", false);
     }
 
     public static GameObject ConstructItem(ItemClass item)
