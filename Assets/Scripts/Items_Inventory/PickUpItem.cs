@@ -32,7 +32,7 @@ public Scene scene;
             Debug.Log(GameDictionary.choiceDictionary[icScript.itemName]);
             Destroy(gameObject);
         }
-        else if(PlayerPrefs.HasKey(scene.name + "_" + this.gameObject.GetComponent<ItemClass>().itemName + ".x"))
+        else if(GameDictionary.choiceDictionary["Loading Game"] && PlayerPrefs.HasKey(scene.name + "_" + this.gameObject.GetComponent<ItemClass>().itemName + ".x"))
         {
             Debug.Log(icScript.itemName + " has been picked up and dropped");
             Destroy(gameObject);

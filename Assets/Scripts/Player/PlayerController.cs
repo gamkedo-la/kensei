@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public RuntimeAnimatorController defaultController;
     public AnimatorOverrideController baseClothingAnimator;
     public AnimatorOverrideController baseClothing1AAnimator;
+    public AnimatorOverrideController nudeAnimator;
     public AnimatorOverrideController nude1AAnimator;
     public AnimatorOverrideController farmersClothesAnimator;
     public AnimatorOverrideController farmersClothes1AAnimator;
@@ -68,7 +69,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         LoadFile.LoadGame();
         //TESTING
-       /* GameDictionary.Instance.UpdateEntry("Samurai Path", true); 
+        /*GameDictionary.Instance.UpdateEntry("Samurai Path", true); 
         GameDictionary.Instance.UpdateEntry("Naginata", true);
         GameDictionary.Instance.UpdateEntry("Sensei Kashimono", true); 
         GameDictionary.Instance.UpdateEntry("Shigenari Dead", false);
@@ -418,7 +419,6 @@ public class PlayerController : MonoBehaviour
                 //flag old item false in dictionary
                 GameDictionary.Instance.UpdateEntry(newItem.GetComponent<ItemClass>().itemName, false);
                 SaveFile.StoreItemLocation(newItem);
-
             }
 
             ChooseAnimator();
@@ -511,7 +511,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (GameDictionary.choiceDictionary["Nude"]) GetComponent<Animator>().runtimeAnimatorController = defaultController as RuntimeAnimatorController;
+            if (GameDictionary.choiceDictionary["Nude"]) GetComponent<Animator>().runtimeAnimatorController = nudeAnimator as RuntimeAnimatorController;
 
             if (GameDictionary.choiceDictionary["Base Kimono"])
             {
