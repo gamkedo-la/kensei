@@ -201,11 +201,11 @@ public class DaimyoDialogueTrigger : DialogueTrigger
                 //load the next scene
                 if(talkedSake || accusedShigie)
                 {
-                    //SceneLoader.Load() pristine village
+                    SceneLoader.Load("TheVillagePristineEndgame");
                 }
                 else
                 {
-                    //SceneLoader.Load() destroyed village
+                    SceneLoader.Load("TheVillageDestroyedEndgame");
                 }
             }
     }

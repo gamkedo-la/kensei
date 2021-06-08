@@ -111,6 +111,7 @@ public class ConfrontationDialogueDestroyedVillage : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
+        player.GetComponent<PlayerController>().movementLocked = false;
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)
