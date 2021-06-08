@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSpawnForest : MonoBehaviour
+public class PlayerSpawnVillage : MonoBehaviour
 {
     public GameObject player;
     public GameObject loadPos;
@@ -10,11 +10,11 @@ public class PlayerSpawnForest : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        if(GameDictionary.choiceDictionary["Left Stronghold Path"] && !moved) 
+        if(GameDictionary.choiceDictionary["Forest to Village"] && !moved) 
         {
             player.transform.position = loadPos.transform.position;
             moved = true;
-            GameDictionary.Instance.UpdateEntry("Left Stronghold Path", false);
+            GameDictionary.Instance.UpdateEntry("Forest to Village", false);
         }
     }
 }

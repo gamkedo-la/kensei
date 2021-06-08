@@ -12,7 +12,9 @@ public class LeaveStongholdScript : MonoBehaviour
             if(GameDictionary.choiceDictionary["Samurai Path"])
             {
             GameDictionary.Instance.UpdateEntry("Left Stronghold", true);
+            GameDictionary.Instance.UpdateEntry("Left Stronghold Path", true);
             //load forest
+            SceneLoader.Load("ForestLevel");
             }
         }
     }

@@ -14,6 +14,7 @@ public class PlayerSpawnPlacerStronghold : MonoBehaviour
        {
            player.transform.position = tunnel.transform.position;
            moved = true;
+           GameDictionary.Instance.UpdateEntry("Used Hidden Tunnel", false);
        }
     }
 }
