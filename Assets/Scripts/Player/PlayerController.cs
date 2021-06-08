@@ -597,5 +597,6 @@ public class PlayerController : MonoBehaviour
     public void SpawnItem(GameObject obj)
     {
         GameObject newItem = Instantiate(obj, new Vector2(PlayerPrefs.GetFloat(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".x"), PlayerPrefs.GetFloat(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".y")), Quaternion.identity);
+        newItem.GetComponent<PickUpItem>().dropped = true;
     }
 }

@@ -39,8 +39,8 @@ public static class LoadFile
                 {
                     if (PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".y"))
                     {
-                        //obj.GetComponent<PickUpItem>().CheckForDestroy(obj);
                         player.GetComponent<PlayerController>().SpawnItem(obj);
+                        Debug.Log("Tried to Spawn"+obj.name);
                     }
                 }
             }
