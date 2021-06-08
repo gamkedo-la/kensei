@@ -2304,10 +2304,10 @@ MonoBehaviour:
   drop: {fileID: 8068239843811485595}
   player: {fileID: 8068239843639634180}
   slot: 0
-  itemInfoPanel: {fileID: 0}
-  itemNameText: {fileID: 0}
-  itemDescriptionText: {fileID: 0}
-  itemCombatScore: {fileID: 0}
+  itemInfoPanel: {fileID: 3366262646025436075}
+  itemNameText: {fileID: 3250005937246357482}
+  itemDescriptionText: {fileID: 2535425248016184938}
+  itemCombatScore: {fileID: 946090259785909800}
 --- !u!1 &8068239843639634180
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,9 +3272,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f827ebffeb963745937ad30446d8378, type: 3}
+--- !u!1 &2535425248016184938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2688756863525701844, guid: 1f827ebffeb963745937ad30446d8378,
+    type: 3}
+  m_PrefabInstance: {fileID: 468305965089324734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3250005937246357482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3127071428585896276, guid: 1f827ebffeb963745937ad30446d8378,
+    type: 3}
+  m_PrefabInstance: {fileID: 468305965089324734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4471826709105021382 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4066996177421692792, guid: 1f827ebffeb963745937ad30446d8378,
+    type: 3}
+  m_PrefabInstance: {fileID: 468305965089324734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3366262646025436075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2938774411665949973, guid: 1f827ebffeb963745937ad30446d8378,
+    type: 3}
+  m_PrefabInstance: {fileID: 468305965089324734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &946090259785909800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 819358123996706966, guid: 1f827ebffeb963745937ad30446d8378,
     type: 3}
   m_PrefabInstance: {fileID: 468305965089324734}
   m_PrefabAsset: {fileID: 0}
