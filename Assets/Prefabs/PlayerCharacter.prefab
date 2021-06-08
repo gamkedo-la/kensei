@@ -1441,10 +1441,10 @@ MonoBehaviour:
   drop: {fileID: 8068239842454014565}
   player: {fileID: 8068239843639634180}
   slot: 1
-  itemInfoPanel: {fileID: 0}
-  itemNameText: {fileID: 0}
-  itemDescriptionText: {fileID: 0}
-  itemCombatScore: {fileID: 0}
+  itemInfoPanel: {fileID: 3366262646025436075}
+  itemNameText: {fileID: 3250005937246357482}
+  itemDescriptionText: {fileID: 2535425248016184938}
+  itemCombatScore: {fileID: 946090259785909800}
 --- !u!1 &8068239842547274259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,10 +2893,10 @@ MonoBehaviour:
   drop: {fileID: 8068239842918023877}
   player: {fileID: 8068239843639634180}
   slot: 2
-  itemInfoPanel: {fileID: 0}
-  itemNameText: {fileID: 0}
-  itemDescriptionText: {fileID: 0}
-  itemCombatScore: {fileID: 0}
+  itemInfoPanel: {fileID: 3366262646025436075}
+  itemNameText: {fileID: 3250005937246357482}
+  itemDescriptionText: {fileID: 2535425248016184938}
+  itemCombatScore: {fileID: 946090259785909800}
 --- !u!1 &8068239843859883823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,10 +2988,10 @@ MonoBehaviour:
   drop: {fileID: 8068239843376336795}
   player: {fileID: 8068239843639634180}
   slot: 3
-  itemInfoPanel: {fileID: 0}
-  itemNameText: {fileID: 0}
-  itemDescriptionText: {fileID: 0}
-  itemCombatScore: {fileID: 0}
+  itemInfoPanel: {fileID: 3366262646025436075}
+  itemNameText: {fileID: 3250005937246357482}
+  itemDescriptionText: {fileID: 2535425248016184938}
+  itemCombatScore: {fileID: 946090259785909800}
 --- !u!1 &8773584648603329812
 GameObject:
   m_ObjectHideFlags: 0
