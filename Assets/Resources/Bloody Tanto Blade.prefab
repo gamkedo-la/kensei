@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3430644606490954432
 Transform:
   m_ObjectHideFlags: 0
@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 3430644606490954492}
   item: {fileID: 3430644606490954433}
+  dropped: 0
   scene:
     m_Handle: 0
 --- !u!114 &3430644606490954494

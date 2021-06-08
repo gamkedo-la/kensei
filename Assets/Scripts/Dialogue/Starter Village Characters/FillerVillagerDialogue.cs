@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FillerVillagerDialogue : DialogueTrigger
 {
-
+    public GameObject player;
     public override void Start()
     {
         button.SetActive(false);
@@ -25,6 +25,7 @@ public class FillerVillagerDialogue : DialogueTrigger
         {
             inRange = true;
             button.SetActive(true);
+            player = collider.gameObject;
 
             if (!GameDictionary.choiceDictionary["Nude"])
             {
@@ -112,6 +113,7 @@ public class FillerVillagerDialogue : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
+        player.GetComponent<PlayerController>().movementLocked = false;
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)

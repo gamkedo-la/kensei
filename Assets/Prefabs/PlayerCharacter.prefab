@@ -2443,6 +2443,7 @@ MonoBehaviour:
     type: 2}
   baseClothing1AAnimator: {fileID: 22100000, guid: 8931e2d765a328d478ff10f044c401c2,
     type: 2}
+  nudeAnimator: {fileID: 22100000, guid: 333abc03ff5839e468b661817cda7afb, type: 2}
   nude1AAnimator: {fileID: 22100000, guid: ecddb971bd7dc8f44ab89d835c94fdaf, type: 2}
   farmersClothesAnimator: {fileID: 22100000, guid: 5bfdfca9afb4b8344bbc343d00456d54,
     type: 2}
