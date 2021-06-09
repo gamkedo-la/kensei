@@ -44623,11 +44623,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Template
       objectReference: {fileID: 0}
-    - target: {fileID: 4855295428969838243, guid: f316a61b8b29ed949801b12c173bb23e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4855295428969838247, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
       propertyPath: m_Pivot.x
