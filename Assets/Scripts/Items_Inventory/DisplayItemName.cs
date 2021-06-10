@@ -19,7 +19,7 @@ public class DisplayItemName : MonoBehaviour, IPointerEnterHandler
         if (item)
         {
             UnityEngine.Debug.Log(item);
-            itemName.text = player.GetComponent<ItemClass>().itemName;
+            itemName.text = item.GetComponent<ItemClass>().itemName;
         }
     }
     /*

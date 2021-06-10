@@ -32,7 +32,7 @@ public class DisplayDropButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
                 if(player.GetComponent<PlayerController>().weapon)
                 {
                     itemInfoPanel.SetActive(true);
-                    itemNameText.GetComponent<Text>().text = player.GetComponent<PlayerController>().weapon.GetComponent<ItemClass>().name;
+                    itemNameText.GetComponent<Text>().text = player.GetComponent<PlayerController>().weapon.GetComponent<ItemClass>().itemName;
                     itemDescriptionText.GetComponent<Text>().text = player.GetComponent<PlayerController>().weapon.GetComponent<ItemClass>().itemDescription;
                     itemCombatScore.GetComponent<Text>().text = player.GetComponent<PlayerController>().weapon.GetComponent<ItemClass>().combatPoints.ToString();
                 }
@@ -42,7 +42,7 @@ public class DisplayDropButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
                 if(player.GetComponent<PlayerController>().clothing)
                 {
                     itemInfoPanel.SetActive(true);
-                    itemNameText.GetComponent<Text>().text = player.GetComponent<PlayerController>().clothing.GetComponent<ItemClass>().name;
+                    itemNameText.GetComponent<Text>().text = player.GetComponent<PlayerController>().clothing.GetComponent<ItemClass>().itemName;
                     itemDescriptionText.GetComponent<Text>().text = player.GetComponent<PlayerController>().clothing.GetComponent<ItemClass>().itemDescription;
                     itemCombatScore.GetComponent<Text>().text = player.GetComponent<PlayerController>().clothing.GetComponent<ItemClass>().combatPoints.ToString();
                 }
@@ -52,7 +52,7 @@ public class DisplayDropButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
                 if(player.GetComponent<PlayerController>().bigItem)
                 {
                     itemInfoPanel.SetActive(true);
-                    itemNameText.GetComponent<Text>().text = player.GetComponent<PlayerController>().bigItem.GetComponent<ItemClass>().name;
+                    itemNameText.GetComponent<Text>().text = player.GetComponent<PlayerController>().bigItem.GetComponent<ItemClass>().itemName;
                     itemDescriptionText.GetComponent<Text>().text = player.GetComponent<PlayerController>().bigItem.GetComponent<ItemClass>().itemDescription;
                     itemCombatScore.GetComponent<Text>().text = player.GetComponent<PlayerController>().bigItem.GetComponent<ItemClass>().combatPoints.ToString();
                 }
@@ -62,7 +62,7 @@ public class DisplayDropButton : MonoBehaviour, IPointerEnterHandler, IPointerEx
                 if(player.GetComponent<PlayerController>().smallItem)
                 {
                     itemInfoPanel.SetActive(true);
-                    itemNameText.GetComponent<Text>().text = player.GetComponent<PlayerController>().smallItem.GetComponent<ItemClass>().name;
+                    itemNameText.GetComponent<Text>().text = player.GetComponent<PlayerController>().smallItem.GetComponent<ItemClass>().itemName;
                     itemDescriptionText.GetComponent<Text>().text = player.GetComponent<PlayerController>().smallItem.GetComponent<ItemClass>().itemDescription;
                     itemCombatScore.GetComponent<Text>().text = player.GetComponent<PlayerController>().smallItem.GetComponent<ItemClass>().combatPoints.ToString();
                 }
