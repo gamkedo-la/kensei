@@ -9,7 +9,6 @@ public class PickUpItem : MonoBehaviour
 public CircleCollider2D circle;    
 private GameObject player;
 private ItemClass icScript;
-public GameObject item;
 public bool dropped;
 
 public Scene scene;
@@ -44,7 +43,7 @@ public Scene scene;
         if(col.CompareTag("Player"))
         {
             player = col.gameObject;
-            col.GetComponent<PlayerController>().targetItem = item;
+            col.GetComponent<PlayerController>().targetItem = gameObject;
 
         }
     }
@@ -60,7 +59,7 @@ public Scene scene;
     }
     public void OnPickUp()
     {
-        item.SetActive(false);
+        gameObject.SetActive(false);
 
     }
     public void CheckForDestroy(GameObject gameObject)

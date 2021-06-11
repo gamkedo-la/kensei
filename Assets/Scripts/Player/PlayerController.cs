@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
     public Transform[] teleportList;
     public bool movementLocked;
     public GameObject bloodedTanto;
+    bool debugKeys = true; 
 
     Scene scene;
 
@@ -63,7 +64,10 @@ public class PlayerController : MonoBehaviour
         {
             AddItem(defaultClothing);
         }
-
+        if(debugKeys)
+        {
+            Debug.LogError("Debug Keys On");
+        }
         SaveFile.SaveGame();
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;
@@ -132,43 +136,51 @@ public class PlayerController : MonoBehaviour
         }
         else { pickUpItemButton.SetActive(false); }
 
-        if (Input.GetKeyDown(KeyCode.Alpha9))
+        if (debugKeys)
         {
-            PlayerPrefs.DeleteAll();
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha9))
+            {
+                PlayerPrefs.DeleteAll();
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha8))
-        {
+            if (Input.GetKeyDown(KeyCode.Alpha8))
+            {
 
-            Debug.Log(PlayerPrefs.GetInt("Base Kimono"));
-        }
+                Debug.Log(PlayerPrefs.GetInt("Base Kimono"));
+            }
 
-        /*
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            Debug.Log("Input");
-            GameObject newGO = Instantiate(Resources.Load("Bloody Tanto Blade") as GameObject);
-            Debug.Log(newGO != null);
-            newGO.SetActive(true);
-            newGO.transform.position = transform.position + Vector3.up * 2f;
-        }
-        */
-        //Remove for release
-        if (Input.GetKeyDown(KeyCode.Alpha1) && teleportList[0] != null)
-        {
-            transform.position = teleportList[0].position;
-        }
+            /*
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                Debug.Log("Input");
+                GameObject newGO = Instantiate(Resources.Load("Bloody Tanto Blade") as GameObject);
+                Debug.Log(newGO != null);
+                newGO.SetActive(true);
+                newGO.transform.position = transform.position + Vector3.up * 2f;
+            }
+            */
+            //Remove for release
+            if (Input.GetKeyDown(KeyCode.Alpha1) && teleportList[0] != null)
+            {
+                transform.position = teleportList[0].position;
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2) && teleportList[1] != null)
-        {
-            transform.position = teleportList[1].position;
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha2) && teleportList[1] != null)
+            {
+                transform.position = teleportList[1].position;
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3) && teleportList[2] != null)
-        {
-            transform.position = teleportList[2].position;
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha3) && teleportList[2] != null)
+            {
+                transform.position = teleportList[2].position;
+            }
 
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                transform.position += Vector3.down * 4.0f;
+            }
+
+        }
         if (GameDictionary.choiceDictionary["Bloody Tanto Blade"] && GameDictionary.choiceDictionary["Bladeless Tanto"])
         {
             GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", false);
@@ -600,6 +612,7 @@ public class PlayerController : MonoBehaviour
     public void SpawnItem(GameObject obj)
     {
         GameObject newItem = Instantiate(obj, new Vector2(PlayerPrefs.GetFloat(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".x"), PlayerPrefs.GetFloat(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".y")), Quaternion.identity);
+        newItem.SetActive(true);
         newItem.GetComponent<PickUpItem>().dropped = true;
     }
 }

@@ -53,7 +53,7 @@ public static class LoadFile
 
     public static GameObject ConstructItem(ItemClass item)
     {
-        GameObject itemToSpawn = new GameObject(item.itemName);
+        /*GameObject itemToSpawn = new GameObject(item.itemName);
 
         itemToSpawn.AddComponent<CanvasRenderer>();
 
@@ -66,7 +66,7 @@ public static class LoadFile
 
         itemToSpawn.AddComponent<PickUpItem>();
         itemToSpawn.GetComponent<PickUpItem>().circle = itemToSpawn.GetComponent<CircleCollider2D>();
-        itemToSpawn.GetComponent<PickUpItem>().item = itemToSpawn;
+        //itemToSpawn.GetComponent<PickUpItem>().item = itemToSpawn;
 
         itemToSpawn.AddComponent<ItemClass>();
         itemToSpawn.GetComponent<ItemClass>().itemName = item.itemName;
@@ -74,8 +74,8 @@ public static class LoadFile
         itemToSpawn.GetComponent<ItemClass>().combatPoints = item.combatPoints;
         itemToSpawn.GetComponent<ItemClass>().itemSprite = item.itemSprite;
 
-        itemToSpawn.SetActive(false);
-        return itemToSpawn;
+        itemToSpawn.SetActive(false);*/
+        return null;
     }
     public static void EnforceDictionary()
     {

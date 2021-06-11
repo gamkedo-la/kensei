@@ -28,6 +28,14 @@ public class DialogueManager : MonoBehaviour
         button.SetActive(false);
     }
 
+    void Update()
+    {
+        if(panel.activeSelf == false && FindObjectsOfType<PlayerController>()[0].movementLocked)
+        {
+            FindObjectsOfType<PlayerController>()[0].movementLocked = false;
+        } 
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
         FindObjectsOfType<PlayerController>()[0].movementLocked = true;

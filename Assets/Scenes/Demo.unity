@@ -5231,7 +5231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 160543673}
-  item: {fileID: 160543672}
   dropped: 0
   scene:
     m_Handle: 0
@@ -12153,7 +12152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 726768685}
-  item: {fileID: 726768682}
   dropped: 0
   scene:
     m_Handle: 0
@@ -12416,7 +12414,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 995955615}
-  item: {fileID: 995955613}
   dropped: 0
   scene:
     m_Handle: 0
@@ -12560,7 +12557,7 @@ PrefabInstance:
     - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4724.0254
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3959756893086247394, guid: 2e7523044618e1048bc086ea6cfac351,
         type: 3}
@@ -14885,7 +14882,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 1863447208}
-  item: {fileID: 1863447206}
   dropped: 0
   scene:
     m_Handle: 0
@@ -15087,7 +15083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 1967609236}
-  item: {fileID: 1967609235}
   dropped: 0
   scene:
     m_Handle: 0
@@ -15214,7 +15209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 1997373811}
-  item: {fileID: 1997373808}
   dropped: 0
   scene:
     m_Handle: 0
@@ -15434,7 +15428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 2034621891}
-  item: {fileID: 2034621888}
   dropped: 0
   scene:
     m_Handle: 0

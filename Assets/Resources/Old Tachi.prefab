@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6996994372559085770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 102.116, y: -24.085236, z: 4724.0254}
+  m_LocalPosition: {x: 102.116, y: -24.085236, z: 1}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,6 +114,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 6996994372559085813}
   item: {fileID: 6996994372559085770}
+  dropped: 0
+  scene:
+    m_Handle: 0
 --- !u!114 &6996994372559085815
 MonoBehaviour:
   m_ObjectHideFlags: 0
