@@ -384,6 +384,7 @@ public class PlayerController : MonoBehaviour
                     SaveFile.ClearItemLocation(smallItem);
                 }
             }
+            GetComponent<StateTracker>().CalculateNewCombatScore();
         }
         else { return; }
     }
@@ -459,6 +460,7 @@ public class PlayerController : MonoBehaviour
             }
 
         }
+        GetComponent<StateTracker>().CalculateNewCombatScore();
     }
     public void CheckForItems()
     {
@@ -593,6 +595,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         ChooseAnimator();
+        GetComponent<StateTracker>().CalculateNewCombatScore();
     }
     public void SpawnItem(GameObject obj)
     {

@@ -45,9 +45,10 @@ public static class LoadFile
                 }
             }
         }
-
+        player.GetComponent<StateTracker>().playerCombatPoints = PlayerPrefs.GetInt("Player Combat Score");
         Debug.Log("made it to enforce");
         EnforceDictionary();
+        player.GetComponent<StateTracker>().CalculateNewCombatScore();
     }
 
     public static GameObject ConstructItem(ItemClass item)

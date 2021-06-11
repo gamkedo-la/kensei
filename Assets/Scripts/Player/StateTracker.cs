@@ -18,9 +18,9 @@ public class StateTracker : MonoBehaviour
     public bool oneArm = false;
     public bool incrementedCombatPoints = false;
 
-    public void Update()
+    public void CalculateNewCombatScore()
     {
-    oneArm = GameDictionary.choiceDictionary["One Arm"];
+        oneArm = GameDictionary.choiceDictionary["One Arm"];
 
         if(!player.GetComponent<PlayerController>().weapon)
         {
@@ -31,6 +31,7 @@ public class StateTracker : MonoBehaviour
         {
         currentWeapon = player.GetComponent<PlayerController>().weapon;
         currentWeaponPoints = currentWeapon.GetComponent<ItemClass>().combatPoints;
+        Debug.Log(currentWeapon.GetComponent<ItemClass>().itemName +" "+currentWeapon.GetComponent<ItemClass>().combatPoints);
         }
 
         if(!player.GetComponent<PlayerController>().clothing) 
@@ -42,6 +43,7 @@ public class StateTracker : MonoBehaviour
         {
         currentClothing = player.GetComponent<PlayerController>().clothing;
         currentClothingPoints = currentClothing.GetComponent<ItemClass>().combatPoints;
+        Debug.Log(currentClothing.GetComponent<ItemClass>().itemName +" "+currentClothing.GetComponent<ItemClass>().combatPoints);
         }
 
         if(!player.GetComponent<PlayerController>().bigItem) currentBigItemPoints = 0;
@@ -49,6 +51,7 @@ public class StateTracker : MonoBehaviour
         {
         currentBigItem = player.GetComponent<PlayerController>().bigItem;
         currentBigItemPoints = currentBigItem.GetComponent<ItemClass>().combatPoints;
+        Debug.Log(currentBigItem.GetComponent<ItemClass>().itemName +" "+currentBigItem.GetComponent<ItemClass>().combatPoints);
         }
 
         if(!player.GetComponent<PlayerController>().smallItem) currentSmallItemPoints = 0;
@@ -56,16 +59,12 @@ public class StateTracker : MonoBehaviour
         {
         currentSmallItem = player.GetComponent<PlayerController>().smallItem;
         currentSmallItemPoints = currentSmallItem.GetComponent<ItemClass>().combatPoints;
-        }
-
-        if( !incrementedCombatPoints && GameDictionary.choiceDictionary["Ronin Path"])
-        {
-            incrementedCombatPoints = true;
-            playerCombatPoints = playerCombatPoints + 10;
+        Debug.Log(currentSmallItem.GetComponent<ItemClass>().itemName +" "+currentSmallItem.GetComponent<ItemClass>().combatPoints);
         }
         
         if(oneArm) combatScore = (currentWeaponPoints + currentClothingPoints + currentBigItemPoints + currentSmallItemPoints + playerCombatPoints) / 2;
         else combatScore = currentWeaponPoints + currentClothingPoints + currentBigItemPoints + currentSmallItemPoints + playerCombatPoints;
+        Debug.Log(combatScore);
     }
 
 

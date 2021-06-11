@@ -8,7 +8,7 @@ public class VillageLoaderTrigger : MonoBehaviour
 
     public void OnTriggerEnter2D()
     {
-        GameDictionary.Instance.UpdateEntry("Forest to Village", true);
+        GameDictionary.Instance.UpdateEntry("Forest to Village", true); 
     }
 
 }

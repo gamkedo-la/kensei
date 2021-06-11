@@ -30,6 +30,7 @@ public static class SaveFile
                 PlayerPrefs.SetInt(pair.Key, (pair.Value ? 1 : 0));
             }
         }
+        PlayerPrefs.SetInt("Player Combat Score", player.GetComponent<StateTracker>().playerCombatPoints);
     }
 
     public static void StoreItemLocation(GameObject item)

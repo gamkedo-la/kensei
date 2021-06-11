@@ -109,7 +109,7 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
         GameDictionary.Instance.UpdateEntry("Ronin Path", true);
         GameDictionary.Instance.UpdateEntry("Path Chosen", true);
         StartCoroutine(TimePasses());
-
+        player.GetComponent<StateTracker>().playerCombatPoints += 10;
         button.SetActive(false);
         button.GetComponent<DialogueRun>().dialogue = null;
         button.GetComponent<DialogueRun>().trigger = null;
