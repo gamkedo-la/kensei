@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError("Debug Keys On");
         }
+        
         SaveFile.SaveGame();
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;

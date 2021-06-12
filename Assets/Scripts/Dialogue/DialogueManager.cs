@@ -30,9 +30,13 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if(panel.activeSelf == false && FindObjectsOfType<PlayerController>()[0].movementLocked)
+        if(panel.activeSelf == false && choiceA.activeSelf == false && FindObjectsOfType<PlayerController>()[0].movementLocked)
         {
             FindObjectsOfType<PlayerController>()[0].movementLocked = false;
+        } 
+        else if(panel.activeSelf == false && choiceA.activeSelf == true && !FindObjectsOfType<PlayerController>()[0].movementLocked)
+        {
+            FindObjectsOfType<PlayerController>()[0].movementLocked = true;
         } 
     }
 
