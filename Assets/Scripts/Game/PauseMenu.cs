@@ -14,6 +14,12 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         pauseMenu.SetActive(false);
+        if (pauseMenu == null)
+        {
+            //if scene changes, find and hide new pause menu
+            pauseMenu = GameObject.Find("PauseMenu");
+            pauseMenu.SetActive(false);
+        }
     }
 
     // Update is called once per frame
