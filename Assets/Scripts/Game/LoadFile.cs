@@ -17,6 +17,7 @@ public static class LoadFile
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
 
         Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
+        player.transform.position = position;
 
         foreach (KeyValuePair<string, bool> pair in GameDictionary.choiceDictionary)
         {
