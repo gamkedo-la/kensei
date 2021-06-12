@@ -21463,39 +21463,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 771c62b7bc5018d45900965b7901a38a, type: 3}
---- !u!1 &529628348 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3740566487813743612, guid: 771c62b7bc5018d45900965b7901a38a,
-    type: 3}
-  m_PrefabInstance: {fileID: 529628347}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &529628349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529628348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a910ff0cb155ea4ca73b0d93f694e61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 2082864815}
-  isPaused: 0
-  mainMenuSceneName: Titlescreen
---- !u!114 &529628350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529628348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 640cb4ecbdd73bd4fb1150d0d97ec92e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &530753484
 GameObject:
   m_ObjectHideFlags: 0
@@ -105206,7 +105173,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 529628349}
+      objectReference: {fileID: 2082864816}
     - target: {fileID: 630945962342017079, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -105221,7 +105188,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 529628350}
+      objectReference: {fileID: 2082864815}
     - target: {fileID: 630945962895559674, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -105231,7 +105198,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 529628349}
+      objectReference: {fileID: 2082864816}
     - target: {fileID: 630945963014219905, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -105246,7 +105213,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 529628350}
+      objectReference: {fileID: 2082864815}
     - target: {fileID: 630945963189033762, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -105391,7 +105358,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 529628349}
+      objectReference: {fileID: 2082864816}
     - target: {fileID: 630945964186298605, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -105410,7 +105377,31 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2082864813}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2082864815 stripped
+--- !u!114 &2082864815 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8631802953935532828, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082864813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082864817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640cb4ecbdd73bd4fb1150d0d97ec92e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2082864816 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7256529070523837791, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082864813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082864817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a910ff0cb155ea4ca73b0d93f694e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2082864817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 630945963707952200, guid: a4a77f9a21cb01f44bc557107e8e1ac7,
     type: 3}
@@ -108997,6 +108988,11 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 2082864817}
     - target: {fileID: 8068239843639634200, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}
       propertyPath: bloodedTanto

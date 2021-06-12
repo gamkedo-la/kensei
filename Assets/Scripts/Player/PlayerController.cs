@@ -52,7 +52,8 @@ public class PlayerController : MonoBehaviour
     public Transform[] teleportList;
     public bool movementLocked;
     public GameObject bloodedTanto;
-    bool debugKeys = true; 
+    bool debugKeys = true;
+    public GameObject pauseMenu;
 
     Scene scene;
 
@@ -64,11 +65,11 @@ public class PlayerController : MonoBehaviour
         {
             AddItem(defaultClothing);
         }
-        if(debugKeys)
+        if (debugKeys)
         {
             Debug.LogError("Debug Keys On");
         }
-        
+
         SaveFile.SaveGame();
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;
@@ -190,6 +191,21 @@ public class PlayerController : MonoBehaviour
             bigItem = null;
             smallItem = null;
             AddItem(bloodedTanto);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (pauseMenu != null)
+            {
+                if (pauseMenu.GetComponent<PauseMenu>().isPaused)
+                {
+                    pauseMenu.GetComponent<PauseMenu>().ResumeGame();
+                }
+                else
+                {
+                    pauseMenu.GetComponent<PauseMenu>().PauseGame();
+                }
+            }
         }
 
     }
