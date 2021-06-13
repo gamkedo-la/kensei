@@ -36665,9 +36665,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 8
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 8
+  - 'For all his bravado, Miyamoto Musashi is extremely dangerous. He started killing
+    grown men at age 13, and he does not play by the rules. I am worried for Sasaki
+    Kojiro. '
 --- !u!114 &804921355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36680,9 +36682,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 7
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 7
+  - Soon Sasaki Kojiro will face his most dangerous opponent. My enemies sent Miyamoto
+    Musashi here to kill our strongest samurai and weaken our image among the other
+    clans.
 --- !u!114 &804921356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36695,9 +36699,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 6
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 6
+  - My instinct was correct. I have errored in rushing my decision. So many unnecessary
+    deaths. I believe our differences could have been resolved by talking rather
+    than by conflict.
 --- !u!114 &804921357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36710,9 +36716,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 5
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 5
+  - I trusted you Shigeie, I cannot believe you would betray me like this. You will
+    lose more than an arm in the name of justice.
 --- !u!114 &804921358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36725,9 +36732,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 4
+  name: Ishida Shigeie
   sentences:
-  - 4
+  - You got what you deserved. My Father is finally avenged.
 --- !u!114 &804921359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36740,9 +36747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 3
+  name: Ishida Shigeie
   sentences:
-  - 3
+  - My arm! Nooooooooooo!
 --- !u!114 &804921360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36755,9 +36762,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 2
+  name: Sasaki Kojiro
   sentences:
-  - 2
+  - 'Shigeie! I knew never to trust you! I will protect you Daimyo, stay away from
+    this deranged dog. '
 --- !u!114 &804921361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36770,9 +36778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 1
+  name: Ishida Shigeie
   sentences:
-  - 1
+  - Daimyo! Today I will kill you, you caused the death of my Father and now my brother.
+    Your time is over!
 --- !u!114 &804921362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36785,9 +36794,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 0
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 0
+  - My instinct was correct. I have errored in rushing my decision. So many unnecessary
+    deaths. I believe our differences could have been resolved by talking rather
+    than by conflict.
 --- !u!114 &804921363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36800,9 +36811,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 9
+  name: "Daimyo M\u014Dri Terumoto"
   sentences:
-  - 9
+  - If you think there is nothing more to see here, then we can depart. It is a shame
+    things turned out this way.
 --- !u!1001 &811806531
 PrefabInstance:
   m_ObjectHideFlags: 0
