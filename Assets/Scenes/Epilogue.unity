@@ -232,8 +232,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -620, y: 234}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -315.2, y: -14.5}
+  m_SizeDelta: {x: 146.89783, y: 297.16748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633430697
 MonoBehaviour:
@@ -256,18 +256,33 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 75
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "On April 13th, 1612 on the island of Ganry\u016Bjima Miyamoto Musashi
+    and Sasaki Kojir\u014D had their duel. \n\nKojir\u014D was known for using a
+    nodachi, a long katana called the 'laundry-drying pole' for its length. He was
+    known of as 'The Demon of the Western Provinces' for his swordsmanship.\n\nMiyamoto
+    Musashi founded the Nito Ichi-ry\u016B style of swordsmanship and was known to
+    often wield a blade in each hand. However, on this occasion he took a different
+    approach. \n\nKojir\u014D arrived for the duel at the scheduled time. By some
+    accounts, Musashi overslept. By others, he intentionally arrived late. In either
+    case Kojir\u014D was made to wait several hours. Musashi arrived by boat, and
+    during the trip used one of the ship's oars to make an improvised wooden sword.\n\nWhen
+    he got there, Kojir\u014D chided him for his lateness, and cast his scabbard
+    into the sea, a sign that he would fight to the death. Musashi responded he must
+    not be very confident if he didnt think he would ever use the beautiful scabbard
+    again. \n\nThe two cicled each other, then moved in to strike. Legend has it
+    that Musashi escaped death by the thickness of his headband. Kojir\u014D was
+    not so fortunate."
 --- !u!222 &633430698
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -310,8 +325,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 158, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 84, y: 0.0000062734}
+  m_SizeDelta: {x: 56.287163, y: 56.387276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &753845419
 MonoBehaviour:
@@ -464,7 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -632,7 +647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -621, y: 280}
+  m_AnchoredPosition: {x: -309, y: 149}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1957207859
@@ -656,10 +671,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
