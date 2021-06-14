@@ -16,6 +16,8 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
 
+    public bool forceLock;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +32,11 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if(panel.activeSelf == false && choiceA.activeSelf == false && FindObjectsOfType<PlayerController>()[0].movementLocked)
+        if(panel.activeSelf == false && choiceA.activeSelf == false && FindObjectsOfType<PlayerController>()[0].movementLocked && !forceLock)
         {
             FindObjectsOfType<PlayerController>()[0].movementLocked = false;
         } 
-        else if(panel.activeSelf == false && choiceA.activeSelf == true && !FindObjectsOfType<PlayerController>()[0].movementLocked)
+        else if(panel.activeSelf == false && choiceA.activeSelf == true && !FindObjectsOfType<PlayerController>()[0].movementLocked && !forceLock)
         {
             FindObjectsOfType<PlayerController>()[0].movementLocked = true;
         } 

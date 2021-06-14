@@ -10,6 +10,7 @@ public class PlayerMovementDestroyed : NPCFollowPath
     {
         base.Start();
         if(gameObject.CompareTag("Player")){
+            FindObjectOfType<DialogueManager>().forceLock = true;
             GetComponent<PlayerController>().movementLocked = true;
         }
     }
@@ -29,6 +30,7 @@ public class PlayerMovementDestroyed : NPCFollowPath
     {
         base.FinishMoving();
         if(gameObject.CompareTag("Player")){
+            FindObjectOfType<DialogueManager>().forceLock = false;
             GetComponent<PlayerController>().movementLocked = false;
         } else {
             GetComponent<CircleCollider2D>().enabled = true;

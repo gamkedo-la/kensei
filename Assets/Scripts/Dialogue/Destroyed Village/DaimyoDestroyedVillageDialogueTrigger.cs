@@ -22,6 +22,8 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
     bool dialogueOver;
     public Sprite shigeie1A;
     int switchInt = 0;
+    bool endGame;
+    public GameObject endGamePanel;
 
     public override void Start()
     {
@@ -78,7 +80,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                     interactionOver = true;
                     shigeieAttacks = false;
                     GameDictionary.Instance.UpdateEntry("Shigeie Apprehended", true);
-                    shigeie.GetComponent<SpriteRenderer>().sprite = shigeie1A;
+                    //shigeie.GetComponent<SpriteRenderer>().sprite = shigeie1A;
                     armScene.SetActive(true);
                     //shigeie says something like ouch
                     button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
@@ -109,10 +111,10 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                         shigeieApprehended = true;
                     }
                 }
-                if (dialogueEnd && interactionOver && !shigeieApprehended && GameDictionary.choiceDictionary["Opted Let Die"])
+                if (dialogueEnd && interactionOver && !shigeieApprehended && GameDictionary.choiceDictionary["Opted Let Die"] && !endGame)
                 {
-                    // end game
-                    //
+                    endGame = true;
+                    endGamePanel.SetActive(true);                    
                 }
             }
             else if (skipDialogue)

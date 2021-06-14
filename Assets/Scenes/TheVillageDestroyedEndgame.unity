@@ -36658,6 +36658,7 @@ MonoBehaviour:
   armScene: {fileID: 1037064930}
   player: {fileID: 0}
   shigeie1A: {fileID: 21300000, guid: 91d7f834c03965542aa81fb11d9ac895, type: 3}
+  endGamePanel: {fileID: 0}
 --- !u!114 &804921354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66194,8 +66195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1534889106}
+  - {fileID: 1534889105}
   collider: {fileID: 1534889099}
   button: {fileID: 1016599175}
   panel: {fileID: 1016599176}
