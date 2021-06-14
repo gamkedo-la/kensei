@@ -29,7 +29,7 @@ public Scene scene;
         else if(GameDictionary.choiceDictionary[icScript.itemName])
         {
             Debug.Log(icScript.itemName + " has been picked up");
-            Debug.Log(GameDictionary.choiceDictionary[icScript.itemName]);
+            //Debug.Log(GameDictionary.choiceDictionary[icScript.itemName]);
             Destroy(gameObject);
         }
         else if(!dropped && PlayerPrefs.HasKey(scene.name + "_" + this.gameObject.GetComponent<ItemClass>().itemName + ".x"))

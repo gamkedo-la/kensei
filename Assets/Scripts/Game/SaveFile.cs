@@ -12,15 +12,19 @@ public static class SaveFile
     //public GameObject player;
     public static void SaveGame()
     {
-        scene = SceneManager.GetActiveScene();
+        scene = SceneManager.GetActiveScene(); 
 
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
-        if (!player) return;
+        if (!player) {
+            Debug.Log("ERROR: SaveGame did not find a player!");
+            return;
+        }
 
         else
         {   
             GameDictionary.Instance.UpdateEntry("Game Saved", true);
-            PlayerPrefs.SetString("Scene", scene.ToString());
+            //PlayerPrefs.SetString("Scene", scene.ToString()); // this would store the OBJECT CLASA NAME!! not the scene name
+            PlayerPrefs.SetString("Scene", scene.name);
             PlayerPrefs.SetFloat("PlayerPosition.x", player.transform.position.x);
             PlayerPrefs.SetFloat("PlayerPosition.y", player.transform.position.y);
             PlayerPrefs.SetFloat("PlayerPosition.z", player.transform.position.z);

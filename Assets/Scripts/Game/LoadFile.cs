@@ -12,9 +12,32 @@ public static class LoadFile
     private static GameObject[] objArray;
     public static void LoadGame()
     {
-        scene = SceneManager.GetActiveScene();
+        //scene = SceneManager.GetActiveScene(); // unused
+
+        string loadme = PlayerPrefs.GetString("Scene");
+        if (loadme!=null) {
+            
+            // only if changed
+            if (SceneManager.GetActiveScene().name != loadme) {
+                Debug.Log("Current scene: "+SceneManager.GetActiveScene().name);
+                Debug.Log("LoadGame is about to load scene: "+loadme);
+                SceneManager.LoadScene(loadme);
+                Debug.Log("LoadGame finished loading scene: "+loadme);
+            } else {
+                Debug.Log("Skipping LoadScene because "+loadme+" is already the active scene.");
+            }
+        } else {
+            Debug.Log("ERROR: no scene stored in playerperfs! Ignoring.");
+        }
+
         dictionaryList = new List<string>();
+
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+
+        if (!player) {
+            Debug.Log("ERROR: LoadGame did not find a player!");
+            return;
+        }
 
         Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
         player.transform.position = position;

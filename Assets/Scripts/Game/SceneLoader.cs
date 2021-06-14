@@ -11,8 +11,12 @@ public static class SceneLoader
     // Start is called before the first frame update
     public static void Load(String scene)
     {    
-    SceneManager.LoadScene(scene);
-    Debug.Log("loaded");
+        Debug.Log("SceneLoader is loading: " + scene);
+        SceneManager.LoadScene(scene);
+        Debug.Log("SceneLoader finished loading: " + scene);
+        // now remember this so we don't loop endlessly
+        Debug.Log("Writing current scene to savegame: " +scene);
+        PlayerPrefs.SetString("Scene",scene);
     }
 
 

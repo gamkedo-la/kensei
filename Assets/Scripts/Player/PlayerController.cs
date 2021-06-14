@@ -59,21 +59,29 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Debug.LogError("PlayerController.Start()");
+
         scene = SceneManager.GetActiveScene();
 
+        // FIXME this feels like a hack!!!
         if (scene.name == "TheVillage" && !GameDictionary.choiceDictionary["Game Saved"])
         {
             AddItem(defaultClothing);
+            Debug.Log("Game has never been saved before: adding default clothing and saving game.");
+            SaveFile.SaveGame(); 
         }
         if (debugKeys)
         {
             Debug.LogError("Debug Keys On");
         }
 
-        SaveFile.SaveGame();
+        // FIXME makes no sense to save AND load in the same frame!
+        // perhaps this fills in valid default values in a new game?
+        // SaveFile.SaveGame(); 
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;
         LoadFile.LoadGame();
+        
         //TESTING
         /*GameDictionary.Instance.UpdateEntry("Samurai Path", true); 
         GameDictionary.Instance.UpdateEntry("Naginata", true);
