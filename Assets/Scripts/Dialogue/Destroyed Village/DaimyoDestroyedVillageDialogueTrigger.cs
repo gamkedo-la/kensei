@@ -207,7 +207,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
 
     public override void ButtonA()
     {
-        //set up switch
+        //set up switch to end game
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
         shigeieAttacks = true;
@@ -218,7 +218,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
 
     public override void ButtonB()
     {
-        //set up switch
+        //set up switch to end game
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
         shigeieAttacks = true;
