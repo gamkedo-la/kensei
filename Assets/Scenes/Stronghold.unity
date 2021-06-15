@@ -44668,6 +44668,12 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3959756893086247396, guid: 2e7523044618e1048bc086ea6cfac351,
+        type: 3}
+      propertyPath: itemDescription
+      value: Ancient in design but contemporary in make, it appears as though it
+        has never been used. Perhaps the Daimyo has no one to drink with.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e7523044618e1048bc086ea6cfac351, type: 3}
 --- !u!1001 &5993816357589931857

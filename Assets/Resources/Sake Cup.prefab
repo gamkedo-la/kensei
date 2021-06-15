@@ -97,7 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 3959756893086247395}
-  item: {fileID: 3959756893086247392}
   dropped: 0
   scene:
     m_Handle: 0
@@ -117,7 +116,8 @@ MonoBehaviour:
   itemSlot: 3
   combatPoints: 0
   itemSprite: {fileID: 21300000, guid: bf88e3fab24422f479654cc126ca3310, type: 3}
-  itemDescription: 
+  itemDescription: Ancient in design but contemporary in make, it appears as though
+    it has never been used. Perhaps the Daimyo has no one to drink with.
 --- !u!58 &3959756893086247395
 CircleCollider2D:
   m_ObjectHideFlags: 0
