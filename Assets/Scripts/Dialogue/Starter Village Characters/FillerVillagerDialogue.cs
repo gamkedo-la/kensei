@@ -26,6 +26,7 @@ public class FillerVillagerDialogue : DialogueTrigger
             inRange = true;
             button.SetActive(true);
             player = collider.gameObject;
+            GetComponent<NPCWander>().onSwitch = false;
 
             if (!GameDictionary.choiceDictionary["Nude"])
             {
@@ -116,6 +117,7 @@ public class FillerVillagerDialogue : DialogueTrigger
             buttonB.SetActive(false);
             combatScore.SetActive(false);
             player.GetComponent<PlayerController>().movementLocked = false;
+            GetComponent<NPCWander>().onSwitch = true;
         }
     }
 

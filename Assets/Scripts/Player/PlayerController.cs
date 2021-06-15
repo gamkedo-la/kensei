@@ -84,11 +84,8 @@ public class PlayerController : MonoBehaviour
         
         //TESTING
         //PlayerPrefs.DeleteAll(); 
-       /* GameDictionary.Instance.UpdateEntry("Monk Path", true);
-        GameDictionary.Instance.UpdateEntry("Monk Entry", true);
-        GameDictionary.Instance.UpdateEntry("Ronin Armor", true); 
-        GameDictionary.Instance.UpdateEntry("Shigenari Dead", false);
-        GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", true);*/
+        //GameDictionary.Instance.UpdateEntry("Samurai Path", true);
+        //GameDictionary.Instance.UpdateEntry("Left Stronghold Path", true);
         SaveFile.SaveGame();
         LoadFile.LoadGame();
         ChooseAnimator();

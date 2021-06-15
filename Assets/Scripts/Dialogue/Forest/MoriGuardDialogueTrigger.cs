@@ -48,6 +48,8 @@ public class MoriGuardDialogueTrigger : DialogueTrigger
         }
         if (dialogueEnd && samuraiDialogue)
         {
+            GameDictionary.Instance.UpdateEntry("Samurai Path", true);
+            GameDictionary.Instance.UpdateEntry("Path Chosen", true);
             doorCollider.SetActive(true);
             samuraiDialogue = false;
             dialogueEnd = false;

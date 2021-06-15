@@ -9,13 +9,12 @@ public class LeaveStongholdScript : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {   
-            if(GameDictionary.choiceDictionary["Samurai Path"])
-            {
+            Debug.Log("collided to leave sh");
             GameDictionary.Instance.UpdateEntry("Left Stronghold", true);
             GameDictionary.Instance.UpdateEntry("Left Stronghold Path", true);
             //load forest
             SceneLoader.Load("ForestLevel");
-            }
+            
         }
     }
 }

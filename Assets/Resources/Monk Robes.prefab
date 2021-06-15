@@ -115,7 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 7344770510082991410}
-  item: {fileID: 7344770510082991411}
   dropped: 0
   scene:
     m_Handle: 0

@@ -43,6 +43,7 @@ public class ShigieColliderScript : MonoBehaviour
         {
             collider.GetComponent<IshidaShigieDialogueTrigger>().reachedEntrance = true;
             FindObjectOfType<DialogueManager>().forceLock = false;
+            this.gameObject.SetActive(false);
         }
     }
 
