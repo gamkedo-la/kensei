@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
         LoadFile.LoadGame();
         
         //TESTING
-        PlayerPrefs.DeleteAll(); 
+        //PlayerPrefs.DeleteAll(); 
         /*GameDictionary.Instance.UpdateEntry("Ancient Chokuto", true);
         GameDictionary.Instance.UpdateEntry("Ronin Armor", true); 
         GameDictionary.Instance.UpdateEntry("Shigenari Dead", false);

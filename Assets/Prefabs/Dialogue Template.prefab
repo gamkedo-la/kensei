@@ -51,6 +51,7 @@ MonoBehaviour:
   trigger: {fileID: 0}
   nameText: {fileID: 4855295428994274577}
   dialogueText: {fileID: 4855295427728226985}
+  forceLock: 0
 --- !u!1 &4855295427722579932
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,8 +195,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: eb8bc192ca580b04b967448d037fc6dc, type: 3}
-    m_FontSize: 24
+    m_Font: {fileID: 12800000, guid: 9aa330f12457b3d4e9929e3159ea7290, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -205,7 +206,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0.5
+    m_LineSpacing: 0.75
   m_Text: 'New Text New Text New Text New Text New Text New Text New Text New Text
     New Text New Text New Text New Text New Text New Text '
 --- !u!1 &4855295427801942085
@@ -1368,11 +1369,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: eb8bc192ca580b04b967448d037fc6dc, type: 3}
-    m_FontSize: 32
+    m_Font: {fileID: 12800000, guid: 9aa330f12457b3d4e9929e3159ea7290, type: 3}
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0

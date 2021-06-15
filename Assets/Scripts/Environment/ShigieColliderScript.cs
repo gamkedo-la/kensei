@@ -19,6 +19,7 @@ public class ShigieColliderScript : MonoBehaviour
         {
             if (!GameDictionary.choiceDictionary["Shigeie Walked"])
             {
+                FindObjectOfType<DialogueManager>().forceLock = true;
                 collider.GetComponent<PlayerController>().movementLocked = true;
                 shigie.GetComponent<ShigieMovementScript>().targetPosition = this.gameObject;
                 shigie.GetComponent<ShigieMovementScript>().onSwitch = true;
@@ -31,6 +32,7 @@ public class ShigieColliderScript : MonoBehaviour
             }
             else
             {
+                
                 this.gameObject.SetActive(false);
             }
         }
@@ -38,6 +40,7 @@ public class ShigieColliderScript : MonoBehaviour
         if (collider.CompareTag("Shigie"))
         {
             collider.GetComponent<IshidaShigieDialogueTrigger>().reachedEntrance = true;
+            FindObjectOfType<DialogueManager>().forceLock = false;
         }
     }
 

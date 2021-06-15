@@ -7396,6 +7396,7 @@ GameObject:
   - component: {fileID: 168435142}
   - component: {fileID: 168435143}
   - component: {fileID: 168435145}
+  - component: {fileID: 168435146}
   m_Layer: 0
   m_Name: Temple Gate
   m_TagString: Item
@@ -7505,7 +7506,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.93929213, y: -0.2290944}
+  m_Offset: {x: -0.93929213, y: -0.694739}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7516,7 +7517,33 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9679078, y: 1.3508546}
+  m_Size: {x: 0.9679078, y: 2.2821443}
+  m_EdgeRadius: 0
+--- !u!61 &168435146
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168435141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.1257436, y: -0.6744936}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 4.1}
+    newSize: {x: 12.74, y: 10.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.967926, y: 2.2416534}
   m_EdgeRadius: 0
 --- !u!1 &169745214
 GameObject:
