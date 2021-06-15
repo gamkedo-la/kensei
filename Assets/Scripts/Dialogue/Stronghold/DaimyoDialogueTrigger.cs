@@ -318,9 +318,11 @@ public class DaimyoDialogueTrigger : DialogueTrigger
 
         else
         {
+            DecisionDisplay("???", "Plead with the Daimyo");
+            /*
             button.GetComponent<DialogueRun>().dialogue = Dialogues[7];
             button.GetComponent<DialogueRun>().trigger = this;
-            button.GetComponent<DialogueRun>().TriggerDialogue();
+            button.GetComponent<DialogueRun>().TriggerDialogue();*/
         }
         choicesShown = true;
     }

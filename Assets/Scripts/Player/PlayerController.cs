@@ -84,10 +84,11 @@ public class PlayerController : MonoBehaviour
         
         //TESTING
         //PlayerPrefs.DeleteAll(); 
-        /*GameDictionary.Instance.UpdateEntry("Ancient Chokuto", true);
+        GameDictionary.Instance.UpdateEntry("Monk Path", true);
+        GameDictionary.Instance.UpdateEntry("Monk Entry", true);
         GameDictionary.Instance.UpdateEntry("Ronin Armor", true); 
         GameDictionary.Instance.UpdateEntry("Shigenari Dead", false);
-        GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", true);*/
+        GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", true);
         SaveFile.SaveGame();
         LoadFile.LoadGame();
         ChooseAnimator();
@@ -195,7 +196,7 @@ public class PlayerController : MonoBehaviour
         {
             GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", false);
             GameDictionary.Instance.UpdateEntry("Bladeless Tanto", false);
-            GameDictionary.Instance.UpdateEntry("Blooded Tanto", false);
+            GameDictionary.Instance.UpdateEntry("Blooded Tanto", true);
             bigItem = null;
             smallItem = null;
             AddItem(bloodedTanto);
