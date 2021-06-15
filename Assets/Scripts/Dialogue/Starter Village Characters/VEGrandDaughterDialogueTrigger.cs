@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class VEGrandDaughterDialogueTrigger : DialogueTrigger
 {
-    public bool healedPlayer;
     public override void Start()
     {
         button.SetActive(false);
@@ -20,21 +19,21 @@ public class VEGrandDaughterDialogueTrigger : DialogueTrigger
         //check for conditions for different dialogue options
 
         //boolean check for if the duel just happened
-        if (!healedPlayer && GameDictionary.choiceDictionary["One Arm"])
+        if (!GameDictionary.choiceDictionary["Healed Player"] && GameDictionary.choiceDictionary["One Arm"])
         {
             FindObjectOfType<DialogueManager>().forceLock = true;
             GetComponent<NPCFollowPlayerScript>().onSwitch = true;
             button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
             button.GetComponent<DialogueRun>().trigger = this;
             button.GetComponent<DialogueRun>().TriggerDialogue();
-            healedPlayer = true;
+            GameDictionary.Instance.UpdateEntry("Healed Player", true);
         }
-        if(GetComponent<NPCFollowPlayerScript>().stopped == true)
+        if (GetComponent<NPCFollowPlayerScript>().stopped == true)
         {
             GetComponent<NPCFollowPlayerScript>().onSwitch = false;
             FindObjectOfType<DialogueManager>().forceLock = false;
         }
-  
+
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
@@ -44,7 +43,7 @@ public class VEGrandDaughterDialogueTrigger : DialogueTrigger
             inRange = true;
             button.SetActive(true);
 
-            if (healedPlayer)
+            if (GameDictionary.choiceDictionary["Healed Player"])
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
                 button.GetComponent<DialogueRun>().trigger = this;
@@ -70,19 +69,22 @@ public class VEGrandDaughterDialogueTrigger : DialogueTrigger
 
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if (collider.CompareTag("Player"))
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
 
-        if(healedPlayer)
-        {   
-           if(!GetComponent<NPCWander>().onSwitch) GetComponent<NPCWander>().onSwitch = true;
+            if (GameDictionary.choiceDictionary["Healed Player"])
+            {
+                if (!GetComponent<NPCWander>().onSwitch) GetComponent<NPCWander>().onSwitch = true;
+            }
         }
     }
 
