@@ -80,7 +80,8 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                     interactionOver = true;
                     shigeieAttacks = false;
                     GameDictionary.Instance.UpdateEntry("Shigeie Apprehended", true);
-                    //shigeie.GetComponent<SpriteRenderer>().sprite = shigeie1A;
+                    shigeie.GetComponent<Animator>().enabled = false;
+                    shigeie.GetComponent<SpriteRenderer>().sprite = shigeie1A;
                     armScene.SetActive(true);
                     screenEffect.SetActive(true);
                     screenEffect.GetComponent<ScreenEffect>().StartCoroutine("WaitForAnim");

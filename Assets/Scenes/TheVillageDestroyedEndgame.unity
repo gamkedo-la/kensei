@@ -53250,10 +53250,16 @@ GameObject:
   - component: {fileID: 1225503812}
   - component: {fileID: 1225503811}
   - component: {fileID: 1225503810}
-  - component: {fileID: 1225503809}
   - component: {fileID: 1225503813}
   - component: {fileID: 1225503814}
+  - component: {fileID: 1225503809}
   - component: {fileID: 1225503815}
+  - component: {fileID: 1225503821}
+  - component: {fileID: 1225503820}
+  - component: {fileID: 1225503819}
+  - component: {fileID: 1225503818}
+  - component: {fileID: 1225503817}
+  - component: {fileID: 1225503816}
   m_Layer: 0
   m_Name: Sasaki Kojiro
   m_TagString: Untagged
@@ -53416,6 +53422,114 @@ MonoBehaviour:
   animator: {fileID: 1225503813}
   daimyo: {fileID: 804921345}
   button: {fileID: 1016599175}
+--- !u!114 &1225503816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Sasaki Kojir\u014D"
+  sentences:
+  - 'Musashi infuriates me. I cannot let him get to me though, or I will become sloppy
+    with my swordsmanship. '
+--- !u!114 &1225503817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Sasaki Kojir\u014D"
+  sentences:
+  - Oubasan, apologies if I got blood on your robe. That rogue Shigeie almost killed
+    the Daimyo, I had to move quickly--you may have been in danger yourself.
+--- !u!114 &1225503818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Sasaki Kojir\u014D"
+  sentences:
+  - 'Good reaction time to defend the Daimyo from Shigeie. I may not have made it
+    in time, I am sure he is grateful to you for saving his life. '
+--- !u!114 &1225503819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Sasaki Kojir\u014D"
+  sentences:
+  - 'Good reaction time to defend the Daimyo from Shigeie. I may not have made it
+    in time, I am sure he is grateful to you for saving his life. '
+--- !u!114 &1225503820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Sasaki Kojir\u014D"
+  sentences:
+  - I saw that you didn't even draw your sword to protect the Daimyo. I hope that
+    your reflexes were simply too slow and your loyalty to your lord remains unwavering...
+--- !u!114 &1225503821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225503808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c158869a8bf9b4b4099043f7a150636b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  collider: {fileID: 1225503809}
+  button: {fileID: 1016599175}
+  panel: {fileID: 1016599176}
+  inRange: 0
+  dialogueEnd: 0
+  combatScore: {fileID: 1016599172}
+  buttonA: {fileID: 1016599174}
+  buttonAText: 
+  buttonB: {fileID: 1016599173}
+  buttonBText: 
 --- !u!1001 &1227219208
 PrefabInstance:
   m_ObjectHideFlags: 0
