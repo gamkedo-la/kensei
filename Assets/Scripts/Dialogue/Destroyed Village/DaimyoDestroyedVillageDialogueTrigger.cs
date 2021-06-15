@@ -36,7 +36,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
     void Update()
     {
         //check for conditions for different dialogue options
-        if (!GameDictionary.choiceDictionary["Shigeie Apprehended"] || GameDictionary.choiceDictionary["Last Scene Over"])
+        if (!GameDictionary.choiceDictionary["Shigeie Apprehended"] || !GameDictionary.choiceDictionary["Last Scene Over"])
         {
 
             switchInt = 0;
@@ -70,7 +70,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                         //Sasaki says something
                         button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                         button.GetComponent<DialogueRun>().trigger = this;
-                       // button.GetComponent<DialogueRun>().TriggerDialogue();
+                        // button.GetComponent<DialogueRun>().TriggerDialogue();
                         //shigeieApprehended = true;
                     }
                 }
@@ -116,7 +116,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                 if (dialogueEnd && interactionOver && !shigeieApprehended && GameDictionary.choiceDictionary["Opted Let Die"] && !endGame)
                 {
                     endGame = true;
-                    endGamePanel.SetActive(true);                    
+                    endGamePanel.SetActive(true);
                 }
             }
             else if (skipDialogue)
@@ -140,6 +140,11 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                     GameDictionary.Instance.UpdateEntry("Last Scene Over", true);
                 }
             }
+        }
+        else if (dialogueEnd && (GameDictionary.choiceDictionary["Shigeie Apprehended"] || GameDictionary.choiceDictionary["Last Scene Over"]))
+        {
+            switchInt = 1;
+            DecisionDisplay("End the Game", "Keep Exploring");
         }
 
     }
@@ -173,13 +178,11 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
                 button.GetComponent<DialogueRun>().trigger = this;
-                switchInt = 1;
             }
             if (GameDictionary.choiceDictionary["Last Scene Over"])
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[9];
                 button.GetComponent<DialogueRun>().trigger = this;
-                switchInt = 2;
             }
 
         }
@@ -211,35 +214,53 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
 
     public override void ButtonA()
     {
-        //set up switch to end game
-        this.buttonA.SetActive(false);
-        this.buttonB.SetActive(false);
-        shigeieAttacks = true;
-        shigeieApprehended = true;
-        GameDictionary.Instance.UpdateEntry("Opted Save", true);
-        dialogueEnd = true;
+        switch (switchInt)
+        {
+
+            case 0:
+                //set up switch to end game
+                this.buttonA.SetActive(false);
+                this.buttonB.SetActive(false);
+                shigeieAttacks = true;
+                shigeieApprehended = true;
+                GameDictionary.Instance.UpdateEntry("Opted Save", true);
+                dialogueEnd = true;
+                break;
+
+            case 1:
+            SceneLoader.Load("Epilogue");
+                break;
+        }
     }
 
     public override void ButtonB()
     {
         //set up switch to end game
-        this.buttonA.SetActive(false);
-        this.buttonB.SetActive(false);
-        shigeieAttacks = true;
-        if (GameDictionary.choiceDictionary["Ronin Path"])
+        switch (switchInt)
         {
-            shigeieApprehended = false;
-            GameDictionary.Instance.UpdateEntry("Opted Let Die", true);
-            dialogueEnd = true;
-        }
-        if (GameDictionary.choiceDictionary["Samurai Path"])
-        {
-            //Sasaki says something
-            shigeieApprehended = true;
-            GameDictionary.Instance.UpdateEntry("Opted Let Die", true);
-            dialogueEnd = true;
-            sasaki.GetComponent<EndgameSasakiSimpleMovementScript>().onSwitch = true;
-            
+
+            case 0:
+                this.buttonA.SetActive(false);
+                this.buttonB.SetActive(false);
+                shigeieAttacks = true;
+                if (GameDictionary.choiceDictionary["Ronin Path"])
+                {
+                    shigeieApprehended = false;
+                    GameDictionary.Instance.UpdateEntry("Opted Let Die", true);
+                    dialogueEnd = true;
+                }
+                if (GameDictionary.choiceDictionary["Samurai Path"])
+                {
+                    //Sasaki says something
+                    shigeieApprehended = true;
+                    GameDictionary.Instance.UpdateEntry("Opted Let Die", true);
+                    dialogueEnd = true;
+                    sasaki.GetComponent<EndgameSasakiSimpleMovementScript>().onSwitch = true;
+                }
+                break;
+
+            case 1:
+                break;
         }
 
     }
@@ -248,6 +269,4 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
     {
         sasaki.GetComponent<SimpleMovementScript>().onSwitch = true;
     }
-
-
 }
