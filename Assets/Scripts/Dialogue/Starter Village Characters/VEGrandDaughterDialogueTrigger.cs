@@ -22,6 +22,7 @@ public class VEGrandDaughterDialogueTrigger : DialogueTrigger
         //boolean check for if the duel just happened
         if (!healedPlayer && GameDictionary.choiceDictionary["One Arm"])
         {
+            FindObjectOfType<DialogueManager>().forceLock = true;
             GetComponent<NPCFollowPlayerScript>().onSwitch = true;
             button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
             button.GetComponent<DialogueRun>().trigger = this;
@@ -31,6 +32,7 @@ public class VEGrandDaughterDialogueTrigger : DialogueTrigger
         if(GetComponent<NPCFollowPlayerScript>().stopped == true)
         {
             GetComponent<NPCFollowPlayerScript>().onSwitch = false;
+            FindObjectOfType<DialogueManager>().forceLock = false;
         }
   
     }
