@@ -46,9 +46,14 @@ public class FatherDialogue : DialogueTrigger
                     button.GetComponent<DialogueRun>().trigger = this;
                     giveSakeBottle = true;
                 }
-                else
+                else if (!GameDictionary.choiceDictionary["Given Sake Bottle"] && GameDictionary.choiceDictionary["One Arm"])
                 {
                     button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                    button.GetComponent<DialogueRun>().trigger = this;
+                }
+                else
+                {
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
                     button.GetComponent<DialogueRun>().trigger = this;
                 }
             }
@@ -90,7 +95,7 @@ public class FatherDialogue : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
-        GameDictionary.choiceDictionary["Given Sake Bottle"] = true;
+        GameDictionary.Instance.UpdateEntry("Given Sake Bottle", true);
         player.GetComponent<PlayerController>().AddItem(sakeBottle);
     }
 

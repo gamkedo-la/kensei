@@ -111,7 +111,7 @@ public class DialogueTriggerMusashi : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
 
-        particles.SetActive(true);
+        //particles.SetActive(true);
         button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
         button.GetComponent<DialogueRun>().trigger = this;
         button.GetComponent<DialogueRun>().TriggerDialogue();
