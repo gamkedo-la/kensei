@@ -83,10 +83,9 @@ public class PlayerController : MonoBehaviour
         LoadFile.LoadGame();
         
         //TESTING
-        PlayerPrefs.DeleteAll();
-        GameDictionary.Instance.UpdateEntry("Ronin Path", true); 
-        GameDictionary.Instance.UpdateEntry("Naginata", true);
-        GameDictionary.Instance.UpdateEntry("Sensei Kashimono", true); 
+        PlayerPrefs.DeleteAll(); 
+        GameDictionary.Instance.UpdateEntry("Ancient Chokuto", true);
+        GameDictionary.Instance.UpdateEntry("Ronin Armor", true); 
         GameDictionary.Instance.UpdateEntry("Shigenari Dead", false);
         GameDictionary.Instance.UpdateEntry("Bloody Tanto Blade", true);
         SaveFile.SaveGame();

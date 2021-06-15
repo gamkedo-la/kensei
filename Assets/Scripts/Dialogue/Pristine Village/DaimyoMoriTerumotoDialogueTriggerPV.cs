@@ -94,6 +94,7 @@ public class DaimyoMoriTerumotoDialogueTriggerPV : DialogueTrigger
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
         //end the game
+        SceneLoader.Load("Epilogue");
     }
 
     public override void ButtonB()
