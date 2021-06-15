@@ -118,7 +118,7 @@ public class IshidaShigenariDialogueTrigger2 : DialogueTrigger
 
             case 1:
                 screenEffect.SetActive(true);
-                if (player.GetComponent<StateTracker>().combatScore > 20)
+                if (player.GetComponent<StateTracker>().combatScore > 15)
                 {
                     deadShigenari.SetActive(true);
                     GameDictionary.Instance.UpdateEntry("Shigenari Dead", true);
