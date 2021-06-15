@@ -44529,6 +44529,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Acala's Charm
       objectReference: {fileID: 0}
+    - target: {fileID: 3781478109625111178, guid: 71ca759f5f5c4254dbfc7fe6ef756a6d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781478109625111183, guid: 71ca759f5f5c4254dbfc7fe6ef756a6d,
         type: 3}
       propertyPath: m_RootOrder

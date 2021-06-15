@@ -27,6 +27,8 @@ public class ShigieColliderScript : MonoBehaviour
                 if (!GameDictionary.choiceDictionary["Monk Path"] && !GameDictionary.choiceDictionary["Ronin Path"])
                 {
                     GameDictionary.Instance.UpdateEntry("Samurai Path", true);
+                    GameDictionary.Instance.UpdateEntry("Path Chosen", true);
+
                 }
             GameDictionary.Instance.UpdateEntry("Shigeie Walked", true);
             }
