@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         
         //TESTING
         PlayerPrefs.DeleteAll();
-        GameDictionary.Instance.UpdateEntry("Monk Path", true); 
+        GameDictionary.Instance.UpdateEntry("Ronin Path", true); 
         GameDictionary.Instance.UpdateEntry("Naginata", true);
         GameDictionary.Instance.UpdateEntry("Sensei Kashimono", true); 
         GameDictionary.Instance.UpdateEntry("Shigenari Dead", false);

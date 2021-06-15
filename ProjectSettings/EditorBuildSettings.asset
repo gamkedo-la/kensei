@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheVillageDestroyedEndgame.unity
     guid: 21b9f355dd688394cb9492309e15cab8
+  - enabled: 1
+    path: Assets/Scenes/Epilogue.unity
+    guid: 59b376af0bd71884684edb739af5c68d
   m_configObjects: {}

@@ -41,8 +41,16 @@ public class EndgameSimpleMovementScript : MonoBehaviour
                 animator.SetFloat("Speed", 0f);
                 if (animator) animator.SetInteger("Direction", 0);
                 onSwitch = false;
+                if (GameDictionary.choiceDictionary["Ronin Path"] || GameDictionary.choiceDictionary["Samurai Path"])
+                {
                 button.GetComponent<DialogueRun>().trigger = daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>();
                 daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().DecisionDisplay("Save the Daimyo", "Do Nothing");
+                }
+                else
+                {
+                    button.GetComponent<DialogueRun>().trigger = daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>();
+                    daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().dialogueEnd = true;
+                }
             }
         }
     }

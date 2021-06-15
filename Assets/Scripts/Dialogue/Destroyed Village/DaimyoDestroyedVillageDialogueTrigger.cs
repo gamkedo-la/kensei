@@ -63,25 +63,27 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                     }
                     else
                     {
+                        shigeie.GetComponent<EndgameSimpleMovementScript>().onSwitch = true;
                         dialogueEnd = false;
                         shigeieDialogueEnd = false;
                         shigeieAttacks = true;
                         //Sasaki says something
                         button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                         button.GetComponent<DialogueRun>().trigger = this;
-                        button.GetComponent<DialogueRun>().TriggerDialogue();
-                        shigeieApprehended = true;
+                       // button.GetComponent<DialogueRun>().TriggerDialogue();
+                        //shigeieApprehended = true;
                     }
                 }
                 if (dialogueEnd && shigeieApprehended && shigeieAttacks)
                 {
-                    
                     dialogueEnd = false;
                     interactionOver = true;
                     shigeieAttacks = false;
                     GameDictionary.Instance.UpdateEntry("Shigeie Apprehended", true);
                     //shigeie.GetComponent<SpriteRenderer>().sprite = shigeie1A;
                     armScene.SetActive(true);
+                    screenEffect.SetActive(true);
+                    screenEffect.GetComponent<ScreenEffect>().StartCoroutine("WaitForAnim");
                     //shigeie says something like ouch
                     button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
                     button.GetComponent<DialogueRun>().trigger = this;
@@ -101,11 +103,11 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                         button.GetComponent<DialogueRun>().TriggerDialogue();
                         deadDaimyo.SetActive(true);
                     }
-                    if (GameDictionary.choiceDictionary["Samurai Path"])
+                    else
                     {
                         dialogueEnd = false;
                         shigeieDialogueEnd = false;
-                        shigeieAttacks = false;
+                        //shigeieAttacks = false;
                         //Sasaki says something
                         sasaki.GetComponent<EndgameSasakiSimpleMovementScript>().onSwitch = true;
                         shigeieApprehended = true;

@@ -44,8 +44,8 @@ public class EndgameSasakiSimpleMovementScript : MonoBehaviour
                 button.GetComponent<DialogueRun>().trigger = daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>();
                 button.GetComponent<DialogueRun>().dialogue = daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().Dialogues[2];
                 button.GetComponent<DialogueRun>().TriggerDialogue();
-                daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().screenEffect.SetActive(true);
-                daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().screenEffect.GetComponent<ScreenEffect>().StartCoroutine("WaitForAnim");
+                //daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().screenEffect.SetActive(true);
+                //daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().screenEffect.GetComponent<ScreenEffect>().StartCoroutine("WaitForAnim");
             }
         }
     }
