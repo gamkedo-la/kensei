@@ -18,7 +18,7 @@ public class SasakiKojiroDialogueTriggerMonknRonin : DialogueTrigger
     void Update()
     {
         //check for conditions for different dialogue options
-        if (GameDictionary.choiceDictionary["Samurai Path"])
+        if (GameDictionary.choiceDictionary["Samurai Path"] && !GameDictionary.choiceDictionary["Left Stronghold"])
         {
             this.gameObject.SetActive(false);
         }
@@ -42,6 +42,11 @@ public class SasakiKojiroDialogueTriggerMonknRonin : DialogueTrigger
             {
                 //pick which Dialogue to run
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
+            if (GameDictionary.choiceDictionary["Samurai Path"] && GameDictionary.choiceDictionary["Left Stronghold"])
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
         }

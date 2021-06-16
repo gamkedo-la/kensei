@@ -30031,6 +30031,7 @@ GameObject:
   - component: {fileID: 2120722234}
   - component: {fileID: 2120722242}
   - component: {fileID: 2120722241}
+  - component: {fileID: 2120722243}
   m_Layer: 0
   m_Name: Sasaki Kojiro (1)
   m_TagString: Untagged
@@ -30053,6 +30054,7 @@ MonoBehaviour:
   Dialogues:
   - {fileID: 2120722242}
   - {fileID: 2120722241}
+  - {fileID: 2120722243}
   collider: {fileID: 2120722237}
   button: {fileID: 1332023229}
   panel: {fileID: 790871734}
@@ -30229,6 +30231,21 @@ MonoBehaviour:
   name: "Sasaki Kojir\u014D"
   sentences:
   - '*winks at you but says nothing*'
+--- !u!114 &2120722243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120722233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "Sasaki Kojir\u014D"
+  sentences:
+  - What do you have to report? I'm sure the Daimyo will be interested to hear.
 --- !u!1001 &2123705143
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -21,6 +21,16 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
         buttonB.SetActive(false);
         combatScore.SetActive(false);
 
+        if(GameDictionary.choiceDictionary["Left Stronghold"])
+        {
+            this.gameObject.SetActive(false);
+        }
+        
+        if(GameDictionary.choiceDictionary["Used Hidden Tunnel"])
+        {
+            this.gameObject.SetActive(false);
+        }
+
     }
 
     void Update()
