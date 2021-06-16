@@ -53,6 +53,8 @@ public class MusashiDialogueTriggerDestroyedVillage : DialogueTrigger
     
     public override void OnTriggerExit2D(Collider2D collider)
     {
+        if (collider.CompareTag("Player"))
+        {
         inRange = false;
         button.SetActive(false);
         button.GetComponent<DialogueRun>().dialogue = null;
@@ -62,6 +64,7 @@ public class MusashiDialogueTriggerDestroyedVillage : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)

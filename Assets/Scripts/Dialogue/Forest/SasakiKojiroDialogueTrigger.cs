@@ -18,8 +18,8 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
-        
-        if(GameDictionary.choiceDictionary["Samurai Path"])
+
+        if (GameDictionary.choiceDictionary["Samurai Path"])
         {
             this.gameObject.SetActive(false);
         }
@@ -75,23 +75,26 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
 
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        if (!left && !spoke)
+        if (collider.CompareTag("Player"))
         {
-            inRange = false;
-            button.SetActive(false);
-            button.GetComponent<DialogueRun>().dialogue = null;
-            button.GetComponent<DialogueRun>().trigger = null;
-            dialogueEnd = false;
-            panel.SetActive(false);
-            buttonA.SetActive(false);
-            buttonB.SetActive(false);
-            combatScore.SetActive(false);
-        }
+            if (!left && !spoke)
+            {
+                inRange = false;
+                button.SetActive(false);
+                button.GetComponent<DialogueRun>().dialogue = null;
+                button.GetComponent<DialogueRun>().trigger = null;
+                dialogueEnd = false;
+                panel.SetActive(false);
+                buttonA.SetActive(false);
+                buttonB.SetActive(false);
+                combatScore.SetActive(false);
+            }
 
-        if (!left && spoke)
-        {
-            GetComponent<SimpleMovementScript>().onSwitch = true;
-            left = true;
+            if (!left && spoke)
+            {
+                GetComponent<SimpleMovementScript>().onSwitch = true;
+                left = true;
+            }
         }
     }
 

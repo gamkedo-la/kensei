@@ -8,58 +8,61 @@ public class SakichiNotMourningDialogueDestroyedVillage : DialogueTrigger
 
     public override void Start()
     {
-       button.SetActive(false); 
-       buttonA.SetActive(false);
-       buttonB.SetActive(false);
-       combatScore.SetActive(false);
+        button.SetActive(false);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
     }
 
     void Update()
     {
-      //check for conditions for different dialogue options
+        //check for conditions for different dialogue options
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.CompareTag("Player"))
+        if (collider.CompareTag("Player"))
         {
-        inRange = true;
-        button.SetActive(true);
+            inRange = true;
+            button.SetActive(true);
 
-            if(GameDictionary.choiceDictionary["Samurai Path"])
+            if (GameDictionary.choiceDictionary["Samurai Path"])
             {
-            //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
-            button.GetComponent<DialogueRun>().trigger = this;
+                //pick which Dialogue to run
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+                button.GetComponent<DialogueRun>().trigger = this;
             }
 
-            if(GameDictionary.choiceDictionary["Ronin Path"])
+            if (GameDictionary.choiceDictionary["Ronin Path"])
             {
-            //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
-            button.GetComponent<DialogueRun>().trigger = this;
+                //pick which Dialogue to run
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                button.GetComponent<DialogueRun>().trigger = this;
             }
 
-            if(GameDictionary.choiceDictionary["Monk Path"])
+            if (GameDictionary.choiceDictionary["Monk Path"])
             {
-            //pick which Dialogue to run
-            button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-            button.GetComponent<DialogueRun>().trigger = this;
+                //pick which Dialogue to run
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                button.GetComponent<DialogueRun>().trigger = this;
             }
-        }   
+        }
     }
-    
+
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if (collider.CompareTag("Player"))
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)

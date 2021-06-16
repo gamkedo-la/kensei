@@ -73,7 +73,7 @@ public class MoriGuardDialogueTrigger : DialogueTrigger
                     button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
                     button.GetComponent<DialogueRun>().trigger = this;
                     samuraiDialogue = true;
-                    
+
                 }
                 else if (GameDictionary.choiceDictionary["One Arm"])
                 {
@@ -129,7 +129,7 @@ public class MoriGuardDialogueTrigger : DialogueTrigger
             }
 
             //else if you're a samurai coming back in
-            else if(GameDictionary.choiceDictionary["Samurai Path"])
+            else if (GameDictionary.choiceDictionary["Samurai Path"])
             {
                 button.SetActive(false);
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
@@ -142,15 +142,18 @@ public class MoriGuardDialogueTrigger : DialogueTrigger
 
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if (collider.CompareTag("Player"))
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)
@@ -172,7 +175,7 @@ public class MoriGuardDialogueTrigger : DialogueTrigger
         doorCollider.SetActive(true);
         GameDictionary.Instance.UpdateEntry("Duel Entry", true);
         this.gameObject.SetActive(false);
-        
+
 
     }
 

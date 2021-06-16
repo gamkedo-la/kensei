@@ -8,98 +8,101 @@ public class IshidaShigenariDialogueTriggerPV : DialogueTrigger
 
     public override void Start()
     {
-       button.SetActive(false); 
-       buttonA.SetActive(false);
-       buttonB.SetActive(false);
-       combatScore.SetActive(false);
+        button.SetActive(false);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
     }
 
     void Update()
     {
-      //check for conditions for different dialogue options
-      if(GameDictionary.choiceDictionary["Shigenari Dead"])
-      {
-          this.gameObject.SetActive(false);
-      }
+        //check for conditions for different dialogue options
+        if (GameDictionary.choiceDictionary["Shigenari Dead"])
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.CompareTag("Player"))
+        if (collider.CompareTag("Player"))
         {
-        inRange = true;
-        button.SetActive(true);
-            if(GameDictionary.choiceDictionary["Shigie Arrested"])
+            inRange = true;
+            button.SetActive(true);
+            if (GameDictionary.choiceDictionary["Shigie Arrested"])
             {
-                if(GameDictionary.choiceDictionary["Samurai Path"] && GameDictionary.choiceDictionary["One Arm"])
+                if (GameDictionary.choiceDictionary["Samurai Path"] && GameDictionary.choiceDictionary["One Arm"])
                 {
-                //pick which Dialogue to run
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    //pick which Dialogue to run
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
+                    button.GetComponent<DialogueRun>().trigger = this;
                 }
-                else if(GameDictionary.choiceDictionary["Samurai Path"] && !GameDictionary.choiceDictionary["One Arm"])
+                else if (GameDictionary.choiceDictionary["Samurai Path"] && !GameDictionary.choiceDictionary["One Arm"])
                 {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
-                button.GetComponent<DialogueRun>().trigger = this;
-                }
-
-                if(GameDictionary.choiceDictionary["Ronin Path"])
-                {
-                //pick which Dialogue to run
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
+                    button.GetComponent<DialogueRun>().trigger = this;
                 }
 
-                if(GameDictionary.choiceDictionary["Monk Path"])
+                if (GameDictionary.choiceDictionary["Ronin Path"])
                 {
-                //pick which Dialogue to run
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    //pick which Dialogue to run
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                    button.GetComponent<DialogueRun>().trigger = this;
+                }
+
+                if (GameDictionary.choiceDictionary["Monk Path"])
+                {
+                    //pick which Dialogue to run
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
+                    button.GetComponent<DialogueRun>().trigger = this;
                 }
             }
-            if(GameDictionary.choiceDictionary["Sake with Daimyo"])
+            if (GameDictionary.choiceDictionary["Sake with Daimyo"])
             {
-                if(GameDictionary.choiceDictionary["Samurai Path"] && GameDictionary.choiceDictionary["One Arm"])
+                if (GameDictionary.choiceDictionary["Samurai Path"] && GameDictionary.choiceDictionary["One Arm"])
                 {
-                //pick which Dialogue to run
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    //pick which Dialogue to run
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
+                    button.GetComponent<DialogueRun>().trigger = this;
                 }
 
-                else if(GameDictionary.choiceDictionary["Samurai Path"] && !GameDictionary.choiceDictionary["One Arm"])
+                else if (GameDictionary.choiceDictionary["Samurai Path"] && !GameDictionary.choiceDictionary["One Arm"])
                 {
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
+                    button.GetComponent<DialogueRun>().trigger = this;
                 }
 
-                if(GameDictionary.choiceDictionary["Ronin Path"])
+                if (GameDictionary.choiceDictionary["Ronin Path"])
                 {
-                //pick which Dialogue to run
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    //pick which Dialogue to run
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
+                    button.GetComponent<DialogueRun>().trigger = this;
                 }
 
-                if(GameDictionary.choiceDictionary["Monk Path"])
+                if (GameDictionary.choiceDictionary["Monk Path"])
                 {
-                //pick which Dialogue to run
-                button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
-                button.GetComponent<DialogueRun>().trigger = this;
+                    //pick which Dialogue to run
+                    button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
+                    button.GetComponent<DialogueRun>().trigger = this;
                 }
             }
-        }   
+        }
     }
-    
+
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if (collider.CompareTag("Player"))
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)

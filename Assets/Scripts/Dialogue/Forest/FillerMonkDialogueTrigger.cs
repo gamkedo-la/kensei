@@ -61,7 +61,7 @@ public class FillerMonkDialogueTrigger : DialogueTrigger
                     case 7:
                         dialogue.sentences[0] = "Have you sat outside, closed your eyes and visualized your breath like the wind around you?";
                         break;
-                    
+
                 }
                 //pick which Dialogue to run
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
@@ -79,15 +79,18 @@ public class FillerMonkDialogueTrigger : DialogueTrigger
 
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if (collider.CompareTag("Player"))
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)

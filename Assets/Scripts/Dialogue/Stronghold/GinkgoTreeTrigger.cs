@@ -11,43 +11,46 @@ public class GinkgoTreeTrigger : DialogueTrigger
 
     public override void Start()
     {
-       button.SetActive(false); 
-       buttonA.SetActive(false);
-       buttonB.SetActive(false);
-       combatScore.SetActive(false);
+        button.SetActive(false);
+        buttonA.SetActive(false);
+        buttonB.SetActive(false);
+        combatScore.SetActive(false);
     }
 
     void Update()
     {
-      //check for conditions for different dialogue options
+        //check for conditions for different dialogue options
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.CompareTag("Player"))
+        if (collider.CompareTag("Player"))
         {
-        inRange = true;
-        player = collider.gameObject;
+            inRange = true;
+            player = collider.gameObject;
 
-            if(GameDictionary.choiceDictionary["Ginkgo Seed"])
+            if (GameDictionary.choiceDictionary["Ginkgo Seed"])
             {
                 button.GetComponent<DialogueRun>().trigger = this;
                 DecisionDisplay("Plant the Ginkgo Seed", "Do Nothing");
             }
-        }   
+        }
     }
-    
+
     public override void OnTriggerExit2D(Collider2D collider)
     {
-        inRange = false;
-        button.SetActive(false);
-        button.GetComponent<DialogueRun>().dialogue = null;
-        button.GetComponent<DialogueRun>().trigger = null;
-        dialogueEnd = false;
-        panel.SetActive(false);
-        buttonA.SetActive(false);
-        buttonB.SetActive(false);
-        combatScore.SetActive(false);
+        if (collider.CompareTag("Player"))
+        {
+            inRange = false;
+            button.SetActive(false);
+            button.GetComponent<DialogueRun>().dialogue = null;
+            button.GetComponent<DialogueRun>().trigger = null;
+            dialogueEnd = false;
+            panel.SetActive(false);
+            buttonA.SetActive(false);
+            buttonB.SetActive(false);
+            combatScore.SetActive(false);
+        }
     }
 
     public override void DecisionDisplay(string buttonAText, string buttonBText)
