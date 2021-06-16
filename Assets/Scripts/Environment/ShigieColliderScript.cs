@@ -12,6 +12,10 @@ public class ShigieColliderScript : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+        if(GameDictionary.choiceDictionary["Left Stronghold"])
+        {
+            this.gameObject.SetActive(false);
+        }
     }
     void OnTriggerEnter2D(Collider2D collider)
     {

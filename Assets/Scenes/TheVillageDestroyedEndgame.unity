@@ -11380,9 +11380,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 4
+  name: Miyamoto Musashi
   sentences:
-  - 
+  - 'This was your hometown no? Is that not your Father lying there dead? I''m sure
+    you must feel terrible for not being able to stop this. '
 --- !u!114 &323366291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11395,9 +11396,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 3
+  name: Miyamoto Musashi
   sentences:
-  - 
+  - 'This was your hometown no? Is that not your Father lying there dead? I''m sure
+    you must feel terrible for not being able to stop this. '
 --- !u!114 &323366292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11410,9 +11412,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 2
+  name: Miyamoto Musashi
   sentences:
-  - 
+  - 'This was your hometown no? Is that not your Father lying there dead? I''m sure
+    you must feel terrible for not being able to stop this. '
 --- !u!114 &323366293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11425,9 +11428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 1
+  name: Miyamoto Musashi
   sentences:
-  - 
+  - You struck quickly, but not quickly enough. Now you have paid the price.
 --- !u!114 &323366294
 MonoBehaviour:
   m_ObjectHideFlags: 0

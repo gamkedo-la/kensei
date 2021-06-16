@@ -37,9 +37,14 @@ public class SasakiDialogueTriggerDestroyedVillage : DialogueTrigger
                         button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
                         button.GetComponent<DialogueRun>().trigger = this;
                     }
-                    else
+                    else if (GameDictionary.choiceDictionary["Opted Save"])
                     {
                         button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
+                        button.GetComponent<DialogueRun>().trigger = this;
+                    }
+                    else
+                    {
+                        button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
                         button.GetComponent<DialogueRun>().trigger = this;
                     }
                 }
