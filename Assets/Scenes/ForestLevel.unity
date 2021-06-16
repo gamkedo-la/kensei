@@ -55926,7 +55926,7 @@ MonoBehaviour:
   speed: 6
   onSwitch: 0
   animator: {fileID: 1190041523}
-  button: {fileID: 0}
+  button: {fileID: 865944195}
 --- !u!114 &1190041526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60086,7 +60086,7 @@ MonoBehaviour:
   speed: 12
   onSwitch: 0
   animator: {fileID: 1280050417}
-  button: {fileID: 0}
+  button: {fileID: 865944195}
 --- !u!114 &1280050414 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3866649638315369964, guid: 8b883384a8bc43c47a9af54baceed707,
