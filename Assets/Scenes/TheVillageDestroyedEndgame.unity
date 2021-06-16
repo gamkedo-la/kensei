@@ -46061,9 +46061,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: "M\u014Dri Guard"
   sentences:
-  - 3
+  - Oubasan be careful, there may still be violence happening near here.
 --- !u!114 &1062594722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46076,9 +46076,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: "M\u014Dri Guard"
   sentences:
-  - 2
+  - Watch your step Ronin...and your back.
 --- !u!114 &1062594723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46093,7 +46093,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "M\u014Dri Guard"
   sentences:
-  - 1
+  - This was your hometown? I guess we should consider ourselves lucky you aren't
+    a traitor too.
 --- !u!114 &1062594724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103239,7 +103240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   sentences:
-  - 3
+  - Oubasan be careful, there may still be violence happening near here.
 --- !u!114 &1949607546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103254,7 +103255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   sentences:
-  - 2
+  - Watch your step Ronin...and your back.
 --- !u!114 &1949607547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103269,7 +103270,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "M\u014Dri Guard"
   sentences:
-  - 1
+  - This was your hometown? I guess we should consider ourselves lucky you aren't
+    a traitor too.
 --- !u!114 &1949607548
 MonoBehaviour:
   m_ObjectHideFlags: 0

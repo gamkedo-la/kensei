@@ -25359,8 +25359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ishida Shigeie
   sentences:
-  - ' Fine. But be quick about it. I will have my eye on you. The Daimyo is a busy
-    man.'
+  - Fine. But be quick about it. I will have my eye on you. The Daimyo is a busy
+    man.
 --- !u!114 &1692442890
 MonoBehaviour:
   m_ObjectHideFlags: 0
