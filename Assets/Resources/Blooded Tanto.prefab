@@ -100,7 +100,8 @@ MonoBehaviour:
   itemSlot: 3
   combatPoints: 4
   itemSprite: {fileID: 21300000, guid: 903cfd8b64a82364cbe9be83d4de7bf4, type: 3}
-  itemDescription: 
+  itemDescription: The blade found in Mitsu's corpse matches the handle found in
+    Shigeie's room perfectly.
 --- !u!114 &5993816356027387800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 5993816356027387801}
-  item: {fileID: 5993816356027387797}
   dropped: 0
   scene:
     m_Handle: 0
