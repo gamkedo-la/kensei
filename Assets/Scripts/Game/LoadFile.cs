@@ -12,67 +12,74 @@ public static class LoadFile
     private static GameObject[] objArray;
     public static void LoadGame()
     {
-        //scene = SceneManager.GetActiveScene(); // unused
-
-        /*string loadme = PlayerPrefs.GetString("Scene");
-        if (loadme!=null) {
-            
-            // only if changed
-            if (SceneManager.GetActiveScene().name != loadme) {
-                Debug.Log("Current scene: "+SceneManager.GetActiveScene().name);
-                Debug.Log("LoadGame is about to load scene: "+loadme);
-               // SceneManager.LoadScene(loadme);
-                Debug.Log("LoadGame finished loading scene: "+loadme);
-            } else {
-                Debug.Log("Skipping LoadScene because "+loadme+" is already the active scene.");
-            }
-        } else {
-            Debug.Log("ERROR: no scene stored in playerperfs! Ignoring.");
-        }*/
-
-        dictionaryList = new List<string>();
+        Debug.Log("LOADING SAVE DATA...");
 
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
-
         if (!player) {
             Debug.Log("ERROR: LoadGame did not find a player!");
             return;
         }
 
-        Vector3 position = new Vector3(PlayerPrefs.GetFloat("PlayerPosition.x"), PlayerPrefs.GetFloat("PlayerPosition.y"), PlayerPrefs.GetFloat("PlayerPosition.z"));
-       // player.transform.position = position;
-
+        Debug.Log("LOADING DICTIONARY DATA...");
+        dictionaryList = new List<string>();
         foreach (KeyValuePair<string, bool> pair in GameDictionary.choiceDictionary)
         {
             dictionaryList.Add(pair.Key);
             //GameDictionary.choiceDictionary[dictionaryEntry.Key] = false;   
         }
-
         foreach (string entry in dictionaryList)
         {
             GameDictionary.Instance.UpdateEntry(entry, PlayerPrefs.GetInt(entry, 0) == 1);
         }
 
+        Debug.Log("SPAWNING RESOURCES...");
         objArray = Resources.LoadAll("", typeof(GameObject)).Cast<GameObject>().ToArray();
-        
         foreach (GameObject obj in objArray)
         {
             if (obj != null)
             {
-                if (PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".x"))
+                if (PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".x")
+                && PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".y"))
                 {
-                    if (PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".y"))
-                    {
-                        player.GetComponent<PlayerController>().SpawnItem(obj);
-                        Debug.Log("Tried to Spawn"+obj.name);
-                    }
+                    player.GetComponent<PlayerController>().SpawnItem(obj);
+                    Debug.Log("- Tried to Spawn"+obj.name);
+                } else {
+                    Debug.Log(obj.name + " is missing missing position data.");
                 }
             }
         }
+        
+        Debug.Log("LOADING PLAYER STATS...");
         player.GetComponent<StateTracker>().playerCombatPoints = PlayerPrefs.GetInt("Player Combat Score");
-        Debug.Log("made it to enforce");
-        EnforceDictionary();
         player.GetComponent<StateTracker>().CalculateNewCombatScore();
+
+        Debug.Log("ENFORCING DICTIONARY...");
+        EnforceDictionary();
+
+        // teleport to the correct map (scene)
+        Debug.Log("LOADING MAP...");
+        string loadme = PlayerPrefs.GetString("Scene");
+        if (loadme!=null) {
+            // only if changed
+            if (SceneManager.GetActiveScene().name != loadme) {
+                Debug.Log("- Current scene: "+SceneManager.GetActiveScene().name);
+                Debug.Log("- LoadGame is about to load scene: "+loadme);
+                SceneManager.LoadScene(loadme);
+                Debug.Log("- LoadGame finished loading scene: "+loadme);
+            } else {
+                Debug.Log("- We are already in the saved scene: "+loadme+".");
+            }
+        } else {
+            Debug.Log("- No scene saved in playerperfs. Nothing to load.");
+        }
+
+        float newx = PlayerPrefs.GetFloat("PlayerPosition.x");
+        float newy = PlayerPrefs.GetFloat("PlayerPosition.y");
+        float newz = PlayerPrefs.GetFloat("PlayerPosition.z");
+        Debug.Log("TELEPORTING PLAYER TO "+newx+","+newy);
+        player.transform.position = new Vector3(newx, newy, newz);
+
+
     }
 
     public static GameObject ConstructItem(ItemClass item)

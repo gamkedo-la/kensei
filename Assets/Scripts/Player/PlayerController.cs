@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Game has never been saved before: adding default clothing and saving game.");
             SaveFile.SaveGame(); 
         }
+
         if (debugKeys)
         {
             Debug.LogError("Debug Keys On");
@@ -80,6 +81,7 @@ public class PlayerController : MonoBehaviour
         // SaveFile.SaveGame(); 
         defaultController = GetComponent<Animator>().runtimeAnimatorController;
         Cursor.lockState = CursorLockMode.Confined;
+        Debug.Log("PlayerController is about to load their game...");
         LoadFile.LoadGame();
         
         //TESTING
