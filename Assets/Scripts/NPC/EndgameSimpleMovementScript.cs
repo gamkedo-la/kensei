@@ -45,11 +45,13 @@ public class EndgameSimpleMovementScript : MonoBehaviour
                 {
                 button.GetComponent<DialogueRun>().trigger = daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>();
                 daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().DecisionDisplay("Save the Daimyo", "Do Nothing");
+                onSwitch = false;
                 }
                 else
                 {
                     button.GetComponent<DialogueRun>().trigger = daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>();
                     daimyo.GetComponent<DaimyoDestroyedVillageDialogueTrigger>().dialogueEnd = true;
+                    onSwitch = false;
                 }
             }
         }
