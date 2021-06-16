@@ -103287,7 +103287,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b3ec2906d0dde43a770bcb805b1a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialogues: []
+  Dialogues:
+  - {fileID: 1949607547}
+  - {fileID: 1949607546}
+  - {fileID: 1949607545}
   collider: {fileID: 1949607549}
   button: {fileID: 1016599175}
   panel: {fileID: 1016599176}
