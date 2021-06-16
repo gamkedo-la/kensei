@@ -59,7 +59,7 @@ public Scene scene;
     }
     public void OnPickUp()
     {
-        gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
 
     }
     public void CheckForDestroy(GameObject gameObject)

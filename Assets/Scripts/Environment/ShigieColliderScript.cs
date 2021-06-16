@@ -32,11 +32,6 @@ public class ShigieColliderScript : MonoBehaviour
                 }
             GameDictionary.Instance.UpdateEntry("Shigeie Walked", true);
             }
-            else
-            {
-                
-                this.gameObject.SetActive(false);
-            }
         }
 
         if (collider.CompareTag("Shigie"))

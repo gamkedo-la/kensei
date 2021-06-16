@@ -1,0 +1,149 @@
+Date : 2021-06-15 17:34:12
+Directory : c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts
+Total : 113 files,  7571 codes, 385 comments, 1371 blanks, all 9327 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C#       |        113 |      7,571 |        385 |      1,371 |      9,327 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                           |        113 |      7,571 |        385 |      1,371 |      9,327 |
+| Dialogue                                                                                                                                    |         62 |      5,230 |        177 |        931 |      6,338 |
+| Dialogue\Destroyed Village                                                                                                                  |         14 |      1,175 |         50 |        206 |      1,431 |
+| Dialogue\Forest                                                                                                                             |         11 |      1,201 |         30 |        188 |      1,419 |
+| Dialogue\Pristine Village                                                                                                                   |         15 |      1,072 |         52 |        201 |      1,325 |
+| Dialogue\Starter Village Characters                                                                                                         |          6 |        551 |         16 |         96 |        663 |
+| Dialogue\Stronghold                                                                                                                         |          8 |        959 |         22 |        179 |      1,160 |
+| Environment                                                                                                                                 |         16 |        390 |         13 |         88 |        491 |
+| GUI Scripts                                                                                                                                 |          3 |        106 |         12 |         27 |        145 |
+| Game                                                                                                                                        |          8 |        269 |         69 |         57 |        395 |
+| Items_Inventory                                                                                                                             |          8 |        294 |         27 |         49 |        370 |
+| NPC                                                                                                                                         |         13 |        693 |         36 |        123 |        852 |
+| Player                                                                                                                                      |          3 |        589 |         51 |         96 |        736 |
++---------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                                                    | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\ChoiceText.cs                                                       | C#       |         12 |          2 |          5 |         19 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\ConfrontationDialogueDestroyedVillage.cs          | C#       |        139 |          2 |          9 |        150 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\DaimyoDestroyedVillageDialogueTrigger.cs          | C#       |        239 |         15 |         20 |        274 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\DeadShigenariDialogueTrigger.cs                   | C#       |         70 |          1 |         15 |         86 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\DeadVillagerDialogueTriggerDestroyedVillage.cs    | C#       |         55 |          1 |         14 |         70 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\MoriGuardDestroyedVillageDialogue.cs              | C#       |         68 |          4 |         16 |         88 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\MusashiDialogueTriggerDestroyedVillage.cs         | C#       |         73 |          3 |         14 |         90 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\SakichiMourningDialogueTriggerDestroyedVillage.cs | C#       |         55 |          2 |         14 |         71 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\SakichiNotMourningDialogueDestroyedVillage.cs     | C#       |         68 |          4 |         16 |         88 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\SasakiDialogueTriggerDestroyedVillage.cs          | C#       |         84 |          4 |         17 |        105 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\ShigeieDialogueTriggerAttackingEndgame.cs         | C#       |         63 |          3 |         14 |         80 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\ShigeieDialogueTriggerNotAttackingEndgame.cs      | C#       |         55 |          2 |         14 |         71 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\TakuanSohoDestroyedVillageDialogue.cs             | C#       |         68 |          4 |         16 |         88 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\UmamiIsaDialogueDestroyedVillage.cs               | C#       |         83 |          4 |         13 |        100 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Destroyed Village\VillagerDialogueTriggerDestroyedVillage.cs        | C#       |         55 |          1 |         14 |         70 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Dialogue.cs                                                         | C#       |         10 |          0 |          3 |         13 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\DialogueManager.cs                                                  | C#       |         68 |          1 |         16 |         85 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\DialogueRun.cs                                                      | C#       |         22 |          0 |          5 |         27 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\DialogueTrigger.cs                                                  | C#       |         69 |          2 |         14 |         85 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\DialogueTriggerBase.cs                                              | C#       |         55 |          2 |         14 |         71 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\FillerMonkDialogueTrigger.cs                                 | C#       |         91 |          2 |         23 |        116 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\HaniwaDialogueTrigger.cs                                     | C#       |        107 |          2 |         16 |        125 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\HiddenTunnel.cs                                              | C#       |         69 |          3 |         11 |         83 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\IshidaSakichiDialogueTrigger.cs                              | C#       |         82 |          3 |         15 |        100 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\IshidaShigenariDialogueTrigger.cs                            | C#       |         72 |          2 |         18 |         92 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\IshidaShigenariDialogueTrigger2.cs                           | C#       |        133 |          1 |         21 |        155 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\MoriGuardDialogueTrigger.cs                                  | C#       |        164 |          9 |         17 |        190 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\OnigawaraDialogueTrigger.cs                                  | C#       |         86 |          1 |         11 |         98 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\SasakiKojiroDialogueTrigger.cs                               | C#       |        127 |          3 |         20 |        150 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\TakuanSohoDialogueTrigger.cs                                 | C#       |        174 |          2 |         22 |        198 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Forest\VillageMessengerDialogueTrigger.cs                           | C#       |         96 |          2 |         14 |        112 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\DaimyoMoriTerumotoDialogueTriggerPV.cs             | C#       |         90 |          6 |         15 |        111 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\DaimyoPathEndDialogueTrigger.cs                    | C#       |         22 |          0 |          2 |         24 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\FatherDialoguePristineVillage.cs                   | C#       |         68 |          4 |         17 |         89 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\FillerVillagerDialoguePV.cs                        | C#       |         85 |          2 |         21 |        108 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\GraveDialogueTrigger.cs                            | C#       |         22 |          0 |          2 |         24 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\IshidaSakichiDialogueTriggerPV.cs                  | C#       |         99 |          8 |         21 |        128 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\IshidaShigeieDialogueTriggerPV.cs                  | C#       |         77 |          4 |         17 |         98 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\IshidaShigenariDialogueTriggerPV.cs                | C#       |        103 |          7 |         18 |        128 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\KujoDialoguePristineVillage.cs                     | C#       |         68 |          4 |         17 |         89 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\MusashiDialoguePristineVillage.cs                  | C#       |         87 |          5 |         14 |        106 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\PristineVEGrandDaughterDialogueScript.cs           | C#       |         27 |          0 |          2 |         29 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\SasakiDialoguePristineVillage.cs                   | C#       |         87 |          5 |         14 |        106 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\SasakiMusashiDialogueTrigger.cs                    | C#       |         95 |          1 |         14 |        110 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\TakuanSohoDialogueTriggerPV.cs                     | C#       |         87 |          4 |         12 |        103 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Pristine Village\VillageElderDialogueTriggerPV.cs                   | C#       |         55 |          2 |         15 |         72 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Starter Village Characters\DialogueTriggerMusashi.cs                | C#       |        101 |          2 |         18 |        121 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Starter Village Characters\FatherDialogue.cs                        | C#       |         96 |          3 |         12 |        111 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Starter Village Characters\FillerVillagerDialogue.cs                | C#       |        120 |          2 |         22 |        144 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Starter Village Characters\ShopkeepDialogue.cs                      | C#       |         81 |          2 |         13 |         96 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Starter Village Characters\VEGrandDaughterDialogueTrigger.cs        | C#       |         90 |          4 |         17 |        111 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Starter Village Characters\VillageElderSVTrigger.cs                 | C#       |         63 |          3 |         14 |         80 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Stronghold\DaimyoDialogueTrigger.cs                                 | C#       |        281 |          7 |         54 |        342 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Stronghold\GinkgoTreeTrigger.cs                                     | C#       |         68 |          1 |         13 |         82 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Stronghold\IshidaSakichiDialogueTriggerStronghold.cs                | C#       |         55 |          2 |         13 |         70 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Stronghold\IshidaShigieDialogueTrigger.cs                           | C#       |        226 |          2 |         35 |        263 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Stronghold\IshidaShigieDialogueTriggerHiddenTunnel.cs               | C#       |         75 |          4 |         17 |         96 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Stronghold\SasakiKojiroDialogueTriggerMonknRonin.cs                 | C#       |         67 |          3 |         16 |         86 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Stronghold\SasakiKojiroDialogueTriggerSamurai.cs                    | C#       |        116 |          2 |         17 |        135 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\Stronghold\ShinzoShrineDialogueTrigger.cs                           | C#       |         71 |          1 |         14 |         86 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\buttonA.cs                                                          | C#       |         20 |          0 |          2 |         22 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Dialogue\buttonB.cs                                                          | C#       |         16 |          0 |          2 |         18 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\BlockerScriptStronghold.cs                                       | C#       |         13 |          1 |          2 |         16 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\ChapterTitle.cs                                                  | C#       |         15 |          2 |          5 |         22 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\CloseLockedDoor.cs                                               | C#       |         14 |          1 |          2 |         17 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\EnvironmentObjectSort.cs                                         | C#       |         19 |          1 |          2 |         22 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\GateLoaderCheck.cs                                               | C#       |         10 |          1 |          2 |         13 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\LeaveStongholdScript.cs                                          | C#       |         16 |          1 |          4 |         21 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\LoadEpilogue.cs                                                  | C#       |         10 |          1 |          2 |         13 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\MusicManager.cs                                                  | C#       |        129 |          0 |         40 |        169 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\OpenLockedDoor.cs                                                | C#       |         14 |          1 |          3 |         18 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\PlayerSpawnForest.cs                                             | C#       |         19 |          1 |          2 |         22 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\PlayerSpawnPlacerStronghold.cs                                   | C#       |         18 |          1 |          2 |         21 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\PlayerSpawnVillage.cs                                            | C#       |         18 |          1 |          2 |         21 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\ScreenEffect.cs                                                  | C#       |         15 |          1 |          3 |         19 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\ShigieColliderScript.cs                                          | C#       |         43 |          0 |          8 |         51 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\VillageLoaderTrigger.cs                                          | C#       |         11 |          0 |          4 |         15 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Environment\Wind_In_The_Grass.cs                                             | C#       |         26 |          0 |          5 |         31 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\GUI Scripts\PlayButtonSFX.cs                                                 | C#       |         13 |          0 |          3 |         16 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\GUI Scripts\TitlescreenMenu.cs                                               | C#       |         22 |          2 |          3 |         27 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\GUI Scripts\ctkWobble.cs                                                     | C#       |         71 |         10 |         21 |        102 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Game\AudioManager.cs                                                         | C#       |         25 |          0 |          4 |         29 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Game\CollisionBasedLoad.cs                                                   | C#       |         13 |          0 |          3 |         16 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Game\EndGame.cs                                                              | C#       |         12 |          1 |          2 |         15 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Game\GameDictionary.cs                                                       | C#       |         50 |         20 |         10 |         80 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Game\LoadFile.cs                                                             | C#       |         58 |         40 |         14 |        112 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Game\PauseMenu.cs                                                            | C#       |         50 |          4 |          9 |         63 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Game\SaveFile.cs                                                             | C#       |         42 |          2 |         12 |         56 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Game\SceneLoader.cs                                                          | C#       |         19 |          2 |          3 |         24 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Items_Inventory\DisplayCombatScore.cs                                        | C#       |         13 |          0 |          2 |         15 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Items_Inventory\DisplayDropButton.cs                                         | C#       |         73 |          1 |         12 |         86 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Items_Inventory\DisplayItemInfo.cs                                           | C#       |         25 |          1 |          4 |         30 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Items_Inventory\DisplayItemName.cs                                           | C#       |         22 |         22 |          2 |         46 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Items_Inventory\ItemClass.cs                                                 | C#       |         12 |          0 |          3 |         15 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Items_Inventory\ItemDictionary.cs                                            | C#       |         46 |          1 |          4 |         51 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Items_Inventory\PickUpItem.cs                                                | C#       |         58 |          2 |         11 |         71 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Items_Inventory\itemDisplay.cs                                               | C#       |         45 |          0 |         11 |         56 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\DaimyoMovement.cs                                                        | C#       |         55 |          0 |          7 |         62 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\DaimyoMovementDestroyed.cs                                               | C#       |         31 |          0 |          7 |         38 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\EndgameSasakiSimpleMovementScript.cs                                     | C#       |         49 |          3 |          7 |         59 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\EndgameShigeieSimpleMovementScript.cs                                    | C#       |         48 |          1 |          7 |         56 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\EndgameSimpleMovementScript.cs                                           | C#       |         56 |          1 |          7 |         64 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\EyeBlinking.cs                                                           | C#       |         31 |          3 |          6 |         40 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\MovementTestScript.cs                                                    | C#       |         28 |          0 |          6 |         34 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\NPCFollowPath.cs                                                         | C#       |         75 |          2 |          6 |         83 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\NPCFollowPlayerScript.cs                                                 | C#       |        116 |         14 |         28 |        158 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\NPCWander.cs                                                             | C#       |         86 |         10 |         20 |        116 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\PlayerMovementDestroyed.cs                                               | C#       |         33 |          0 |          7 |         40 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\ShigieMovementScript.cs                                                  | C#       |         39 |          1 |          8 |         48 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\NPC\SimpleMovementScript.cs                                                  | C#       |         46 |          1 |          7 |         54 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Player\CursorManager.cs                                                      | C#       |         15 |          2 |          5 |         22 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Player\PlayerController.cs                                                   | C#       |        512 |         49 |         81 |        642 |
+| c:\Users\Bjorn the fire\Documents\GitHub\kensei\Assets\Scripts\Player\StateTracker.cs                                                       | C#       |         62 |          0 |         10 |         72 |
+| Total                                                                                                                                       |          |      7,571 |        385 |      1,371 |      9,327 |
++---------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

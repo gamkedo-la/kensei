@@ -48,6 +48,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[0];
                 button.GetComponent<DialogueRun>().trigger = this;
                 button.GetComponent<DialogueRun>().TriggerDialogue();
+                
             }
 
             if(GameDictionary.choiceDictionary["Duel Entry"])
@@ -71,6 +72,7 @@ public class IshidaShigieDialogueTrigger : DialogueTrigger
                 button.GetComponent<DialogueRun>().TriggerDialogue();
             }
             reachedEntrance = false;
+            Debug.Log("Made it to reached entrance false");
         }
 
         if(dialogueEnd && !decided)

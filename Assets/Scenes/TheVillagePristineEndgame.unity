@@ -3714,7 +3714,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 111
+  m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &110165940
 Rigidbody2D:
@@ -6717,7 +6717,17 @@ Transform:
   - {fileID: 665594627}
   - {fileID: 827318248}
   - {fileID: 1864736753}
+  - {fileID: 580752625}
+  - {fileID: 719790974}
   - {fileID: 900248423}
+  - {fileID: 1513235139}
+  - {fileID: 1003670637}
+  - {fileID: 2061598999}
+  - {fileID: 914400622}
+  - {fileID: 110165939}
+  - {fileID: 1491726474}
+  - {fileID: 968977287}
+  - {fileID: 467124179}
   - {fileID: 2031986305}
   - {fileID: 1908931224}
   - {fileID: 891706942}
@@ -6727,16 +6737,6 @@ Transform:
   - {fileID: 1495133681}
   - {fileID: 912503104}
   - {fileID: 1554471676}
-  - {fileID: 580752625}
-  - {fileID: 719790974}
-  - {fileID: 1513235139}
-  - {fileID: 1003670637}
-  - {fileID: 2061598999}
-  - {fileID: 914400622}
-  - {fileID: 110165939}
-  - {fileID: 1491726474}
-  - {fileID: 968977287}
-  - {fileID: 467124179}
   - {fileID: 1516853497}
   - {fileID: 850790802}
   - {fileID: 2007461801}
@@ -6920,7 +6920,6 @@ Transform:
   - {fileID: 2019018654}
   - {fileID: 2074512425}
   - {fileID: 346019370}
-  - {fileID: 1517862776}
   - {fileID: 2045179057}
   - {fileID: 803642836}
   - {fileID: 1416633984}
@@ -6931,6 +6930,7 @@ Transform:
   - {fileID: 1024052269}
   - {fileID: 603286206}
   - {fileID: 720460903}
+  - {fileID: 1517862776}
   - {fileID: 1008920260}
   - {fileID: 1007307586}
   - {fileID: 793831833}
@@ -11475,7 +11475,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 303
+  m_RootOrder: 302
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &323402182
 Rigidbody2D:
@@ -17549,7 +17549,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 114
+  m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &467124180
 Rigidbody2D:
@@ -27471,7 +27471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 105
+  m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &580752626
 Rigidbody2D:
@@ -28072,7 +28072,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 307
+  m_RootOrder: 306
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &603286207
 Rigidbody2D:
@@ -32858,7 +32858,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 106
+  m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &719790975
 Rigidbody2D:
@@ -32988,7 +32988,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 308
+  m_RootOrder: 307
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &720460904
 Rigidbody2D:
@@ -33499,7 +33499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - 'I will see no darkness, only red. Your presence here is as a pawn, I hope you
     know you are being used. '
@@ -33531,7 +33531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - Musashi your tongue is as blasphemous as the rumors say. I look forward to cutting
     you down and stopping your breath from uttering such insults again.
@@ -35664,7 +35664,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 300
+  m_RootOrder: 299
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &803642837
 Rigidbody2D:
@@ -40409,7 +40409,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 110
+  m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &914400623
 Rigidbody2D:
@@ -42022,7 +42022,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 113
+  m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &968977288
 Rigidbody2D:
@@ -43033,7 +43033,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 108
+  m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1003670638
 Rigidbody2D:
@@ -44301,7 +44301,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 306
+  m_RootOrder: 305
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1024052270
 Rigidbody2D:
@@ -45260,7 +45260,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 302
+  m_RootOrder: 301
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1056780223
 Rigidbody2D:
@@ -52172,7 +52172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - Wear that Kashimono proudly, it is an heirloom from my school of swordsmanship.
     Only those who are worthy receive one.
@@ -52188,7 +52188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - Sometimes the gods bestow great gifts upon fools. There is no use in trying to
     reason with these truths. Perhaps your folks at the Temple will be able to figure
@@ -52205,7 +52205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - Sometimes the gods bestow great gifts upon fools. There is no use in trying to
     reason with these truths. However, you are no fool and I am proud to have trained
@@ -52222,7 +52222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - 'Sometimes the gods bestow great gifts upon fools. There is no use in trying
     to reason with these truths. However, you are no fool and I am proud to have
@@ -59691,7 +59691,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 301
+  m_RootOrder: 300
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1416633985
 Rigidbody2D:
@@ -62836,7 +62836,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 112
+  m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1491726475
 Rigidbody2D:
@@ -63442,7 +63442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 107
+  m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1513235140
 Rigidbody2D:
@@ -63722,7 +63722,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 304
+  m_RootOrder: 303
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1515665656
 Rigidbody2D:
@@ -90286,7 +90286,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 305
+  m_RootOrder: 304
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1773890130
 Rigidbody2D:
@@ -101661,7 +101661,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 299
+  m_RootOrder: 298
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2045179058
 Rigidbody2D:
@@ -102207,7 +102207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 194369813}
-  m_RootOrder: 109
+  m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2061599000
 Rigidbody2D:
@@ -106607,6 +106607,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068239843639634205, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068239843639634205, guid: ec41ab8670d852d45a70769b8f7e3eed,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8068239843639634205, guid: ec41ab8670d852d45a70769b8f7e3eed,
         type: 3}

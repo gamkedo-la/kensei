@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         
         //TESTING
         //PlayerPrefs.DeleteAll(); 
-        //GameDictionary.Instance.UpdateEntry("Samurai Path", true);
+        GameDictionary.Instance.UpdateEntry("Base Katana", true);
         //GameDictionary.Instance.UpdateEntry("Left Stronghold Path", true);
         SaveFile.SaveGame();
         LoadFile.LoadGame();
@@ -614,12 +614,15 @@ public class PlayerController : MonoBehaviour
 
                 if (obj != null)
                 {
+                    obj.SetActive(true);
                     ItemClass thisItem = obj.GetComponent<ItemClass>();
+
 
                     if (thisItem != null && entry == thisItem.itemName)
                     {
                         Debug.Log("tried add" + obj.GetComponent<ItemClass>().itemName);
-                        AddItem(obj);
+                        GameObject itemToInstantiate = Instantiate<GameObject>(obj);
+                        AddItem(itemToInstantiate);
                     }
                     else { Debug.Log("Broken item is" + obj.name); }
                 }

@@ -9680,7 +9680,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &668726614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30211,7 +30211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - '*Nods approvingly but says nothing*'
 --- !u!114 &2120722242
@@ -30226,7 +30226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - '*winks at you but says nothing*'
 --- !u!1001 &2123705143
@@ -45006,7 +45006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - Shigie why do you harass this young man? Do you not know that the Daimyo is expecting
     a new recruit? We should make him welcome, come I will follow you to the Daimyo's
@@ -45076,7 +45076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - You should go talk to Daimyo...
 --- !u!114 &8814317049793591069
@@ -45091,7 +45091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - 'So you wish to train a samurai? It will not be easy, but by the time I am finished
     with you the Daimyo will count you as one of his finest swordsmen. '

@@ -50814,6 +50814,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 54
       objectReference: {fileID: 0}
+    - target: {fileID: 4855295428945795251, guid: f316a61b8b29ed949801b12c173bb23e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4855295428969838243, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
       propertyPath: m_Name
@@ -55863,7 +55868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - 'You appear to be in search of a non-traditional means of a noble destiny. I
     help those seeking their own path in life to learn to use a weapon. Young or
@@ -55923,7 +55928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1190041524}
   targetPosition: {fileID: 32599082}
-  speed: 6
+  speed: 15
   onSwitch: 0
   animator: {fileID: 1190041523}
   button: {fileID: 865944195}
@@ -55939,7 +55944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - It is best if I do not remain here, my loyalty to my lord the Daimyo is unquestionable
     and I cannot be a party to this. My only advice is that the Daimyo tends to be
@@ -135794,7 +135799,6 @@ GameObject:
   - component: {fileID: 3740566485851115217}
   - component: {fileID: 3740566485851115216}
   - component: {fileID: 3740566485851115218}
-  - component: {fileID: 3740566485851115232}
   - component: {fileID: 3740566485851115233}
   m_Layer: 0
   m_Name: GameManager
@@ -135803,21 +135807,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &3740566485851115232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3740566485851115231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!114 &3740566485851115233
 MonoBehaviour:
   m_ObjectHideFlags: 0

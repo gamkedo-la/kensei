@@ -33569,7 +33569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - 'I would strike you down here myself if I were an upstart like you, but since
     we have a date set to settle our differences I will honor the ancient customs. '
@@ -33601,7 +33601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - Musashi what have you done! These men were doing their job of maintaining peace!
     We shall have you killed for the murder of samurai!
@@ -36340,7 +36340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b578e725129e0b4ab967722f7aa2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sasaki Kojiro
+  name: "Sasaki Kojir\u014D"
   sentences:
   - 'Shigeie! I knew never to trust you! I will protect you Daimyo, stay away from
     this deranged dog. '
@@ -46106,7 +46106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b3ec2906d0dde43a770bcb805b1a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialogues: []
+  Dialogues:
+  - {fileID: 1062594723}
+  - {fileID: 1062594722}
+  - {fileID: 1062594721}
   collider: {fileID: 1062594725}
   button: {fileID: 1016599175}
   panel: {fileID: 1016599176}
@@ -52874,11 +52877,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1225503820}
+  - {fileID: 1225503819}
+  - {fileID: 1225503818}
+  - {fileID: 1225503817}
+  - {fileID: 1225503816}
   collider: {fileID: 1225503809}
   button: {fileID: 1016599175}
   panel: {fileID: 1016599176}
@@ -92556,7 +92559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
-  - {fileID: 0}
+  - {fileID: 1801235670}
   collider: {fileID: 1801235667}
   button: {fileID: 1016599175}
   panel: {fileID: 1016599176}
