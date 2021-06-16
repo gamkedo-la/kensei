@@ -84,10 +84,10 @@ public class PlayerController : MonoBehaviour
         
         //TESTING
         //PlayerPrefs.DeleteAll(); 
-        GameDictionary.Instance.UpdateEntry("Base Katana", true);
+        //GameDictionary.Instance.UpdateEntry("Base Katana", true);
         //GameDictionary.Instance.UpdateEntry("Left Stronghold Path", true);
-        SaveFile.SaveGame();
-        LoadFile.LoadGame();
+        //SaveFile.SaveGame();
+        //LoadFile.LoadGame();
         ChooseAnimator();
     }
 
