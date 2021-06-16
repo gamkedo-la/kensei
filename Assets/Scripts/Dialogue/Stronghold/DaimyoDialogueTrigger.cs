@@ -201,10 +201,12 @@ public class DaimyoDialogueTrigger : DialogueTrigger
                 //load the next scene
                 if(talkedSake || accusedShigie)
                 {
+                    SaveFile.SaveGame();
                     SceneLoader.Load("TheVillagePristineEndgame");
                 }
                 else
                 {
+                    SaveFile.SaveGame();
                     SceneLoader.Load("TheVillageDestroyedEndgame");
                 }
             }

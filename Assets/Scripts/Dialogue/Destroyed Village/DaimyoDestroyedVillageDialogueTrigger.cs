@@ -59,6 +59,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                     {
                         dialogueEnd = false;
                         shigeieDialogueEnd = false;
+                        shigeieAttacks = true;
                         shigeie.GetComponent<EndgameSimpleMovementScript>().onSwitch = true;
                     }
                     else
@@ -96,7 +97,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                     {
                         dialogueEnd = false;
                         interactionOver = true;
-                        shigeieAttacks = false;
+                        //shigeieAttacks = false;
                         this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
                         //shigeie says something about kill Daimyo
                         button.GetComponent<DialogueRun>().dialogue = Dialogues[4];
