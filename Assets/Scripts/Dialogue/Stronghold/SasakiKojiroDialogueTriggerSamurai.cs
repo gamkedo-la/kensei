@@ -64,6 +64,7 @@ public class SasakiKojiroDialogueTriggerSamurai : DialogueTrigger
             GameDictionary.Instance.UpdateEntry("Trained as Samurai", true);
             StartCoroutine(WaitForTime());
             timePassed = true;
+            player = FindObjectOfType<PlayerController>().gameObject;
             player.GetComponent<StateTracker>().playerCombatPoints += 10;
         }
     }

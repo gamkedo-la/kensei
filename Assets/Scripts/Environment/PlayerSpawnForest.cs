@@ -12,7 +12,7 @@ public class PlayerSpawnForest : MonoBehaviour
     {
         if(GameDictionary.choiceDictionary["Left Stronghold Path"] && !moved) 
         {
-            player = FindObjectOfType<PlayerController>().gameObject;
+            Debug.Log("made it to load pos check");
             player.transform.position = loadPos.transform.position;
             GameDictionary.Instance.UpdateEntry("Left Stronghold Path", false);
             moved = true;
