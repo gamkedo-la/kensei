@@ -132,4 +132,5 @@ MonoBehaviour:
   itemSlot: 1
   combatPoints: 24
   itemSprite: {fileID: 21300000, guid: bde97c582e765dd43b24fc88e6ac5447, type: 3}
-  itemDescription: 
+  itemDescription: "Left to you by Miyamoto Musashi, this armor has seen innumerable
+    conflicts, and will likely see innumerable more before it\u2019s time is done."

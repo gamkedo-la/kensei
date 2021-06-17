@@ -116,7 +116,8 @@ MonoBehaviour:
   itemSlot: 2
   combatPoints: 0
   itemSprite: {fileID: 21300000, guid: dd6ab416e595d5043b36c3f070ecd9e3, type: 3}
-  itemDescription: 
+  itemDescription: Its blade gone, all that remains is the handle.  Etched into the
+    handle is the mark of the Ishida family.
 --- !u!114 &6285317791780478787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 6285317791780478785}
-  item: {fileID: 6285317791780478844}
   dropped: 0
   scene:
     m_Handle: 0

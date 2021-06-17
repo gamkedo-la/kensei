@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 6996994372559085813}
-  item: {fileID: 6996994372559085770}
   dropped: 0
   scene:
     m_Handle: 0
@@ -133,4 +132,5 @@ MonoBehaviour:
   itemSlot: 0
   combatPoints: 10
   itemSprite: {fileID: 21300000, guid: c03566b9f867b514f8b25004a877febe, type: 3}
-  itemDescription: 
+  itemDescription: "This old sword remains sharp, it\u2019s steel glinting in the
+    sun. Some political gift from long ago, its blade is untouched. "

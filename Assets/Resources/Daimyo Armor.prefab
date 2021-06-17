@@ -117,7 +117,9 @@ MonoBehaviour:
   itemSlot: 1
   combatPoints: 15
   itemSprite: {fileID: 21300000, guid: c98705f78108bb64cbe3ba112f42c7c3, type: 3}
-  itemDescription: 
+  itemDescription: "Very fine samurai armor found within the Daimyo\u2019s stronghold.
+    Likely the suit the Daimyo dons themselves when they go into battle, it has more
+    embellishments than most warriors would spend for. "
 --- !u!114 &6100928738225180550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 6100928738225180548}
-  item: {fileID: 6100928738225180551}
   dropped: 0
   scene:
     m_Handle: 0

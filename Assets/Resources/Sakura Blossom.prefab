@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 2163388395215824035}
-  item: {fileID: 2163388395215824046}
   dropped: 0
   scene:
     m_Handle: 0
@@ -133,4 +132,5 @@ MonoBehaviour:
   itemSlot: 3
   combatPoints: 0
   itemSprite: {fileID: 21300000, guid: ea8805ef430d87141b48133aab4eedfd, type: 3}
-  itemDescription: 
+  itemDescription: Picked from the branch of a blooming tree, the Sakura Blossom
+    lives with grace before its time is done.
