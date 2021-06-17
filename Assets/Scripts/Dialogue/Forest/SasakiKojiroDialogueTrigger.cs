@@ -35,7 +35,7 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
             dialogueEnd = false;
         }
 
-        if (GameDictionary.choiceDictionary["Message Delivered"] && !spoke)
+        if (GameDictionary.choiceDictionary["Message Delivered"] && !GameDictionary.choiceDictionary["Sasaki Returned"])
         {
             button.GetComponent<DialogueRun>().dialogue = Dialogues[1];
             button.GetComponent<DialogueRun>().trigger = this;
