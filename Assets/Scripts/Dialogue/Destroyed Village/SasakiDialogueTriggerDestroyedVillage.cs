@@ -26,7 +26,7 @@ public class SasakiDialogueTriggerDestroyedVillage : DialogueTrigger
             inRange = true;
             button.SetActive(true);
 
-            if (!GameDictionary.choiceDictionary["Shigeie Triggered"])
+            if (GameDictionary.choiceDictionary["Shigeie Triggered"])
             {
 
                 if (GameDictionary.choiceDictionary["Samurai Path"])

@@ -36,7 +36,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
     void Update()
     {
         //check for conditions for different dialogue options
-        if (!GameDictionary.choiceDictionary["Shigeie Apprehended"] || !GameDictionary.choiceDictionary["Last Scene Over"])
+        if (!GameDictionary.choiceDictionary["Shigeie Apprehended"] && !GameDictionary.choiceDictionary["Last Scene Over"])
         {
 
             switchInt = 0;
