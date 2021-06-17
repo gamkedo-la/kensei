@@ -194,8 +194,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: -45}
-  m_SizeDelta: {x: 220, y: 260}
+  m_AnchoredPosition: {x: 12, y: 2.61}
+  m_SizeDelta: {x: 220, y: 164.77689}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &4286265928111993238
 CanvasRenderer:
@@ -226,7 +226,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9aa330f12457b3d4e9929e3159ea7290, type: 3}
-    m_FontSize: 14
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -651,8 +651,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12, y: -45}
-  m_SizeDelta: {x: 220, y: 260}
+  m_AnchoredPosition: {x: -12, y: -21.58}
+  m_SizeDelta: {x: 220, y: 213.15634}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &6858858151351200866
 CanvasRenderer:
@@ -1630,7 +1630,7 @@ GameObject:
   - component: {fileID: 8068239842162601689}
   - component: {fileID: 8068239842162601690}
   m_Layer: 0
-  m_Name: Buttons
+  m_Name: ButtonsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1693,7 +1693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 2
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
