@@ -77,7 +77,7 @@ public static class LoadFile
         float newy = PlayerPrefs.GetFloat("PlayerPosition.y");
         float newz = PlayerPrefs.GetFloat("PlayerPosition.z");
         Debug.Log("TELEPORTING PLAYER TO "+newx+","+newy);
-        player.transform.position = new Vector3(newx, newy, newz);
+        //player.transform.position = new Vector3(newx, newy, newz);
 
 
     }

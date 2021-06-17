@@ -12,7 +12,7 @@ public class LeaveStongholdScript : MonoBehaviour
             Debug.Log("collided to leave sh");
             GameDictionary.Instance.UpdateEntry("Left Stronghold", true);
             GameDictionary.Instance.UpdateEntry("Left Stronghold Path", true);
-            GameDictionary.Instance.UpdateEntry("Used Hidden Tunnel", true);
+            GameDictionary.Instance.UpdateEntry("Used Hidden Tunnel", false);
             SaveFile.SaveGame();
             //load forest
             SceneLoader.Load("ForestLevel");
