@@ -8,14 +8,15 @@ public static class LoadFile
 {
     static List<string> dictionaryList;
     public static Scene scene;
-
+    private static bool debugSkips = true;
     private static GameObject[] objArray;
     public static void LoadGame()
     {
         Debug.Log("LOADING SAVE DATA...");
 
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
-        if (!player) {
+        if (!player)
+        {
             Debug.Log("ERROR: LoadGame did not find a player!");
             return;
         }
@@ -42,13 +43,15 @@ public static class LoadFile
                 && PlayerPrefs.HasKey(scene.name + "_" + obj.GetComponent<ItemClass>().itemName + ".y"))
                 {
                     player.GetComponent<PlayerController>().SpawnItem(obj);
-                    Debug.Log("- Tried to Spawn"+obj.name);
-                } else {
+                    Debug.Log("- Tried to Spawn" + obj.name);
+                }
+                else
+                {
                     Debug.Log(obj.name + " is missing missing position data.");
                 }
             }
         }
-        
+
         Debug.Log("LOADING PLAYER STATS...");
         player.GetComponent<StateTracker>().playerCombatPoints = PlayerPrefs.GetInt("Player Combat Score");
         player.GetComponent<StateTracker>().CalculateNewCombatScore();
@@ -59,25 +62,46 @@ public static class LoadFile
         // teleport to the correct map (scene)
         Debug.Log("LOADING MAP...");
         string loadme = PlayerPrefs.GetString("Scene");
-        if (loadme!=null) {
+        if (loadme != null)
+        {
             // only if changed
-            if (SceneManager.GetActiveScene().name != loadme) {
-                Debug.Log("- Current scene: "+SceneManager.GetActiveScene().name);
-                Debug.Log("- LoadGame is about to load scene: "+loadme);
-                SceneManager.LoadScene(loadme);
-                Debug.Log("- LoadGame finished loading scene: "+loadme);
-            } else {
-                Debug.Log("- We are already in the saved scene: "+loadme+".");
+            if (SceneManager.GetActiveScene().name != loadme)
+            {
+                Debug.Log("- Current scene: " + SceneManager.GetActiveScene().name);
+                Debug.Log("- LoadGame is about to load scene: " + loadme);
+
+                if (debugSkips == false)
+                {
+                    SceneManager.LoadScene(loadme);
+                }
+                else
+                {
+                    Debug.LogWarning("DEBUG SKIPS ON IN LOADFILE AND NOT LOADING SCENE");
+                }
+                Debug.Log("- LoadGame finished loading scene: " + loadme);
             }
-        } else {
+            else
+            {
+                Debug.Log("- We are already in the saved scene: " + loadme + ".");
+            }
+        }
+        else
+        {
             Debug.Log("- No scene saved in playerperfs. Nothing to load.");
         }
 
         float newx = PlayerPrefs.GetFloat("PlayerPosition.x");
         float newy = PlayerPrefs.GetFloat("PlayerPosition.y");
         float newz = PlayerPrefs.GetFloat("PlayerPosition.z");
-        Debug.Log("TELEPORTING PLAYER TO "+newx+","+newy);
-        //player.transform.position = new Vector3(newx, newy, newz);
+        Debug.Log("TELEPORTING PLAYER TO " + newx + "," + newy);
+        if (debugSkips == false)
+        {
+            player.transform.position = new Vector3(newx, newy, newz);
+        }
+        else
+        {
+            Debug.LogWarning("DEBUG SKIPS ON IN LOADFILE AND NOT LOADING PLAYER AT LOCATION");
+        }
 
 
     }

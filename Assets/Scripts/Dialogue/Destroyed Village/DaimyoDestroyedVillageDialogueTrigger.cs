@@ -233,6 +233,8 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                 break;
 
             case 1:
+            this.buttonA.SetActive(false);
+            this.buttonB.SetActive(false);
             readyToEnd = false;
             SceneLoader.Load("Epilogue");
                 break;
@@ -267,6 +269,8 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
 
             case 1:
             readyToEnd = false;
+            this.buttonA.SetActive(false);
+            this.buttonB.SetActive(false);
                 break;
         }
 
