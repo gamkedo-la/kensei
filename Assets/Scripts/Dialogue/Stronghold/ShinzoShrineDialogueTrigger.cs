@@ -16,6 +16,12 @@ public class ShinzoShrineDialogueTrigger : DialogueTrigger
         buttonA.SetActive(false);
         buttonB.SetActive(false);
         combatScore.SetActive(false);
+
+        if(GameDictionary.choiceDictionary["Shrine Repaired"])
+        {
+            completeShrine.SetActive(true);
+            this.gameObject.SetActive(false);
+        }
     }
 
     void Update()
@@ -70,6 +76,7 @@ public class ShinzoShrineDialogueTrigger : DialogueTrigger
         player.GetComponent<PlayerController>().AddItem(charm);
         GameDictionary.Instance.UpdateEntry("Shinzo Fragment", false);
         GameDictionary.Instance.UpdateEntry("Acala's Charm", true);
+        GameDictionary.Instance.UpdateEntry("Shrine Repaired", true);
         completeShrine.SetActive(true);
         this.gameObject.SetActive(false);
 
