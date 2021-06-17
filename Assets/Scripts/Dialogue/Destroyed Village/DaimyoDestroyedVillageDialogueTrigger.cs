@@ -24,6 +24,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
     int switchInt = 0;
     bool endGame;
     public GameObject endGamePanel;
+    bool readyToEnd;
 
     public override void Start()
     {
@@ -143,7 +144,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                 }
             }
         }
-        else if (dialogueEnd && (GameDictionary.choiceDictionary["Shigeie Apprehended"] || GameDictionary.choiceDictionary["Last Scene Over"]))
+        else if (dialogueEnd && readyToEnd && (GameDictionary.choiceDictionary["Shigeie Apprehended"] || GameDictionary.choiceDictionary["Last Scene Over"]))
         {
             switchInt = 1;
             DecisionDisplay("End the Game", "Keep Exploring");
@@ -178,11 +179,13 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
             }
             if (GameDictionary.choiceDictionary["Shigeie Apprehended"])
             {
+                readyToEnd = true;
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
             if (GameDictionary.choiceDictionary["Last Scene Over"])
             {
+                readyToEnd = true;
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[9];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
@@ -230,6 +233,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                 break;
 
             case 1:
+            readyToEnd = false;
             SceneLoader.Load("Epilogue");
                 break;
         }
@@ -262,6 +266,7 @@ public class DaimyoDestroyedVillageDialogueTrigger : DialogueTrigger
                 break;
 
             case 1:
+            readyToEnd = false;
                 break;
         }
 

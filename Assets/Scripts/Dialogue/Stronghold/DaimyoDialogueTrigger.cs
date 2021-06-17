@@ -16,7 +16,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
     public bool shigieDialogue;
     public bool exchangeOver;
 
-    
+
     public override void Start()
     {
         button.SetActive(false);
@@ -28,17 +28,19 @@ public class DaimyoDialogueTrigger : DialogueTrigger
     void Update()
     {
         //check for conditions for different dialogue options
-        if (GameDictionary.choiceDictionary["Used Hidden Tunnel"] && dialogueEnd && !choicesShown)
+        if (!GameDictionary.choiceDictionary["Samurai Path"])
+        {
+            if (GameDictionary.choiceDictionary["Used Hidden Tunnel"] && dialogueEnd && !choicesShown)
             {
                 dialogueEnd = false;
 
-                if(GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
+                if (GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
                 {
                     DecisionDisplay("Offer a Drink of Sake", "Plead with the Daimyo");
                     offeredSakeChoice = true;
                 }
 
-                else if(GameDictionary.choiceDictionary["Blooded Tanto"])
+                else if (GameDictionary.choiceDictionary["Blooded Tanto"])
                 {
                     DecisionDisplay("Accuse Ishida Shigie of Murder", "Plead with the Daimyo");
                     accusedShigieChoice = true;
@@ -55,13 +57,13 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             {
                 dialogueEnd = false;
 
-                if(GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
+                if (GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
                 {
                     DecisionDisplay("Offer a Drink of Sake", "Plead with the Daimyo");
                     offeredSakeChoice = true;
                 }
 
-                else if(GameDictionary.choiceDictionary["Blooded Tanto"])
+                else if (GameDictionary.choiceDictionary["Blooded Tanto"])
                 {
                     DecisionDisplay("Accuse Ishida Shigie of Murder", "Plead with the Daimyo");
                     accusedShigieChoice = true;
@@ -77,20 +79,20 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             if (GameDictionary.choiceDictionary["Beggar Entry"] && dialogueEnd && !choicesShown)
             {
                 dialogueEnd = false;
-                
 
-                if(GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
+
+                if (GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
                 {
                     DecisionDisplay("Offer a Drink of Sake", "Plead with the Daimyo");
                     offeredSakeChoice = true;
                 }
 
-                else if(GameDictionary.choiceDictionary["Blooded Tanto"])
+                else if (GameDictionary.choiceDictionary["Blooded Tanto"])
                 {
                     DecisionDisplay("Accuse Ishida Shigie of Murder", "Plead with the Daimyo");
                     accusedShigieChoice = true;
                 }
-                
+
                 else
                 {
                     DecisionDisplay("???", "Plead with the Daimyo");
@@ -101,115 +103,115 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             {
                 dialogueEnd = false;
 
-                if(GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
+                if (GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
                 {
                     DecisionDisplay("Offer a Drink of Sake", "Plead with the Daimyo");
                     offeredSakeChoice = true;
                 }
 
-                else if(GameDictionary.choiceDictionary["Blooded Tanto"])
+                else if (GameDictionary.choiceDictionary["Blooded Tanto"])
                 {
                     DecisionDisplay("Accuse Ishida Shigie of Murder", "Plead with the Daimyo");
                     accusedShigieChoice = true;
                 }
-                
+
                 else
                 {
                     DecisionDisplay("???", "Plead with the Daimyo");
                 }
             }
+        }
+        if (GameDictionary.choiceDictionary["Left Stronghold"] && dialogueEnd && !choicesShown)
+        {
+            dialogueEnd = false;
 
-            if (GameDictionary.choiceDictionary["Left Stronghold"] && dialogueEnd && !choicesShown)
+            if (GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
             {
-                dialogueEnd = false;
-
-                if(GameDictionary.choiceDictionary["Sake Cup"] && GameDictionary.choiceDictionary["Sake Bottle"])
-                {
-                    DecisionDisplay("Offer a Drink of Sake", "Plead with the Daimyo");
-                    offeredSakeChoice = true;
-                }
-
-                if(GameDictionary.choiceDictionary["Blooded Tanto"])
-                {
-                    DecisionDisplay("Accuse Ishida Shigie of Murder", "Plead with the Daimyo");
-                    accusedShigieChoice = true;
-                }
-                
-                else
-                {
-                    DecisionDisplay("Counsel Peace and Diplomacy", "Counsel Use of Force");
-                }
+                DecisionDisplay("Offer a Drink of Sake", "Plead with the Daimyo");
+                offeredSakeChoice = true;
             }
 
-            if(dialogueEnd && choicesShown && !shigieDialogue)
+            if (GameDictionary.choiceDictionary["Blooded Tanto"])
             {
-                dialogueEnd = false;
-
-                if(talkedSake)
-                {
-                    button.GetComponent<DialogueRun>().dialogue = Dialogues[8];
-                    button.GetComponent<DialogueRun>().trigger = this;
-                    button.GetComponent<DialogueRun>().TriggerDialogue();
-                }
-
-                else if(accusedShigie)
-                {
-                    button.GetComponent<DialogueRun>().dialogue = Dialogues[9];
-                    button.GetComponent<DialogueRun>().trigger = this;
-                    button.GetComponent<DialogueRun>().TriggerDialogue();
-                }
-
-                else
-                {
-                    button.GetComponent<DialogueRun>().dialogue = Dialogues[10];
-                    button.GetComponent<DialogueRun>().trigger = this;
-                    button.GetComponent<DialogueRun>().TriggerDialogue();
-                }
-                shigieDialogue = true;
+                DecisionDisplay("Accuse Ishida Shigie of Murder", "Plead with the Daimyo");
+                accusedShigieChoice = true;
             }
 
-            if(dialogueEnd && choicesShown && shigieDialogue && !exchangeOver)
+            else
             {
-                dialogueEnd = false;
+                DecisionDisplay("Counsel Peace and Diplomacy", "Counsel Use of Force");
+            }
+        }
 
-                if(talkedSake)
-                {
-                    button.GetComponent<DialogueRun>().dialogue = Dialogues[11];
-                    button.GetComponent<DialogueRun>().trigger = this;
-                    button.GetComponent<DialogueRun>().TriggerDialogue();
-                }
+        if (dialogueEnd && choicesShown && !shigieDialogue)
+        {
+            dialogueEnd = false;
 
-                else if(accusedShigie)
-                {
-                    button.GetComponent<DialogueRun>().dialogue = Dialogues[12];
-                    button.GetComponent<DialogueRun>().trigger = this;
-                    button.GetComponent<DialogueRun>().TriggerDialogue();
-                }
-
-                else
-                {
-                    button.GetComponent<DialogueRun>().dialogue = Dialogues[13];
-                    button.GetComponent<DialogueRun>().trigger = this;
-                    button.GetComponent<DialogueRun>().TriggerDialogue();
-                }
-                exchangeOver = true;
+            if (talkedSake)
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[8];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
             }
 
-            if(dialogueEnd && exchangeOver)
+            else if (accusedShigie)
             {
-                dialogueEnd = false;
-                //load the next scene
-                if(talkedSake || accusedShigie)
-                {
-                    SaveFile.SaveGame();
-                    SceneLoader.Load("TheVillagePristineEndgame");
-                }
-                else
-                {
-                    SaveFile.SaveGame();
-                    SceneLoader.Load("TheVillageDestroyedEndgame");
-                }
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[9];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
             }
+
+            else
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[10];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
+            }
+            shigieDialogue = true;
+        }
+
+        if (dialogueEnd && choicesShown && shigieDialogue && !exchangeOver)
+        {
+            dialogueEnd = false;
+
+            if (talkedSake)
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[11];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
+            }
+
+            else if (accusedShigie)
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[12];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
+            }
+
+            else
+            {
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[13];
+                button.GetComponent<DialogueRun>().trigger = this;
+                button.GetComponent<DialogueRun>().TriggerDialogue();
+            }
+            exchangeOver = true;
+        }
+
+        if (dialogueEnd && exchangeOver)
+        {
+            dialogueEnd = false;
+            //load the next scene
+            if (talkedSake || accusedShigie)
+            {
+                SaveFile.SaveGame();
+                SceneLoader.Load("TheVillagePristineEndgame");
+            }
+            else
+            {
+                SaveFile.SaveGame();
+                SceneLoader.Load("TheVillageDestroyedEndgame");
+            }
+        }
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
@@ -256,13 +258,13 @@ public class DaimyoDialogueTrigger : DialogueTrigger
                 leaveStrongholdBlocker.SetActive(false);
             }
 
-            if(GameDictionary.choiceDictionary["Left Stronghold"])
+            if (GameDictionary.choiceDictionary["Left Stronghold"])
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[14];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
 
-            if(GameDictionary.choiceDictionary["Used Hidden Tunnel"])
+            if (GameDictionary.choiceDictionary["Used Hidden Tunnel"])
             {
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[15];
                 button.GetComponent<DialogueRun>().trigger = this;
@@ -300,7 +302,7 @@ public class DaimyoDialogueTrigger : DialogueTrigger
         this.buttonA.SetActive(false);
         this.buttonB.SetActive(false);
 
-        if(offeredSakeChoice)
+        if (offeredSakeChoice)
         {
             button.GetComponent<DialogueRun>().dialogue = Dialogues[5];
             button.GetComponent<DialogueRun>().trigger = this;
@@ -309,22 +311,20 @@ public class DaimyoDialogueTrigger : DialogueTrigger
             GameDictionary.Instance.UpdateEntry("Sake with Daimyo", true);
         }
 
-        else if(accusedShigieChoice)
+        else if (accusedShigieChoice)
         {
             button.GetComponent<DialogueRun>().dialogue = Dialogues[6];
             button.GetComponent<DialogueRun>().trigger = this;
             button.GetComponent<DialogueRun>().TriggerDialogue();
-            GameDictionary.Instance.UpdateEntry("Shigie Arrested",true);
+            GameDictionary.Instance.UpdateEntry("Shigie Arrested", true);
             accusedShigie = true;
         }
 
         else
         {
-            DecisionDisplay("???", "Plead with the Daimyo");
-            /*
             button.GetComponent<DialogueRun>().dialogue = Dialogues[7];
             button.GetComponent<DialogueRun>().trigger = this;
-            button.GetComponent<DialogueRun>().TriggerDialogue();*/
+            button.GetComponent<DialogueRun>().TriggerDialogue();
         }
         choicesShown = true;
     }
