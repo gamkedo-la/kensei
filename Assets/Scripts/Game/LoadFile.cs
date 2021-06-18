@@ -47,7 +47,10 @@ public static class LoadFile
                 }
                 else
                 {
-                    Debug.Log(obj.name + " is missing missing position data.");
+                    // FIXME: does this mean the data is malformed,
+                    // or just that we've ot obtained that item yet?
+                    // I think this is a permissable error ok to ignore
+                    Debug.Log(obj.name + " is missing missing position data. Ignoring.");
                 }
             }
         }
@@ -90,20 +93,23 @@ public static class LoadFile
             Debug.Log("- No scene saved in playerperfs. Nothing to load.");
         }
 
-        float newx = PlayerPrefs.GetFloat("PlayerPosition.x");
-        float newy = PlayerPrefs.GetFloat("PlayerPosition.y");
-        float newz = PlayerPrefs.GetFloat("PlayerPosition.z");
-        Debug.Log("TELEPORTING PLAYER TO " + newx + "," + newy);
-        if (debugSkips == false)
-        {
-            player.transform.position = new Vector3(newx, newy, newz);
-        }
-        else
-        {
-            Debug.LogWarning("DEBUG SKIPS ON IN LOADFILE AND NOT LOADING PLAYER AT LOCATION");
-        }
+        float newx = PlayerPrefs.GetFloat("PlayerPosition.x",-999f);
+        float newy = PlayerPrefs.GetFloat("PlayerPosition.y",-999f);
+        float newz = PlayerPrefs.GetFloat("PlayerPosition.z",-999f);
+        if (newx==-999f || newy==-999f || newz==-999f) {
+            Debug.Log("- The save data is missing player x,y,z. Ignoring.");
+        } else {
 
-
+            Debug.Log("TELEPORTING PLAYER TO " + newx + "," + newy);
+            if (debugSkips == false)
+            {
+                player.transform.position = new Vector3(newx, newy, newz);
+            }
+            else
+            {
+                Debug.LogWarning("DEBUG SKIPS ON IN LOADFILE AND NOT LOADING PLAYER AT LOCATION");
+            }
+        }
     }
 
     public static GameObject ConstructItem(ItemClass item)

@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        Debug.LogError("PlayerController.Start()");
+        Debug.Log("PlayerController.Start()");
 
         scene = SceneManager.GetActiveScene();
 
