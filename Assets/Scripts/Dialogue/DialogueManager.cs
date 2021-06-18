@@ -49,7 +49,7 @@ public class DialogueManager : MonoBehaviour
         sentences.Clear();
         panel.SetActive(true);
         button.SetActive(false);
-        nameText.text = dialogue.name;
+        if (nameText!=null) nameText.text = dialogue.name;
 
         foreach (string sentence in dialogue.sentences)
         {
@@ -76,7 +76,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         panel.SetActive(false);
-        trigger.dialogueEnd = true;
+        if (trigger!=null) trigger.dialogueEnd = true;
         FindObjectsOfType<PlayerController>()[0].movementLocked = false;
 
     }

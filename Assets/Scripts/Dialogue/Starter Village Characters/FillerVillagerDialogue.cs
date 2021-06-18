@@ -26,7 +26,9 @@ public class FillerVillagerDialogue : DialogueTrigger
             inRange = true;
             button.SetActive(true);
             player = collider.gameObject;
-            GetComponent<NPCWander>().onSwitch = false;
+            if (GetComponent<NPCWander>()!=null) {
+                GetComponent<NPCWander>().onSwitch = false;
+            }
 
             if (!GameDictionary.choiceDictionary["Nude"])
             {
