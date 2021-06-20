@@ -49,6 +49,10 @@ public class IshidaShigenariDialogueTrigger : DialogueTrigger
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
+            if (GameDictionary.choiceDictionary["Path Chosen"] && !GameDictionary.choiceDictionary["Ronin Path"])
+            {
+                this.gameObject.SetActive(false);
+            }
 
         }
     }

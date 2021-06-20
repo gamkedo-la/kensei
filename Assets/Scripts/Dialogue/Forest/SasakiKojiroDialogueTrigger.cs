@@ -53,6 +53,10 @@ public class SasakiKojiroDialogueTrigger : DialogueTrigger
         {
             gameObject.SetActive(false);
         }
+        if (GameDictionary.choiceDictionary["Path Chosen"] && !GameDictionary.choiceDictionary["Ronin Path"])
+        {
+            this.gameObject.SetActive(false);
+        }
 
     }
 

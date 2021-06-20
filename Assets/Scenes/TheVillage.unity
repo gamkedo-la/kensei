@@ -43140,6 +43140,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2003768348}
     m_Modifications:
+    - target: {fileID: 4855295428969838241, guid: f316a61b8b29ed949801b12c173bb23e,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4855295428969838243, guid: f316a61b8b29ed949801b12c173bb23e,
         type: 3}
       propertyPath: m_Name

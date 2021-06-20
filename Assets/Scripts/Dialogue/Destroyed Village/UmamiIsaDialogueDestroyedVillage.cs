@@ -51,6 +51,13 @@ public class UmamiIsaDialogueDestroyedVillage : DialogueTrigger
                 button.GetComponent<DialogueRun>().dialogue = Dialogues[2];
                 button.GetComponent<DialogueRun>().trigger = this;
             }
+            
+            if (GameDictionary.choiceDictionary["Gave Sakura Blossom"])
+            {
+                //pick which Dialogue to run
+                button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
+                button.GetComponent<DialogueRun>().trigger = this;
+            }
         }
     }
 
@@ -84,6 +91,7 @@ public class UmamiIsaDialogueDestroyedVillage : DialogueTrigger
         this.buttonB.SetActive(false);
         player.GetComponent<PlayerController>().smallItem = null;
         GameDictionary.Instance.UpdateEntry("Sakura Blossom", false);
+        GameDictionary.Instance.UpdateEntry("Gave Sakura Blossom", true);
         button.GetComponent<DialogueRun>().dialogue = Dialogues[3];
         button.GetComponent<DialogueRun>().trigger = this;
         button.GetComponent<DialogueRun>().TriggerDialogue();

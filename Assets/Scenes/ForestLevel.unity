@@ -6144,8 +6144,8 @@ MonoBehaviour:
   - Greetings to our fine Temple, servant of the Daimyo. How can I assist you?
   - I have heard many unhappy people walk through my doors in search of guidance
     and help. It seems soon they will be taking matters into their own hands.
-  - If you wish to know more, please speak with Shigenari, in the clearing. I will
-    join you in case tensions run hot.
+  - If you wish to know more, please speak with Shigenari, near the entrance to the
+    village. I will join you in case tensions run hot.
 --- !u!58 &148536950 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 3036719314840957220, guid: 345815714a835dd4b9d150b6b13e4aac,
@@ -6320,7 +6320,7 @@ MonoBehaviour:
   name: "Takuan S\u014Dh\u014D"
   sentences:
   - 'A Ronin wanders in...I wonder what they could want? Perhaps they seek entry
-    to the stronhold. '
+    to the stronghold. '
   - 'A keen observer might notice a hidden tunnel below this temple. Some might tell
     you that the key was last known to be posessed by one in the village. That is
     all.  '
