@@ -512,7 +512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 62.5, y: -25.600006}
+  m_AnchoredPosition: {x: 62.5, y: -25.600037}
   m_SizeDelta: {x: 64.92938, y: 26.752258}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1605572615748109778
@@ -3327,7 +3327,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   movementLocked: 0
-  bloodedTanto: {fileID: 8664694571415600837, guid: 3bc3ac4c0bdccec43a05e5a858fc67a5,
+  bloodedTanto: {fileID: 5993816356027387797, guid: f4ca504556a585f41bded64e769f1964,
     type: 3}
   pauseMenu: {fileID: 0}
 --- !u!95 &8068239843639634201

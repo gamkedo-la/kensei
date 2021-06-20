@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
     public Transform[] teleportList;
     public bool movementLocked;
     public GameObject bloodedTanto;
-    bool debugKeys = true;
+    bool debugKeys = false;
     public GameObject pauseMenu;
 
     Scene scene;
