@@ -7,7 +7,7 @@ public class TitlescreenMenu : MonoBehaviour
 {
     public AudioSource playButtonAudioSource;
     public AudioClip playButtonClickSFX;
-    public string SceneNameToLoad = "TheVillage";
+    public string SceneNameToLoad;
     public void playButtonClicked()
     {
         if (PlayerPrefs.GetString("Scene") != null)
@@ -21,7 +21,7 @@ public class TitlescreenMenu : MonoBehaviour
         {
             PlayerPrefs.DeleteAll();
             //playButtonAudioSource.PlayOneShot(playButtonClickSFX);
-            SceneManager.LoadScene(SceneNameToLoad, LoadSceneMode.Single);
+            SceneManager.LoadScene("TheVillage", LoadSceneMode.Single);
         }
     }
 
@@ -30,6 +30,6 @@ public class TitlescreenMenu : MonoBehaviour
         Debug.Log("New Game Button Clicked.");
         PlayerPrefs.DeleteAll();
         //playButtonAudioSource.PlayOneShot(playButtonClickSFX);
-        SceneManager.LoadScene(SceneNameToLoad, LoadSceneMode.Single);
+        SceneManager.LoadScene("TheVillage", LoadSceneMode.Single);
     }
 }
