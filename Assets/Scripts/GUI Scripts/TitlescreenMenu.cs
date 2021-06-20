@@ -10,10 +10,19 @@ public class TitlescreenMenu : MonoBehaviour
     public string SceneNameToLoad;
     public void playButtonClicked()
     {
-        SceneNameToLoad = PlayerPrefs.GetString("Scene");
-        Debug.Log("Play Button Clicked.");
-        //playButtonAudioSource.PlayOneShot(playButtonClickSFX);
-        SceneManager.LoadScene(SceneNameToLoad, LoadSceneMode.Single);
+        if (PlayerPrefs.GetString("Scene") != null)
+        {
+            SceneNameToLoad = PlayerPrefs.GetString("Scene");
+            Debug.Log("Play Button Clicked.");
+            //playButtonAudioSource.PlayOneShot(playButtonClickSFX);
+            SceneManager.LoadScene(SceneNameToLoad, LoadSceneMode.Single);
+        }
+        else
+        {
+            PlayerPrefs.DeleteAll();
+            //playButtonAudioSource.PlayOneShot(playButtonClickSFX);
+            SceneManager.LoadScene(SceneNameToLoad, LoadSceneMode.Single);
+        }
     }
 
     public void newGameButtonClicked()
