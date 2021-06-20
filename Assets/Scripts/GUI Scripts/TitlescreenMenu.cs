@@ -7,7 +7,7 @@ public class TitlescreenMenu : MonoBehaviour
 {
     public AudioSource playButtonAudioSource;
     public AudioClip playButtonClickSFX;
-    public string SceneNameToLoad;
+    public string SceneNameToLoad = "TheVillage";
     public void playButtonClicked()
     {
         if (PlayerPrefs.GetString("Scene") != null)
